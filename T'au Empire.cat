@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::tau-empire" name="T'au Empire" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::napoks-hunters::00-lone-spear-na-pok" name="Lone-spear Na'pok" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b81c1f70" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ea516c8f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dc1e2436" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
+        <categoryLink id="c7bc2ef8" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="9a5163eb" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="2261c96e" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="489608c2" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="ba20c75a" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
+        <categoryLink id="de5ed75a" name="Lone-spear" hidden="false" targetId="cp-kw::lone-spear" primary="false" />
+        <categoryLink id="b0e901f9" name="Lone-spear Na'pok" hidden="false" targetId="cp-kw::lone-spear-na-pok" primary="false" />
+        <categoryLink id="5a1da8e8" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="30d3513a" name="Lone-spear Na'pok" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="088d89c8" name="Blast javelin" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">10</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e7e7a0a1" name="Hunting javelin" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2b5baf32" name="Kalamandra's bite" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fd793638" name="Advanced Scouting" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time this model makes a ranged attack that hits an enemy unit, until the end of the turn, each time another Kroot model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b118d50d" name="Enhancement: Grizzled Predator (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has the Feel No Pain 5+ ability. Once per battle round, when an enemy unit ends a Normal, Advance or Fall Back move within 18" of the bearer, it can use this ability. If it does, that enemy unit must take a Battle-shock test, subtracting 1 from the result, and if that enemy unit is within 9" of the bearer, the bearer can make a Normal move of up to D6". (Default enhancement; may be replaced with Hunter's Eye: Ranged weapons equipped by the bearer have the [Precision] ability. At the start of your Shooting phase, select one Kroot Carnivores unit within 9" of the bearer. Until the end of the phase, Kroot rifles equipped by models in that unit have the [Precision] ability.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="24c35454" name="Advanced Scouting" hidden="false">
+          <description>Each time this model makes a ranged attack that hits an enemy unit, until the end of the turn, each time another Kroot model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll.</description>
+        </rule>
+        <rule id="9b942c56" name="Enhancement: Grizzled Predator (Warlord)" hidden="false">
+          <description>The bearer has the Feel No Pain 5+ ability. Once per battle round, when an enemy unit ends a Normal, Advance or Fall Back move within 18" of the bearer, it can use this ability. If it does, that enemy unit must take a Battle-shock test, subtracting 1 from the result, and if that enemy unit is within 9" of the bearer, the bearer can make a Normal move of up to D6". (Default enhancement; may be replaced with Hunter's Eye: Ranged weapons equipped by the bearer have the [Precision] ability. At the start of your Shooting phase, select one Kroot Carnivores unit within 9" of the bearer. Until the end of the phase, Kroot rifles equipped by models in that unit have the [Precision] ability.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::napoks-hunters::00-lone-spear-na-pok::blast-javelin" name="Blast javelin" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1ca0012c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="eecce568" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::00-lone-spear-na-pok::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="5f65c0f3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0c80265a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::00-lone-spear-na-pok::hunting-javelin" name="Hunting javelin" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="58ec7c0d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="34ee1676" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::00-lone-spear-na-pok::kalamandra-s-bite" name="Kalamandra's bite" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="eee7c411" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a626f7f4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::napoks-hunters::01-kroot-carnivores" name="Kroot Carnivores" type="unit" hidden="false">
+      <constraints>
+        <constraint id="0e83a342" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="296e5dba" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a92cd645" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
+        <categoryLink id="db17f640" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="0dd5325b" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="9936ecce" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="f445bac0" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
+        <categoryLink id="e9fcfc9b" name="Carnivores" hidden="false" targetId="cp-kw::carnivores" primary="false" />
+        <categoryLink id="af3754a6" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e33eb0e4" name="Kroot Carnivores" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="017d5d8b" name="Tanglebomb launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">D3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="75d01f0b" name="Kroot pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54e54703" name="Kroot rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6369839" name="Fieldcraft" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8ab95034" name="Fieldcraft" hidden="false">
+          <description>At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::napoks-hunters::01-kroot-carnivores::1-long-quill-kroot-pistol-kroot-rifle-close-combat-weapon" name="1 Long-quill: Kroot pistol, Kroot rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="05c1b483" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1c8db222" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::01-kroot-carnivores::8-kroot-carnivores-kroot-rifle-close-combat-weapon" name="8 Kroot Carnivores: Kroot rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="0c867b4c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="54b7f984" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::01-kroot-carnivores::1-kroot-carnivore-tanglebomb-launcher-close-combat-weapon" name="1 Kroot Carnivore: tanglebomb launcher, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c162c03b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a99852c6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::napoks-hunters::02-krootox-rider" name="Krootox Rider" type="unit" hidden="false">
+      <constraints>
+        <constraint id="467e9d0b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="293d78c9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="39826fc2" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
+        <categoryLink id="0e648f96" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="d3fd1a8e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="eedeae83" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="d7a91f75" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
+        <categoryLink id="b09dac7f" name="Krootox Riders" hidden="false" targetId="cp-kw::krootox-riders" primary="false" />
+        <categoryLink id="1cc67b78" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="07d61d12" name="Krootox Rider" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="96fc7f79" name="Repeater cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="84e1cd88" name="Krootox fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::napoks-hunters::02-krootox-rider::repeater-cannon" name="Repeater cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2b04ae73" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ec815283" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::02-krootox-rider::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="97ccf65f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="22d6261a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::02-krootox-rider::krootox-fists" name="Krootox fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e15e10f4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3655c78d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::napoks-hunters::03-krootox-rampagers" name="Krootox Rampagers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a3e9149e" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b45c4f2e" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1db1791b" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
+        <categoryLink id="2edf13fb" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="e7967094" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="7c39d433" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="50031092" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
+        <categoryLink id="d5927216" name="Krootox Rampagers" hidden="false" targetId="cp-kw::krootox-rampagers" primary="false" />
+        <categoryLink id="350e1002" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="86409f88" name="Krootox Rampagers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8715364b" name="Kroot pistol and hunting javelins" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="874da5d9" name="Hunting blades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b1e49650" name="Rampager fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::napoks-hunters::03-krootox-rampagers::3-krootox-rampagers-kroot-pistol-and-hunting-javelins-hunting-blades-rampager-fists" name="3 Krootox Rampagers: Kroot pistol and hunting javelins, hunting blades, Rampager fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a1feafac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f2b49ead" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::napoks-hunters::04-kroot-carnivores" name="Kroot Carnivores" type="unit" hidden="false">
+      <constraints>
+        <constraint id="cf74c823" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9e9d2054" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="de4636d7" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
+        <categoryLink id="39cdb3a1" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="41c6cf94" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="151e5203" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="3d9936a5" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
+        <categoryLink id="5e211732" name="Carnivores" hidden="false" targetId="cp-kw::carnivores" primary="false" />
+        <categoryLink id="89b39e2a" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e33eb0e4" name="Kroot Carnivores" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="017d5d8b" name="Tanglebomb launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">D3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="75d01f0b" name="Kroot pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54e54703" name="Kroot rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6369839" name="Fieldcraft" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8ab95034" name="Fieldcraft" hidden="false">
+          <description>At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::napoks-hunters::04-kroot-carnivores::1-long-quill-kroot-pistol-kroot-rifle-close-combat-weapon" name="1 Long-quill: Kroot pistol, Kroot rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6c1f9974" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="bbccede1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::04-kroot-carnivores::8-kroot-carnivores-kroot-rifle-close-combat-weapon" name="8 Kroot Carnivores: Kroot rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="38b4416d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="dafd68be" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::napoks-hunters::04-kroot-carnivores::1-kroot-carnivore-tanglebomb-launcher-close-combat-weapon" name="1 Kroot Carnivore: tanglebomb launcher, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="7d23ad23" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="160d7eaa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::napoks-hunters::05-krootox-rampagers" name="Krootox Rampagers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="97f8e218" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9af5e598" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0a0cae47" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
+        <categoryLink id="8632cbcb" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="c88be968" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="08229c30" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="5facd9fc" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
+        <categoryLink id="ca76b957" name="Krootox Rampagers" hidden="false" targetId="cp-kw::krootox-rampagers" primary="false" />
+        <categoryLink id="e7008e95" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="86409f88" name="Krootox Rampagers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8715364b" name="Kroot pistol and hunting javelins" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="874da5d9" name="Hunting blades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b1e49650" name="Rampager fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::napoks-hunters::05-krootox-rampagers::3-krootox-rampagers-kroot-pistol-and-hunting-javelins-hunting-blades-rampager-fists" name="3 Krootox Rampagers: Kroot pistol and hunting javelins, hunting blades, Rampager fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3449f862" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3227698f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::protectors-of-aunshar::00-aun-shar" name="Aun'Shar" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c94d3198" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="dd023a3b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="edd5a783" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" primary="true" />
+        <categoryLink id="3eb7b67a" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="dcbd23e6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="c1f1e79a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="1af83dfc" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="9ec6bac2" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="cbf36db7" name="Ethereal" hidden="false" targetId="cp-kw::ethereal" primary="false" />
+        <categoryLink id="a6075b26" name="Aun'Shar" hidden="false" targetId="cp-kw::aun-shar" primary="false" />
+        <categoryLink id="faf0812b" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a6620746" name="Aun'Shar" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3432cdbc" name="Honour stave" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="221dd81f" name="Coordinated Leadership" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, roll one D6: on a 4+, you gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e1e860e0" name="Hover Drone" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer can Fly and has a Move characteristic of 10".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="39c27f67" name="Enhancement: DS13 Experimental Drone (Aura) (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has the Lone Operative and Stealth abilities. While a friendly T'au Empire Infantry unit is within 6" of the bearer, improve the Save characteristic of models in that unit by 1 and those models have the Feel No Pain 5+ ability. (Default enhancement; may be replaced with DS15 Experimental Drone (Aura): The bearer has the Lone Operative and Stealth abilities. While a friendly T'au Empire unit is within 6" of the bearer, ranged weapons equipped by models in that unit have the [Lethal Hits] ability.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ea7e680f" name="Coordinated Leadership" hidden="false">
+          <description>In your Command phase, roll one D6: on a 4+, you gain 1CP.</description>
+        </rule>
+        <rule id="37f45b06" name="Hover Drone" hidden="false">
+          <description>The bearer can Fly and has a Move characteristic of 10".</description>
+        </rule>
+        <rule id="616e8388" name="Enhancement: DS13 Experimental Drone (Aura) (Warlord)" hidden="false">
+          <description>The bearer has the Lone Operative and Stealth abilities. While a friendly T'au Empire Infantry unit is within 6" of the bearer, improve the Save characteristic of models in that unit by 1 and those models have the Feel No Pain 5+ ability. (Default enhancement; may be replaced with DS15 Experimental Drone (Aura): The bearer has the Lone Operative and Stealth abilities. While a friendly T'au Empire unit is within 6" of the bearer, ranged weapons equipped by models in that unit have the [Lethal Hits] ability.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::protectors-of-aunshar::00-aun-shar::honour-stave" name="Honour stave" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2c942881" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ab4cb447" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::00-aun-shar::hover-drone" name="Hover drone" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="9ca283c5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f06b6236" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::protectors-of-aunshar::01-shas-nel-d-tano" name="Shas'nel D'tano" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f3b2b266" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3640ac0c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="24d2affa" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" primary="true" />
+        <categoryLink id="06eb0657" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="434b9fd5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="54623820" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="a97fc113" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="4d33c592" name="Cadre Fireblade" hidden="false" targetId="cp-kw::cadre-fireblade" primary="false" />
+        <categoryLink id="2ddb6dd9" name="Shas'nel D'tano" hidden="false" targetId="cp-kw::shas-nel-d-tano" primary="false" />
+        <categoryLink id="a0ad4e37" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a78a0a1b" name="Shas'nel D'tano" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3c63906a" name="Fireblade pulse rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="07796a4a" name="Volley Fire" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model is leading a unit, add 1 to the Attacks characteristic of ranged weapons equipped by models in that unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Strike Team</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2a94b2c" name="Volley Fire" hidden="false">
+          <description>While this model is leading a unit, add 1 to the Attacks characteristic of ranged weapons equipped by models in that unit.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Strike Team</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::protectors-of-aunshar::01-shas-nel-d-tano::fireblade-pulse-rifle" name="Fireblade pulse rifle" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e4edf3d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="fafa3d25" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::01-shas-nel-d-tano::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8f44c917" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="77662fed" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::protectors-of-aunshar::02-ghostkeel-battlesuit" name="Ghostkeel Battlesuit" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a5a54a12" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="bcc001ee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="87c61103" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" primary="true" />
+        <categoryLink id="ae60a180" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="2b2436d5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="06c77f7b" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="34efceaf" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="a7657a4d" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="1b34a53d" name="Battlesuit" hidden="false" targetId="cp-kw::battlesuit" primary="false" />
+        <categoryLink id="900e578b" name="Ghostkeel" hidden="false" targetId="cp-kw::ghostkeel" primary="false" />
+        <categoryLink id="fcb60362" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="dc44588b" name="Ghostkeel Battlesuit" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">8</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="88429617" name="Cyclic ion raker – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">6</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a274eb42" name="Cyclic ion raker – overcharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">6</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Hazardous</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="966cf941" name="Twin fusion blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">9</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Melta 2, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c0c87cf" name="Ghostkeel fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6d42bd7" name="Battlesuit Support System" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer is eligible to shoot in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="856a523c" name="Battlesuit Support System" hidden="false">
+          <description>The bearer is eligible to shoot in a turn in which it Fell Back.</description>
+        </rule>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::protectors-of-aunshar::02-ghostkeel-battlesuit::cyclic-ion-raker" name="Cyclic ion raker" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="58b49532" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d55473ec" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::02-ghostkeel-battlesuit::twin-fusion-blaster" name="Twin fusion blaster" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c5c4b003" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cfb0958f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::02-ghostkeel-battlesuit::ghostkeel-fists" name="Ghostkeel fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="9abd706c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8f7979f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::02-ghostkeel-battlesuit::battlesuit-support-system" name="Battlesuit support system" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="cbcad75d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0ce1521e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::protectors-of-aunshar::03-strike-team" name="Strike Team" type="unit" hidden="false">
+      <constraints>
+        <constraint id="76c4e642" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ad87b57c" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9eb1f647" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" primary="true" />
+        <categoryLink id="7a0ceb9d" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="7d456dbc" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="d00382c6" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="3d4aff06" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="4226c6ce" name="Markerlight" hidden="false" targetId="cp-kw::markerlight" primary="false" />
+        <categoryLink id="be9c6f02" name="Fire Warrior" hidden="false" targetId="cp-kw::fire-warrior" primary="false" />
+        <categoryLink id="f3212320" name="Strike Team" hidden="false" targetId="cp-kw::strike-team" primary="false" />
+        <categoryLink id="3fb2fb1d" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="96663220" name="Strike Team" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6dbfa9be" name="Pulse carbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">20"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c40a6b93" name="Pulse pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1e1db901" name="Pulse rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="47a05771" name="Support turret missile system" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Indirect Fire, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0fcfd011" name="Cover Fire" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this unit is within range of an objective marker you control, each time you select it as the target of the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c768b8e7" name="DS8 Support Turret" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Movement phase, if this unit Remains Stationary, until the start of your next Movement phase, its Fire Warrior Shas'ui model is equipped with the support turret missile system weapon.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a8695ae" name="Designer's Note" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Place a DS8 Support Turret token next to this unit to remind you. This does not count as a model for any rules purposes.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="68da761e" name="Cover Fire" hidden="false">
+          <description>While this unit is within range of an objective marker you control, each time you select it as the target of the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem.</description>
+        </rule>
+        <rule id="b315876f" name="DS8 Support Turret" hidden="false">
+          <description>In your Movement phase, if this unit Remains Stationary, until the start of your next Movement phase, its Fire Warrior Shas'ui model is equipped with the support turret missile system weapon.</description>
+        </rule>
+        <rule id="d5c09c1b" name="Designer's Note" hidden="false">
+          <description>Place a DS8 Support Turret token next to this unit to remind you. This does not count as a model for any rules purposes.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::protectors-of-aunshar::03-strike-team::1-fire-warrior-shas-ui-pulse-carbine-pulse-pistol-close-combat-weapon-support-turret-missile-system-marker-drone" name="1 Fire Warrior Shas'ui: pulse carbine, pulse pistol, close combat weapon, support turret missile system, marker drone" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="24628e9e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9967c6d4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::03-strike-team::5-fire-warriors-pulse-pistol-pulse-rifle-close-combat-weapon" name="5 Fire Warriors: pulse pistol, pulse rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="67c2b756" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3d3442d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::03-strike-team::4-fire-warriors-pulse-carbine-pulse-pistol-close-combat-weapon" name="4 Fire Warriors: pulse carbine, pulse pistol, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d05692df" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="70d4ff9b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::protectors-of-aunshar::04-stealth-battlesuits" name="Stealth Battlesuits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a5c421f1" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0a9bb9fc" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="aef556ec" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" primary="true" />
+        <categoryLink id="21e05a61" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="78352280" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="21a0b629" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="0f371db8" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="30d8aaaf" name="Battlesuit" hidden="false" targetId="cp-kw::battlesuit" primary="false" />
+        <categoryLink id="8582f678" name="Stealth" hidden="false" targetId="cp-kw::stealth" primary="false" />
+        <categoryLink id="0e056a81" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="38834f72" name="Stealth Battlesuits" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="288e879f" name="Burst cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1184c0fd" name="Fusion blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">9</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Melta 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2aba0c2a" name="Battlesuit fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c3c82f05" name="Forward Observers" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time this unit is an Observer unit, until the end of the phase, each time a ranged attack is made by a model in their Guided unit that targets their Spotted unit, re-roll a Wound roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="08197c47" name="Marker Drone" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer's unit has the Markerlight keyword and can act as an Observer unit for another unit even if it Advanced this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a8695ae" name="Designer's Note" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Place a Marker Drone token next to this unit to remind you. This does not count as a model for any rules purposes.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ded380bc" name="Forward Observers" hidden="false">
+          <description>Each time this unit is an Observer unit, until the end of the phase, each time a ranged attack is made by a model in their Guided unit that targets their Spotted unit, re-roll a Wound roll of 1.</description>
+        </rule>
+        <rule id="d782eb48" name="Marker Drone" hidden="false">
+          <description>The bearer's unit has the Markerlight keyword and can act as an Observer unit for another unit even if it Advanced this turn.</description>
+        </rule>
+        <rule id="d5c09c1b" name="Designer's Note" hidden="false">
+          <description>Place a Marker Drone token next to this unit to remind you. This does not count as a model for any rules purposes.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::protectors-of-aunshar::04-stealth-battlesuits::1-stealth-shas-vre-fusion-blaster-battlesuit-fists-battlesuit-support-system-marker-drone" name="1 Stealth Shas'vre: fusion blaster, battlesuit fists, battlesuit support system, marker drone" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c8b38c78" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="883076a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::protectors-of-aunshar::04-stealth-battlesuits::2-stealth-shas-ui-burst-cannon-battlesuit-fists" name="2 Stealth Shas'ui: burst cannon, battlesuit fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f255a5ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="919c1f8e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::sudden-dawn-cadre::00-commander-cloudspear" name="Commander Cloudspear" type="unit" hidden="false">
+      <constraints>
+        <constraint id="689dc12a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e443f27d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7636ee1f" name="Combat Patrol: T'au Empire (Sudden Dawn Cadre)" hidden="false" targetId="cp-cat::sudden-dawn-cadre" primary="true" />
+        <categoryLink id="d3c253b2" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="5544314a" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="b7c286fa" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="18ea360f" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="969b98b9" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="7163ba92" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="980a630e" name="Battlesuit" hidden="false" targetId="cp-kw::battlesuit" primary="false" />
+        <categoryLink id="4a3faa45" name="Commander in Enforcer Battlesuit" hidden="false" targetId="cp-kw::commander-in-enforcer-battlesuit" primary="false" />
+        <categoryLink id="8c5db66e" name="Commander Cloudspear" hidden="false" targetId="cp-kw::commander-cloudspear" primary="false" />
+        <categoryLink id="432ebc34" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="bfdebb30" name="Commander Cloudspear" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0f97e53f" name="Airbursting fragmentation projector" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Indirect Fire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3d261b65" name="Plasma rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2aba0c2a" name="Battlesuit fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="361b180b" name="Shield Drone" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Add 1 to the bearer's Wounds characteristic.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3309fa7" name="Weapon Support System" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time the bearer makes a ranged attack, you can ignore any or all modifiers to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="35d1a7a4" name="Enhancement: Electro-static Flares (Aura) (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While a friendly T'au Empire unit (excluding Devilfish units) is within 6" of the bearer, enemy units cannot use the Fire Overwatch Stratagem to fire at that unit and each time a ranged attack targets that unit, subtract 1 from the Hit roll. The bearer has a 4+ invulnerable save. (Default enhancement; may be replaced with Prototype Systems: Each time the bearer is selected to shoot, you can re-roll one Hit roll and you can re-roll one Wound roll when resolving those attacks. Each time you roll to determine the number of attacks made with the bearer's airbursting fragmentation projector, you can re-roll the result. The bearer has a 4+ invulnerable save.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5ad93ddd" name="Shield Drone" hidden="false">
+          <description>Add 1 to the bearer's Wounds characteristic.</description>
+        </rule>
+        <rule id="bb5eaa3c" name="Weapon Support System" hidden="false">
+          <description>Each time the bearer makes a ranged attack, you can ignore any or all modifiers to the Hit roll.</description>
+        </rule>
+        <rule id="ed984612" name="Enhancement: Electro-static Flares (Aura) (Warlord)" hidden="false">
+          <description>While a friendly T'au Empire unit (excluding Devilfish units) is within 6" of the bearer, enemy units cannot use the Fire Overwatch Stratagem to fire at that unit and each time a ranged attack targets that unit, subtract 1 from the Hit roll. The bearer has a 4+ invulnerable save. (Default enhancement; may be replaced with Prototype Systems: Each time the bearer is selected to shoot, you can re-roll one Hit roll and you can re-roll one Wound roll when resolving those attacks. Each time you roll to determine the number of attacks made with the bearer's airbursting fragmentation projector, you can re-roll the result. The bearer has a 4+ invulnerable save.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::sudden-dawn-cadre::00-commander-cloudspear::airbursting-fragmentation-projector" name="Airbursting fragmentation projector" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b00a2a02" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4bae4a84" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::00-commander-cloudspear::plasma-rifle" name="Plasma rifle" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e5b9c8ce" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b1c47c14" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::00-commander-cloudspear::battlesuit-fists" name="Battlesuit fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b1921840" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9bf42eec" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::00-commander-cloudspear::2-shield-drones" name="2 shield drones" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="00aa375d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="23dcd69a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::00-commander-cloudspear::weapon-support-system" name="Weapon support system" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6dc16a9d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="99c8c60e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::sudden-dawn-cadre::01-pathfinder-team" name="Pathfinder Team" type="unit" hidden="false">
+      <constraints>
+        <constraint id="297beeec" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="67a4ed88" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1339f87c" name="Combat Patrol: T'au Empire (Sudden Dawn Cadre)" hidden="false" targetId="cp-cat::sudden-dawn-cadre" primary="true" />
+        <categoryLink id="bc21b43b" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="81c2dfad" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="9a71c811" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="61340bdc" name="Markerlight" hidden="false" targetId="cp-kw::markerlight" primary="false" />
+        <categoryLink id="4c9c7282" name="Pathfinder Team" hidden="false" targetId="cp-kw::pathfinder-team" primary="false" />
+        <categoryLink id="17f03d18" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e5589ec6" name="Pathfinder Team" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6dbfa9be" name="Pulse carbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">20"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c40a6b93" name="Pulse pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e5e2d139" name="Rail rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">10</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d72d8b90" name="Scouts 7&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models. If you do so, one of those units must contain the Pathfinder Shas'ui model and the other unit must contain the models equipped with rail rifles.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b50629e" name="Grav-inhibitor Drone" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time an enemy unit selects the bearer's unit as the target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other negative modifiers to that Charge roll).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models. If you do so, one of those units must contain the Pathfinder Shas'ui model and the other unit must contain the models equipped with rail rifles.</description>
+        </rule>
+        <rule id="e48838e8" name="Grav-inhibitor Drone" hidden="false">
+          <description>Each time an enemy unit selects the bearer's unit as the target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other negative modifiers to that Charge roll).</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::sudden-dawn-cadre::01-pathfinder-team::1-pathfinder-shas-ui-pulse-carbine-pulse-pistol-close-combat-weapon-grav-inhibitor-drone" name="1 Pathfinder Shas'ui: pulse carbine, pulse pistol, close combat weapon, grav-inhibitor drone" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e0b1ed49" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="693d5e15" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::01-pathfinder-team::3-pathfinders-pulse-pistol-rail-rifle-close-combat-weapon" name="3 Pathfinders: pulse pistol, rail rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e9c7ffeb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="05536a20" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::01-pathfinder-team::6-pathfinders-pulse-carbine-pulse-pistol-close-combat-weapon" name="6 Pathfinders: pulse carbine, pulse pistol, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b9bc944d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="414bfac8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::sudden-dawn-cadre::02-breacher-team" name="Breacher Team" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c97d081b" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9b720c60" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bc4b3c23" name="Combat Patrol: T'au Empire (Sudden Dawn Cadre)" hidden="false" targetId="cp-cat::sudden-dawn-cadre" primary="true" />
+        <categoryLink id="ec8ca789" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="a92264a1" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="c327c7ab" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="5642f7ef" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="9d560464" name="Markerlight" hidden="false" targetId="cp-kw::markerlight" primary="false" />
+        <categoryLink id="eac58dc9" name="Fire Warrior" hidden="false" targetId="cp-kw::fire-warrior" primary="false" />
+        <categoryLink id="0a5a5773" name="Breacher Team" hidden="false" targetId="cp-kw::breacher-team" primary="false" />
+        <categoryLink id="cfbeea3c" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="533e07a7" name="Breacher Team" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f864f45f" name="Pulse blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">10"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c40a6b93" name="Pulse pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b527c9e5" name="Breach and Clear" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes a ranged attack that targets an enemy unit within range of an objective marker, you can re-roll the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d80e1a8d" name="Breach and Clear" hidden="false">
+          <description>Each time a model in this unit makes a ranged attack that targets an enemy unit within range of an objective marker, you can re-roll the Wound roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::sudden-dawn-cadre::02-breacher-team::10-fire-warriors-pulse-blaster-pulse-pistol-close-combat-weapon" name="10 Fire Warriors: pulse blaster, pulse pistol, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="49e46102" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="164dbad8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::sudden-dawn-cadre::03-devilfish" name="Devilfish" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ed658d9b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="48b98483" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="422aa39b" name="Combat Patrol: T'au Empire (Sudden Dawn Cadre)" hidden="false" targetId="cp-cat::sudden-dawn-cadre" primary="true" />
+        <categoryLink id="41ea1557" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="4d0b3ee5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="20f6947f" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="f515d64b" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="ed5bcb13" name="Transport" hidden="false" targetId="cp-kw::transport" primary="false" />
+        <categoryLink id="68c66b51" name="Dedicated Transport" hidden="false" targetId="cp-kw::dedicated-transport" primary="false" />
+        <categoryLink id="ca7add67" name="Devilfish" hidden="false" targetId="cp-kw::devilfish" primary="false" />
+        <categoryLink id="6fa7e83c" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f806fad6" name="Devilfish" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">9</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">13</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d550e858" name="Accelerator burst cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ace7cc0" name="Twin pulse carbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">20"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf0df76e" name="Armoured hull" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dd9d4f" name="For the Greater Good" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0185d854" name="Transport" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has a transport capacity of 12 T'au Empire Infantry models. It cannot transport Battlesuit, Kroot or Vespid Stingwings models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="19ef8708" name="Transport" hidden="false">
+          <description>This model has a transport capacity of 12 T'au Empire Infantry models. It cannot transport Battlesuit, Kroot or Vespid Stingwings models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::sudden-dawn-cadre::03-devilfish::accelerator-burst-cannon" name="Accelerator burst cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6158cd78" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9000f2c7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::03-devilfish::2-twin-pulse-carbines" name="2 twin pulse carbines" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="926f41fd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2b8626b5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::sudden-dawn-cadre::03-devilfish::armoured-hull" name="Armoured hull" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1819e900" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7555c093" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

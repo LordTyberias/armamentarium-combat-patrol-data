@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::dark-angels" name="Dark Angels" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::mordekais-judgement::00-chaplain-mordekai" name="Chaplain Mordekai" type="unit" hidden="false">
+      <constraints>
+        <constraint id="92f2dba1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="faddd80a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4eb5f496" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" targetId="cp-cat::mordekais-judgement" primary="true" />
+        <categoryLink id="5bcdfbac" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="946c1b77" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="6c4eb6ee" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="e691e785" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="5cb24eed" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="2fca121c" name="Chaplain" hidden="false" targetId="cp-kw::chaplain" primary="false" />
+        <categoryLink id="4170adea" name="Mordekai" hidden="false" targetId="cp-kw::mordekai" primary="false" />
+        <categoryLink id="6572fab3" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="4ac94ba8" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="be4b0ad2" name="Chaplain Mordekai" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b5866f30" name="Absolvor bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82453615" name="Crozius arcanum" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3209902d" name="Litany of Hate" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Intercessor Squad.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d2f4c31e" name="Enhancement: Stoic Exemplar (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a melee attack targets the bearer's unit, if one or more enemy units ended a Charge move within Engagement Range of the bearer's unit this turn, subtract 1 from the Wound roll. (Default enhancement; may be replaced with Zealous Wrath: You can re-roll Advance and Charge rolls made for the bearer's unit.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1ae93338" name="Litany of Hate" hidden="false">
+          <description>While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Intercessor Squad.</description>
+        </rule>
+        <rule id="e8cbebee" name="Enhancement: Stoic Exemplar (Warlord)" hidden="false">
+          <description>Each time a melee attack targets the bearer's unit, if one or more enemy units ended a Charge move within Engagement Range of the bearer's unit this turn, subtract 1 from the Wound roll. (Default enhancement; may be replaced with Zealous Wrath: You can re-roll Advance and Charge rolls made for the bearer's unit.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::mordekais-judgement::00-chaplain-mordekai::absolvor-bolt-pistol" name="Absolvor bolt pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6453de91" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="03d595f3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::mordekais-judgement::00-chaplain-mordekai::crozius-arcanum" name="Crozius arcanum" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="870cb577" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="34786f4a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::mordekais-judgement::01-intercessor-squad" name="Intercessor Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f8eaadae" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6d5c9a7f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="79e72cc5" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" targetId="cp-cat::mordekais-judgement" primary="true" />
+        <categoryLink id="dbf39218" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="559a737a" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="1ee6267d" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="20c002aa" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="32e3145f" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="a1b680fa" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="4a25e59e" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
+        <categoryLink id="19749d09" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="44af5ea7" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4bde364" name="Bolt rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3755955" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::mordekais-judgement::01-intercessor-squad::1-sergeant-bolt-pistol-power-weapon" name="1 Sergeant: bolt pistol, power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="34d6d307" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2e730b51" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::mordekais-judgement::01-intercessor-squad::4-intercessors-bolt-pistol-bolt-rifle-close-combat-weapon" name="4 Intercessors: bolt pistol, bolt rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="83834aa6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cd27be97" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::mordekais-judgement::02-inceptor-squad" name="Inceptor Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b5349b0b" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="883ac5dc" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8b76b706" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" targetId="cp-cat::mordekais-judgement" primary="true" />
+        <categoryLink id="d94b2830" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="2e98acc8" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="7f51f7f3" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="270689ef" name="Jump Pack" hidden="false" targetId="cp-kw::jump-pack" primary="false" />
+        <categoryLink id="6590d2c5" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="315d427c" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="a4c4fb51" name="Gravis" hidden="false" targetId="cp-kw::gravis" primary="false" />
+        <categoryLink id="e55a46a0" name="Inceptor Squad" hidden="false" targetId="cp-kw::inceptor-squad" primary="false" />
+        <categoryLink id="4f9841b6" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="76c5e7e4" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="15cfa8ba" name="Inceptor Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="113bcba1" name="Assault bolters" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol, Sustained Hits 2, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::mordekais-judgement::02-inceptor-squad::every-model-assault-bolters-close-combat-weapon" name="Every model: assault bolters, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="908462f1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cdc2925e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::mordekais-judgement::03-redemptor-dreadnought" name="Redemptor Dreadnought" type="unit" hidden="false">
+      <constraints>
+        <constraint id="40736d4d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="befdbcc3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="73c42e55" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" targetId="cp-cat::mordekais-judgement" primary="true" />
+        <categoryLink id="c8f14283" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="5c41f507" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="419003a8" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="9ff7638c" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="48564084" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="6d81896a" name="Redemptor Dreadnought" hidden="false" targetId="cp-kw::redemptor-dreadnought" primary="false" />
+        <categoryLink id="f23c58ee" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="3f92123d" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5ccac8cf" name="Redemptor Dreadnought" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9118a404" name="Icarus rocket pod" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">D3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Fly 2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93f3faa3" name="Macro plasma incinerator – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6+1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8ce90d49" name="Macro plasma incinerator – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6+1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">9</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Hazardous</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="af59f706" name="Onslaught gatling cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">8</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce4c660f" name="Twin fragstorm grenade launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e6e4723" name="Redemptor fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">12</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::mordekais-judgement::03-redemptor-dreadnought::icarus-rocket-pod" name="Icarus rocket pod" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1dc17706" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="74d58938" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::mordekais-judgement::03-redemptor-dreadnought::macro-plasma-incinerator" name="Macro plasma incinerator" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4849219d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7799bf16" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::mordekais-judgement::03-redemptor-dreadnought::onslaught-gatling-cannon" name="Onslaught gatling cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="9a240929" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3c3de6e9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::mordekais-judgement::03-redemptor-dreadnought::twin-fragstorm-grenade-launcher" name="Twin fragstorm grenade launcher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="edb859bb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="484f92a8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::mordekais-judgement::03-redemptor-dreadnought::redemptor-fist" name="Redemptor fist" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e04b480f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6052acac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vengeful-brethren::00-master-zacharial" name="Master Zacharial" type="unit" hidden="false">
+      <constraints>
+        <constraint id="17d8d8e1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="c19875fd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4cf45e63" name="Combat Patrol: Dark Angels (The Vengeful Brethren)" hidden="false" targetId="cp-cat::the-vengeful-brethren" primary="true" />
+        <categoryLink id="78c880fc" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="2255a8d6" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="cc0d047b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="a24d1ab2" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="b77f932d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="63516100" name="Gravis" hidden="false" targetId="cp-kw::gravis" primary="false" />
+        <categoryLink id="6ab2f6b3" name="Captain" hidden="false" targetId="cp-kw::captain" primary="false" />
+        <categoryLink id="7b91c574" name="Master Zacharial" hidden="false" targetId="cp-kw::master-zacharial" primary="false" />
+        <categoryLink id="5cd3f1f9" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="e1430a11" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="12dd60ed" name="Master Zacharial" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4f81d04c" name="Boltstorm gauntlet" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="42d227c4" name="Power fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="14e1c8cf" name="Relic chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3d62907e" name="Refuse to Yield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time an attack is allocated to this model, halve the Damage characteristic of that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb1df3b2" name="Enhancement: Determined Combatant (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While the bearer is within range of an objective marker, weapons equipped by the bearer have the [Sustained Hits 1] ability. (Default enhancement; may be replaced with Wages of Retribution: Each time an Adeptus Astartes model from your army destroys your Oath of Moment target, if the bearer is on the battlefield, roll one D6: on a 4+, you gain 1CP.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f3d90f32" name="Refuse to Yield" hidden="false">
+          <description>Each time an attack is allocated to this model, halve the Damage characteristic of that attack.</description>
+        </rule>
+        <rule id="6f640ec2" name="Enhancement: Determined Combatant (Warlord)" hidden="false">
+          <description>While the bearer is within range of an objective marker, weapons equipped by the bearer have the [Sustained Hits 1] ability. (Default enhancement; may be replaced with Wages of Retribution: Each time an Adeptus Astartes model from your army destroys your Oath of Moment target, if the bearer is on the battlefield, roll one D6: on a 4+, you gain 1CP.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vengeful-brethren::00-master-zacharial::boltstorm-gauntlet" name="Boltstorm gauntlet" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2c79e7a4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ff015eff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-vengeful-brethren::00-master-zacharial::power-fist" name="Power fist" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="216723f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5e0959b0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-vengeful-brethren::00-master-zacharial::relic-chainsword" name="Relic chainsword" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="44798bac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d72f3896" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vengeful-brethren::01-intercessor-squad" name="Intercessor Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="97ba85ce" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5c21c3e3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c9ff4599" name="Combat Patrol: Dark Angels (The Vengeful Brethren)" hidden="false" targetId="cp-cat::the-vengeful-brethren" primary="true" />
+        <categoryLink id="a8ab053e" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="ee8d4f92" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="d29751ad" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="2033eb4d" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="a4c79ebe" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="12539f30" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="322c6f21" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
+        <categoryLink id="0040e93c" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="2ed48835" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4bde364" name="Bolt rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Declare Battle Formations step this unit can be split into two units, each containing five models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>At the start of the Declare Battle Formations step this unit can be split into two units, each containing five models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vengeful-brethren::01-intercessor-squad::every-model-bolt-pistol-bolt-rifle-close-combat-weapon" name="Every model: bolt pistol, bolt rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b1366cca" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b09e1c97" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vengeful-brethren::02-hellblaster-squad" name="Hellblaster Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3b9eac22" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f73ed516" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0a05cb15" name="Combat Patrol: Dark Angels (The Vengeful Brethren)" hidden="false" targetId="cp-cat::the-vengeful-brethren" primary="true" />
+        <categoryLink id="d05193a0" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="ae62baca" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="12eff4e0" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="2d3c65eb" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="7a70acb3" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="f869fb74" name="Hellblaster Squad" hidden="false" targetId="cp-kw::hellblaster-squad" primary="false" />
+        <categoryLink id="d831df60" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="222c1617" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="3a1d5741" name="Hellblaster Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9570dddb" name="Plasma incinerator – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df4fdb91" name="Plasma incinerator – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Hazardous, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vengeful-brethren::02-hellblaster-squad::every-model-bolt-pistol-plasma-incinerator-close-combat-weapon" name="Every model: bolt pistol, plasma incinerator, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="99d6c4f2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="11044c3e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vengeful-brethren::03-bladeguard-veteran-squad" name="Bladeguard Veteran Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="cfa10259" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="bbf98661" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="580f353d" name="Combat Patrol: Dark Angels (The Vengeful Brethren)" hidden="false" targetId="cp-cat::the-vengeful-brethren" primary="true" />
+        <categoryLink id="beeb9fd0" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="bd7fc8c9" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="e95dac1e" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="b4611307" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="b0303469" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="24d534aa" name="Bladeguard Veteran Squad" hidden="false" targetId="cp-kw::bladeguard-veteran-squad" primary="false" />
+        <categoryLink id="e5bd0670" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="5248ba35" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="65e7a356" name="Bladeguard Veteran Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4b671f19" name="Heavy bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="626d2435" name="Master-crafted power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="42473d88" name="Bladeguard" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, you can select one of the following abilities to apply to models in this unit until the end of the phase: Swords of the Chapter: Each time a model in this unit makes a melee attack, re-roll a Hit roll of 1. Shields of the Chapter: Each time an invulnerable saving throw is made for a model in this unit, re-roll a saving throw of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="88951884" name="Bladeguard" hidden="false">
+          <description>At the start of the Fight phase, you can select one of the following abilities to apply to models in this unit until the end of the phase: Swords of the Chapter: Each time a model in this unit makes a melee attack, re-roll a Hit roll of 1. Shields of the Chapter: Each time an invulnerable saving throw is made for a model in this unit, re-roll a saving throw of 1.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vengeful-brethren::03-bladeguard-veteran-squad::every-model-heavy-bolt-pistol-master-crafted-power-weapon" name="Every model: heavy bolt pistol, master-crafted power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="03f89366" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e52f472e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

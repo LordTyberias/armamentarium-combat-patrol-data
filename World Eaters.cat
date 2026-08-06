@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::world-eaters" name="World Eaters" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::karagars-rampagers::00-karagar-the-blooded" name="Karagar the Blooded" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f45c201e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1d814350" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1b8f5a3d" name="Combat Patrol: World Eaters (Karagar's Rampagers)" hidden="false" targetId="cp-cat::karagars-rampagers" primary="true" />
+        <categoryLink id="c6f4064c" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="741387d5" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="d2679cbd" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="e6421070" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="258b1f93" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="539f9f74" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="bf50c9c9" name="Lord on Juggernaut" hidden="false" targetId="cp-kw::lord-on-juggernaut" primary="false" />
+        <categoryLink id="05f62425" name="Karagar the Blooded" hidden="false" targetId="cp-kw::karagar-the-blooded" primary="false" />
+        <categoryLink id="47fc3643" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5d33620b" name="Karagar the Blooded" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">7</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e0aadc7" name="Exalted chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">7</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11bf2762" name="Juggernaut's bladed horn" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks, Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="287a4267" name="Enhancement: Skulls for Khorne (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time the bearer destroys an enemy unit with a melee attack, roll one D6: on a 2+, you gain 1CP. (Default enhancement; may be replaced with Arch-slaughterer: Melee weapons equipped by the bearer have the [PRECISION] ability.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="60372b8b" name="Enhancement: Skulls for Khorne (Warlord)" hidden="false">
+          <description>Each time the bearer destroys an enemy unit with a melee attack, roll one D6: on a 2+, you gain 1CP. (Default enhancement; may be replaced with Arch-slaughterer: Melee weapons equipped by the bearer have the [PRECISION] ability.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::karagars-rampagers::00-karagar-the-blooded::plasma-pistol" name="Plasma pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="249daaf9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="99157c5c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::00-karagar-the-blooded::exalted-chainblade" name="Exalted chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3eee3f4d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="35430c64" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::00-karagar-the-blooded::juggernaut-s-bladed-horn" name="Juggernaut's bladed horn" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="5f38ed7a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f95400ac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::karagars-rampagers::01-khorne-berzerkers" name="Khorne Berzerkers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="819d0dad" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0f4bc3bd" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b8871983" name="Combat Patrol: World Eaters (Karagar's Rampagers)" hidden="false" targetId="cp-cat::karagars-rampagers" primary="true" />
+        <categoryLink id="bb3e04da" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="8ca388b6" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="0356bb16" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="98ab1b41" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="803772b2" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="0006c5a5" name="Berzerkers" hidden="false" targetId="cp-kw::berzerkers" primary="false" />
+        <categoryLink id="236eca90" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="25610d77" name="Khorne Berzerkers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e898a76e" name="Berzerker chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="15b3d074" name="Khornate eviscerator" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::karagars-rampagers::01-khorne-berzerkers::1-khorne-berzerker-champion-plasma-pistol-berzerker-chainblade" name="1 Khorne Berzerker Champion: plasma pistol, Berzerker chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1b047b0a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6c2dc622" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::01-khorne-berzerkers::1-khorne-berzerker-plasma-pistol-berzerker-chainblade" name="1 Khorne Berzerker: plasma pistol, Berzerker chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c6f7bade" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1781c9b7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::01-khorne-berzerkers::1-khorne-berzerker-plasma-pistol-berzerker-chainblade-icon-of-khorne" name="1 Khorne Berzerker: plasma pistol, Berzerker chainblade, icon of Khorne" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2fb636ea" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ce48f97c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::01-khorne-berzerkers::2-khorne-berzerkers-bolt-pistol-khornate-eviscerator" name="2 Khorne Berzerkers: bolt pistol, Khornate eviscerator" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ec39c1cd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3d03cb12" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::01-khorne-berzerkers::5-khorne-berzerkers-bolt-pistol-berzerker-chainblade" name="5 Khorne Berzerkers: bolt pistol, Berzerker chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2504a51d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="79a988c6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::karagars-rampagers::02-khorne-berzerkers" name="Khorne Berzerkers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f8bde97c" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1691c8f3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c87152ba" name="Combat Patrol: World Eaters (Karagar's Rampagers)" hidden="false" targetId="cp-cat::karagars-rampagers" primary="true" />
+        <categoryLink id="4212a687" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="214240ee" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="8fa949e2" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="011b57d1" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="bbf24034" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="1082b803" name="Berzerkers" hidden="false" targetId="cp-kw::berzerkers" primary="false" />
+        <categoryLink id="c1a0ddae" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="25610d77" name="Khorne Berzerkers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e898a76e" name="Berzerker chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="15b3d074" name="Khornate eviscerator" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::karagars-rampagers::02-khorne-berzerkers::1-khorne-berzerker-champion-plasma-pistol-berzerker-chainblade" name="1 Khorne Berzerker Champion: plasma pistol, Berzerker chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e58ba1a8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="da334119" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::02-khorne-berzerkers::1-khorne-berzerker-plasma-pistol-berzerker-chainblade" name="1 Khorne Berzerker: plasma pistol, Berzerker chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1cede9c9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="40bd3487" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::02-khorne-berzerkers::1-khorne-berzerker-plasma-pistol-berzerker-chainblade-icon-of-khorne" name="1 Khorne Berzerker: plasma pistol, Berzerker chainblade, icon of Khorne" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dd6b1500" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8b437f27" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::02-khorne-berzerkers::2-khorne-berzerkers-bolt-pistol-khornate-eviscerator" name="2 Khorne Berzerkers: bolt pistol, Khornate eviscerator" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a277e388" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7fe104b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::02-khorne-berzerkers::5-khorne-berzerkers-bolt-pistol-berzerker-chainblade" name="5 Khorne Berzerkers: bolt pistol, Berzerker chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="76477408" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="20d15e81" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::karagars-rampagers::03-jakhals" name="Jakhals" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2375077c" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1e53f496" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="02cfbb55" name="Combat Patrol: World Eaters (Karagar's Rampagers)" hidden="false" targetId="cp-cat::karagars-rampagers" primary="true" />
+        <categoryLink id="a18e0305" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="6a0efef4" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="ba6979d4" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="ea8ca9a8" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="0af5d360" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="fe5e7e92" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="c7f214ac" name="Jakhals" hidden="false" targetId="cp-kw::jakhals" primary="false" />
+        <categoryLink id="496d29a0" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6c9aaacc" name="Jakhals" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="58cc8097" name="Jakhal chainblades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="28498cbe" name="Mauler chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3a199baa" name="Skullsmasher" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97a0be0b" name="Feel No Pain 6+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::karagars-rampagers::03-jakhals::1-jakhal-pack-leader-autopistol-jakhal-chainblades" name="1 Jakhal Pack Leader: autopistol, Jakhal chainblades" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="0ddd7b25" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4c66f9a8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::03-jakhals::1-dishonoured-skullsmasher" name="1 Dishonoured: skullsmasher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b2ff5b03" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e2aeabea" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::03-jakhals::1-jakhal-autopistol-mauler-chainblade" name="1 Jakhal: autopistol, mauler chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e3906732" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="491adc1b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::03-jakhals::1-jakhal-autopistol-jakhal-chainblades-icon-of-khorne" name="1 Jakhal: autopistol, Jakhal chainblades, icon of Khorne" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dfc1acd1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="64214983" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::karagars-rampagers::03-jakhals::6-jakhals-autopistol-jakhal-chainblades" name="6 Jakhals: autopistol, Jakhal chainblades" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="0d466f25" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c20432c6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::arkoths-gorepact::00-arkoth-skorgardt" name="Arkoth Skorgardt" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4f0d8739" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8cebf4e8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cd9e8b57" name="Combat Patrol: World Eaters (Arkoth's Gorepact)" hidden="false" targetId="cp-cat::arkoths-gorepact" primary="true" />
+        <categoryLink id="c3f80ea3" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="c7b9dc1a" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="9a1f466e" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="9534870b" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="110fb046" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="5beeb1c4" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="0286e1cd" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
+        <categoryLink id="34d10a9e" name="Possessed" hidden="false" targetId="cp-kw::possessed" primary="false" />
+        <categoryLink id="116e4f18" name="Slaughterbound" hidden="false" targetId="cp-kw::slaughterbound" primary="false" />
+        <categoryLink id="c0ba6b0c" name="Arkoth Skorgardt" hidden="false" targetId="cp-kw::arkoth-skorgardt" primary="false" />
+        <categoryLink id="3f8d5ca0" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6295d1ce" name="Arkoth Skorgardt" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4756f40" name="Lacerator and daemonic claw" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ada4f6a" name="Khornate Gifts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7806a73a" name="Possessed Lord" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4e64f354" name="Enhancement: Dread Patron (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time the bearer makes a melee attack, add 1 to the Wound roll. The bearer has the Feel No Pain 5+ ability. (Default enhancement; may be replaced with Whirlwind of Blood (Aura): While a friendly World Eaters or Blood Legions unit is wholly within 6" of the bearer, models in that unit have the Stealth ability and enemy units cannot use the Fire Overwatch Stratagem to shoot at that unit.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="cab8d8c3" name="Possessed Lord" hidden="false">
+          <description>Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability.</description>
+        </rule>
+        <rule id="de59910a" name="Enhancement: Dread Patron (Warlord)" hidden="false">
+          <description>Each time the bearer makes a melee attack, add 1 to the Wound roll. The bearer has the Feel No Pain 5+ ability. (Default enhancement; may be replaced with Whirlwind of Blood (Aura): While a friendly World Eaters or Blood Legions unit is wholly within 6" of the bearer, models in that unit have the Stealth ability and enemy units cannot use the Fire Overwatch Stratagem to shoot at that unit.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::arkoths-gorepact::00-arkoth-skorgardt::lacerator-and-daemonic-claw" name="Lacerator and daemonic claw" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="488e16e9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="064f4972" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::arkoths-gorepact::01-goremongers" name="Goremongers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="058c16e8" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="258ead70" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="559bb790" name="Combat Patrol: World Eaters (Arkoth's Gorepact)" hidden="false" targetId="cp-cat::arkoths-gorepact" primary="true" />
+        <categoryLink id="559278fa" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="d5ea0922" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="bbe46048" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="2a44fdbd" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="a1bf90bb" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="e3063a6f" name="Goremongers" hidden="false" targetId="cp-kw::goremongers" primary="false" />
+        <categoryLink id="5046e113" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="517a7218" name="Goremongers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">9"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d93d8235" name="Chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ada4f6a" name="Khornate Gifts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0b01c1f2" name="Loping Speed" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6".</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="120ed902" name="Loping Speed" hidden="false">
+          <description>Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6".</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::arkoths-gorepact::01-goremongers::autopistol" name="Autopistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6c3ed991" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2c5ac769" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::arkoths-gorepact::01-goremongers::chainblade" name="Chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c1f38742" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ad766a2d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::arkoths-gorepact::02-goremongers" name="Goremongers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4b1fbf8b" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b73afed7" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0aaba55c" name="Combat Patrol: World Eaters (Arkoth's Gorepact)" hidden="false" targetId="cp-cat::arkoths-gorepact" primary="true" />
+        <categoryLink id="a4633035" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="f04e00e2" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="6970ca8f" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="8685b213" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="156bea7a" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="6e79f24c" name="Goremongers" hidden="false" targetId="cp-kw::goremongers" primary="false" />
+        <categoryLink id="28738839" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="517a7218" name="Goremongers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">9"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d93d8235" name="Chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ada4f6a" name="Khornate Gifts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0b01c1f2" name="Loping Speed" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6".</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="120ed902" name="Loping Speed" hidden="false">
+          <description>Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6".</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::arkoths-gorepact::02-goremongers::autopistol" name="Autopistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1361101f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9cd8dee4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::arkoths-gorepact::02-goremongers::chainblade" name="Chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a57f136e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="02ebdc9d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::arkoths-gorepact::03-bloodletters" name="Bloodletters" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c4d065a8" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="aa1c3cab" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3b662a99" name="Combat Patrol: World Eaters (Arkoth's Gorepact)" hidden="false" targetId="cp-cat::arkoths-gorepact" primary="true" />
+        <categoryLink id="47386353" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="4dadeed4" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="04360a5c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="42d1c1e4" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="f80a160e" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="8bcbf1f5" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
+        <categoryLink id="f7d08256" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="448132d4" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
+        <categoryLink id="86f53531" name="Bloodletters" hidden="false" targetId="cp-kw::bloodletters" primary="false" />
+        <categoryLink id="36a942f0" name="Blood Legions" hidden="false" targetId="cp-kw::blood-legions" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="eeb6b102" name="Bloodletters" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">7+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="14caa443" name="Hellblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ada4f6a" name="Khornate Gifts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::arkoths-gorepact::03-bloodletters::hellblade" name="Hellblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4ad5200a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="92e236d7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::arkoths-gorepact::04-flesh-hounds" name="Flesh Hounds" type="unit" hidden="false">
+      <constraints>
+        <constraint id="79dcbdf4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="99ce44c8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e6450cdc" name="Combat Patrol: World Eaters (Arkoth's Gorepact)" hidden="false" targetId="cp-cat::arkoths-gorepact" primary="true" />
+        <categoryLink id="08ebcc89" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="9055a56b" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="8632ba60" name="Beast" hidden="false" targetId="cp-kw::beast" primary="false" />
+        <categoryLink id="c3f57228" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="ba353592" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
+        <categoryLink id="78629a61" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="2cb1b4d4" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
+        <categoryLink id="b5d1d101" name="Flesh Hounds" hidden="false" targetId="cp-kw::flesh-hounds" primary="false" />
+        <categoryLink id="88c707cf" name="Blood Legions" hidden="false" targetId="cp-kw::blood-legions" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9b19cb17" name="Flesh Hounds" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">7+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="293c34d2" name="Burning roar" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2bce747b" name="Gore-drenched fangs" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ada4f6a" name="Khornate Gifts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a73629c7" name="Hunters from the Warp" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your opponent's turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e4ec96f2" name="Hunters from the Warp" hidden="false">
+          <description>At the end of your opponent's turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::arkoths-gorepact::04-flesh-hounds::1-gore-hound-burning-roar-gore-drenched-fangs" name="1 Gore Hound: burning roar, gore-drenched fangs" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dcc76e55" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1a5f1d5d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::arkoths-gorepact::04-flesh-hounds::4-flesh-hounds-gore-drenched-fangs" name="4 Flesh Hounds: gore-drenched fangs" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="aa88293b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="093fad77" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::frenzied-reavers::00-vorrakh" name="Vorrakh" type="unit" hidden="false">
+      <constraints>
+        <constraint id="492cc688" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2c5d76c7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c82d5cad" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="d3d1df9f" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="07e0cff3" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="8996d735" name="Monster" hidden="false" targetId="cp-kw::monster" primary="false" />
+        <categoryLink id="1e9edf5f" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="1ab3a085" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="1984ade1" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="f7922410" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
+        <categoryLink id="f08e7b78" name="Daemon Prince" hidden="false" targetId="cp-kw::daemon-prince" primary="false" />
+        <categoryLink id="0538bb2d" name="Vorrakh" hidden="false" targetId="cp-kw::vorrakh" primary="false" />
+        <categoryLink id="0f702bc3" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="093a1f2a" name="Vorrakh" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">10</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2cd6fea" name="Infernal cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c7ca7650" name="Hellforged weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">16</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="055b6e10" name="Enhancement: Fearsome Presence (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While the bearer is not Battle-shocked, it has an Objective Control characteristic of 5. (Default enhancement; may be replaced with Bane of the Craven: Each time an enemy unit (excluding Monsters and Vehicles) that is within Engagement Range of the bearer Falls Back, all models in that enemy unit must take a Desperate Escape test; when doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="90daad30" name="Enhancement: Fearsome Presence (Warlord)" hidden="false">
+          <description>While the bearer is not Battle-shocked, it has an Objective Control characteristic of 5. (Default enhancement; may be replaced with Bane of the Craven: Each time an enemy unit (excluding Monsters and Vehicles) that is within Engagement Range of the bearer Falls Back, all models in that enemy unit must take a Desperate Escape test; when doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::frenzied-reavers::00-vorrakh::infernal-cannon" name="Infernal cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ecca3395" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a867c2b7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::00-vorrakh::hellforged-weapons" name="Hellforged weapons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="821204b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7bbf9acd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::frenzied-reavers::01-jakhals" name="Jakhals" type="unit" hidden="false">
+      <constraints>
+        <constraint id="75f1a19b" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="82bf2f47" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="117cb676" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="bb40fe54" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="678155fc" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="6e440ee7" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="6b520edf" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="fe753fab" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="4be7011b" name="Jakhals" hidden="false" targetId="cp-kw::jakhals" primary="false" />
+        <categoryLink id="e9e3db39" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6c9aaacc" name="Jakhals" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="848d6d33" name="Chainblades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="28498cbe" name="Mauler chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">5+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="717a072d" name="Skullsmasher and mangler" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-jakhal-pack-leader-autopistol-chainblades" name="1 Jakhal Pack Leader: autopistol, chainblades" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="9d8f653c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3a1b56e1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-dishonoured-skullsmasher-and-mangler" name="1 Dishonoured: skullsmasher and mangler" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="70028229" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5588b45e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-jakhal-autopistol-mauler-chainblade" name="1 Jakhal: autopistol, mauler chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="bc4bb98d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="19459676" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::7-jakhals-autopistol-chainblades" name="7 Jakhals: autopistol, chainblades" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8d2e0255" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3cc748e5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers" name="Khorne Berzerkers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4c5ada0d" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e62b40d1" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2b2bae59" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="71444f15" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="589adf6f" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="a18d0ec0" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="eca7a6c5" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="a3776670" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="8f58de4f" name="Berzerkers" hidden="false" targetId="cp-kw::berzerkers" primary="false" />
+        <categoryLink id="bd56a113" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="25610d77" name="Khorne Berzerkers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d93d8235" name="Chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="15b3d074" name="Khornate eviscerator" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::1-khorne-berzerker-champion-plasma-pistol-chainblade" name="1 Khorne Berzerker Champion: plasma pistol, chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="64ee1d11" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="093e335f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::2-khorne-berzerkers-plasma-pistol-chainblade" name="2 Khorne Berzerkers: plasma pistol, chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="315c4083" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e09e1ad3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::2-khorne-berzerkers-bolt-pistol-khornate-eviscerator" name="2 Khorne Berzerkers: bolt pistol, Khornate eviscerator" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="08ff1314" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="84210715" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::5-khorne-berzerkers-bolt-pistol-chainblade" name="5 Khorne Berzerkers: bolt pistol, chainblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b4b93716" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="deb813b6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::frenzied-reavers::03-master-of-executions" name="Master of Executions" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3ebd8934" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8f9abcd1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b0d8135d" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="c40f7408" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="a4af49ff" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="6b44a58b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="449562bc" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="8262c5d5" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="896ba85a" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+        <categoryLink id="34d1c03f" name="Master of Executions" hidden="false" targetId="cp-kw::master-of-executions" primary="false" />
+        <categoryLink id="0c32a148" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5890fc01" name="Master of Executions" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5fde6168" name="Axe of dismemberment" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">7</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ae3f6b9c" name="A Worthy Skull" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's unit destroys an enemy Character model, you gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1516fa64" name="A Worthy Skull" hidden="false">
+          <description>Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's unit destroys an enemy Character model, you gain 1CP.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::frenzied-reavers::03-master-of-executions::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4f62ac50" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f76471f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::frenzied-reavers::03-master-of-executions::axe-of-dismemberment" name="Axe of dismemberment" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3586c4f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e30437b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

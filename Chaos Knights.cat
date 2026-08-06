@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::chaos-knights" name="Chaos Knights" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::slaughter-talon::00-zarkys-and-helskarr" name="Zarkys and Helskarr" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7299c4c2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1e31c170" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cc170c88" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" targetId="cp-cat::slaughter-talon" primary="true" />
+        <categoryLink id="04d4e706" name="Chaos Knights" hidden="false" targetId="cp-faction::chaos-knights" primary="false" />
+        <categoryLink id="09b30ba7" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="e4c9c255" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="32122995" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="76fe4173" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="8980234d" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="ac6bfedd" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="e4c60372" name="War Dog" hidden="false" targetId="cp-kw::war-dog" primary="false" />
+        <categoryLink id="e2c3ad14" name="Stalker" hidden="false" targetId="cp-kw::stalker" primary="false" />
+        <categoryLink id="37dd7925" name="Zarkys and Helskarr" hidden="false" targetId="cp-kw::zarkys-and-helskarr" primary="false" />
+        <categoryLink id="1e97b0f9" name="Chaos Knights" hidden="false" targetId="cp-kw::chaos-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="41bae219" name="Zarkys and Helskarr" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc4c2742" name="Avenger chaincannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">12</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="270b13ce" name="Havoc multi-launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Indirect Fire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3b9714b" name="Slaughterclaw" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">12</characteristic>
+            <characteristic name="AP" typeId="54255f70">-3</characteristic>
+            <characteristic name="D" typeId="1f91ac72">D6+2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+ (vs ranged)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b08f029a" name="Hunter Pack" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c57ef0a" name="Enhancement: Frenzied to the Last (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">War Dog Stalker model only. If the bearer is destroyed by a melee attack and it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and it is then removed from play. When making its attacks, the destroyed model is considered to have 1 wound remaining for the purpose of its Damaged ability. (Zarkys and Helskarr is the patrol's default Warlord; you may instead make Karthon and Firegheist your Warlord with the Feral Hunter enhancement.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+        <rule id="d028dc73" name="Enhancement: Frenzied to the Last (Warlord)" hidden="false">
+          <description>War Dog Stalker model only. If the bearer is destroyed by a melee attack and it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and it is then removed from play. When making its attacks, the destroyed model is considered to have 1 wound remaining for the purpose of its Damaged ability. (Zarkys and Helskarr is the patrol's default Warlord; you may instead make Karthon and Firegheist your Warlord with the Feral Hunter enhancement.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::slaughter-talon::00-zarkys-and-helskarr::avenger-chaincannon" name="Avenger chaincannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d6510b5a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="274906fc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::slaughter-talon::00-zarkys-and-helskarr::havoc-multi-launcher" name="Havoc multi-launcher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="241f58e0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1ccc1bbc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::slaughter-talon::00-zarkys-and-helskarr::slaughterclaw" name="Slaughterclaw" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="960a6923" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d1c6383c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::slaughter-talon::01-karthon-and-firegheist" name="Karthon and Firegheist" type="unit" hidden="false">
+      <constraints>
+        <constraint id="116f733c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9c297739" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="afbbdebe" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" targetId="cp-cat::slaughter-talon" primary="true" />
+        <categoryLink id="58497898" name="Chaos Knights" hidden="false" targetId="cp-faction::chaos-knights" primary="false" />
+        <categoryLink id="f787245b" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="ad4f6f78" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="91c6a303" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="6cceb743" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="f3a2c277" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="946f9e6b" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+        <categoryLink id="76906286" name="War Dog" hidden="false" targetId="cp-kw::war-dog" primary="false" />
+        <categoryLink id="c885ca19" name="Brigand" hidden="false" targetId="cp-kw::brigand" primary="false" />
+        <categoryLink id="63a3d5b0" name="Karthon and Firegheist" hidden="false" targetId="cp-kw::karthon-and-firegheist" primary="false" />
+        <categoryLink id="4c625ba8" name="Chaos Knights" hidden="false" targetId="cp-kw::chaos-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c3a50707" name="Karthon and Firegheist" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc4c2742" name="Avenger chaincannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">12</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="63e853b6" name="Daemonbreath spear" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Melta 4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="307422b7" name="Diabolus heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="910d2a90" name="Armoured feet" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+ (vs ranged)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b08f029a" name="Hunter Pack" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="629ab5f7" name="Enhancement: Feral Hunter (Warlord option)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">War Dog Brigand model only. At the start of the Deploy Armies step, you can set the bearer up in Strategic Reserves instead of setting it up on the battlefield. Each time the bearer is set up on the battlefield from Strategic Reserves, it can be set up anywhere on the battlefield wholly within 9" of one or more battlefield edges and not within 6" of one or more enemy units. When doing so, if the bearer is set up within 9" of one or more enemy units, until the end of the turn, it is not eligible to declare a charge. (Available if you make Karthon and Firegheist your Warlord instead of Zarkys and Helskarr.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+        <rule id="59f9d794" name="Enhancement: Feral Hunter (Warlord option)" hidden="false">
+          <description>War Dog Brigand model only. At the start of the Deploy Armies step, you can set the bearer up in Strategic Reserves instead of setting it up on the battlefield. Each time the bearer is set up on the battlefield from Strategic Reserves, it can be set up anywhere on the battlefield wholly within 9" of one or more battlefield edges and not within 6" of one or more enemy units. When doing so, if the bearer is set up within 9" of one or more enemy units, until the end of the turn, it is not eligible to declare a charge. (Available if you make Karthon and Firegheist your Warlord instead of Zarkys and Helskarr.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::slaughter-talon::01-karthon-and-firegheist::avenger-chaincannon" name="Avenger chaincannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="07a13a97" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e38ce589" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::slaughter-talon::01-karthon-and-firegheist::daemonbreath-spear" name="Daemonbreath spear" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e871278a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9a1c9183" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::slaughter-talon::01-karthon-and-firegheist::diabolus-heavy-stubber" name="Diabolus heavy stubber" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e2b8f82a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="61f1db76" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::slaughter-talon::01-karthon-and-firegheist::armoured-feet" name="Armoured feet" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dc08d8b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6bbe957b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

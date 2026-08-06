@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::grey-knights" name="Grey Knights" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::aurellios-banishers::00-librarian-aurellios" name="Librarian Aurellios" type="unit" hidden="false">
+      <constraints>
+        <constraint id="941a3a06" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5766042e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="65b7e68e" name="Combat Patrol: Grey Knights (Aurellios' Banishers)" hidden="false" targetId="cp-cat::aurellios-banishers" primary="true" />
+        <categoryLink id="2ef12cf8" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="97d1299f" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="3ad9ef47" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="cfc5b677" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="b351153c" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
+        <categoryLink id="e59071b6" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="66e7209a" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="3e216ee7" name="Librarian" hidden="false" targetId="cp-kw::librarian" primary="false" />
+        <categoryLink id="ed3bdbe3" name="Aurellios" hidden="false" targetId="cp-kw::aurellios" primary="false" />
+        <categoryLink id="f60e6f87" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f5f49f85" name="Librarian Aurellios" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8334f055" name="Purge Soul – witchfire" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="879bb654" name="Purge Soul – focused witchfire" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Precision, Psychic, Hazardous</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edbda1fc" name="Nemesis force weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe5e4cbb" name="Teleport Assault" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c149ac3e" name="Sanctic Hood" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Brotherhood Terminator Squad.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4791aa29" name="Enhancement: Banishment Stone (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time the bearer destroys an enemy Character model, roll one D6: on a 2+, you gain 1CP. (Default enhancement; may be replaced with Dominating Aura: The bearer has an Objective Control characteristic of 3.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ac9f35fc" name="Sanctic Hood" hidden="false">
+          <description>While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Brotherhood Terminator Squad.</description>
+        </rule>
+        <rule id="2968d28c" name="Enhancement: Banishment Stone (Warlord)" hidden="false">
+          <description>Each time the bearer destroys an enemy Character model, roll one D6: on a 2+, you gain 1CP. (Default enhancement; may be replaced with Dominating Aura: The bearer has an Objective Control characteristic of 3.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::aurellios-banishers::00-librarian-aurellios::purge-soul" name="Purge Soul" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d0a724f1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2aee5de5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::aurellios-banishers::00-librarian-aurellios::nemesis-force-weapon" name="Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2e2d1a57" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="debee15c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aurellios-banishers::01-strike-squad" name="Strike Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b5cc8742" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ba2ac587" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="93a7ba44" name="Combat Patrol: Grey Knights (Aurellios' Banishers)" hidden="false" targetId="cp-cat::aurellios-banishers" primary="true" />
+        <categoryLink id="e8ccecb7" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="ce33bbe1" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="19df3425" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="5ace68cc" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="639cd52b" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="7cd566b6" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="16af61fb" name="Strike Squad" hidden="false" targetId="cp-kw::strike-squad" primary="false" />
+        <categoryLink id="f872f510" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="13c1225e" name="Strike Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="641320ae" name="Psilencer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Psychic, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="596aae44" name="Storm bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edbda1fc" name="Nemesis force weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe5e4cbb" name="Teleport Assault" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::aurellios-banishers::01-strike-squad::1-justicar-storm-bolter-nemesis-force-weapon" name="1 Justicar: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="255fc7e2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2292e7a1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::aurellios-banishers::01-strike-squad::3-grey-knights-storm-bolter-nemesis-force-weapon" name="3 Grey Knights: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="de4820ea" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="104649cd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::aurellios-banishers::01-strike-squad::1-grey-knight-psilencer-close-combat-weapon" name="1 Grey Knight: psilencer, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3ea50052" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1555b484" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aurellios-banishers::02-brotherhood-terminator-squad" name="Brotherhood Terminator Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b43a42c5" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d9fc26da" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="571108b2" name="Combat Patrol: Grey Knights (Aurellios' Banishers)" hidden="false" targetId="cp-cat::aurellios-banishers" primary="true" />
+        <categoryLink id="1e4dbd19" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="833ca53c" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="54eef9ad" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="005e7bd1" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="ddbb52e6" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="9893f220" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
+        <categoryLink id="2a5a7888" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="c0c39db9" name="Brotherhood Terminator Squad" hidden="false" targetId="cp-kw::brotherhood-terminator-squad" primary="false" />
+        <categoryLink id="73d94ad9" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="863cf930" name="Brotherhood Terminator Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9ff5b70" name="Psycannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="596aae44" name="Storm bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edbda1fc" name="Nemesis force weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe5e4cbb" name="Teleport Assault" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="88f20a14" name="Hammerhand (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [Lethal Hits] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e1bcd2de" name="Hammerhand (Psychic)" hidden="false">
+          <description>Each time a model in this unit makes a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [Lethal Hits] ability.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::aurellios-banishers::02-brotherhood-terminator-squad::1-terminator-justicar-storm-bolter-nemesis-force-weapon" name="1 Terminator Justicar: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="cbc8aed7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f078676f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::aurellios-banishers::02-brotherhood-terminator-squad::3-brotherhood-terminators-storm-bolter-nemesis-force-weapon" name="3 Brotherhood Terminators: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1e7bedfb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7ae9ef04" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::aurellios-banishers::02-brotherhood-terminator-squad::1-brotherhood-terminator-psycannon-nemesis-force-weapon" name="1 Brotherhood Terminator: psycannon, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="90d8a4d6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6092daa3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aurellios-banishers::03-nemesis-dreadknight" name="Nemesis Dreadknight" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1f3eeff5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6baf56ff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9c0f6d02" name="Combat Patrol: Grey Knights (Aurellios' Banishers)" hidden="false" targetId="cp-cat::aurellios-banishers" primary="true" />
+        <categoryLink id="c2e6a6a1" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="f22a28d1" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="7b67b49c" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="b100a535" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="f71cdd14" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="5951db9b" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="902ca871" name="Nemesis Dreadknight" hidden="false" targetId="cp-kw::nemesis-dreadknight" primary="false" />
+        <categoryLink id="ef86c5d0" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="874c9175" name="Nemesis Dreadknight" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">8</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">13</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2d8ca7e5" name="Heavy psycannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">10</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="40c95568" name="Nemesis greatsword – strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">10</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">D6</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="21bd90fd" name="Nemesis greatsword – sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">10</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::aurellios-banishers::03-nemesis-dreadknight::heavy-psycannon" name="Heavy psycannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="135c345e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5b0dbc40" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::aurellios-banishers::03-nemesis-dreadknight::nemesis-greatsword" name="Nemesis greatsword" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4c8e6403" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8e43f765" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::crowes-sanctifiers::00-castellan-crowe" name="Castellan Crowe" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2eba8e8d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f9308165" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e02a56c9" name="Combat Patrol: Grey Knights (Crowe's Sanctifiers)" hidden="false" targetId="cp-cat::crowes-sanctifiers" primary="true" />
+        <categoryLink id="4df93de6" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="a608bcf8" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="29d52ce9" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="36002021" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="fff15844" name="Epic Hero" hidden="false" targetId="cp-kw::epic-hero" primary="false" />
+        <categoryLink id="ed40e1f3" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="f20c23d0" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="6b6f2403" name="Castellan Crowe" hidden="false" targetId="cp-kw::castellan-crowe" primary="false" />
+        <categoryLink id="f61dc4f9" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d0649cd6" name="Castellan Crowe" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d7faf27b" name="Purifying Flame" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Ignores Cover, Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="596aae44" name="Storm bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="39091a2a" name="Black Blade of Antwyr" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c873ac6e" name="Occult Interdiction" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ab7d8d0" name="Foesight (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time this model makes an attack that targets a Character unit, you can re-roll the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d5ffdbaf" name="Enhancement: Concealing Wards (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has the Lone Operative and Stealth abilities. (Default enhancement; may be replaced with Sorcerous Conflagration: The bearer's Purifying Flame weapon has a Ballistic Skill characteristic of 'N/A' and has the [Torrent] and [Twin-linked] abilities.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="64a61505" name="Foesight (Psychic)" hidden="false">
+          <description>Each time this model makes an attack that targets a Character unit, you can re-roll the Hit roll.</description>
+        </rule>
+        <rule id="2ce16a75" name="Enhancement: Concealing Wards (Warlord)" hidden="false">
+          <description>The bearer has the Lone Operative and Stealth abilities. (Default enhancement; may be replaced with Sorcerous Conflagration: The bearer's Purifying Flame weapon has a Ballistic Skill characteristic of 'N/A' and has the [Torrent] and [Twin-linked] abilities.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::crowes-sanctifiers::00-castellan-crowe::purifying-flame" name="Purifying Flame" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="42d3784d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1c743060" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::00-castellan-crowe::storm-bolter" name="Storm bolter" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ed22f2ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cb5d31f4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::00-castellan-crowe::black-blade-of-antwyr" name="Black Blade of Antwyr" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="56b54650" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="aa4a0408" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::crowes-sanctifiers::01-strike-squad" name="Strike Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="969a3cd8" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="74cb9cba" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="320f5d5c" name="Combat Patrol: Grey Knights (Crowe's Sanctifiers)" hidden="false" targetId="cp-cat::crowes-sanctifiers" primary="true" />
+        <categoryLink id="2ca1933a" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="a0743210" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="23e755ab" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="7f286a11" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="fe6b699e" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="f7fb8b02" name="Strike Squad" hidden="false" targetId="cp-kw::strike-squad" primary="false" />
+        <categoryLink id="3b1083f9" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="13c1225e" name="Strike Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d0a27438" name="Incinerator" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9ff5b70" name="Psycannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="596aae44" name="Storm bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edbda1fc" name="Nemesis force weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c873ac6e" name="Occult Interdiction" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::crowes-sanctifiers::01-strike-squad::1-justicar-storm-bolter-nemesis-force-weapon" name="1 Justicar: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2c266ca3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e7d289ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::01-strike-squad::1-grey-knight-incinerator-close-combat-weapon" name="1 Grey Knight: incinerator, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="9ad0be99" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="dc3f13f5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::01-strike-squad::1-grey-knight-psycannon-close-combat-weapon" name="1 Grey Knight: psycannon, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="5f052740" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1d6f5041" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::01-strike-squad::7-grey-knights-storm-bolter-nemesis-force-weapon" name="7 Grey Knights: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d65c7a99" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="63dcf1ca" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::crowes-sanctifiers::02-brotherhood-terminator-squad" name="Brotherhood Terminator Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="d15076a0" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="67501104" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="56576326" name="Combat Patrol: Grey Knights (Crowe's Sanctifiers)" hidden="false" targetId="cp-cat::crowes-sanctifiers" primary="true" />
+        <categoryLink id="e3bedd37" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="2cece48e" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="1e8c5e16" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="e5e78dbf" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="b7594633" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
+        <categoryLink id="5e23341d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="6d7eb54e" name="Brotherhood Terminator Squad" hidden="false" targetId="cp-kw::brotherhood-terminator-squad" primary="false" />
+        <categoryLink id="6a2ae936" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="863cf930" name="Brotherhood Terminator Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9ff5b70" name="Psycannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="596aae44" name="Storm bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edbda1fc" name="Nemesis force weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c873ac6e" name="Occult Interdiction" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="948c7941" name="Force Edge (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes a melee attack that targets a unit (excluding Monsters and Vehicles), improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bf4052c2" name="Force Edge (Psychic)" hidden="false">
+          <description>Each time a model in this unit makes a melee attack that targets a unit (excluding Monsters and Vehicles), improve the Armour Penetration characteristic of that attack by 1.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::crowes-sanctifiers::02-brotherhood-terminator-squad::1-justicar-storm-bolter-nemesis-force-weapon" name="1 Justicar: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="63a62c6f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="84948ce1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::02-brotherhood-terminator-squad::1-brotherhood-terminator-psycannon-nemesis-force-weapon" name="1 Brotherhood Terminator: psycannon, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c7037bd1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="91f4e9db" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::02-brotherhood-terminator-squad::3-brotherhood-terminators-storm-bolter-nemesis-force-weapon" name="3 Brotherhood Terminators: storm bolter, Nemesis force weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="91b28782" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2bd760d2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::crowes-sanctifiers::03-venerable-dreadnought" name="Venerable Dreadnought" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2f465825" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="23df6634" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="92bea3a0" name="Combat Patrol: Grey Knights (Crowe's Sanctifiers)" hidden="false" targetId="cp-cat::crowes-sanctifiers" primary="true" />
+        <categoryLink id="5d8789ee" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="4e02c197" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="232508fb" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="48077bfb" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="63457be4" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="472e00f8" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="26f615a4" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
+        <categoryLink id="49efa900" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="d8a3abda" name="Venerable Dreadnought" hidden="false" targetId="cp-kw::venerable-dreadnought" primary="false" />
+        <categoryLink id="1fe1a0e0" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="badee476" name="Venerable Dreadnought" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">9</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">8</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="596aae44" name="Storm bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="43fdfdd2" name="Twin lascannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6+1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d6e00cc5" name="Dreadnought combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">12</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c873ac6e" name="Occult Interdiction" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0378162f" name="Guidance of the Ancients (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a model from a Grey Knights unit in your army makes an attack that targets that unit, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="cbd320c0" name="Guidance of the Ancients (Psychic)" hidden="false">
+          <description>In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a model from a Grey Knights unit in your army makes an attack that targets that unit, add 1 to the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::crowes-sanctifiers::03-venerable-dreadnought::twin-lascannon" name="Twin lascannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="53574f3b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ed47fc31" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::03-venerable-dreadnought::storm-bolter" name="Storm bolter" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6e244a88" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="59e9ef8c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::crowes-sanctifiers::03-venerable-dreadnought::dreadnought-combat-weapon" name="Dreadnought combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d90ca555" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5f0a927c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::space-wolves" name="Space Wolves" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::askars-wolfpack::00-fyrri-askar" name="Fyrri Askar" type="unit" hidden="false">
+      <constraints>
+        <constraint id="830fe18b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3efad47c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6ed08a7c" name="Combat Patrol: Space Wolves (Askar's Wolfpack)" hidden="false" targetId="cp-cat::askars-wolfpack" primary="true" />
+        <categoryLink id="366deff1" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="0f29bdb6" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="1fba29d4" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="9bcba7c0" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="a11fc55e" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="0bb5bb71" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="07b03620" name="Wolf Guard" hidden="false" targetId="cp-kw::wolf-guard" primary="false" />
+        <categoryLink id="6b60055b" name="Battle Leader" hidden="false" targetId="cp-kw::battle-leader" primary="false" />
+        <categoryLink id="5a783937" name="Fyrri Askar" hidden="false" targetId="cp-kw::fyrri-askar" primary="false" />
+        <categoryLink id="f62a18fb" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="55fc8b04" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6d82277f" name="Fyrri Askar" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="626d2435" name="Master-crafted power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">7</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f6bc2538" name="Heroic Last Stand" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a8215e6a" name="Storm Shield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has a Wounds characteristic of 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Blood Claws</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa19fdf2" name="Enhancement: Lone Wolf (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has the Lone Operative and Stealth abilities. (Default enhancement; may be replaced with Eager Combatant: Add 1 to Charge rolls made for the bearer's unit.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e9aec7ca" name="Heroic Last Stand" hidden="false">
+          <description>If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</description>
+        </rule>
+        <rule id="74aa24cd" name="Storm Shield" hidden="false">
+          <description>The bearer has a Wounds characteristic of 6.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Blood Claws</description>
+        </rule>
+        <rule id="4e8805bd" name="Enhancement: Lone Wolf (Warlord)" hidden="false">
+          <description>The bearer has the Lone Operative and Stealth abilities. (Default enhancement; may be replaced with Eager Combatant: Add 1 to Charge rolls made for the bearer's unit.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::askars-wolfpack::00-fyrri-askar::master-crafted-power-weapon" name="Master-crafted power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="709f9e14" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e7b2cc00" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::askars-wolfpack::00-fyrri-askar::storm-shield" name="Storm shield" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ac91b3ae" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2bdf65e3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::askars-wolfpack::01-blood-claws" name="Blood Claws" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7e750443" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="97172379" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="19939134" name="Combat Patrol: Space Wolves (Askar's Wolfpack)" hidden="false" targetId="cp-cat::askars-wolfpack" primary="true" />
+        <categoryLink id="c270d222" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="bffa2fe5" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="9e8d1846" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="17eff772" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="8af32d60" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="1b5e4d5f" name="Blood Claws" hidden="false" targetId="cp-kw::blood-claws" primary="false" />
+        <categoryLink id="9a11d9a7" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="f0fd3e04" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f69e0c46" name="Blood Claws" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6251b776" name="Astartes chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3755955" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::askars-wolfpack::01-blood-claws::1-blood-claw-pack-leader-plasma-pistol-power-weapon" name="1 Blood Claw Pack Leader: plasma pistol, power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="11b94406" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0550057a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::askars-wolfpack::01-blood-claws::9-blood-claws-bolt-pistol-astartes-chainsword" name="9 Blood Claws: bolt pistol, Astartes chainsword" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="473b3fc8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d978bf71" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::askars-wolfpack::02-wolf-guard-terminators" name="Wolf Guard Terminators" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2a714f33" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="661d69c4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f442a29b" name="Combat Patrol: Space Wolves (Askar's Wolfpack)" hidden="false" targetId="cp-cat::askars-wolfpack" primary="true" />
+        <categoryLink id="73a8e834" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="3683b8d5" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="9208e301" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="362b22fa" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="6ea929fc" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
+        <categoryLink id="e9601f71" name="Wolf Guard" hidden="false" targetId="cp-kw::wolf-guard" primary="false" />
+        <categoryLink id="1eca7634" name="Wolf Guard Terminators" hidden="false" targetId="cp-kw::wolf-guard-terminators" primary="false" />
+        <categoryLink id="a5f0dfcf" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="26da2b41" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a18d3421" name="Wolf Guard Terminators" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="af36e5aa" name="Assault cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">6</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="596aae44" name="Storm bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="626d2435" name="Master-crafted power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="42d227c4" name="Power fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4361d1e" name="Relic greataxe" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">7</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97f4293a" name="Rugged Resilience" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e4226e59" name="Rugged Resilience" hidden="false">
+          <description>Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::askars-wolfpack::02-wolf-guard-terminators::1-wolf-guard-terminator-pack-leader-relic-greataxe" name="1 Wolf Guard Terminator Pack Leader: relic greataxe" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e482e366" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0e88d338" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::askars-wolfpack::02-wolf-guard-terminators::3-wolf-guard-terminators-storm-bolter-master-crafted-power-weapon" name="3 Wolf Guard Terminators: storm bolter, master-crafted power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a49f32b4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="48a28c77" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::askars-wolfpack::02-wolf-guard-terminators::1-wolf-guard-terminator-assault-cannon-power-fist" name="1 Wolf Guard Terminator: assault cannon, power fist" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b267dc01" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2f4252f7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::askars-wolfpack::03-wulfen" name="Wulfen" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2e6b3173" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="10c20a28" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="17289233" name="Combat Patrol: Space Wolves (Askar's Wolfpack)" hidden="false" targetId="cp-cat::askars-wolfpack" primary="true" />
+        <categoryLink id="e8dc6a46" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="881381c6" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="419f80c3" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="2b824481" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="bde9e6aa" name="Wulfen" hidden="false" targetId="cp-kw::wulfen" primary="false" />
+        <categoryLink id="f17af20b" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="eea33e20" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6979d60a" name="Wulfen" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">9"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11b31823" name="Stormfrag auto-launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2fa366e9" name="Wulfen weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="61336ec4" name="Savage Frenzy" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of this unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ed111758" name="Savage Frenzy" hidden="false">
+          <description>Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of this unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::askars-wolfpack::03-wulfen::3-wulfen-wulfen-weapons" name="3 Wulfen: Wulfen weapons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f34ada57" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5c5b3195" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::askars-wolfpack::03-wulfen::2-wulfen-wulfen-weapons-stormfrag-auto-launcher" name="2 Wulfen: Wulfen weapons, stormfrag auto-launcher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c3b6733b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="dc8e8243" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::thoryks-void-hunters::00-battle-leader-thoryk" name="Battle Leader Thoryk" type="unit" hidden="false">
+      <constraints>
+        <constraint id="61463f4d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="61f00bfd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="127bf94c" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" targetId="cp-cat::thoryks-void-hunters" primary="true" />
+        <categoryLink id="0666150c" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="7926bb50" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="bb51233a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="3ed7b1d7" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="348df9f0" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="2e8e6f97" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="b26eedf3" name="Battle Leader" hidden="false" targetId="cp-kw::battle-leader" primary="false" />
+        <categoryLink id="10b5a690" name="Thoryk" hidden="false" targetId="cp-kw::thoryk" primary="false" />
+        <categoryLink id="8a2a3a1f" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="f98077d2" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d4a70420" name="Battle Leader Thoryk" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9069ec4e" name="Master-crafted bolt rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="626d2435" name="Master-crafted power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa9287c2" name="Target Priority" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model's unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Intercessor Squad</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ae3a98d" name="Enhancement: Tireless Hunter (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the first battle round, select one enemy unit. Each time the bearer makes an attack that targets that unit, add 1 to the Wound roll. (Default enhancement; may be replaced with Ferocious: You can target the bearer's unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b909bfeb" name="Target Priority" hidden="false">
+          <description>This model's unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Intercessor Squad</description>
+        </rule>
+        <rule id="1daa5b0a" name="Enhancement: Tireless Hunter (Warlord)" hidden="false">
+          <description>At the start of the first battle round, select one enemy unit. Each time the bearer makes an attack that targets that unit, add 1 to the Wound roll. (Default enhancement; may be replaced with Ferocious: You can target the bearer's unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::thoryks-void-hunters::00-battle-leader-thoryk::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="91f5b183" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1195762f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::thoryks-void-hunters::00-battle-leader-thoryk::master-crafted-bolt-rifle" name="Master-crafted bolt rifle" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="718a8a5f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="38146c3e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::thoryks-void-hunters::00-battle-leader-thoryk::master-crafted-power-weapon" name="Master-crafted power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="023e9514" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="541228b4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::thoryks-void-hunters::01-intercessor-squad" name="Intercessor Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="65f2efd5" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2bfd65db" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0f01dfde" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" targetId="cp-cat::thoryks-void-hunters" primary="true" />
+        <categoryLink id="667171c6" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="cf7d013b" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="296c262e" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="a8ef296f" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="5238ccf1" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="71a75766" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="6cfb9017" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
+        <categoryLink id="0eade2a0" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="c3cf03d7" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4bde364" name="Bolt rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6251b776" name="Astartes chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::thoryks-void-hunters::01-intercessor-squad::1-intercessor-sergeant-bolt-pistol-astartes-chainsword" name="1 Intercessor Sergeant: bolt pistol, Astartes chainsword" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="739dad3a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="950e8054" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::thoryks-void-hunters::01-intercessor-squad::9-intercessors-bolt-pistol-bolt-rifle-close-combat-weapon" name="9 Intercessors: bolt pistol, bolt rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ca7bf711" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0c16c28d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::thoryks-void-hunters::02-reiver-squad" name="Reiver Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1f08ed1a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0a40b548" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="766b59fb" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" targetId="cp-cat::thoryks-void-hunters" primary="true" />
+        <categoryLink id="3a1435f2" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="05618493" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="0b92c9ac" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="9970df6a" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
+        <categoryLink id="72c78d56" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="7448ad0d" name="Phobos" hidden="false" targetId="cp-kw::phobos" primary="false" />
+        <categoryLink id="7d7cee91" name="Reiver Squad" hidden="false" targetId="cp-kw::reiver-squad" primary="false" />
+        <categoryLink id="07688bd8" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="8f6d8509" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="10508598" name="Reiver Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df88bd5e" name="Special issue bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c0188ffd" name="Combat knife" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e3aba06e" name="Scouts 6&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c44bc33a" name="Reiver Grav-chute" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has the Deep Strike ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b5bae453" name="Fearsome Assault" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ff9dc955" name="Reiver Grav-chute" hidden="false">
+          <description>The bearer has the Deep Strike ability.</description>
+        </rule>
+        <rule id="ffd705c3" name="Fearsome Assault" hidden="false">
+          <description>At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::thoryks-void-hunters::02-reiver-squad::every-model-special-issue-bolt-pistol-combat-knife-reiver-grav-chute" name="Every model: special issue bolt pistol, combat knife, Reiver grav-chute" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dc211600" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="650a6fc8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::thoryks-void-hunters::03-invictor-tactical-warsuit" name="Invictor Tactical Warsuit" type="unit" hidden="false">
+      <constraints>
+        <constraint id="34789e4a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="713f8264" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d7d26fb7" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" targetId="cp-cat::thoryks-void-hunters" primary="true" />
+        <categoryLink id="b19c8f98" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
+        <categoryLink id="32ad5795" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="88c0510d" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="3095534c" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="101d0a59" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="d5880de0" name="Phobos" hidden="false" targetId="cp-kw::phobos" primary="false" />
+        <categoryLink id="2caf28d5" name="Invictor Tactical Warsuit" hidden="false" targetId="cp-kw::invictor-tactical-warsuit" primary="false" />
+        <categoryLink id="47d9d781" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="6227af30" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9ffa1020" name="Invictor Tactical Warsuit" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">8</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb336174" name="Fragstorm grenade launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="13ecd27e" name="Heavy bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a9d4b6eb" name="Twin ironhail autocannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">9</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9596c53" name="Twin ironhail heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f935859" name="Invictor fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">14</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c579d68" name="Scouts 8&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::thoryks-void-hunters::03-invictor-tactical-warsuit::fragstorm-grenade-launcher" name="Fragstorm grenade launcher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="160be4ce" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d9589e56" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::thoryks-void-hunters::03-invictor-tactical-warsuit::heavy-bolter" name="Heavy bolter" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="0b9d76e2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c3429c71" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::thoryks-void-hunters::03-invictor-tactical-warsuit::twin-ironhail-autocannon" name="Twin ironhail autocannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3f5deee3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="48e1dba2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::thoryks-void-hunters::03-invictor-tactical-warsuit::twin-ironhail-heavy-stubber" name="Twin ironhail heavy stubber" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1f98d505" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c74917a5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::thoryks-void-hunters::03-invictor-tactical-warsuit::invictor-fist" name="Invictor fist" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4f5b6af2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="61e7408a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

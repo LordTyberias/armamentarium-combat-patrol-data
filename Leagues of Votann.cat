@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::leagues-of-votann" name="Leagues of Votann" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::bane-slayers-bulwark::00-vynn-bane-slayer" name="Vynn Bane-Slayer" type="unit" hidden="false">
+      <constraints>
+        <constraint id="9e1d8a4a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="55f0ffcd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b8345be7" name="Combat Patrol: Leagues of Votann (Bane-Slayer's Bulwark)" hidden="false" targetId="cp-cat::bane-slayers-bulwark" primary="true" />
+        <categoryLink id="a75f0ea7" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="053b69eb" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="efd3aa2b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="0b08a675" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="079ea1de" name="Exoarmour" hidden="false" targetId="cp-kw::exoarmour" primary="false" />
+        <categoryLink id="d65b67c2" name="Einhyr Champion" hidden="false" targetId="cp-kw::einhyr-champion" primary="false" />
+        <categoryLink id="0ce3a0f9" name="Vynn Bane-Slayer" hidden="false" targetId="cp-kw::vynn-bane-slayer" primary="false" />
+        <categoryLink id="ebea3481" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5b6e3dea" name="Vynn Bane-Slayer" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="88097102" name="Autoch-pattern combi-bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="173289ee" name="Mass hammer" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">12</characteristic>
+            <characteristic name="AP" typeId="54255f70">-3</characteristic>
+            <characteristic name="D" typeId="1f91ac72">D6+1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="908f0978" name="Prioritised Efficiency" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19a86a10" name="Weavefield Crest" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Einhyr Hearthguard</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="054bf31e" name="Enhancement: Indomitable Exemplar (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in the bearer's unit is destroyed, if that model has not fought this phase, roll one D6: on a 2+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play. (Default enhancement; may be replaced with Torvâhl Mass Drivers: Each time the bearer ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6: on a 2-4, that enemy unit suffers 1 mortal wound; on a 5-6, that enemy unit suffers 2 mortal wounds. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="dcf7d68a" name="Weavefield Crest" hidden="false">
+          <description>The bearer has a 4+ invulnerable save.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Einhyr Hearthguard</description>
+        </rule>
+        <rule id="f8e0f8a4" name="Enhancement: Indomitable Exemplar (Warlord)" hidden="false">
+          <description>Each time a model in the bearer's unit is destroyed, if that model has not fought this phase, roll one D6: on a 2+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play. (Default enhancement; may be replaced with Torvâhl Mass Drivers: Each time the bearer ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6: on a 2-4, that enemy unit suffers 1 mortal wound; on a 5-6, that enemy unit suffers 2 mortal wounds. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::bane-slayers-bulwark::00-vynn-bane-slayer::autoch-pattern-combi-bolter" name="Autoch-pattern combi-bolter" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3fedb91a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3f922de8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::bane-slayers-bulwark::00-vynn-bane-slayer::mass-hammer" name="Mass hammer" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a05f0b7e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a0a71b25" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::bane-slayers-bulwark::00-vynn-bane-slayer::weavefield-crest" name="Weavefield crest" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="048ffd76" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e41bce51" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::bane-slayers-bulwark::01-hearthkyn-warriors" name="Hearthkyn Warriors" type="unit" hidden="false">
+      <constraints>
+        <constraint id="875b22d6" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="4ab18852" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="aff07de7" name="Combat Patrol: Leagues of Votann (Bane-Slayer's Bulwark)" hidden="false" targetId="cp-cat::bane-slayers-bulwark" primary="true" />
+        <categoryLink id="e787eec8" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="85a8ab3b" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="ded3c0d1" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="02225b6a" name="Hearthkyn Warriors" hidden="false" targetId="cp-kw::hearthkyn-warriors" primary="false" />
+        <categoryLink id="d929a73b" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="98e0364b" name="Hearthkyn Warriors" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11f35a72" name="Autoch-pattern bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1735bff4" name="HYLas auto rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4e80025c" name="HYLas rotary cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">6</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Heavy, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f826948e" name="Ion blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f285cb5" name="Magna-rail rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">D3+3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a6dd0e0" name="Theyn's pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93c7c5aa" name="Plasma knife" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5b780e8b" name="Theyn's melee weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97a0be0b" name="Feel No Pain 6+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="908f0978" name="Prioritised Efficiency" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="039279f3" name="Panspectral Scanning" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes a ranged attack, re-roll a Hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1dfdc52d" name="Panspectral Scanning" hidden="false">
+          <description>Each time a model in this unit makes a ranged attack, re-roll a Hit roll of 1.</description>
+        </rule>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::bane-slayers-bulwark::01-hearthkyn-warriors::1-theyn-autoch-pattern-bolt-pistol-theyn-s-pistol-theyn-s-melee-weapon" name="1 Theyn: Autoch-pattern bolt pistol, Theyn's pistol, Theyn's melee weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="660a46dc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="200d725f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::bane-slayers-bulwark::01-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-hylas-auto-rifle-close-combat-weapon" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, HYLas auto rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c6a9516c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="04b6715c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::bane-slayers-bulwark::01-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-magna-rail-rifle-close-combat-weapon" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, magna-rail rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="cb1eda84" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e6d1850f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::bane-slayers-bulwark::01-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-plasma-knife" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, plasma knife" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3d44c967" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7e70f85f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::bane-slayers-bulwark::01-hearthkyn-warriors::6-hearthkyn-warriors-autoch-pattern-bolt-pistol-ion-blaster-close-combat-weapon" name="6 Hearthkyn Warriors: Autoch-pattern bolt pistol, ion blaster, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3bd459e5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1f18434c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::bane-slayers-bulwark::02-einhyr-hearthguard" name="Einhyr Hearthguard" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1670a257" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="02473e7c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8a17e4ef" name="Combat Patrol: Leagues of Votann (Bane-Slayer's Bulwark)" hidden="false" targetId="cp-cat::bane-slayers-bulwark" primary="true" />
+        <categoryLink id="c8ea447c" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="54286982" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="3a2d1387" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="7ac16ca7" name="Exoarmour" hidden="false" targetId="cp-kw::exoarmour" primary="false" />
+        <categoryLink id="a0fb1f41" name="Einhyr Hearthguard" hidden="false" targetId="cp-kw::einhyr-hearthguard" primary="false" />
+        <categoryLink id="02789d64" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="ea29f833" name="Einhyr Hearthguard" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="011bda3a" name="Exoarmour grenade launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">D3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d40e7458" name="Volkanite disintegrator" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d477ad9f" name="Graviton hammer" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">9</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Monster 3+, Anti-Vehicle 3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ed563872" name="Plasma blade gauntlet" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="908f0978" name="Prioritised Efficiency" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="461f78ef" name="Decisive Destruction" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes a ranged attack that targets the closest eligible target, re-roll a Hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fa09792d" name="Decisive Destruction" hidden="false">
+          <description>Each time a model in this unit makes a ranged attack that targets the closest eligible target, re-roll a Hit roll of 1.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::bane-slayers-bulwark::02-einhyr-hearthguard::1-hesyr-volkanite-disintegrator-exoarmour-grenade-launcher-graviton-hammer" name="1 Hesyr: volkanite disintegrator, exoarmour grenade launcher, graviton hammer" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6b4f3fdb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e6c3581c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::bane-slayers-bulwark::02-einhyr-hearthguard::4-einhyr-hearthguard-volkanite-disintegrator-exoarmour-grenade-launcher-plasma-blade-gauntlet" name="4 Einhyr Hearthguard: volkanite disintegrator, exoarmour grenade launcher, plasma blade gauntlet" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c78b4051" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8b3e5562" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::bane-slayers-bulwark::03-br-khyr-thunderkyn" name="Brôkhyr Thunderkyn" type="unit" hidden="false">
+      <constraints>
+        <constraint id="fc3ab2db" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f464f498" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="91a468db" name="Combat Patrol: Leagues of Votann (Bane-Slayer's Bulwark)" hidden="false" targetId="cp-cat::bane-slayers-bulwark" primary="true" />
+        <categoryLink id="fe31e4c0" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="fcb130bb" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5168be08" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="ac15e957" name="Exoframe" hidden="false" targetId="cp-kw::exoframe" primary="false" />
+        <categoryLink id="c77b18ee" name="Brôkhyr" hidden="false" targetId="cp-kw::br-khyr" primary="false" />
+        <categoryLink id="5cf6b35f" name="Thunderkyn" hidden="false" targetId="cp-kw::thunderkyn" primary="false" />
+        <categoryLink id="77ac7799" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0c3616a2" name="Brôkhyr Thunderkyn" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0562a9e6" name="SP conversion beamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Conversion, Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="908f0978" name="Prioritised Efficiency" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="39dc57fd" name="Conversion" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time an attack made with this weapon targets an enemy unit that is not within 12", an unmodified Hit roll of 4+ scores a Critical Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ecef88f6" name="Breaching Fire" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, that enemy unit cannot have the Benefit of Cover.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4a7f700c" name="Conversion" hidden="false">
+          <description>Each time an attack made with this weapon targets an enemy unit that is not within 12", an unmodified Hit roll of 4+ scores a Critical Hit.</description>
+        </rule>
+        <rule id="5d5107d2" name="Breaching Fire" hidden="false">
+          <description>In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, that enemy unit cannot have the Benefit of Cover.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::bane-slayers-bulwark::03-br-khyr-thunderkyn::3-br-khyr-thunderkyn-sp-conversion-beamer-close-combat-weapon" name="3 Brôkhyr Thunderkyn: SP conversion beamer, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6c40913f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5e271dee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::warspekes-prospect::00-k-hl-warspeke" name="Kâhl Warspeke" type="unit" hidden="false">
+      <constraints>
+        <constraint id="01fb90dc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="c20a62ff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0fa3fd22" name="Combat Patrol: Leagues of Votann (Warspeke's Prospect)" hidden="false" targetId="cp-cat::warspekes-prospect" primary="true" />
+        <categoryLink id="06f920d1" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="322cf5f7" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5b7f1a15" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="b7c25bb9" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="944798b2" name="Kâhl" hidden="false" targetId="cp-kw::k-hl" primary="false" />
+        <categoryLink id="6d6943a8" name="Warspeke" hidden="false" targetId="cp-kw::warspeke" primary="false" />
+        <categoryLink id="88e68e4c" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f7338a53" name="Kâhl Warspeke" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d40e7458" name="Volkanite disintegrator" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6dfcf5cd" name="Mass gauntlet" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c44c00c7" name="Eye of the Ancestors" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf5a1dc0" name="Grim Efficiency" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per battle round, in your Command phase, you can select one enemy unit that is visible to this model. That enemy unit gains 1 Judgement token.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Hearthkyn Warriors</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ce123f4" name="Enhancement: Waste Feeds the Void (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in the bearer's unit makes a ranged attack, re-roll a Hit roll of 1. In addition, the bearer's unit is eligible to shoot in a turn in which it Fell Back. (Default enhancement; may be replaced with Prâgmaat Comms Uplink: Add 1 to the Objective Control characteristic of models in the bearer's unit. In addition, you can re-roll Battle-shock tests taken for the bearer's unit.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ee10454f" name="Grim Efficiency" hidden="false">
+          <description>Once per battle round, in your Command phase, you can select one enemy unit that is visible to this model. That enemy unit gains 1 Judgement token.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Hearthkyn Warriors</description>
+        </rule>
+        <rule id="d4105a24" name="Enhancement: Waste Feeds the Void (Warlord)" hidden="false">
+          <description>Each time a model in the bearer's unit makes a ranged attack, re-roll a Hit roll of 1. In addition, the bearer's unit is eligible to shoot in a turn in which it Fell Back. (Default enhancement; may be replaced with Prâgmaat Comms Uplink: Add 1 to the Objective Control characteristic of models in the bearer's unit. In addition, you can re-roll Battle-shock tests taken for the bearer's unit.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::warspekes-prospect::00-k-hl-warspeke::volkanite-disintegrator" name="Volkanite disintegrator" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3c56a83d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b94a9bce" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::00-k-hl-warspeke::mass-gauntlet" name="Mass gauntlet" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b6fe973d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="81b6e81f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::00-k-hl-warspeke::teleport-crest" name="Teleport crest" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="aeb0f5e6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8fd3adb7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::warspekes-prospect::01-cthonian-beserks" name="Cthonian Beserks" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c390cdbf" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7d59e2a7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b9202dc7" name="Combat Patrol: Leagues of Votann (Warspeke's Prospect)" hidden="false" targetId="cp-cat::warspekes-prospect" primary="true" />
+        <categoryLink id="53dc4740" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="c878ce6c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="4a628c82" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="db03a3e0" name="Cthonian Beserks" hidden="false" targetId="cp-kw::cthonian-beserks" primary="false" />
+        <categoryLink id="60ab077c" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="01392542" name="Cthonian Beserks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f113b9de" name="Mole grenade launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Indirect Fire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c546ac82" name="Heavy plasma axe – strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ff34291d" name="Heavy plasma axe – sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b8939a9" name="Twin concussion gauntlet" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">9</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c44c00c7" name="Eye of the Ancestors" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f16e396d" name="Mole Grenade Launcher" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Add 1 to the Wounds and Attacks characteristics of the model equipped with this weapon.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="57e865ad" name="Cyberstimms" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model's unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="70d29d8d" name="Mole Grenade Launcher" hidden="false">
+          <description>Add 1 to the Wounds and Attacks characteristics of the model equipped with this weapon.</description>
+        </rule>
+        <rule id="08c30603" name="Cyberstimms" hidden="false">
+          <description>Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model's unit has finished making its attacks, and is then removed from play.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::warspekes-prospect::01-cthonian-beserks::3-cthonian-beserks-heavy-plasma-axe" name="3 Cthonian Beserks: heavy plasma axe" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e0b61c56" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b222cbd2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::01-cthonian-beserks::1-cthonian-beserk-mole-grenade-launcher-heavy-plasma-axe" name="1 Cthonian Beserk: mole grenade launcher, heavy plasma axe" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="cae051be" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4df45fd6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::01-cthonian-beserks::1-cthonian-beserk-twin-concussion-gauntlet" name="1 Cthonian Beserk: twin concussion gauntlet" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="58d7cc36" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="941558f7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::warspekes-prospect::02-hernkyn-pioneers" name="Hernkyn Pioneers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="603c3867" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6139fd9a" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6a72ebe0" name="Combat Patrol: Leagues of Votann (Warspeke's Prospect)" hidden="false" targetId="cp-cat::warspekes-prospect" primary="true" />
+        <categoryLink id="72e65962" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="fc52d80c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="b30154d0" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="347a309b" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="d721aeb3" name="Hernkyn Pioneers" hidden="false" targetId="cp-kw::hernkyn-pioneers" primary="false" />
+        <categoryLink id="0523e3ce" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="270a47c4" name="Hernkyn Pioneers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="45a4ab11" name="Bolt revolver" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">9"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd22f4d1" name="Bolt shotgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4e80025c" name="HYLas rotary cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">6</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="254d7b75" name="Magna-coil autocannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93c7c5aa" name="Plasma knife" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c44c00c7" name="Eye of the Ancestors" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c73c2402" name="Outflanking Mag-Riders" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your opponent's turn (excluding the first), if this unit is within 6" of any battlefield edge and is not within Engagement Range of any enemy units, you can remove this unit from the battlefield and place it in Reserves. In the Reinforcements step of your next Movement phase, set up this unit wholly within 6" of any battlefield edge excluding your opponent's, and more than 9" horizontally away from all enemy models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="887cbc0c" name="Outflanking Mag-Riders" hidden="false">
+          <description>At the end of your opponent's turn (excluding the first), if this unit is within 6" of any battlefield edge and is not within Engagement Range of any enemy units, you can remove this unit from the battlefield and place it in Reserves. In the Reinforcements step of your next Movement phase, set up this unit wholly within 6" of any battlefield edge excluding your opponent's, and more than 9" horizontally away from all enemy models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::warspekes-prospect::02-hernkyn-pioneers::1-hernkyn-pioneer-bolt-revolver-bolt-shotgun-magna-coil-autocannon-plasma-knife-comms-array" name="1 Hernkyn Pioneer: bolt revolver, bolt shotgun, magna-coil autocannon, plasma knife, comms array" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="249d7072" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ff05f083" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::02-hernkyn-pioneers::1-hernkyn-pioneer-bolt-revolver-bolt-shotgun-magna-coil-autocannon-plasma-knife-rollbar-searchlight" name="1 Hernkyn Pioneer: bolt revolver, bolt shotgun, magna-coil autocannon, plasma knife, rollbar searchlight" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="97a8086a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4313b3d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::02-hernkyn-pioneers::1-hernkyn-pioneer-bolt-revolver-bolt-shotgun-hylas-rotary-cannon-magna-coil-autocannon-plasma-knife" name="1 Hernkyn Pioneer: bolt revolver, bolt shotgun, HYLas rotary cannon, magna-coil autocannon, plasma knife" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2637d611" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="af4bbc38" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors" name="Hearthkyn Warriors" type="unit" hidden="false">
+      <constraints>
+        <constraint id="223d69dd" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8ea3fcd4" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ab33e136" name="Combat Patrol: Leagues of Votann (Warspeke's Prospect)" hidden="false" targetId="cp-cat::warspekes-prospect" primary="true" />
+        <categoryLink id="f2ab4355" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="706340c5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="b55a561a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="f676937f" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="ce4a11a4" name="Hearthkyn Warriors" hidden="false" targetId="cp-kw::hearthkyn-warriors" primary="false" />
+        <categoryLink id="2703126b" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="98e0364b" name="Hearthkyn Warriors" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11f35a72" name="Autoch-pattern bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="52aa3ff4" name="Autoch-pattern bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="58fe8306" name="EtaCarn plasma pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">6"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1735bff4" name="HYLas auto rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f826948e" name="Ion blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f285cb5" name="Magna-rail rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">D3+3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d4269384" name="Kin melee weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c44c00c7" name="Eye of the Ancestors" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="95c6d861" name="Pan-spectral Scanner" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Ranged weapons equipped by models in the bearer's unit have the [Ignores Cover] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="841a5713" name="Medipack" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Models in the bearer's unit have the Feel No Pain 6+ ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9702bfea" name="Pan-spectral Scanner" hidden="false">
+          <description>Ranged weapons equipped by models in the bearer's unit have the [Ignores Cover] ability.</description>
+        </rule>
+        <rule id="71753faf" name="Medipack" hidden="false">
+          <description>Models in the bearer's unit have the Feel No Pain 6+ ability.</description>
+        </rule>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors::1-theyn-etacarn-plasma-pistol-kin-melee-weapon-weavefield-crest" name="1 Theyn: EtaCarn plasma pistol, Kin melee weapon, weavefield crest" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c5535f77" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="741b43a9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors::4-hearthkyn-warriors-autoch-pattern-bolt-pistol-ion-blaster-close-combat-weapon" name="4 Hearthkyn Warriors: Autoch-pattern bolt pistol, ion blaster, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3739a1e5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8c36f99a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-ion-blaster-close-combat-weapon-comms-array" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, ion blaster, close combat weapon, comms array" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e931b6d8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="171db707" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-ion-blaster-close-combat-weapon-medipack" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, ion blaster, close combat weapon, medipack" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e3ecd571" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="168c081a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-ion-blaster-close-combat-weapon-pan-spectral-scanner" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, ion blaster, close combat weapon, pan-spectral scanner" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ff004188" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0d16df7e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-hylas-auto-rifle-close-combat-weapon" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, HYLas auto rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d33c221c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b2f82107" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::warspekes-prospect::03-hearthkyn-warriors::1-hearthkyn-warrior-autoch-pattern-bolt-pistol-magna-rail-rifle-close-combat-weapon" name="1 Hearthkyn Warrior: Autoch-pattern bolt pistol, magna-rail rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c853c43b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7aca8391" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

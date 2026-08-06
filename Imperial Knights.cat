@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::imperial-knights" name="Imperial Knights" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::armiger-trailblazers::00-pilot-dantos-and-thauvir" name="Pilot Dantos and Thauvir" type="unit" hidden="false">
+      <constraints>
+        <constraint id="fb0713df" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b503723a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ce17462d" name="Combat Patrol: Imperial Knights (Armiger Trailblazers)" hidden="false" targetId="cp-cat::armiger-trailblazers" primary="true" />
+        <categoryLink id="2b7a0b96" name="Imperial Knights" hidden="false" targetId="cp-faction::imperial-knights" primary="false" />
+        <categoryLink id="a312db70" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="c0ad9e9e" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="4886ab8a" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="fbc1f68a" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="d5087f56" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="0badf33e" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="9a9db3e1" name="Armiger" hidden="false" targetId="cp-kw::armiger" primary="false" />
+        <categoryLink id="8661c16c" name="Helverin" hidden="false" targetId="cp-kw::helverin" primary="false" />
+        <categoryLink id="77c9a61a" name="Dantos and Thauvir" hidden="false" targetId="cp-kw::dantos-and-thauvir" primary="false" />
+        <categoryLink id="ab708833" name="Imperial Knights" hidden="false" targetId="cp-kw::imperial-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="39215e7d" name="Pilot Dantos and Thauvir" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8e435674" name="Armiger autocannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">9</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="96bdc648" name="Questoris heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="910d2a90" name="Armoured feet" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+ (vs ranged)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5919bfbc" name="Household Vanguard" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="85e510c7" name="Enhancement: Servo-skull Dataleech (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Armiger Helverin model only. Each time the bearer destroys an enemy Character unit, roll one D6: on a 2+, you gain 1CP. (Pilot Dantos and Thauvir is the patrol's default Warlord; you may instead make Pilot Morrigan and Viridor your Warlord with the Embedded Auto Medicae enhancement.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+        <rule id="288794ef" name="Enhancement: Servo-skull Dataleech (Warlord)" hidden="false">
+          <description>Armiger Helverin model only. Each time the bearer destroys an enemy Character unit, roll one D6: on a 2+, you gain 1CP. (Pilot Dantos and Thauvir is the patrol's default Warlord; you may instead make Pilot Morrigan and Viridor your Warlord with the Embedded Auto Medicae enhancement.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::armiger-trailblazers::00-pilot-dantos-and-thauvir::2-armiger-autocannons" name="2 Armiger autocannons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3c955332" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6509b31b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::armiger-trailblazers::00-pilot-dantos-and-thauvir::questoris-heavy-stubber" name="Questoris heavy stubber" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="db78a7b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ce1f3a62" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::armiger-trailblazers::00-pilot-dantos-and-thauvir::armoured-feet" name="Armoured feet" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c7d23cee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="eb9ab64e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::armiger-trailblazers::01-pilot-morrigan-and-viridor" name="Pilot Morrigan and Viridor" type="unit" hidden="false">
+      <constraints>
+        <constraint id="52ca120c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7ecb1226" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="48ca8713" name="Combat Patrol: Imperial Knights (Armiger Trailblazers)" hidden="false" targetId="cp-cat::armiger-trailblazers" primary="true" />
+        <categoryLink id="2f06d9d9" name="Imperial Knights" hidden="false" targetId="cp-faction::imperial-knights" primary="false" />
+        <categoryLink id="57759de0" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="8a8f2790" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="b2e26682" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="24bd980c" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+        <categoryLink id="bb3ea725" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="740fc0cd" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="85700303" name="Armiger" hidden="false" targetId="cp-kw::armiger" primary="false" />
+        <categoryLink id="800fdf74" name="Warglaive" hidden="false" targetId="cp-kw::warglaive" primary="false" />
+        <categoryLink id="d8b7cbe9" name="Morrigan and Viridor" hidden="false" targetId="cp-kw::morrigan-and-viridor" primary="false" />
+        <categoryLink id="1349b206" name="Imperial Knights" hidden="false" targetId="cp-kw::imperial-knights" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="662d1969" name="Pilot Morrigan and Viridor" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="96bdc648" name="Questoris heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0cc157dd" name="Thermal spear" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Melta 4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcae94a6" name="Reaper chain-cleaver" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">8</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+ (vs ranged)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5919bfbc" name="Household Vanguard" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c59cf3bb" name="Enhancement: Embedded Auto Medicae (Warlord option)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Armiger Warglaive model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has the Feel No Pain 6+ ability. (Available if you make Pilot Morrigan and Viridor your Warlord instead of Pilot Dantos and Thauvir.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+        <rule id="4a2ba335" name="Enhancement: Embedded Auto Medicae (Warlord option)" hidden="false">
+          <description>Armiger Warglaive model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has the Feel No Pain 6+ ability. (Available if you make Pilot Morrigan and Viridor your Warlord instead of Pilot Dantos and Thauvir.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::armiger-trailblazers::01-pilot-morrigan-and-viridor::questoris-heavy-stubber" name="Questoris heavy stubber" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1a7b3441" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e839e46e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::armiger-trailblazers::01-pilot-morrigan-and-viridor::reaper-chain-cleaver" name="Reaper chain-cleaver" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="abb98d49" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="79e674d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::armiger-trailblazers::01-pilot-morrigan-and-viridor::thermal-spear" name="Thermal spear" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="cb4e6d83" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ea44e5eb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

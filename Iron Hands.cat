@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::iron-hands" name="Iron Hands" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::medusan-redoubt::00-techmarine-gorloch-kataan" name="Techmarine Gorloch Kataan" type="unit" hidden="false">
+      <constraints>
+        <constraint id="aff0d1b3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6d359333" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="139a3c4e" name="Combat Patrol: Iron Hands (Medusan Redoubt)" hidden="false" targetId="cp-cat::medusan-redoubt" primary="true" />
+        <categoryLink id="30778a8d" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="302202a2" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="f055e8dc" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="a409e5c2" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="533fecf2" name="Epic Hero" hidden="false" targetId="cp-kw::epic-hero" primary="false" />
+        <categoryLink id="ee7b5b3d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="0575c20f" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="6ee304e3" name="Techmarine" hidden="false" targetId="cp-kw::techmarine" primary="false" />
+        <categoryLink id="10532489" name="Gorloch Kataan" hidden="false" targetId="cp-kw::gorloch-kataan" primary="false" />
+        <categoryLink id="56d4b8ff" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1919fcea" name="Techmarine Gorloch Kataan" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9f6a6c4" name="Forge bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c0c5f9b" name="Grav-pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Vehicle 2+, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c82d83cb" name="Omnissian power axe" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="783d3bb2" name="Servo-arm" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c3daa0c7" name="Techmarine" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model is within 3" of one or more friendly Adeptus Astartes Vehicle units, this model has the Lone Operative ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="52d51b0a" name="Blessing of the Omnissiah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, you can select one friendly Adeptus Astartes Vehicle model within 3" of this model. That model regains up to D3 lost wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b7881006" name="Vengeance of the Omnissiah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">If a friendly Adeptus Astartes Vehicle model is destroyed within 12" of this model, until the end of the battle, this model's Omnissian power axe has an Attacks characteristic of 7.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="81d35e3e" name="Enhancement: Gorgon's Rage (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Melee weapons equipped by the bearer have a Weapon Skill characteristic of 2+ and the [Sustained Hits 1] ability. (Default enhancement; may be replaced with Machine Unity: In the Declare Battle Formations step, the bearer can be attached to a Heavy Intercessor Squad.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="635c5ce8" name="Techmarine" hidden="false">
+          <description>While this model is within 3" of one or more friendly Adeptus Astartes Vehicle units, this model has the Lone Operative ability.</description>
+        </rule>
+        <rule id="333536f1" name="Blessing of the Omnissiah" hidden="false">
+          <description>In your Command phase, you can select one friendly Adeptus Astartes Vehicle model within 3" of this model. That model regains up to D3 lost wounds.</description>
+        </rule>
+        <rule id="189d990e" name="Vengeance of the Omnissiah" hidden="false">
+          <description>If a friendly Adeptus Astartes Vehicle model is destroyed within 12" of this model, until the end of the battle, this model's Omnissian power axe has an Attacks characteristic of 7.</description>
+        </rule>
+        <rule id="c90eedcc" name="Enhancement: Gorgon's Rage (Warlord)" hidden="false">
+          <description>Melee weapons equipped by the bearer have a Weapon Skill characteristic of 2+ and the [Sustained Hits 1] ability. (Default enhancement; may be replaced with Machine Unity: In the Declare Battle Formations step, the bearer can be attached to a Heavy Intercessor Squad.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::medusan-redoubt::00-techmarine-gorloch-kataan::forge-bolter" name="Forge bolter" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="38d86fc2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5abafd62" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::medusan-redoubt::00-techmarine-gorloch-kataan::grav-pistol" name="Grav-pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="7c44b87a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4dee73c5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::medusan-redoubt::00-techmarine-gorloch-kataan::omnissian-power-axe" name="Omnissian power axe" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d2735fe8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7ab04c78" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::medusan-redoubt::00-techmarine-gorloch-kataan::servo-arm" name="Servo-arm" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f261dcc4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="385d236d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::medusan-redoubt::01-heavy-intercessor-squad" name="Heavy Intercessor Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8282cdd4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e1b4f397" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8d622d8d" name="Combat Patrol: Iron Hands (Medusan Redoubt)" hidden="false" targetId="cp-cat::medusan-redoubt" primary="true" />
+        <categoryLink id="e02bdde3" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="4f46b293" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="98c2a7b7" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="d94f9ac5" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="47901e17" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="e3b36a25" name="Gravis" hidden="false" targetId="cp-kw::gravis" primary="false" />
+        <categoryLink id="d7b0cb15" name="Heavy Intercessor Squad" hidden="false" targetId="cp-kw::heavy-intercessor-squad" primary="false" />
+        <categoryLink id="80c640bb" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b079e9af" name="Heavy Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eadb3ccd" name="Heavy bolt rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="13ecd27e" name="Heavy bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="215237a9" name="Unyielding in the Face of the Foe" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this unit is within range of an objective marker you control, each time an attack with a Damage characteristic of 1 is allocated to a model in this unit, add 1 to any armour saving throw made against that attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5d622a14" name="Unyielding in the Face of the Foe" hidden="false">
+          <description>While this unit is within range of an objective marker you control, each time an attack with a Damage characteristic of 1 is allocated to a model in this unit, add 1 to any armour saving throw made against that attack.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::medusan-redoubt::01-heavy-intercessor-squad::1-heavy-intercessor-sergeant-bolt-pistol-heavy-bolt-rifle-close-combat-weapon" name="1 Heavy Intercessor Sergeant: bolt pistol, heavy bolt rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1f056acb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="311a0381" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::medusan-redoubt::01-heavy-intercessor-squad::3-heavy-intercessors-bolt-pistol-heavy-bolt-rifle-close-combat-weapon" name="3 Heavy Intercessors: bolt pistol, heavy bolt rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="573e7748" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="75ae4ab6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::medusan-redoubt::01-heavy-intercessor-squad::1-heavy-intercessor-bolt-pistol-heavy-bolter-close-combat-weapon" name="1 Heavy Intercessor: bolt pistol, heavy bolter, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d0937acb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a3b0c6fb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::medusan-redoubt::02-firestrike-servo-turret" name="Firestrike Servo-turret" type="unit" hidden="false">
+      <constraints>
+        <constraint id="da5e2da9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="47dced00" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cd36cd2d" name="Combat Patrol: Iron Hands (Medusan Redoubt)" hidden="false" targetId="cp-cat::medusan-redoubt" primary="true" />
+        <categoryLink id="b4ffb513" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="21db1a69" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="7fd8ada9" name="Artillery" hidden="false" targetId="cp-kw::artillery" primary="false" />
+        <categoryLink id="4945a8b5" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="7f1644ca" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="31fdba73" name="Firestrike Servo-turret" hidden="false" targetId="cp-kw::firestrike-servo-turret" primary="false" />
+        <categoryLink id="0b182c6f" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="709099bd" name="Firestrike Servo-turret" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">3"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="352f4f28" name="Twin Firestrike las-talon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">10</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6+1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f32bbf3c" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="80080933" name="Sentinel Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="25536dbf" name="Sentinel Protocols" hidden="false">
+          <description>Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::medusan-redoubt::02-firestrike-servo-turret::twin-firestrike-las-talon" name="Twin Firestrike las-talon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="71e2d30a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="97471ddd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::medusan-redoubt::02-firestrike-servo-turret::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="5609b5e3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5b25c631" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

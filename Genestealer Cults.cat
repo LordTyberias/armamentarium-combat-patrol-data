@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::genestealer-cults" name="Genestealer Cults" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian" name="Shanus Daskovian" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8b61f162" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5d6619a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="af4007d5" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="70918d75" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="7e583db6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="d83b63ce" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="f549e4ca" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="037c7349" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="8d6e6bf3" name="Jackal Alphus" hidden="false" targetId="cp-kw::jackal-alphus" primary="false" />
+        <categoryLink id="6907a74b" name="Shanus Daskovian" hidden="false" targetId="cp-kw::shanus-daskovian" primary="false" />
+        <categoryLink id="7c96d82f" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c750c3ef" name="Shanus Daskovian" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ac80e9d" name="Cult sniper rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Heavy, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6d21f8" name="Master Outrider" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, after this model's unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 6" as if it were your Movement phase. If it does, until the end of the turn, that unit is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Atalan Jackals</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d53da959" name="Enhancement: Priority Kill Order (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of your Shooting phase, select one enemy unit visible to the bearer. Until the end of the phase, each time a friendly Genestealer Cults model makes an attack that targets that enemy unit, you can re-roll the Hit roll. (Default enhancement; may be replaced with Master of Suppression: In your Shooting phase, after the bearer's unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d17509f6" name="Master Outrider" hidden="false">
+          <description>In your Shooting phase, after this model's unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 6" as if it were your Movement phase. If it does, until the end of the turn, that unit is not eligible to declare a charge.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Atalan Jackals</description>
+        </rule>
+        <rule id="0a0478be" name="Enhancement: Priority Kill Order (Warlord)" hidden="false">
+          <description>At the start of your Shooting phase, select one enemy unit visible to the bearer. Until the end of the phase, each time a friendly Genestealer Cults model makes an attack that targets that enemy unit, you can re-roll the Hit roll. (Default enhancement; may be replaced with Master of Suppression: In your Shooting phase, after the bearer's unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian::autopistol" name="Autopistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3bcdddf2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c4f80e20" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian::cult-sniper-rifle" name="Cult sniper rifle" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="fdbe5a75" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1a8e039e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="13caf71c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="bd25b85f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs" name="Hybrid Metamorphs" type="unit" hidden="false">
+      <constraints>
+        <constraint id="24abc511" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="76858633" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3d0443d0" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="1c02db7f" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="96d726b5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5cf226ca" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="43f66f35" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="00b83b66" name="Hybrid Metamorphs" hidden="false" targetId="cp-kw::hybrid-metamorphs" primary="false" />
+        <categoryLink id="9addf068" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c255bf24" name="Hybrid Metamorphs" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4763c70c" name="Hand flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Pistol, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d8e0c9d" name="Leader's bio-weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5e4f203c" name="Metamorph mutations – strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d7b3702" name="Metamorph mutations – sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e3aba06e" name="Scouts 6&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d944ab7a" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::1-metamorph-leader-autopistol-leader-s-bio-weapons" name="1 Metamorph Leader: autopistol, Leader's bio-weapons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8e6859d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f0245efb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::1-hybrid-metamorph-metamorph-mutations" name="1 Hybrid Metamorph: Metamorph mutations" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="7c44ad00" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ceb2a48a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::3-hybrid-metamorphs-hand-flamer-metamorph-mutations" name="3 Hybrid Metamorphs: hand flamer, Metamorph mutations" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b7f4a93f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="60676e9d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner" name="Achilles Ridgerunner" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ff353ce0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ef69ffe9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="976432d7" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="5d7ad922" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="8e056962" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="fa13c1c7" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="04a9b7ca" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="685ddff2" name="Achilles Ridgerunner" hidden="false" targetId="cp-kw::achilles-ridgerunner" primary="false" />
+        <categoryLink id="543139e6" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f7e27f3d" name="Achilles Ridgerunner" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">8</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7f3c5f34" name="Achilles missile launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">9</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9cd34710" name="Twin heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Twin-linked, Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf0df76e" name="Armoured hull" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="25973431" name="Crossfire" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Genestealer Cults unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="29472e4c" name="Crossfire" hidden="false">
+          <description>In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Genestealer Cults unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner::achilles-missile-launcher" name="Achilles missile launcher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="90ea0e73" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0ed27fdb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner::twin-heavy-stubber" name="Twin heavy stubber" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="025f089a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9910244e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner::armoured-hull" name="Armoured hull" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c3ecfda4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c653282f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals" name="Atalan Jackals" type="unit" hidden="false">
+      <constraints>
+        <constraint id="90d242f3" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="606f245c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="50e53f5f" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="4c91a43a" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="941da42c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="b8d510f7" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="77b0095a" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="6619302d" name="Atalan Jackals" hidden="false" targetId="cp-kw::atalan-jackals" primary="false" />
+        <categoryLink id="259af8df" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="bbdee297" name="Atalan Jackal" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd93fdc1" name="Atalan Wolfquad" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="848bfa30" name="Atalan small arms" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="572293e2" name="Mining laser" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6+1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8fc2ec26" name="Atalan power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::1-atalan-jackal-atalan-small-arms-atalan-power-weapon" name="1 Atalan Jackal: Atalan small arms, Atalan power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a4b2c042" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b05ce92b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::3-atalan-jackals-atalan-small-arms-close-combat-weapon" name="3 Atalan Jackals: Atalan small arms, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b518d188" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="18c436f0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::1-the-atalan-wolfquad-atalan-small-arms-mining-laser-close-combat-weapon" name="1 The Atalan Wolfquad: Atalan small arms, mining laser, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="308c8da3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9ba1e7fe" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::hand-of-the-magus::00-magus-veridielle" name="Magus Veridielle" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4915215a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ff46f39b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7ece0ff9" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
+        <categoryLink id="fd920204" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="0629ce61" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="afde5746" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="8b1810c9" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="bf47a697" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="6cfb4deb" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="2467415c" name="Magus" hidden="false" targetId="cp-kw::magus" primary="false" />
+        <categoryLink id="0a5aafb6" name="Veridielle" hidden="false" targetId="cp-kw::veridielle" primary="false" />
+        <categoryLink id="d036cd21" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="ce4c21bb" name="Magus Veridielle" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ae98431" name="Magus stave" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">D3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="362699aa" name="Spiritual Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: Acolyte Hybrids, Neophyte Hybrids</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b52f5e70" name="Enhancement: Psionic Shield (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While the bearer is leading a unit, each time a ranged attack is allocated to a model in that unit, add 1 to the saving throw made against that attack. (Default enhancement; may be replaced with Resonance Stave: Melee weapons equipped by the bearer have the [Anti-Infantry 5+] and [Devastating Wounds] abilities.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e27259bd" name="Spiritual Leader" hidden="false">
+          <description>While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following units: Acolyte Hybrids, Neophyte Hybrids</description>
+        </rule>
+        <rule id="666d09d3" name="Enhancement: Psionic Shield (Warlord)" hidden="false">
+          <description>While the bearer is leading a unit, each time a ranged attack is allocated to a model in that unit, add 1 to the saving throw made against that attack. (Default enhancement; may be replaced with Resonance Stave: Melee weapons equipped by the bearer have the [Anti-Infantry 5+] and [Devastating Wounds] abilities.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::hand-of-the-magus::00-magus-veridielle::autopistol" name="Autopistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="0fe71c25" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0d04d65b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::00-magus-veridielle::magus-stave" name="Magus stave" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a3cc952b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5a0e8355" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::hand-of-the-magus::01-neophyte-hybrids" name="Neophyte Hybrids" type="unit" hidden="false">
+      <constraints>
+        <constraint id="25e6940d" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a49ace67" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8502fa1f" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
+        <categoryLink id="f7bd6f89" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="7aabc27e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5f8ef2db" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="0cd7b53e" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="a4ce042d" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="6c8402a3" name="Neophyte Hybrids" hidden="false" targetId="cp-kw::neophyte-hybrids" primary="false" />
+        <categoryLink id="94d7b503" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d1f6b3c0" name="Neophyte Hybrids" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="51ccfc61" name="Hybrid firearm" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1eaf3b22" name="Leader pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4dec5970" name="Heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="871c1a9e" name="Seismic cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">D3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Heavy, Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f6cc91ce" name="Webber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3755955" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d944ab7a" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::hand-of-the-magus::01-neophyte-hybrids::1-neophyte-leader-autopistol-leader-pistol-power-weapon" name="1 Neophyte Leader: autopistol, leader pistol, power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="80fd9e9b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="af9b6d41" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::01-neophyte-hybrids::5-neophyte-hybrids-autopistol-hybrid-firearm-close-combat-weapon" name="5 Neophyte Hybrids: autopistol, hybrid firearm, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="babc9415" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d80f2098" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::01-neophyte-hybrids::1-neophyte-hybrid-autopistol-hybrid-firearm-close-combat-weapon-cult-icon" name="1 Neophyte Hybrid: autopistol, hybrid firearm, close combat weapon, cult icon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="85582e9d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4cd1e839" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::01-neophyte-hybrids::1-neophyte-hybrid-autopistol-heavy-stubber-close-combat-weapon" name="1 Neophyte Hybrid: autopistol, heavy stubber, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="068791b8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="79e8c50a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::01-neophyte-hybrids::1-neophyte-hybrid-autopistol-seismic-cannon-close-combat-weapon" name="1 Neophyte Hybrid: autopistol, seismic cannon, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dc9122e1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0bef9184" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::01-neophyte-hybrids::1-neophyte-hybrid-autopistol-webber-close-combat-weapon" name="1 Neophyte Hybrid: autopistol, webber, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="02079b60" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="557abc5a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::hand-of-the-magus::02-neophyte-hybrids" name="Neophyte Hybrids" type="unit" hidden="false">
+      <constraints>
+        <constraint id="674ccc03" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a01c335e" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="938a248c" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
+        <categoryLink id="22b3801d" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="32484ec9" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="a1ac3536" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="3b512b2d" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="e1bd2de4" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="f8601b51" name="Neophyte Hybrids" hidden="false" targetId="cp-kw::neophyte-hybrids" primary="false" />
+        <categoryLink id="1393030b" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d1f6b3c0" name="Neophyte Hybrids" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="51ccfc61" name="Hybrid firearm" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1eaf3b22" name="Leader pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4dec5970" name="Heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="871c1a9e" name="Seismic cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">D3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Heavy, Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f6cc91ce" name="Webber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3755955" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d944ab7a" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::hand-of-the-magus::02-neophyte-hybrids::1-neophyte-leader-autopistol-leader-pistol-power-weapon" name="1 Neophyte Leader: autopistol, leader pistol, power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6c1644b7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ab57ac98" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::02-neophyte-hybrids::5-neophyte-hybrids-autopistol-hybrid-firearm-close-combat-weapon" name="5 Neophyte Hybrids: autopistol, hybrid firearm, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="338d46be" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b75b3205" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::02-neophyte-hybrids::1-neophyte-hybrid-autopistol-hybrid-firearm-close-combat-weapon-cult-icon" name="1 Neophyte Hybrid: autopistol, hybrid firearm, close combat weapon, cult icon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c6e2d287" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0f0e30bd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::02-neophyte-hybrids::1-neophyte-hybrid-autopistol-heavy-stubber-close-combat-weapon" name="1 Neophyte Hybrid: autopistol, heavy stubber, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="42263620" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="49bf357e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::02-neophyte-hybrids::1-neophyte-hybrid-autopistol-seismic-cannon-close-combat-weapon" name="1 Neophyte Hybrid: autopistol, seismic cannon, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="bc1bd663" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="213257d6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::02-neophyte-hybrids::1-neophyte-hybrid-autopistol-webber-close-combat-weapon" name="1 Neophyte Hybrid: autopistol, webber, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="75364135" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="79364c58" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::hand-of-the-magus::03-acolyte-hybrids" name="Acolyte Hybrids" type="unit" hidden="false">
+      <constraints>
+        <constraint id="83163128" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b3369200" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8bbf4ef5" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
+        <categoryLink id="9c307daa" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="808ec5e2" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="a68cdfae" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="43334989" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="137adadd" name="Acolyte Hybrids" hidden="false" targetId="cp-kw::acolyte-hybrids" primary="false" />
+        <categoryLink id="66fe1608" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5fb2423f" name="Acolyte Hybrids" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a624d62b" name="Demolition charges" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">6"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6+3</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Blast, Hazardous, One Shot</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4a19725d" name="Cult claws and knife" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d06b3837" name="Heavy mining tool" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">10</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="430bf93a" name="Leader's cult weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d944ab7a" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="51be6e3d" name="One Shot" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer can only shoot with this weapon once per battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8aa0c5ce" name="Vile Insurrectionists" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, re-roll a Wound roll of 1 as well.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="36d8505e" name="One Shot" hidden="false">
+          <description>The bearer can only shoot with this weapon once per battle.</description>
+        </rule>
+        <rule id="593edf53" name="Vile Insurrectionists" hidden="false">
+          <description>Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, re-roll a Wound roll of 1 as well.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::hand-of-the-magus::03-acolyte-hybrids::1-acolyte-leader-leader-s-cult-weapons-autopistol" name="1 Acolyte Leader: leader's cult weapons, autopistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="581d64b3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1e5a8e34" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::03-acolyte-hybrids::2-acolyte-hybrids-autopistol-cult-claws-and-knife" name="2 Acolyte Hybrids: autopistol, cult claws and knife" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3a4344a3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="83529792" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::03-acolyte-hybrids::1-acolyte-hybrid-demolition-charges-cult-claws-and-knife" name="1 Acolyte Hybrid: demolition charges, cult claws and knife" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="48c64df1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d22963de" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::03-acolyte-hybrids::1-acolyte-hybrid-heavy-mining-tool" name="1 Acolyte Hybrid: heavy mining tool" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="94f8e27b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7d61c0e9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::hand-of-the-magus::04-aberrants" name="Aberrants" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2dc94cf5" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="96c4348d" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a763949e" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
+        <categoryLink id="163864a0" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="8153526c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="1da94f2d" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="f2346be5" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="4ca12343" name="Aberrants" hidden="false" targetId="cp-kw::aberrants" primary="false" />
+        <categoryLink id="8ea602ae" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b93d9455" name="Aberrants" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e18393d6" name="Heavy improvised weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e8def26b" name="Heavy power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5de055bc" name="Hypermorph tail" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::hand-of-the-magus::04-aberrants::1-aberrant-hypermorph-heavy-improvised-weapon-hypermorph-tail" name="1 Aberrant Hypermorph: heavy improvised weapon, hypermorph tail" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="de99f856" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a6578ae2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::04-aberrants::4-aberrants-heavy-power-weapon" name="4 Aberrants: heavy power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c096b999" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="76df2854" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::hand-of-the-magus::05-goliath-rockgrinder" name="Goliath Rockgrinder" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b9cb4dd6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="586b9a50" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="22ffe412" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
+        <categoryLink id="9b4c73f6" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="427aff1c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="d54a09c5" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="8f31a7f9" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="dce4413d" name="Goliath Rockgrinder" hidden="false" targetId="cp-kw::goliath-rockgrinder" primary="false" />
+        <categoryLink id="5fe53cfc" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="74a7c438" name="Goliath Rockgrinder" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">10</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="27bd303b" name="Clearance incinerator" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">2D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="36908318" name="Demolition charge cache" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">6"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6+3</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Blast, Hazardous</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4dec5970" name="Heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="133c7fa0" name="Drilldozer blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">10</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e63c270" name="Firing Deck 6" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b9515a61" name="Damaged: 1-3 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1a9b551f" name="Damaged: 1-3 Wounds Remaining" hidden="false">
+          <description>While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::hand-of-the-magus::05-goliath-rockgrinder::clearance-incinerator" name="Clearance incinerator" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="9cfbbefc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="85f47ade" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::05-goliath-rockgrinder::demolition-charge-cache" name="Demolition charge cache" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="00481a18" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="60ab200c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::05-goliath-rockgrinder::heavy-stubber" name="Heavy stubber" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3c0ed434" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="56d377eb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::hand-of-the-magus::05-goliath-rockgrinder::drilldozer-blade" name="Drilldozer blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3cdae8fc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0d094dce" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

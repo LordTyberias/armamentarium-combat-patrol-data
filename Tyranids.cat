@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::tyranids" name="Tyranids" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::tyranid-assault-brood::00-parasite-of-mortrex" name="Parasite of Mortrex" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8322dec2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5cbb422a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f5d6d863" name="Combat Patrol: Tyranids (Tyranid Assault Brood)" hidden="false" targetId="cp-cat::tyranid-assault-brood" primary="true" />
+        <categoryLink id="8205da0a" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="d28f1f20" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="8ca7d312" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="cb638425" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="299497e6" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="7fba9e9f" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="d4feb7bc" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="f6766396" name="Synapse" hidden="false" targetId="cp-kw::synapse" primary="false" />
+        <categoryLink id="2717b1ee" name="Parasite of Mortrex" hidden="false" targetId="cp-kw::parasite-of-mortrex" primary="false" />
+        <categoryLink id="1c112aad" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a4cd08dc" name="Parasite of Mortrex" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f670f964" name="Barbed ovipositor" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 3+, Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f3485f58" name="Clawed limbs" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="711c75d8" name="Shadow in the Warp" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ca888b3" name="It Itches!" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, select one enemy unit within Engagement Range of this model. That enemy unit must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6f820a2e" name="Enhancement: Indurated Carapace (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has a 4+ invulnerable save. In addition, each time a melee attack targets the bearer, subtract 1 from the Hit roll. (Default enhancement; may be replaced with Bioacid: Once per turn, when a friendly Tyranids unit within 6" of the bearer is selected to shoot or fight, the bearer can use this ability. If it does, until the end of the phase, improve the Armour Penetration characteristic of weapons equipped by models in that friendly unit by 1.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="af714c4b" name="It Itches!" hidden="false">
+          <description>At the start of the Fight phase, select one enemy unit within Engagement Range of this model. That enemy unit must take a Battle-shock test.</description>
+        </rule>
+        <rule id="b29a12a5" name="Enhancement: Indurated Carapace (Warlord)" hidden="false">
+          <description>The bearer has a 4+ invulnerable save. In addition, each time a melee attack targets the bearer, subtract 1 from the Hit roll. (Default enhancement; may be replaced with Bioacid: Once per turn, when a friendly Tyranids unit within 6" of the bearer is selected to shoot or fight, the bearer can use this ability. If it does, until the end of the phase, improve the Armour Penetration characteristic of weapons equipped by models in that friendly unit by 1.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::tyranid-assault-brood::00-parasite-of-mortrex::barbed-ovipositor" name="Barbed ovipositor" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ba90b0f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0be4c646" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::tyranid-assault-brood::00-parasite-of-mortrex::clawed-limbs" name="Clawed limbs" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1c3a33ad" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="99bf0d8b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::tyranid-assault-brood::01-genestealers" name="Genestealers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c1c34804" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e111cb8b" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dfc24a87" name="Combat Patrol: Tyranids (Tyranid Assault Brood)" hidden="false" targetId="cp-cat::tyranid-assault-brood" primary="true" />
+        <categoryLink id="7967e65b" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="71372a44" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="e1a1b8bb" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="49a82bf0" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="b396ea89" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="9fa07bae" name="Genestealers" hidden="false" targetId="cp-kw::genestealers" primary="false" />
+        <categoryLink id="95f791db" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9bc534af" name="Genestealers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6a31ddfa" name="Genestealer claws and talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c579d68" name="Scouts 8&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="23b96a03" name="Vanguard Predator" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target is within range of one or more objective markers, re-roll a Wound roll of 1 as well.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da668c78" name="Vanguard Predator" hidden="false">
+          <description>Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target is within range of one or more objective markers, re-roll a Wound roll of 1 as well.</description>
+        </rule>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::tyranid-assault-brood::01-genestealers::10-genestealers-genestealer-claws-and-talons" name="10 Genestealers: Genestealer claws and talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3ab7a939" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="af7b2456" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::tyranid-assault-brood::02-biovores" name="Biovores" type="unit" hidden="false">
+      <constraints>
+        <constraint id="150beef9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b670cddd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="56a61ab1" name="Combat Patrol: Tyranids (Tyranid Assault Brood)" hidden="false" targetId="cp-cat::tyranid-assault-brood" primary="true" />
+        <categoryLink id="b047d759" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="a60864f8" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="0c5361a1" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="c3ac9a40" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="c81c23ef" name="Biovores" hidden="false" targetId="cp-kw::biovores" primary="false" />
+        <categoryLink id="a3e0b789" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a85c6b2c" name="Biovores" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bda61b1f" name="Spore Mine launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="A" typeId="1318d167">D3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Devastating Wounds, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="71522011" name="Chitin-barbed limbs" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::tyranid-assault-brood::02-biovores::spore-mine-launcher" name="Spore Mine launcher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="63a65231" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2c374190" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::tyranid-assault-brood::02-biovores::chitin-barbed-limbs" name="Chitin-barbed limbs" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4c05e041" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5b88691b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::tyranid-assault-brood::03-tyrant-guard" name="Tyrant Guard" type="unit" hidden="false">
+      <constraints>
+        <constraint id="78a0a18a" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="aee446b7" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="553ab37d" name="Combat Patrol: Tyranids (Tyranid Assault Brood)" hidden="false" targetId="cp-cat::tyranid-assault-brood" primary="true" />
+        <categoryLink id="e20cca9b" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="62731129" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="71a19b32" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="601d9f37" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="c6139e51" name="Tyrant Guard" hidden="false" targetId="cp-kw::tyrant-guard" primary="false" />
+        <categoryLink id="cd4c6801" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1f8db711" name="Tyrant Guard" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">8</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e5c2723c" name="Bone cleaver, lash whip and rending claws" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="20183f18" name="Crushing claws and rending claws" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5036f23e" name="Scything talons and rending claws" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::tyranid-assault-brood::03-tyrant-guard::1-tyrant-guard-bone-cleaver-lash-whip-and-rending-claws" name="1 Tyrant Guard: bone cleaver, lash whip and rending claws" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f38b6842" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2eb0be87" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::tyranid-assault-brood::03-tyrant-guard::1-tyrant-guard-crushing-claws-and-rending-claws" name="1 Tyrant Guard: crushing claws and rending claws" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c68cf09b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b14ae7c6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::tyranid-assault-brood::03-tyrant-guard::1-tyrant-guard-scything-talons-and-rending-claws" name="1 Tyrant Guard: scything talons and rending claws" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="db9fb1ca" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="90878c3f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::insidious-infiltrators::00-death-s-shadow" name="Death's Shadow" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f994defe" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3c2c38a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3fca67b5" name="Combat Patrol: Tyranids (Insidious Infiltrators)" hidden="false" targetId="cp-cat::insidious-infiltrators" primary="true" />
+        <categoryLink id="23923513" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="3e9ba0f3" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="a6afbb79" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="1e8dd0a7" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="432a5942" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="771fb27b" name="Neurolictor" hidden="false" targetId="cp-kw::neurolictor" primary="false" />
+        <categoryLink id="0a19d9e0" name="Death's Shadow" hidden="false" targetId="cp-kw::death-s-shadow" primary="false" />
+        <categoryLink id="69572b74" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="da7ea085" name="Death's Shadow" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">7</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3adb4cdf" name="Piercing claws and talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="711c75d8" name="Shadow in the Warp" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="366ce19c" name="Neural Disruption" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, select one enemy unit within 12" of this model. That unit must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b770959a" name="Psychological Saboteur (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While an enemy unit is within 12" of this model, if that unit is Battle-shocked: Each time a model in that unit makes an attack, subtract 1 from the Hit roll. Each time a friendly Tyranids model makes an attack that targets that unit, add 1 to the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e2c51813" name="Enhancement: Neurogoad (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, select one friendly Tyranids unit within 12" of the bearer. Until the start of your next Command phase, you can re-roll Charge rolls made for that unit, and each time a model in that unit makes an attack, you can re-roll the Hit roll. (Default enhancement; may be replaced with Psionic Phantoms: Once per battle round, when the bearer is selected as the target of one or more shooting attacks made by models from an enemy unit, it can use this Enhancement. If it does, it can make a Normal move of up to 6". If the bearer is then no longer visible to that enemy unit, roll one D6; on a 1-3, the models targeting the bearer can select new targets for their attacks. On a 4-6, the models targeting the bearer cannot select new targets for their attacks and so do not make any attacks this phase.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="26da8885" name="Neural Disruption" hidden="false">
+          <description>In your Command phase, select one enemy unit within 12" of this model. That unit must take a Battle-shock test.</description>
+        </rule>
+        <rule id="e4d2ebb9" name="Psychological Saboteur (Aura)" hidden="false">
+          <description>While an enemy unit is within 12" of this model, if that unit is Battle-shocked: Each time a model in that unit makes an attack, subtract 1 from the Hit roll. Each time a friendly Tyranids model makes an attack that targets that unit, add 1 to the Wound roll.</description>
+        </rule>
+        <rule id="09cc47b8" name="Enhancement: Neurogoad (Warlord)" hidden="false">
+          <description>In your Command phase, select one friendly Tyranids unit within 12" of the bearer. Until the start of your next Command phase, you can re-roll Charge rolls made for that unit, and each time a model in that unit makes an attack, you can re-roll the Hit roll. (Default enhancement; may be replaced with Psionic Phantoms: Once per battle round, when the bearer is selected as the target of one or more shooting attacks made by models from an enemy unit, it can use this Enhancement. If it does, it can make a Normal move of up to 6". If the bearer is then no longer visible to that enemy unit, roll one D6; on a 1-3, the models targeting the bearer can select new targets for their attacks. On a 4-6, the models targeting the bearer cannot select new targets for their attacks and so do not make any attacks this phase.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::insidious-infiltrators::00-death-s-shadow::piercing-claws-and-talons" name="Piercing claws and talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="5136fb36" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2ccf5578" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::insidious-infiltrators::01-lictor" name="Lictor" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4a91fb6b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ed17b235" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="df9ad39c" name="Combat Patrol: Tyranids (Insidious Infiltrators)" hidden="false" targetId="cp-cat::insidious-infiltrators" primary="true" />
+        <categoryLink id="be8b7ca6" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="65e7abd9" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="02b6b864" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="a1317a9f" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="a2d967eb" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="a9c1afe0" name="Lictor" hidden="false" targetId="cp-kw::lictor" primary="false" />
+        <categoryLink id="bb1e76ab" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a3e905d7" name="Lictor" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aeab8e84" name="Lictor claws and talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">7</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e23992f8" name="Fights First" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d6d16056" name="Feeder Tendrils" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time this model destroys an enemy Character model, you gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="79215353" name="Feeder Tendrils" hidden="false">
+          <description>Each time this model destroys an enemy Character model, you gain 1CP.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::insidious-infiltrators::01-lictor::lictor-claws-and-talons" name="Lictor claws and talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="202e0f49" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1e4a1a15" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::insidious-infiltrators::02-von-ryan-s-leapers" name="Von Ryan's Leapers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8f834f06" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="790032fc" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1a27a571" name="Combat Patrol: Tyranids (Insidious Infiltrators)" hidden="false" targetId="cp-cat::insidious-infiltrators" primary="true" />
+        <categoryLink id="57b628f7" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="9c526b78" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="cef70b37" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="2b01eeab" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="80c891dd" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="496dcd7a" name="Von Ryan's Leapers" hidden="false" targetId="cp-kw::von-ryan-s-leapers" primary="false" />
+        <categoryLink id="a9beeb7d" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="40bb0eb5" name="Von Ryan's Leapers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b76cac20" name="Leaper's talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e23992f8" name="Fights First" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f3bc486" name="Pouncing Leap" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da7b4408" name="Pouncing Leap" hidden="false">
+          <description>You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::insidious-infiltrators::02-von-ryan-s-leapers::3-von-ryan-s-leapers-leaper-s-talons" name="3 Von Ryan's Leapers: Leaper's talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a6084b4d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="49f2b7b3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::insidious-infiltrators::03-von-ryan-s-leapers" name="Von Ryan's Leapers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="27aca567" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a2ac959e" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c9d1ee19" name="Combat Patrol: Tyranids (Insidious Infiltrators)" hidden="false" targetId="cp-cat::insidious-infiltrators" primary="true" />
+        <categoryLink id="04c5132a" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="567fcf76" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="bbfb60f9" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="89f831bd" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="cd68e7c5" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="2842b7e5" name="Von Ryan's Leapers" hidden="false" targetId="cp-kw::von-ryan-s-leapers" primary="false" />
+        <categoryLink id="c9f586f4" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="40bb0eb5" name="Von Ryan's Leapers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b76cac20" name="Leaper's talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e23992f8" name="Fights First" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f3bc486" name="Pouncing Leap" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da7b4408" name="Pouncing Leap" hidden="false">
+          <description>You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::insidious-infiltrators::03-von-ryan-s-leapers::3-von-ryan-s-leapers-leaper-s-talons" name="3 Von Ryan's Leapers: Leaper's talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c9ea5e11" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8365fd8d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::insidious-infiltrators::04-von-ryan-s-leapers" name="Von Ryan's Leapers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ec285e66" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ebd0710c" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e932e501" name="Combat Patrol: Tyranids (Insidious Infiltrators)" hidden="false" targetId="cp-cat::insidious-infiltrators" primary="true" />
+        <categoryLink id="839249c8" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="b98bd46d" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5355e187" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="8e16be56" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="5930ee8e" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="e381b7b4" name="Von Ryan's Leapers" hidden="false" targetId="cp-kw::von-ryan-s-leapers" primary="false" />
+        <categoryLink id="365436ab" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="40bb0eb5" name="Von Ryan's Leapers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b76cac20" name="Leaper's talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e23992f8" name="Fights First" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f3bc486" name="Pouncing Leap" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da7b4408" name="Pouncing Leap" hidden="false">
+          <description>You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::insidious-infiltrators::04-von-ryan-s-leapers::3-von-ryan-s-leapers-leaper-s-talons" name="3 Von Ryan's Leapers: Leaper's talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="75171eb6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="be5c4062" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vardenghast-swarm::00-terror-of-vardenghast" name="Terror of Vardenghast" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e50ea15f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="4f9d1e6a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="52f4d397" name="Combat Patrol: Tyranids (The Vardenghast Swarm)" hidden="false" targetId="cp-cat::the-vardenghast-swarm" primary="true" />
+        <categoryLink id="5705ea88" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="d0db7b2e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="eb76a56b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="a4491cf8" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="b49f8c6b" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="6b3b72d3" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="8fb7661e" name="Synapse" hidden="false" targetId="cp-kw::synapse" primary="false" />
+        <categoryLink id="a3e390b6" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="68fbb965" name="Winged Tyranid Prime" hidden="false" targetId="cp-kw::winged-tyranid-prime" primary="false" />
+        <categoryLink id="0292e224" name="Terror of Vardenghast" hidden="false" targetId="cp-kw::terror-of-vardenghast" primary="false" />
+        <categoryLink id="f24c9f15" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="346c5c18" name="Terror of Vardenghast" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="996afb36" name="Prime talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="711c75d8" name="Shadow in the Warp" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="42d3a211" name="Death Blow" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c0d0903" name="Enhancement: Psychostatic Veil (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">The bearer has the Lone Operative ability and a 4+ invulnerable save. In addition, each time a melee attack targets the bearer, subtract 1 from the Hit roll. (Default enhancement; may be replaced with Secretion Goad: Once per turn, when a friendly Tyranids unit within 6" of the bearer is selected to shoot or fight, the bearer can use this ability. If it does, until the end of the phase, improve the Armour Penetration characteristic of weapons equipped by models in that friendly unit by 1.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="aa97336d" name="Death Blow" hidden="false">
+          <description>If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</description>
+        </rule>
+        <rule id="6eb6ecb7" name="Enhancement: Psychostatic Veil (Warlord)" hidden="false">
+          <description>The bearer has the Lone Operative ability and a 4+ invulnerable save. In addition, each time a melee attack targets the bearer, subtract 1 from the Hit roll. (Default enhancement; may be replaced with Secretion Goad: Once per turn, when a friendly Tyranids unit within 6" of the bearer is selected to shoot or fight, the bearer can use this ability. If it does, until the end of the phase, improve the Armour Penetration characteristic of weapons equipped by models in that friendly unit by 1.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vardenghast-swarm::00-terror-of-vardenghast::prime-talons" name="Prime talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="31e89411" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="510dfa9e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vardenghast-swarm::01-psychophage" name="Psychophage" type="unit" hidden="false">
+      <constraints>
+        <constraint id="66674f38" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="dce88b42" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e79a6a3d" name="Combat Patrol: Tyranids (The Vardenghast Swarm)" hidden="false" targetId="cp-cat::the-vardenghast-swarm" primary="true" />
+        <categoryLink id="691a2230" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="898bafe3" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="4d741070" name="Monster" hidden="false" targetId="cp-kw::monster" primary="false" />
+        <categoryLink id="37da8674" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="1928ba73" name="Harvester" hidden="false" targetId="cp-kw::harvester" primary="false" />
+        <categoryLink id="3e9597ba" name="Psychophage" hidden="false" targetId="cp-kw::psychophage" primary="false" />
+        <categoryLink id="b58449aa" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="866f2175" name="Psychophage" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">9</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">10</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c91616f1" name="Psychoclastic torrent" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2945adaf" name="Talons and betentacled maw" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">D6+1</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Psyker 4+, Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b3071e1" name="Feeding Frenzy" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time this model makes a melee attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half-strength, add 1 to the Wound roll as well.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9a0ba2bf" name="Feeding Frenzy" hidden="false">
+          <description>Each time this model makes a melee attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half-strength, add 1 to the Wound roll as well.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vardenghast-swarm::01-psychophage::psychoclastic-torrent" name="Psychoclastic torrent" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="64f7b7dd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3b8e32f9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-vardenghast-swarm::01-psychophage::talons-and-betentacled-maw" name="Talons and betentacled maw" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e8996cc0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8db27ce5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vardenghast-swarm::02-termagants" name="Termagants" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c40537d8" field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8023ebc3" field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="069a1d3c" name="Combat Patrol: Tyranids (The Vardenghast Swarm)" hidden="false" targetId="cp-cat::the-vardenghast-swarm" primary="true" />
+        <categoryLink id="32ad4932" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="3bcaac55" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="6c31345c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="a8a6079b" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="4a8d9dcd" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="0e32cfae" name="Endless Multitude" hidden="false" targetId="cp-kw::endless-multitude" primary="false" />
+        <categoryLink id="852ac312" name="Termagants" hidden="false" targetId="cp-kw::termagants" primary="false" />
+        <categoryLink id="8bb4e769" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d0b270c2" name="Termagants" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="666aa7d2" name="Fleshborer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="16d549a3" name="Chitinous claws and teeth" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54fff729" name="Skulking Horrors" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing ten models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bcaba8c0" name="Skulking Horrors" hidden="false">
+          <description>Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6".</description>
+        </rule>
+        <rule id="da581be6" name="Patrol Squads" hidden="false">
+          <description>At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing ten models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vardenghast-swarm::02-termagants::20-termagants-fleshborer-chitinous-claws-and-teeth" name="20 Termagants: fleshborer, chitinous claws and teeth" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dbfb4a5d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f9daaa80" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vardenghast-swarm::03-barbgaunts" name="Barbgaunts" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3cbe5960" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="64e41848" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="053e1649" name="Combat Patrol: Tyranids (The Vardenghast Swarm)" hidden="false" targetId="cp-cat::the-vardenghast-swarm" primary="true" />
+        <categoryLink id="60f55031" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="eb3d5d6c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="65a0699f" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="38f94f65" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="e32fc743" name="Barbgaunts" hidden="false" targetId="cp-kw::barbgaunts" primary="false" />
+        <categoryLink id="16ad7a6a" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="68bdbf94" name="Barbgaunts" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="08d9db2e" name="Barblauncher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="16d549a3" name="Chitinous claws and teeth" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b738328f" name="Disruption Bombardment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, after this unit has shot, select one enemy Infantry unit hit by one or more of those attacks. Until the end of your opponent's next turn, that enemy unit is disrupted. While a unit is disrupted, subtract 2 from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="161e6ba8" name="Disruption Bombardment" hidden="false">
+          <description>In your Shooting phase, after this unit has shot, select one enemy Infantry unit hit by one or more of those attacks. Until the end of your opponent's next turn, that enemy unit is disrupted. While a unit is disrupted, subtract 2 from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vardenghast-swarm::03-barbgaunts::5-barbgaunts-barblauncher-chitinous-claws-and-teeth" name="5 Barbgaunts: barblauncher, chitinous claws and teeth" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="742b86d7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e731b996" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vardenghast-swarm::04-von-ryan-s-leapers" name="Von Ryan's Leapers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="20d48369" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="73fc1d61" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="af061fa2" name="Combat Patrol: Tyranids (The Vardenghast Swarm)" hidden="false" targetId="cp-cat::the-vardenghast-swarm" primary="true" />
+        <categoryLink id="57f73290" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="9d42dd1b" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="da6f96a3" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="9b6e949f" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+        <categoryLink id="3e8a667c" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
+        <categoryLink id="012e6286" name="Von Ryan's Leapers" hidden="false" targetId="cp-kw::von-ryan-s-leapers" primary="false" />
+        <categoryLink id="0f855deb" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="40bb0eb5" name="Von Ryan's Leapers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">5</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b76cac20" name="Leaper's talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e23992f8" name="Fights First" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b08effc" name="Infiltrators" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ba7a9ad" name="Synapse" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f3bc486" name="Pouncing Leap" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="da7b4408" name="Pouncing Leap" hidden="false">
+          <description>You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-vardenghast-swarm::04-von-ryan-s-leapers::3-von-ryan-s-leapers-leaper-s-talons" name="3 Von Ryan's Leapers: Leaper's talons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6a4c711f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1ab42f27" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

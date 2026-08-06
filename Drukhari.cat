@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::drukhari" name="Drukhari" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::coven-of-agonies::00-xatrophos-nuul" name="Xatrophos Nuul" type="unit" hidden="false">
+      <constraints>
+        <constraint id="9c486991" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6e45333d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f075d969" name="Combat Patrol: Drukhari (Coven of Agonies)" hidden="false" targetId="cp-cat::coven-of-agonies" primary="true" />
+        <categoryLink id="a244e4f7" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="1404060c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="4e1f4a03" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="cf0d61ff" name="Haemonculus Covens" hidden="false" targetId="cp-kw::haemonculus-covens" primary="false" />
+        <categoryLink id="9cae6b5d" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="ee6de83d" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="0705cf14" name="Haemonculus" hidden="false" targetId="cp-kw::haemonculus" primary="false" />
+        <categoryLink id="fd8793f0" name="Xatrophos Nuul" hidden="false" targetId="cp-kw::xatrophos-nuul" primary="false" />
+        <categoryLink id="46ba4769" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="748c1ad1" name="Xatrophos Nuul" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a825973" name="Stinger pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">D3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Pistol, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76ab1c82" name="Haemonculus tools and scissorhands" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">D3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 2+, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4da0dec0" name="Pain Adept" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, if one or more models from your army with this ability are on the battlefield, roll one D6: on a 4+, you gain 1 Pain token.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Wracks</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fac8fc01" name="Enhancement: Flesh Alteration (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Models in the bearer's unit have the Feel No Pain 5+ ability. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D3 wounds remaining. When you set the bearer up in this way, you can spend 1 Pain token; if you do, the bearer has its full wounds remaining instead. (Default enhancement; may be replaced with Implements of Malevolence: Improve the Armour Penetration characteristic of the bearer's melee weapons by 1. Each time the bearer's unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, the bearer's melee weapons have a Damage characteristic of 3.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="799fea2d" name="Pain Adept" hidden="false">
+          <description>In your Command phase, if one or more models from your army with this ability are on the battlefield, roll one D6: on a 4+, you gain 1 Pain token.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Wracks</description>
+        </rule>
+        <rule id="c22dd23f" name="Enhancement: Flesh Alteration (Warlord)" hidden="false">
+          <description>Models in the bearer's unit have the Feel No Pain 5+ ability. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D3 wounds remaining. When you set the bearer up in this way, you can spend 1 Pain token; if you do, the bearer has its full wounds remaining instead. (Default enhancement; may be replaced with Implements of Malevolence: Improve the Armour Penetration characteristic of the bearer's melee weapons by 1. Each time the bearer's unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, the bearer's melee weapons have a Damage characteristic of 3.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::coven-of-agonies::00-xatrophos-nuul::stinger-pistol" name="Stinger pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f81da5f4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c691d05a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::00-xatrophos-nuul::haemonculus-tools-and-scissorhands" name="Haemonculus tools and scissorhands" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3e16cb00" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4f0cea76" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::coven-of-agonies::01-wracks" name="Wracks" type="unit" hidden="false">
+      <constraints>
+        <constraint id="0323c07b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8b62256f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7281b1cd" name="Combat Patrol: Drukhari (Coven of Agonies)" hidden="false" targetId="cp-cat::coven-of-agonies" primary="true" />
+        <categoryLink id="de2c9c54" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="8718ce5e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="2d3c3813" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="db18c031" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="7ee53367" name="Haemonculus Covens" hidden="false" targetId="cp-kw::haemonculus-covens" primary="false" />
+        <categoryLink id="c3e2b1ab" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="341fcc3c" name="Wracks" hidden="false" targetId="cp-kw::wracks" primary="false" />
+        <categoryLink id="6c4d339e" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d8f17ca8" name="Wracks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc411fa2" name="Hexrifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Heavy, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="27632365" name="Ossefactor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 4+, Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e21e0ad" name="Torturer's tool" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="313d4b21" name="Twin torturer's tools" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 4+, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc82c8b5" name="Experimental Enhancements (Pain)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. Each time you do, select one of the following to apply to this unit until the end of the phase: Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 3.; Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 4 and the [Hazardous] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="883217c4" name="Experimental Enhancements (Pain)" hidden="false">
+          <description>In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. Each time you do, select one of the following to apply to this unit until the end of the phase: Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 3.; Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 4 and the [Hazardous] ability.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::coven-of-agonies::01-wracks::1-acothyst-hexrifle-torturer-s-tool" name="1 Acothyst: hexrifle, torturer's tool" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8332af8f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f642343b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::01-wracks::1-wrack-ossefactor-torturer-s-tool" name="1 Wrack: ossefactor, torturer's tool" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="071eafd0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="63ede883" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::01-wracks::3-wracks-twin-torturer-s-tools" name="3 Wracks: twin torturer's tools" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ac99cf09" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6abcac3f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::coven-of-agonies::02-wracks" name="Wracks" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5b729996" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a0c0e084" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="31cb606e" name="Combat Patrol: Drukhari (Coven of Agonies)" hidden="false" targetId="cp-cat::coven-of-agonies" primary="true" />
+        <categoryLink id="9678b79d" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="6d92895c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="0e72c878" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="b0dfbd42" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="449dfe93" name="Haemonculus Covens" hidden="false" targetId="cp-kw::haemonculus-covens" primary="false" />
+        <categoryLink id="303ddef1" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="d83bd91c" name="Wracks" hidden="false" targetId="cp-kw::wracks" primary="false" />
+        <categoryLink id="e9e14179" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d8f17ca8" name="Wracks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc411fa2" name="Hexrifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Heavy, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="27632365" name="Ossefactor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 4+, Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e21e0ad" name="Torturer's tool" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="313d4b21" name="Twin torturer's tools" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 4+, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc82c8b5" name="Experimental Enhancements (Pain)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. Each time you do, select one of the following to apply to this unit until the end of the phase: Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 3.; Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 4 and the [Hazardous] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="883217c4" name="Experimental Enhancements (Pain)" hidden="false">
+          <description>In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. Each time you do, select one of the following to apply to this unit until the end of the phase: Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 3.; Melee weapons equipped by non-Character models in this unit have an Attacks characteristic of 4 and the [Hazardous] ability.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::coven-of-agonies::02-wracks::1-acothyst-hexrifle-torturer-s-tool" name="1 Acothyst: hexrifle, torturer's tool" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2a1f8970" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a9a47d43" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::02-wracks::1-wrack-ossefactor-torturer-s-tool" name="1 Wrack: ossefactor, torturer's tool" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a7bbbbc9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e650d909" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::02-wracks::3-wracks-twin-torturer-s-tools" name="3 Wracks: twin torturer's tools" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="23a98f0b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="54556cac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::coven-of-agonies::03-talos" name="Talos" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7cec12cb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7d7a6d6a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cd458edf" name="Combat Patrol: Drukhari (Coven of Agonies)" hidden="false" targetId="cp-cat::coven-of-agonies" primary="true" />
+        <categoryLink id="0ed08c07" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="ac39bcdc" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="2c28378a" name="Monster" hidden="false" targetId="cp-kw::monster" primary="false" />
+        <categoryLink id="708c2c46" name="Haemonculus Covens" hidden="false" targetId="cp-kw::haemonculus-covens" primary="false" />
+        <categoryLink id="ac5ac7eb" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="79cca2ba" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="9faff20c" name="Talos" hidden="false" targetId="cp-kw::talos" primary="false" />
+        <categoryLink id="3c945218" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c15e840d" name="Talos" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">7</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0bc2bbd2" name="Twin splinter cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Sustained Hits 1, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5772a361" name="Twin liquifier gun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Torrent, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="075cc415" name="Chain flails" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">8</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1502918c" name="Mindless Killing Machines (Pain)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; that destroyed model can fight after the attacking unit has finished making its attacks, and it is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5867783e" name="Mindless Killing Machines (Pain)" hidden="false">
+          <description>At the start of the Fight phase, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; that destroyed model can fight after the attacking unit has finished making its attacks, and it is then removed from play.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::coven-of-agonies::03-talos::twin-splinter-cannon" name="Twin splinter cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="fda45d7e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0fd146cf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::03-talos::twin-liquifier-gun" name="Twin liquifier gun" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="896fd01f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="500bb2e8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::03-talos::chain-flails" name="Chain flails" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f40162a3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="affc7fd5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::coven-of-agonies::04-cronos" name="Cronos" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2dbb2b57" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="00be86f6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="20bb2c31" name="Combat Patrol: Drukhari (Coven of Agonies)" hidden="false" targetId="cp-cat::coven-of-agonies" primary="true" />
+        <categoryLink id="9e533dfc" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="1507cda2" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="fc31b18e" name="Monster" hidden="false" targetId="cp-kw::monster" primary="false" />
+        <categoryLink id="2c4ff891" name="Haemonculus Covens" hidden="false" targetId="cp-kw::haemonculus-covens" primary="false" />
+        <categoryLink id="dea39a66" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="9233a55c" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="5ad373e9" name="Cronos" hidden="false" targetId="cp-kw::cronos" primary="false" />
+        <categoryLink id="083f929c" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c4f57869" name="Cronos" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">7</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd58944f" name="Spirit syphon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="25251b53" name="Spirit vortex" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8434f1f4" name="Spirit-leech tentacles" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c06e3253" name="Pain Engine (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time you spend 1 Pain token to Empower a friendly unit within 9" of this unit, roll one D6: on a 5+, you gain 1 Pain token.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a8695ae" name="Designer's Note" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Pain tokens you spend for reasons other than Empowering a unit do not trigger this ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3e6f1601" name="Pain Engine (Aura)" hidden="false">
+          <description>Each time you spend 1 Pain token to Empower a friendly unit within 9" of this unit, roll one D6: on a 5+, you gain 1 Pain token.</description>
+        </rule>
+        <rule id="d5c09c1b" name="Designer's Note" hidden="false">
+          <description>Pain tokens you spend for reasons other than Empowering a unit do not trigger this ability.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::coven-of-agonies::04-cronos::spirit-syphon" name="Spirit syphon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c2f2006f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ffd972b5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::04-cronos::spirit-vortex" name="Spirit vortex" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="fbb0fee7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="fab5af4d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::coven-of-agonies::04-cronos::spirit-leech-tentacles" name="Spirit-leech tentacles" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8566d044" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8bd9f579" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-blades-of-torment::00-archon-malivex" name="Archon Malivex" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e00dcae1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cba6973b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9fe0f846" name="Combat Patrol: Drukhari (The Blades of Torment)" hidden="false" targetId="cp-cat::the-blades-of-torment" primary="true" />
+        <categoryLink id="126be275" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="d1ed3143" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="f2c84150" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="02cac8a4" name="Kabal" hidden="false" targetId="cp-kw::kabal" primary="false" />
+        <categoryLink id="9a323202" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="672d84ec" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="9c55beb2" name="Archon" hidden="false" targetId="cp-kw::archon" primary="false" />
+        <categoryLink id="fd7ea3ed" name="Malivex" hidden="false" targetId="cp-kw::malivex" primary="false" />
+        <categoryLink id="5d8d265a" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c232bb6a" name="Archon Malivex" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a64978c8" name="Splinter pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2bbe176" name="Huskblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Kabalite Warriors</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable saving throw.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="672c0768" name="Enhancement: Shudderworm Bottle (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While the bearer is leading a unit, models in that unit have the Feel No Pain 5+ ability. (Default enhancement; may be replaced with Spiteful Predator: The bearer's unit is eligible to shoot and declare a charge in a turn in which it Fell Back.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Kabalite Warriors</description>
+        </rule>
+        <rule id="8aad1e42" name="Invulnerable Save" hidden="false">
+          <description>You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable saving throw.</description>
+        </rule>
+        <rule id="c4bec223" name="Enhancement: Shudderworm Bottle (Warlord)" hidden="false">
+          <description>While the bearer is leading a unit, models in that unit have the Feel No Pain 5+ ability. (Default enhancement; may be replaced with Spiteful Predator: The bearer's unit is eligible to shoot and declare a charge in a turn in which it Fell Back.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-blades-of-torment::00-archon-malivex::splinter-pistol" name="Splinter pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="7a6c4a39" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0315e7ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::00-archon-malivex::huskblade" name="Huskblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e974aca6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ade2d905" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-blades-of-torment::01-kabalite-warriors" name="Kabalite Warriors" type="unit" hidden="false">
+      <constraints>
+        <constraint id="85ae47cc" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2b04a752" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="01a8bce7" name="Combat Patrol: Drukhari (The Blades of Torment)" hidden="false" targetId="cp-cat::the-blades-of-torment" primary="true" />
+        <categoryLink id="a7e04ef4" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="22f925c0" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="9f0b3112" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="3eea3553" name="Kabal" hidden="false" targetId="cp-kw::kabal" primary="false" />
+        <categoryLink id="5bc370bb" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="ee9f7e84" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="55f481a6" name="Kabalite Warriors" hidden="false" targetId="cp-kw::kabalite-warriors" primary="false" />
+        <categoryLink id="0d0e3990" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="4732a4c1" name="Kabalite Warriors" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a27ccf53" name="Shredder" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc424914" name="Splinter cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Heavy, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a64978c8" name="Splinter pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d2ad1d6d" name="Splinter rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2fc35034" name="Sybarite weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::the-blades-of-torment::01-kabalite-warriors::1-sybarite-splinter-pistol-sybarite-weapon" name="1 Sybarite: splinter pistol, Sybarite weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="5d6fd6cc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8f9233cf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::01-kabalite-warriors::7-kabalite-warriors-splinter-rifle-close-combat-weapon" name="7 Kabalite Warriors: splinter rifle, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="7e28e5cc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="41ec6777" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::01-kabalite-warriors::1-kabalite-warrior-shredder-close-combat-weapon" name="1 Kabalite Warrior: shredder, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dc171848" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="49cf0c7e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::01-kabalite-warriors::1-kabalite-warrior-splinter-cannon-close-combat-weapon" name="1 Kabalite Warrior: splinter cannon, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="513182bd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="fcdb6931" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-blades-of-torment::02-incubi" name="Incubi" type="unit" hidden="false">
+      <constraints>
+        <constraint id="222e8232" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a9b438d9" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0bd0fe7e" name="Combat Patrol: Drukhari (The Blades of Torment)" hidden="false" targetId="cp-cat::the-blades-of-torment" primary="true" />
+        <categoryLink id="9243c2bb" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="9bad8b0b" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="09ae41ce" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="94d476c9" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="c1f20ea3" name="Incubi" hidden="false" targetId="cp-kw::incubi" primary="false" />
+        <categoryLink id="0d3c2134" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="08a85f55" name="Incubi" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1df998d" name="Klaivex" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="53a21531" name="Demiklaives – single blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33480f6c" name="Demiklaives – dual blades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="05fb749c" name="Klaive" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="83df6fc8" name="Tormentors" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6c5d4a3d" name="Tormentors" hidden="false">
+          <description>At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-blades-of-torment::02-incubi::1-klaivex-demiklaives" name="1 Klaivex: demiklaives" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="78b66b8e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="883e0bbb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::02-incubi::4-incubi-klaive" name="4 Incubi: klaive" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1711c08f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="be541470" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-blades-of-torment::03-raider" name="Raider" type="unit" hidden="false">
+      <constraints>
+        <constraint id="04d0eb2c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7841bb83" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fbf88fbb" name="Combat Patrol: Drukhari (The Blades of Torment)" hidden="false" targetId="cp-cat::the-blades-of-torment" primary="true" />
+        <categoryLink id="8513bdd4" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="ef28c0fa" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="ecb2b063" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="f9c34d33" name="Transport" hidden="false" targetId="cp-kw::transport" primary="false" />
+        <categoryLink id="910cec97" name="Dedicated Transport" hidden="false" targetId="cp-kw::dedicated-transport" primary="false" />
+        <categoryLink id="8de956a5" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="44efc5c7" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="2909871e" name="Raider" hidden="false" targetId="cp-kw::raider" primary="false" />
+        <categoryLink id="2a8641ce" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="4e1a32e5" name="Raider" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">8</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">10</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="95c9261e" name="Disintegrator cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66c774f3" name="Bladevanes" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eaa9e9f9" name="Firing Deck 11" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0185d854" name="Transport" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has a transport capacity of 11 Drukhari Infantry models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="19ef8708" name="Transport" hidden="false">
+          <description>This model has a transport capacity of 11 Drukhari Infantry models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-blades-of-torment::03-raider::disintegrator-cannon" name="Disintegrator cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1d09f716" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a9ad5f38" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::03-raider::bladevanes" name="Bladevanes" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ec10ee36" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e2773f6b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-blades-of-torment::04-ravager" name="Ravager" type="unit" hidden="false">
+      <constraints>
+        <constraint id="89c013b5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3088e87d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5fd30f84" name="Combat Patrol: Drukhari (The Blades of Torment)" hidden="false" targetId="cp-cat::the-blades-of-torment" primary="true" />
+        <categoryLink id="cca2e686" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
+        <categoryLink id="e1ada5ab" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="339a2487" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="7d4759cb" name="Kabal" hidden="false" targetId="cp-kw::kabal" primary="false" />
+        <categoryLink id="8b6923bc" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="dc103c2c" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="c1c339e1" name="Ravager" hidden="false" targetId="cp-kw::ravager" primary="false" />
+        <categoryLink id="f3a0fbd9" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="277c5d2f" name="Ravager" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">9</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">11</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4ea2fff4" name="Dark lance" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6+2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="95c9261e" name="Disintegrator cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66c774f3" name="Bladevanes" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c1443673" name="Power from Pain" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a88302a" name="DAMAGED: 1-4 WOUNDS REMAINING" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time it makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="958b2ed4" name="DAMAGED: 1-4 WOUNDS REMAINING" hidden="false">
+          <description>While this model has 1-4 wounds remaining, each time it makes an attack, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::the-blades-of-torment::04-ravager::2-dark-lances" name="2 dark lances" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="931eb9da" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c3c87d29" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::04-ravager::disintegrator-cannon" name="Disintegrator cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="47596510" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="abe2123e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::the-blades-of-torment::04-ravager::bladevanes" name="Bladevanes" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="20102fd6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3131387a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="cp-catalogue::harlequins" name="Harlequins" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cp::kaleidoscopic-onset::00-solitaire" name="Solitaire" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3ed083e4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cae897df" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e6b4a509" name="Combat Patrol: Harlequins (Kaleidoscopic Onset)" hidden="false" targetId="cp-cat::kaleidoscopic-onset" primary="true" />
+        <categoryLink id="e59e611e" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="6f2af4e5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="26ba5a56" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="2e1eeaf2" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="dac54550" name="Epic Hero" hidden="false" targetId="cp-kw::epic-hero" primary="false" />
+        <categoryLink id="d08e450b" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="209c8c1d" name="Solitaire" hidden="false" targetId="cp-kw::solitaire" primary="false" />
+        <categoryLink id="4bbf547b" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="92d1a875" name="Solitaire" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3046f76f" name="Solitaire weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">9</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e23992f8" name="Fights First" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="652907f2" name="Blur of Movement" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model is eligible to declare a charge in a turn in which it Advanced.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d2720a44" name="Enhancement: Terror from the Labyrinth (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per battle, in your Movement phase, before this model makes a Normal move, it can use this ability. If it does, until the end of the turn, add 2D6" to this model's Move characteristic and add 3 to the Attacks characteristic of this model's Solitaire weapons. (Default enhancement; may be replaced with Illusive Killer: Once per battle round, this unit can perform an Agile Manoeuvre without spending a Battle Focus token to do so. It can do so even if other units have done so in the same phase, and doing so does not prevent other units from performing the same Agile Manoeuvre in the same phase.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="46ca698c" name="Blur of Movement" hidden="false">
+          <description>This model is eligible to declare a charge in a turn in which it Advanced.</description>
+        </rule>
+        <rule id="d2de811f" name="Enhancement: Terror from the Labyrinth (Warlord)" hidden="false">
+          <description>Once per battle, in your Movement phase, before this model makes a Normal move, it can use this ability. If it does, until the end of the turn, add 2D6" to this model's Move characteristic and add 3 to the Attacks characteristic of this model's Solitaire weapons. (Default enhancement; may be replaced with Illusive Killer: Once per battle round, this unit can perform an Agile Manoeuvre without spending a Battle Focus token to do so. It can do so even if other units have done so in the same phase, and doing so does not prevent other units from performing the same Agile Manoeuvre in the same phase.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::kaleidoscopic-onset::00-solitaire::solitaire-weapons" name="Solitaire weapons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b9849c46" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6f71496d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::kaleidoscopic-onset::01-troupe" name="Troupe" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1ae4af05" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3d45abc3" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="be5d0b38" name="Combat Patrol: Harlequins (Kaleidoscopic Onset)" hidden="false" targetId="cp-cat::kaleidoscopic-onset" primary="true" />
+        <categoryLink id="f0cbc973" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="e5fdd2bc" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="25d60742" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="df6825ac" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="fb926e3a" name="Troupe" hidden="false" targetId="cp-kw::troupe" primary="false" />
+        <categoryLink id="b5e697cf" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e2d8a5aa" name="Troupe" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a12e1a6" name="Neuro disruptor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6fa3a79" name="Shuriken pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcd9743d" name="Harlequin's blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c09db33e" name="Harlequin's special weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1da211ca" name="Power sword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29bc7b1c" name="Dance of Death" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, select one of the following abilities for this unit to gain until the end of the phase: Hero's Prowess: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. Villain's Doom: Each time a model in this unit makes an attack, add 1 to the Wound roll. Trickster's Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f206a8ea" name="Dance of Death" hidden="false">
+          <description>At the start of the Fight phase, select one of the following abilities for this unit to gain until the end of the phase: Hero's Prowess: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. Villain's Doom: Each time a model in this unit makes an attack, add 1 to the Wound roll. Trickster's Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::kaleidoscopic-onset::01-troupe::1-lead-player-power-sword-shuriken-pistol" name="1 Lead Player: power sword, shuriken pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="7befc9f0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4f0d3064" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kaleidoscopic-onset::01-troupe::3-players-harlequin-s-special-weapon-shuriken-pistol" name="3 Players: Harlequin's special weapon, shuriken pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6317ad42" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="50c36013" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kaleidoscopic-onset::01-troupe::1-player-harlequin-s-blade-shuriken-pistol" name="1 Player: Harlequin's blade, shuriken pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="0a0e9b59" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="038ab580" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kaleidoscopic-onset::01-troupe::1-player-harlequin-s-blade-neuro-disruptor" name="1 Player: Harlequin's blade, neuro disruptor" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="78fa66c3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0db1e22c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::kaleidoscopic-onset::02-skyweavers" name="Skyweavers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c8b71c35" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="bede2279" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9af7677d" name="Combat Patrol: Harlequins (Kaleidoscopic Onset)" hidden="false" targetId="cp-cat::kaleidoscopic-onset" primary="true" />
+        <categoryLink id="f1730eb3" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="602f09b4" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5033b723" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="d9b0301f" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="85a17e3b" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="5d67e458" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
+        <categoryLink id="22c0775a" name="Skyweavers" hidden="false" targetId="cp-kw::skyweavers" primary="false" />
+        <categoryLink id="57d07dc3" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="22b4513c" name="Skyweavers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a229255" name="Shuriken cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3811b474" name="Skyweaver haywire cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Vehicle 4+, Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5f1e65a6" name="Star bolas" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a0c1907" name="Zephyrglaive" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4e62f2" name="Acrobatic Grace" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time an attack targets this unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e2eebd32" name="Acrobatic Grace" hidden="false">
+          <description>Each time an attack targets this unit, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::kaleidoscopic-onset::02-skyweavers::1-skyweaver-shuriken-cannon-star-bolas-close-combat-weapon" name="1 Skyweaver: shuriken cannon, star bolas, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="64bf4f71" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7bb4d2db" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kaleidoscopic-onset::02-skyweavers::1-skyweaver-skyweaver-haywire-cannon-zephyrglaive" name="1 Skyweaver: Skyweaver haywire cannon, zephyrglaive" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="01acf6c1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="aa28d4f3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::kaleidoscopic-onset::03-voidweaver" name="Voidweaver" type="unit" hidden="false">
+      <constraints>
+        <constraint id="03bd2ba8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6dbae21f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="25e23165" name="Combat Patrol: Harlequins (Kaleidoscopic Onset)" hidden="false" targetId="cp-cat::kaleidoscopic-onset" primary="true" />
+        <categoryLink id="a1b7582f" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="2ab51954" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="3e137368" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="8a5f49b8" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="28033ee4" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="677ebc28" name="Voidweaver" hidden="false" targetId="cp-kw::voidweaver" primary="false" />
+        <categoryLink id="d22dbceb" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0463a607" name="Voidweaver" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a21ea3f" name="Prismatic cannon – dispersed pulse" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3856741" name="Prismatic cannon – focused lances" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">4</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a229255" name="Shuriken cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::kaleidoscopic-onset::03-voidweaver::2-shuriken-cannons" name="2 shuriken cannons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="38dd867f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e1420775" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kaleidoscopic-onset::03-voidweaver::prismatic-cannon" name="Prismatic cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b743f8b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="de9af988" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kaleidoscopic-onset::03-voidweaver::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2bc63972" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d12f914f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::kaleidoscopic-onset::04-starweaver" name="Starweaver" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f46667ae" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="57b731a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e1ec0c69" name="Combat Patrol: Harlequins (Kaleidoscopic Onset)" hidden="false" targetId="cp-cat::kaleidoscopic-onset" primary="true" />
+        <categoryLink id="434d541c" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="ec304e2e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="ccf5e180" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="0bd11678" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="8976869e" name="Transport" hidden="false" targetId="cp-kw::transport" primary="false" />
+        <categoryLink id="ad820034" name="Dedicated Transport" hidden="false" targetId="cp-kw::dedicated-transport" primary="false" />
+        <categoryLink id="c7875df0" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
+        <categoryLink id="ad163c1f" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="ce573671" name="Starweaver" hidden="false" targetId="cp-kw::starweaver" primary="false" />
+        <categoryLink id="1dc58ddd" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d22e67a2" name="Starweaver" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a229255" name="Shuriken cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e63c270" name="Firing Deck 6" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0185d854" name="Transport" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has a transport capacity of 6 Harlequins Infantry models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="19ef8708" name="Transport" hidden="false">
+          <description>This model has a transport capacity of 6 Harlequins Infantry models.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::kaleidoscopic-onset::04-starweaver::2-shuriken-cannons" name="2 shuriken cannons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="76291a1a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9f3b28ee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kaleidoscopic-onset::04-starweaver::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="077cb9b8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2bc98dd8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::twilight-cavalcade::00-knight-of-evenfall" name="Knight of Evenfall" type="unit" hidden="false">
+      <constraints>
+        <constraint id="542ec216" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8e558c87" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="96c97720" name="Combat Patrol: Harlequins (Twilight Cavalcade)" hidden="false" targetId="cp-cat::twilight-cavalcade" primary="true" />
+        <categoryLink id="68ff6bc2" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="a7017d5f" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="793a449b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="02d7c418" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="cabc64d2" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="eba4540e" name="Troupe Master" hidden="false" targetId="cp-kw::troupe-master" primary="false" />
+        <categoryLink id="26515e80" name="Knight of Evenfall" hidden="false" targetId="cp-kw::knight-of-evenfall" primary="false" />
+        <categoryLink id="c5e44ecf" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="804f930d" name="Knight of Evenfall" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6fa3a79" name="Shuriken pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ea743552" name="Troupe Master's blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="731b1bae" name="Cegorach's Favour" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time this model makes a melee attack, you can re-roll a Hit roll of 1 and add 1 to the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Troupe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22b9e9f5" name="Enhancement: Starlight Strike (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Models in the bearer's unit have the Fights First ability. (Default enhancement; may be replaced with Herald of the Night: The bearer has the Lone Operative and Stealth abilities, and each time a model in its unit makes a move, it can move through enemy models. When doing so, it can move within Engagement Range of such models but cannot end that move within Engagement Range of them.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="31fd53fe" name="Cegorach's Favour" hidden="false">
+          <description>Each time this model makes a melee attack, you can re-roll a Hit roll of 1 and add 1 to the Wound roll.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Troupe</description>
+        </rule>
+        <rule id="b88066f6" name="Enhancement: Starlight Strike (Warlord)" hidden="false">
+          <description>Models in the bearer's unit have the Fights First ability. (Default enhancement; may be replaced with Herald of the Night: The bearer has the Lone Operative and Stealth abilities, and each time a model in its unit makes a move, it can move through enemy models. When doing so, it can move within Engagement Range of such models but cannot end that move within Engagement Range of them.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::twilight-cavalcade::00-knight-of-evenfall::shuriken-pistol" name="Shuriken pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="a6efb408" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b1fe518f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::00-knight-of-evenfall::troupe-master-s-blade" name="Troupe Master's blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f786f06d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5d1b08de" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::twilight-cavalcade::01-alineth-shadespinner" name="Alineth Shadespinner" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1f3eaa8f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3d6fc1b8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="52f36411" name="Combat Patrol: Harlequins (Twilight Cavalcade)" hidden="false" targetId="cp-cat::twilight-cavalcade" primary="true" />
+        <categoryLink id="9032ee82" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="a82443f5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="072e2164" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="c3934e30" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="3bd1a6cd" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="b7ecd2e6" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="8424bebd" name="Shadowseer" hidden="false" targetId="cp-kw::shadowseer" primary="false" />
+        <categoryLink id="3634f623" name="Alineth Shadespinner" hidden="false" targetId="cp-kw::alineth-shadespinner" primary="false" />
+        <categoryLink id="4d3d0be0" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="fb891c93" name="Alineth Shadespinner" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a12e1a6" name="Neuro disruptor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a925acbf" name="Miststave" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">D3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4ed928da" name="Treacherous Illusion (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Melee weapons equipped by enemy models have the [Hazardous] ability while targeting this model's unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Troupe</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2bf1be98" name="Treacherous Illusion (Psychic)" hidden="false">
+          <description>Melee weapons equipped by enemy models have the [Hazardous] ability while targeting this model's unit.</description>
+        </rule>
+        <rule id="4541f07f" name="Leader" hidden="false">
+          <description>This model can be attached to the following unit: Troupe</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::twilight-cavalcade::01-alineth-shadespinner::neuro-disruptor" name="Neuro disruptor" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="311c14e8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="197fa74b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::01-alineth-shadespinner::miststave" name="Miststave" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b8c1a5d8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="592b48aa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::twilight-cavalcade::02-troupe" name="Troupe" type="unit" hidden="false">
+      <constraints>
+        <constraint id="0a053fdf" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="93da43a1" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="676704b9" name="Combat Patrol: Harlequins (Twilight Cavalcade)" hidden="false" targetId="cp-cat::twilight-cavalcade" primary="true" />
+        <categoryLink id="9b63910f" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="86018476" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="93267770" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="11111e9c" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="575b3f18" name="Troupe" hidden="false" targetId="cp-kw::troupe" primary="false" />
+        <categoryLink id="9524bba0" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e2d8a5aa" name="Troupe" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a12e1a6" name="Neuro disruptor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6fa3a79" name="Shuriken pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcd9743d" name="Harlequin's blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c09db33e" name="Harlequin's special weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29bc7b1c" name="Dance of Death" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, select one of the following abilities for this unit to gain until the end of the phase: Hero's Prowess: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. Villain's Doom: Each time a model in this unit makes an attack, add 1 to the Wound roll. Trickster's Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f206a8ea" name="Dance of Death" hidden="false">
+          <description>At the start of the Fight phase, select one of the following abilities for this unit to gain until the end of the phase: Hero's Prowess: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. Villain's Doom: Each time a model in this unit makes an attack, add 1 to the Wound roll. Trickster's Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::twilight-cavalcade::02-troupe::1-lead-player-shuriken-pistol-harlequin-s-special-weapon" name="1 Lead Player: shuriken pistol, Harlequin's special weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4095e942" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="141291ed" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::02-troupe::1-harlequin-neuro-disruptor-harlequin-s-blade" name="1 Harlequin: neuro disruptor, Harlequin's blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b43c2720" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a9ae2aaf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::02-troupe::1-harlequin-shuriken-pistol-harlequin-s-blade" name="1 Harlequin: shuriken pistol, Harlequin's blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="861d1e9b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d7c7025d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::02-troupe::3-harlequins-shuriken-pistol-harlequin-s-special-weapon" name="3 Harlequins: shuriken pistol, Harlequin's special weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="24ffe263" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="955fba65" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::twilight-cavalcade::03-troupe" name="Troupe" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4c14a87a" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7302eeb5" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1a025b0e" name="Combat Patrol: Harlequins (Twilight Cavalcade)" hidden="false" targetId="cp-cat::twilight-cavalcade" primary="true" />
+        <categoryLink id="6a01f786" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="a1b14af6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="97435c95" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="88a53b83" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="48e09747" name="Troupe" hidden="false" targetId="cp-kw::troupe" primary="false" />
+        <categoryLink id="1589a63d" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e2d8a5aa" name="Troupe" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a12e1a6" name="Neuro disruptor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6fa3a79" name="Shuriken pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcd9743d" name="Harlequin's blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c09db33e" name="Harlequin's special weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29bc7b1c" name="Dance of Death" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, select one of the following abilities for this unit to gain until the end of the phase: Hero's Prowess: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. Villain's Doom: Each time a model in this unit makes an attack, add 1 to the Wound roll. Trickster's Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f206a8ea" name="Dance of Death" hidden="false">
+          <description>At the start of the Fight phase, select one of the following abilities for this unit to gain until the end of the phase: Hero's Prowess: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. Villain's Doom: Each time a model in this unit makes an attack, add 1 to the Wound roll. Trickster's Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::twilight-cavalcade::03-troupe::1-lead-player-shuriken-pistol-harlequin-s-special-weapon" name="1 Lead Player: shuriken pistol, Harlequin's special weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="dd3a8532" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cf9f0cf4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::03-troupe::1-harlequin-neuro-disruptor-harlequin-s-blade" name="1 Harlequin: neuro disruptor, Harlequin's blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c02a2bab" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="319be3e4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::03-troupe::1-harlequin-shuriken-pistol-harlequin-s-blade" name="1 Harlequin: shuriken pistol, Harlequin's blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="866069b4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="890a1ea1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::03-troupe::3-harlequins-shuriken-pistol-harlequin-s-special-weapon" name="3 Harlequins: shuriken pistol, Harlequin's special weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6bb4f652" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="bb911e15" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::twilight-cavalcade::04-skyweavers" name="Skyweavers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="04b8af5f" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a0c1dd3b" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c27001bc" name="Combat Patrol: Harlequins (Twilight Cavalcade)" hidden="false" targetId="cp-cat::twilight-cavalcade" primary="true" />
+        <categoryLink id="1bd700f0" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="0e6b1366" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="710278a3" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="363ed66b" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="8754f23f" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="d93c7257" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
+        <categoryLink id="ad557384" name="Skyweavers" hidden="false" targetId="cp-kw::skyweavers" primary="false" />
+        <categoryLink id="34f502d3" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="22b4513c" name="Skyweavers" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a229255" name="Shuriken cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3811b474" name="Skyweaver haywire cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Vehicle 4+, Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a0c1907" name="Zephyrglaive" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4e62f2" name="Acrobatic Grace" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time an attack targets this unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e2eebd32" name="Acrobatic Grace" hidden="false">
+          <description>Each time an attack targets this unit, subtract 1 from the Hit roll.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::twilight-cavalcade::04-skyweavers::1-skyweaver-shuriken-cannon-zephyrglaive" name="1 Skyweaver: shuriken cannon, zephyrglaive" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="04c9da99" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e7450043" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::04-skyweavers::1-skyweaver-skyweaver-haywire-cannon-zephyrglaive" name="1 Skyweaver: Skyweaver haywire cannon, zephyrglaive" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c83ecfdd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9bb6004c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::twilight-cavalcade::05-voidweaver" name="Voidweaver" type="unit" hidden="false">
+      <constraints>
+        <constraint id="37e77bf8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="df93de53" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="87ca52f9" name="Combat Patrol: Harlequins (Twilight Cavalcade)" hidden="false" targetId="cp-cat::twilight-cavalcade" primary="true" />
+        <categoryLink id="fe7c2db4" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="ee4e91d9" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="a7b48362" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="15042373" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="4764d9fe" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="b062f2bb" name="Voidweaver" hidden="false" targetId="cp-kw::voidweaver" primary="false" />
+        <categoryLink id="0e0819de" name="Harlequins" hidden="false" targetId="cp-kw::harlequins" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0463a607" name="Voidweaver" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a21ea3f" name="Prismatic cannon – dispersed pulse" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3856741" name="Prismatic cannon – focused lances" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">12</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">4</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a229255" name="Shuriken cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::twilight-cavalcade::05-voidweaver::prismatic-cannon" name="Prismatic cannon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="7f6a10d3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="60b1d44f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::05-voidweaver::2-shuriken-cannons" name="2 shuriken cannons" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f4614bd6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d2bb1a75" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::twilight-cavalcade::05-voidweaver::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="e2631fc8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b5d93478" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
