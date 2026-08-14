@@ -2075,5 +2075,521 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad" name="Krieg Command Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="dd61c75d" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0a7aabcb" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c0b6101e" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" targetId="cp-cat::death-korps-combat-platoon" primary="true" />
+        <categoryLink id="3df4afb1" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="23c43268" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="4df0fb83" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="34fcb82c" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="c8de8021" name="Platoon" hidden="false" targetId="cp-kw::platoon" primary="false" />
+        <categoryLink id="e677e879" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
+        <categoryLink id="932410e7" name="Krieg" hidden="false" targetId="cp-kw::krieg" primary="false" />
+        <categoryLink id="5b160f5a" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="1f7b57f4" name="Officer" hidden="false" targetId="cp-kw::officer" primary="false" />
+        <categoryLink id="ae19415b" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c5286ebc" name="Lord Commissar" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="959deb1f" name="Veteran Guardsman" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d5f0c42" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3e93e524" name="Laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66aacd32" name="Meltagun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">9</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Melta 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4b2fe25f" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c287b6bf" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="004848d3" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24680633" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92a49530" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="896cdb90" name="Voice of Command" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aaac8bdc" name="Grim Determination" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this unit contains an Officer, you can target this unit with Stratagems even while it is Battle-shocked and Orders issued to this unit do not cease to affect this unit if it becomes Battle-shocked.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eec9cde6" name="Master Vox" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time the Officer in the bearer's unit issues an Order, it can issue it to an eligible unit up to 24" away.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f5e8b66b" name="Servo-scribes" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per battle, when issuing an Order, the Lord Commissar can issue one additional Order.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c3fb1067" name="Orders" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's Officer can issue 1 Order to a Regiment unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b6d6c6ae" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit can be attached to the following unit: Death Korps of Krieg.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5e6b894b" name="Enhancement: Student of the Tactica (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, if the bearer is on the battlefield, you gain 1CP. In addition, the bearer can issue 2 additional Orders to Regiment units in your Command phase. (Default enhancement; may be replaced with Intimidating Presence (Aura): In your Command phase, if the bearer is on the battlefield, you gain 1CP. In addition, while a friendly Regiment unit is within 6" of the bearer's unit: Each time a model in this unit makes a ranged attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b0d8c154" name="Grim Determination" hidden="false">
+          <description>While this unit contains an Officer, you can target this unit with Stratagems even while it is Battle-shocked and Orders issued to this unit do not cease to affect this unit if it becomes Battle-shocked.</description>
+        </rule>
+        <rule id="4ef4b2ad" name="Master Vox" hidden="false">
+          <description>Each time the Officer in the bearer's unit issues an Order, it can issue it to an eligible unit up to 24" away.</description>
+        </rule>
+        <rule id="85e5f8a8" name="Servo-scribes" hidden="false">
+          <description>Once per battle, when issuing an Order, the Lord Commissar can issue one additional Order.</description>
+        </rule>
+        <rule id="af3cfa32" name="Orders" hidden="false">
+          <description>This unit's Officer can issue 1 Order to a Regiment unit.</description>
+        </rule>
+        <rule id="f4013eaa" name="Leader" hidden="false">
+          <description>This unit can be attached to the following unit: Death Korps of Krieg.</description>
+        </rule>
+        <rule id="182d7522" name="Enhancement: Student of the Tactica (Warlord)" hidden="false">
+          <description>In your Command phase, if the bearer is on the battlefield, you gain 1CP. In addition, the bearer can issue 2 additional Orders to Regiment units in your Command phase. (Default enhancement; may be replaced with Intimidating Presence (Aura): In your Command phase, if the bearer is on the battlefield, you gain 1CP. In addition, while a friendly Regiment unit is within 6" of the bearer's unit: Each time a model in this unit makes a ranged attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.)</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad::lord-commissar-laspistol-power-weapon" name="Lord Commissar: laspistol, power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4922bec3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="55ddd859" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad::1-veteran-guardsman-plasma-pistol-power-weapon" name="1 Veteran Guardsman: plasma pistol, power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="bc572899" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a4465d04" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad::1-veteran-guardsman-lasgun-close-combat-weapon-master-vox" name="1 Veteran Guardsman: lasgun, close combat weapon, master vox" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c0868070" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7cbe0dc8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad::1-veteran-guardsman-lasgun-close-combat-weapon" name="1 Veteran Guardsman: lasgun, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="381a0bfb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f986a5d8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad::1-veteran-guardsman-meltagun-close-combat-weapon" name="1 Veteran Guardsman: meltagun, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="480dfe1b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="54f5cb9d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad::1-veteran-guardsman-laspistol-close-combat-weapon-servo-scribes" name="1 Veteran Guardsman: laspistol, close combat weapon, servo-scribes" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8b2db541" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1c6e8062" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::death-korps-combat-platoon::01-death-korps-of-krieg" name="Death Korps of Krieg" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f398df84" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="765bc9e3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0bee20df" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" targetId="cp-cat::death-korps-combat-platoon" primary="true" />
+        <categoryLink id="3fb37234" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="ec6920f8" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="2d55f947" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="e3ed17ff" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="6a4e35d5" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="21cf350f" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
+        <categoryLink id="b6c4a7fa" name="Platoon" hidden="false" targetId="cp-kw::platoon" primary="false" />
+        <categoryLink id="a4443626" name="Death Korps of Krieg" hidden="false" targetId="cp-kw::death-korps-of-krieg" primary="false" />
+        <categoryLink id="d638c15c" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="002ec539" name="Death Korps of Krieg" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f1bba4e" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa4f081c" name="Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e51c1829" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0f4a41d4" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0b1447b2" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24d2d6b7" name="Grim Demeanour" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f6f7377a" name="Grim Demeanour" hidden="false">
+          <description>Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::death-korps-combat-platoon::01-death-korps-of-krieg::death-korps-watchmaster-bolt-pistol-power-weapon" name="Death Korps Watchmaster: bolt pistol, power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c8ab6aa9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="dfe57d77" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::01-death-korps-of-krieg::8-death-korps-troopers-lasgun-close-combat-weapon" name="8 Death Korps Troopers: lasgun, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="9faca0ca" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3cbe1519" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::01-death-korps-of-krieg::1-death-korps-trooper-flamer-close-combat-weapon" name="1 Death Korps Trooper: flamer, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="467cc0c8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a44e7601" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::death-korps-combat-platoon::02-krieg-heavy-weapons-squad" name="Krieg Heavy Weapons Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e7d4ca0b" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b07aeb87" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d5115bb9" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" targetId="cp-cat::death-korps-combat-platoon" primary="true" />
+        <categoryLink id="2226bd3d" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="b9f98dc9" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="5b0c819e" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="bd025ec3" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="c31a8a0e" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
+        <categoryLink id="dae5cee0" name="Krieg Heavy Weapons Squad" hidden="false" targetId="cp-kw::krieg-heavy-weapons-squad" primary="false" />
+        <categoryLink id="87c9ae11" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="83aed07d" name="Heavy Weapons Gunner" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">4"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ccd5b10b" name="Fire Coordinator" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b2fd332d" name="Laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e09d228d" name="Twin Krieg heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">5+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Heavy, Rapid Fire 3, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1024010c" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="218f0947" name="Final Duty" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this unit contains a Fire Coordinator, each time a Heavy Weapons Gunner model is destroyed, roll one D6: on a 3+, do not remove it from play. The destroyed model can shoot after the attacking model's unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="60e8f3d5" name="Final Duty" hidden="false">
+          <description>While this unit contains a Fire Coordinator, each time a Heavy Weapons Gunner model is destroyed, roll one D6: on a 3+, do not remove it from play. The destroyed model can shoot after the attacking model's unit has finished making its attacks, and is then removed from play.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::death-korps-combat-platoon::02-krieg-heavy-weapons-squad::3-heavy-weapons-gunners-twin-krieg-heavy-stubber-laspistol-close-combat-weapon" name="3 Heavy Weapons Gunners: twin Krieg heavy stubber, laspistol, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="1cfd69aa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4f3bfca9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::death-korps-combat-platoon::02-krieg-heavy-weapons-squad::1-fire-coordinator-laspistol-close-combat-weapon" name="1 Fire Coordinator: laspistol, close combat weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="12b1b2c4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b2714fdd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::death-korps-combat-platoon::03-death-riders" name="Death Riders" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2d332358" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6eb1697a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="646c8cae" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" targetId="cp-cat::death-korps-combat-platoon" primary="true" />
+        <categoryLink id="fa142864" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="2592877d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="d2ac7be2" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+        <categoryLink id="acb09046" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="3537215e" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
+        <categoryLink id="76f1f52e" name="Death Riders" hidden="false" targetId="cp-kw::death-riders" primary="false" />
+        <categoryLink id="c9f61d64" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="cf96d6b1" name="Death Riders" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="03f230bc" name="Death Rider lascarbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cc50cd24" name="Frag lance" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">D6</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac3f1e45" name="Power sabre" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="efb27f11" name="Steed's savage claws" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="be0c6fbb" name="Screening Line" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6".</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d3a4867f" name="Screening Line" hidden="false">
+          <description>Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6".</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="cp::death-korps-combat-platoon::03-death-riders::every-model-death-rider-lascarbine-frag-lance-power-sabre-steed-s-savage-claws" name="Every model: Death Rider lascarbine, frag lance, power sabre, steed's savage claws" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c4c02bf2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e943585c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>

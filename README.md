@@ -4,7 +4,7 @@ BattleScribe catalogue data for the fixed Combat Patrol rosters of Warhammer 40,
 [Armamentarium](https://github.com/LordTyberias/Armamentarium) project.
 
 - `Combat Patrol.gst` — the game system: profile types, the categories, one force entry.
-- 34 `.cat` files — one per faction, together holding **297 unit entries** across **67 patrols**.
+- 34 `.cat` files — one per faction, together holding **301 unit entries** across **68 patrols**.
 
 ## What this is, and what it is not
 
@@ -24,7 +24,7 @@ faction, its Imperium/Chaos/Xenos grouping and — where applicable — a `Legac
 
 The reader tells those four kinds of membership apart by the **id prefix**, never by the name — three of
 them share names with unit keywords. Six Space Marine catalogues carry the same `cp-faction::` id, and
-79 of the 297 entries name "Space Marines" as their group and "Imperium" as a keyword at the same time.
+79 of the 301 entries name "Space Marines" as their group and "Imperium" as a keyword at the same time.
 
 | Prefix | Meaning |
 |---|---|

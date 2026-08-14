@@ -138,6 +138,7 @@
     <categoryEntry id="cp-cat::dreamers-coterie" name="Combat Patrol: Aeldari (Dreamer's Coterie)" hidden="false" />
     <categoryEntry id="cp-cat::kygharils-protectors" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" />
     <categoryEntry id="cp-cat::the-fatebreakers" name="Combat Patrol: Aeldari (The Fatebreakers)" hidden="false" />
+    <categoryEntry id="cp-cat::death-korps-combat-platoon" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" />
     <categoryEntry id="cp-cat::draydens-lance" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" />
     <categoryEntry id="cp-cat::karsks-gunners" name="Combat Patrol: Astra Militarum (Karsk's Gunners)" hidden="false" />
     <categoryEntry id="cp-cat::strike-platoon-gorgonne-vi" name="Combat Patrol: Astra Militarum (Strike Platoon Gorgonne VI)" hidden="false" />
@@ -220,6 +221,8 @@
     <categoryEntry id="cp-kw::dark-apostle" name="Dark Apostle" hidden="false" />
     <categoryEntry id="cp-faction::death-guard" name="Death Guard" hidden="false" />
     <categoryEntry id="cp-kw::death-guard" name="Death Guard" hidden="false" />
+    <categoryEntry id="cp-kw::death-korps-of-krieg" name="Death Korps of Krieg" hidden="false" />
+    <categoryEntry id="cp-kw::death-riders" name="Death Riders" hidden="false" />
     <categoryEntry id="cp-kw::death-s-shadow" name="Death's Shadow" hidden="false" />
     <categoryEntry id="cp-kw::deathshroud-terminators" name="Deathshroud Terminators" hidden="false" />
     <categoryEntry id="cp-faction::deathwatch" name="Deathwatch" hidden="false" />
@@ -328,6 +331,8 @@
     <categoryEntry id="cp-kw::knight-of-evenfall" name="Knight of Evenfall" hidden="false" />
     <categoryEntry id="cp-kw::kreeth-s-command" name="Kreeth's Command" hidden="false" />
     <categoryEntry id="cp-kw::krenn" name="Krenn" hidden="false" />
+    <categoryEntry id="cp-kw::krieg" name="Krieg" hidden="false" />
+    <categoryEntry id="cp-kw::krieg-heavy-weapons-squad" name="Krieg Heavy Weapons Squad" hidden="false" />
     <categoryEntry id="cp-kw::kroot" name="Kroot" hidden="false" />
     <categoryEntry id="cp-kw::krootox-rampagers" name="Krootox Rampagers" hidden="false" />
     <categoryEntry id="cp-kw::krootox-riders" name="Krootox Riders" hidden="false" />
@@ -643,6 +648,7 @@
         <categoryLink id="98e829a0" name="Combat Patrol: Aeldari (Dreamer's Coterie)" hidden="false" targetId="cp-cat::dreamers-coterie" />
         <categoryLink id="0e8f1e0d" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" />
         <categoryLink id="a081b55f" name="Combat Patrol: Aeldari (The Fatebreakers)" hidden="false" targetId="cp-cat::the-fatebreakers" />
+        <categoryLink id="20365375" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" targetId="cp-cat::death-korps-combat-platoon" />
         <categoryLink id="34715210" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" />
         <categoryLink id="8d5f04fe" name="Combat Patrol: Astra Militarum (Karsk's Gunners)" hidden="false" targetId="cp-cat::karsks-gunners" />
         <categoryLink id="a670f51f" name="Combat Patrol: Astra Militarum (Strike Platoon Gorgonne VI)" hidden="false" targetId="cp-cat::strike-platoon-gorgonne-vi" />
@@ -725,6 +731,8 @@
         <categoryLink id="a102a530" name="Dark Apostle" hidden="false" targetId="cp-kw::dark-apostle" />
         <categoryLink id="c9a284cd" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" />
         <categoryLink id="dcc24428" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" />
+        <categoryLink id="58cefc15" name="Death Korps of Krieg" hidden="false" targetId="cp-kw::death-korps-of-krieg" />
+        <categoryLink id="018289d4" name="Death Riders" hidden="false" targetId="cp-kw::death-riders" />
         <categoryLink id="c9af5f92" name="Death's Shadow" hidden="false" targetId="cp-kw::death-s-shadow" />
         <categoryLink id="abd077a1" name="Deathshroud Terminators" hidden="false" targetId="cp-kw::deathshroud-terminators" />
         <categoryLink id="578a9fc7" name="Deathwatch" hidden="false" targetId="cp-faction::deathwatch" />
@@ -833,6 +841,8 @@
         <categoryLink id="142f986b" name="Knight of Evenfall" hidden="false" targetId="cp-kw::knight-of-evenfall" />
         <categoryLink id="4b657655" name="Kreeth's Command" hidden="false" targetId="cp-kw::kreeth-s-command" />
         <categoryLink id="4888d410" name="Krenn" hidden="false" targetId="cp-kw::krenn" />
+        <categoryLink id="edfb8d56" name="Krieg" hidden="false" targetId="cp-kw::krieg" />
+        <categoryLink id="1ac1c1cb" name="Krieg Heavy Weapons Squad" hidden="false" targetId="cp-kw::krieg-heavy-weapons-squad" />
         <categoryLink id="21f277b9" name="Kroot" hidden="false" targetId="cp-kw::kroot" />
         <categoryLink id="5b5c8a9a" name="Krootox Rampagers" hidden="false" targetId="cp-kw::krootox-rampagers" />
         <categoryLink id="71096b8f" name="Krootox Riders" hidden="false" targetId="cp-kw::krootox-riders" />
