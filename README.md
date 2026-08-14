@@ -4,7 +4,7 @@ BattleScribe catalogue data for the fixed Combat Patrol rosters of Warhammer 40,
 [Armamentarium](https://github.com/LordTyberias/Armamentarium) project.
 
 - `Combat Patrol.gst` — the game system: profile types, the categories, one force entry.
-- 34 `.cat` files — one per faction, together holding **301 unit entries** across **68 patrols**.
+- 34 `.cat` files — one per faction, together holding **317 unit entries** across **72 patrols**.
 
 ## What this is, and what it is not
 
@@ -24,7 +24,7 @@ faction, its Imperium/Chaos/Xenos grouping and — where applicable — a `Legac
 
 The reader tells those four kinds of membership apart by the **id prefix**, never by the name — three of
 them share names with unit keywords. Six Space Marine catalogues carry the same `cp-faction::` id, and
-79 of the 301 entries name "Space Marines" as their group and "Imperium" as a keyword at the same time.
+79 of the 317 entries name "Space Marines" as their group and "Imperium" as a keyword at the same time.
 
 | Prefix | Meaning |
 |---|---|
@@ -61,6 +61,41 @@ The files were generated once, from the Armamentarium project's own JSON data, b
 `tools/cp-migrate.cs`. **That tool and the data it read are both gone** — deleted together in ARMAM-70,
 when the application stopped shipping its own copy and started reading this repository instead. There is
 nothing left to regenerate from: these files are the source, and they are edited directly.
+
+Everything added since then carries its own source, named here.
+
+### Death Korps Combat Platoon (ARMAM-140, added 2026-08-14)
+
+Transcribed from screenshots of the Warhammer 40,000 app's datasheets, then checked value by value
+against a public Combat Patrol reference — no deviation over roughly eighteen weapon lines. The model
+counts have a third, independent confirmation in the English Warhammer Community announcement.
+
+### Masters of Terror, Remorseless Reavers, Warpsmith's Gauntlet, Preybane War Party (ARMAM-141, added 2026-08-14)
+
+**These four have no official source, and that is stated here rather than glossed over.** Every route
+was checked and every one came back empty: `warhammer40000.com/combat-patrol/` still carries the 2023
+set of 24 faction PDFs; Wahapedia does not list them; neither of the two collected Combat Patrol rules
+PDFs contains them; the German and English Warhammer Community announcements give box contents but no
+datasheets; and Games Workshop does not currently offer these patrols in the Warhammer 40,000 app.
+
+Their values therefore come from the public reference at
+`akinnane.github.io/40kcheatsheet/combat-patrols-web.html`, which carries no provenance statement of
+its own. What makes it usable here is a measurement rather than a claim: when ARMAM-140 transcribed a
+patrol from official app screenshots, that same reference matched it exactly across every weapon line.
+Its model counts were cross-checked again here against the German Warhammer Community announcement,
+which agrees for the three patrols it covers; the Iron Warriors box is not in that article and has no
+second source.
+
+Three things about that reference are worth knowing before editing these four. Its **datasheet cards
+are sorted alphabetically**, so the row order here comes from its header line, which is the printed
+one. Its **prose inflects four model names differently from its own statline tables** (`7 Fellgor
+Beastman`, `1 Red Corsairs Raiders`); the statline form was taken, matching this catalogue's convention
+of a singular label for one model and a plural above that. And it writes **"Every X is equipped with"**
+for a sub-group of several models — the model count for such a line comes from the unit composition
+above it, not from the word "every".
+
+Nothing was derived from regular-edition datasheets, and nothing was invented. If Games Workshop
+publishes these four, the official values replace these.
 
 ## Licence
 

@@ -126,9 +126,12 @@
     <categoryEntry id="cp-faction::chaos-daemons" name="Chaos Daemons" hidden="false" />
     <categoryEntry id="cp-faction::chaos-knights" name="Chaos Knights" hidden="false" />
     <categoryEntry id="cp-kw::chaos-knights" name="Chaos Knights" hidden="false" />
+    <categoryEntry id="cp-kw::chaos-lord" name="Chaos Lord" hidden="false" />
     <categoryEntry id="cp-faction::chaos-space-marines" name="Chaos Space Marines" hidden="false" />
+    <categoryEntry id="cp-kw::chaos-terminator-squad" name="Chaos Terminator Squad" hidden="false" />
     <categoryEntry id="cp-kw::chaplain" name="Chaplain" hidden="false" />
     <categoryEntry id="cp-kw::character" name="Character" hidden="false" />
+    <categoryEntry id="cp-kw::chosen" name="Chosen" hidden="false" />
     <categoryEntry id="cp-cat::sanctuary-guardians" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" />
     <categoryEntry id="cp-cat::the-penitent-host" name="Combat Patrol: Adepta Sororitas (The Penitent Host)" hidden="false" />
     <categoryEntry id="cp-cat::guardians-of-the-throne" name="Combat Patrol: Adeptus Custodes (Guardians of the Throne)" hidden="false" />
@@ -149,6 +152,9 @@
     <categoryEntry id="cp-cat::butchers-of-hyporia" name="Combat Patrol: Chaos Daemons (Butchers of Hyporia)" hidden="false" />
     <categoryEntry id="cp-cat::slaughter-talon" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" />
     <categoryEntry id="cp-cat::dark-zealots" name="Combat Patrol: Chaos Space Marines (Dark Zealots)" hidden="false" />
+    <categoryEntry id="cp-cat::masters-of-terror" name="Combat Patrol: Chaos Space Marines (Masters of Terror)" hidden="false" />
+    <categoryEntry id="cp-cat::remorseless-reavers" name="Combat Patrol: Chaos Space Marines (Remorseless Reavers)" hidden="false" />
+    <categoryEntry id="cp-cat::warpsmiths-gauntlet" name="Combat Patrol: Chaos Space Marines (Warpsmith's Gauntlet)" hidden="false" />
     <categoryEntry id="cp-cat::zarkans-daemonkin" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" />
     <categoryEntry id="cp-cat::mordekais-judgement" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" />
     <categoryEntry id="cp-cat::the-vengeful-brethren" name="Combat Patrol: Dark Angels (The Vengeful Brethren)" hidden="false" />
@@ -185,6 +191,7 @@
     <categoryEntry id="cp-cat::askars-wolfpack" name="Combat Patrol: Space Wolves (Askar's Wolfpack)" hidden="false" />
     <categoryEntry id="cp-cat::thoryks-void-hunters" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" />
     <categoryEntry id="cp-cat::napoks-hunters" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" />
+    <categoryEntry id="cp-cat::preybane-war-party" name="Combat Patrol: T'au Empire (Preybane War Party)" hidden="false" />
     <categoryEntry id="cp-cat::protectors-of-aunshar" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" />
     <categoryEntry id="cp-cat::sudden-dawn-cadre" name="Combat Patrol: T'au Empire (Sudden Dawn Cadre)" hidden="false" />
     <categoryEntry id="cp-cat::prism-of-zadophon" name="Combat Patrol: Thousand Sons (Prism of Zadophon)" hidden="false" />
@@ -253,6 +260,8 @@
     <categoryEntry id="cp-kw::exoarmour" name="Exoarmour" hidden="false" />
     <categoryEntry id="cp-kw::exoframe" name="Exoframe" hidden="false" />
     <categoryEntry id="cp-kw::farseer" name="Farseer" hidden="false" />
+    <categoryEntry id="cp-kw::farstalkers" name="Farstalkers" hidden="false" />
+    <categoryEntry id="cp-kw::fellgor-beastmen" name="Fellgor Beastmen" hidden="false" />
     <categoryEntry id="cp-kw::field-ordnance-battery" name="Field Ordnance Battery" hidden="false" />
     <categoryEntry id="cp-kw::fiends" name="Fiends" hidden="false" />
     <categoryEntry id="cp-kw::fire-warrior" name="Fire Warrior" hidden="false" />
@@ -381,6 +390,7 @@
     <categoryEntry id="cp-kw::necron-warriors" name="Necron Warriors" hidden="false" />
     <categoryEntry id="cp-faction::necrons" name="Necrons" hidden="false" />
     <categoryEntry id="cp-kw::necrons" name="Necrons" hidden="false" />
+    <categoryEntry id="cp-kw::nemesis-claw" name="Nemesis Claw" hidden="false" />
     <categoryEntry id="cp-kw::nemesis-dreadknight" name="Nemesis Dreadknight" hidden="false" />
     <categoryEntry id="cp-kw::neophyte-hybrids" name="Neophyte Hybrids" hidden="false" />
     <categoryEntry id="cp-kw::neurolictor" name="Neurolictor" hidden="false" />
@@ -423,6 +433,8 @@
     <categoryEntry id="cp-kw::raldeo" name="Raldeo" hidden="false" />
     <categoryEntry id="cp-kw::rangers" name="Rangers" hidden="false" />
     <categoryEntry id="cp-kw::ravager" name="Ravager" hidden="false" />
+    <categoryEntry id="cp-kw::red-corsairs-raiders" name="Red Corsairs Raiders" hidden="false" />
+    <categoryEntry id="cp-kw::red-corsairs-reave-captain" name="Red Corsairs Reave-Captain" hidden="false" />
     <categoryEntry id="cp-kw::redemptor-dreadnought" name="Redemptor Dreadnought" hidden="false" />
     <categoryEntry id="cp-kw::regiment" name="Regiment" hidden="false" />
     <categoryEntry id="cp-kw::reiver-squad" name="Reiver Squad" hidden="false" />
@@ -528,6 +540,7 @@
     <categoryEntry id="cp-kw::warboss" name="Warboss" hidden="false" />
     <categoryEntry id="cp-kw::warglaive" name="Warglaive" hidden="false" />
     <categoryEntry id="cp-kw::warp-spiders" name="Warp Spiders" hidden="false" />
+    <categoryEntry id="cp-kw::warpsmith" name="Warpsmith" hidden="false" />
     <categoryEntry id="cp-kw::warspeke" name="Warspeke" hidden="false" />
     <categoryEntry id="cp-kw::wave-serpent" name="Wave Serpent" hidden="false" />
     <categoryEntry id="cp-kw::white-scars" name="White Scars" hidden="false" />
@@ -636,9 +649,12 @@
         <categoryLink id="fbe11bbf" name="Chaos Daemons" hidden="false" targetId="cp-faction::chaos-daemons" />
         <categoryLink id="57acfa39" name="Chaos Knights" hidden="false" targetId="cp-faction::chaos-knights" />
         <categoryLink id="be5c423b" name="Chaos Knights" hidden="false" targetId="cp-kw::chaos-knights" />
+        <categoryLink id="e43bc788" name="Chaos Lord" hidden="false" targetId="cp-kw::chaos-lord" />
         <categoryLink id="f50f6716" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" />
+        <categoryLink id="615fe468" name="Chaos Terminator Squad" hidden="false" targetId="cp-kw::chaos-terminator-squad" />
         <categoryLink id="501d684d" name="Chaplain" hidden="false" targetId="cp-kw::chaplain" />
         <categoryLink id="5fd25dfe" name="Character" hidden="false" targetId="cp-kw::character" />
+        <categoryLink id="6606bedf" name="Chosen" hidden="false" targetId="cp-kw::chosen" />
         <categoryLink id="7428859a" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" />
         <categoryLink id="32459b4f" name="Combat Patrol: Adepta Sororitas (The Penitent Host)" hidden="false" targetId="cp-cat::the-penitent-host" />
         <categoryLink id="b14e5c5e" name="Combat Patrol: Adeptus Custodes (Guardians of the Throne)" hidden="false" targetId="cp-cat::guardians-of-the-throne" />
@@ -659,6 +675,9 @@
         <categoryLink id="17717fd1" name="Combat Patrol: Chaos Daemons (Butchers of Hyporia)" hidden="false" targetId="cp-cat::butchers-of-hyporia" />
         <categoryLink id="51f37738" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" targetId="cp-cat::slaughter-talon" />
         <categoryLink id="e71aa121" name="Combat Patrol: Chaos Space Marines (Dark Zealots)" hidden="false" targetId="cp-cat::dark-zealots" />
+        <categoryLink id="38b764c4" name="Combat Patrol: Chaos Space Marines (Masters of Terror)" hidden="false" targetId="cp-cat::masters-of-terror" />
+        <categoryLink id="2e2ee54d" name="Combat Patrol: Chaos Space Marines (Remorseless Reavers)" hidden="false" targetId="cp-cat::remorseless-reavers" />
+        <categoryLink id="5317ba1d" name="Combat Patrol: Chaos Space Marines (Warpsmith's Gauntlet)" hidden="false" targetId="cp-cat::warpsmiths-gauntlet" />
         <categoryLink id="a64288e0" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" />
         <categoryLink id="d8b6d9d3" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" targetId="cp-cat::mordekais-judgement" />
         <categoryLink id="2cb09f03" name="Combat Patrol: Dark Angels (The Vengeful Brethren)" hidden="false" targetId="cp-cat::the-vengeful-brethren" />
@@ -695,6 +714,7 @@
         <categoryLink id="2cac5be6" name="Combat Patrol: Space Wolves (Askar's Wolfpack)" hidden="false" targetId="cp-cat::askars-wolfpack" />
         <categoryLink id="3378c5cd" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" targetId="cp-cat::thoryks-void-hunters" />
         <categoryLink id="cedba8e1" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" />
+        <categoryLink id="39a229ff" name="Combat Patrol: T'au Empire (Preybane War Party)" hidden="false" targetId="cp-cat::preybane-war-party" />
         <categoryLink id="15c13140" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" />
         <categoryLink id="03d011cf" name="Combat Patrol: T'au Empire (Sudden Dawn Cadre)" hidden="false" targetId="cp-cat::sudden-dawn-cadre" />
         <categoryLink id="7d94d92c" name="Combat Patrol: Thousand Sons (Prism of Zadophon)" hidden="false" targetId="cp-cat::prism-of-zadophon" />
@@ -763,6 +783,8 @@
         <categoryLink id="101724b3" name="Exoarmour" hidden="false" targetId="cp-kw::exoarmour" />
         <categoryLink id="f8c18d97" name="Exoframe" hidden="false" targetId="cp-kw::exoframe" />
         <categoryLink id="5c033fe3" name="Farseer" hidden="false" targetId="cp-kw::farseer" />
+        <categoryLink id="b769cda6" name="Farstalkers" hidden="false" targetId="cp-kw::farstalkers" />
+        <categoryLink id="1c9fa93e" name="Fellgor Beastmen" hidden="false" targetId="cp-kw::fellgor-beastmen" />
         <categoryLink id="b42c5a46" name="Field Ordnance Battery" hidden="false" targetId="cp-kw::field-ordnance-battery" />
         <categoryLink id="97617839" name="Fiends" hidden="false" targetId="cp-kw::fiends" />
         <categoryLink id="29d35659" name="Fire Warrior" hidden="false" targetId="cp-kw::fire-warrior" />
@@ -891,6 +913,7 @@
         <categoryLink id="4bf9a069" name="Necron Warriors" hidden="false" targetId="cp-kw::necron-warriors" />
         <categoryLink id="d2685adb" name="Necrons" hidden="false" targetId="cp-faction::necrons" />
         <categoryLink id="b21f1ddf" name="Necrons" hidden="false" targetId="cp-kw::necrons" />
+        <categoryLink id="15abff73" name="Nemesis Claw" hidden="false" targetId="cp-kw::nemesis-claw" />
         <categoryLink id="081a131c" name="Nemesis Dreadknight" hidden="false" targetId="cp-kw::nemesis-dreadknight" />
         <categoryLink id="f57124b1" name="Neophyte Hybrids" hidden="false" targetId="cp-kw::neophyte-hybrids" />
         <categoryLink id="df830d0f" name="Neurolictor" hidden="false" targetId="cp-kw::neurolictor" />
@@ -933,6 +956,8 @@
         <categoryLink id="a8485bc3" name="Raldeo" hidden="false" targetId="cp-kw::raldeo" />
         <categoryLink id="f17427d7" name="Rangers" hidden="false" targetId="cp-kw::rangers" />
         <categoryLink id="4590566d" name="Ravager" hidden="false" targetId="cp-kw::ravager" />
+        <categoryLink id="c9a4105b" name="Red Corsairs Raiders" hidden="false" targetId="cp-kw::red-corsairs-raiders" />
+        <categoryLink id="94f30591" name="Red Corsairs Reave-Captain" hidden="false" targetId="cp-kw::red-corsairs-reave-captain" />
         <categoryLink id="a959cf26" name="Redemptor Dreadnought" hidden="false" targetId="cp-kw::redemptor-dreadnought" />
         <categoryLink id="a7a436e2" name="Regiment" hidden="false" targetId="cp-kw::regiment" />
         <categoryLink id="c7ce8c61" name="Reiver Squad" hidden="false" targetId="cp-kw::reiver-squad" />
@@ -1038,6 +1063,7 @@
         <categoryLink id="bc429844" name="Warboss" hidden="false" targetId="cp-kw::warboss" />
         <categoryLink id="e7fdbaf5" name="Warglaive" hidden="false" targetId="cp-kw::warglaive" />
         <categoryLink id="eea4c1c9" name="Warp Spiders" hidden="false" targetId="cp-kw::warp-spiders" />
+        <categoryLink id="aadb329c" name="Warpsmith" hidden="false" targetId="cp-kw::warpsmith" />
         <categoryLink id="55bbc9c0" name="Warspeke" hidden="false" targetId="cp-kw::warspeke" />
         <categoryLink id="ae5e63dc" name="Wave Serpent" hidden="false" targetId="cp-kw::wave-serpent" />
         <categoryLink id="99f46555" name="White Scars" hidden="false" targetId="cp-kw::white-scars" />
