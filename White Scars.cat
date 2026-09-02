@@ -383,7 +383,7 @@
             <characteristic name="A" typeId="1318d167">D3</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">1</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
             <characteristic name="Keywords" typeId="aa05940c">Anti-Fly 2+</characteristic>
           </characteristics>

@@ -417,7 +417,7 @@
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">9</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
-            <characteristic name="D" typeId="64a3de63">6</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6</characteristic>
             <characteristic name="Keywords" typeId="aa05940c">Melta 2</characteristic>
           </characteristics>
         </profile>

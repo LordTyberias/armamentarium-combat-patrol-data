@@ -516,7 +516,7 @@
             <characteristic name="WS" typeId="258d9251">4+</characteristic>
             <characteristic name="S" typeId="09c93781">8</characteristic>
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
             <characteristic name="Keywords" typeId="23459e53">Anti-Vehicle 3+</characteristic>
           </characteristics>
         </profile>
@@ -527,7 +527,7 @@
             <characteristic name="WS" typeId="258d9251">3+</characteristic>
             <characteristic name="S" typeId="09c93781">8</characteristic>
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>

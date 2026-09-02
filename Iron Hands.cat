@@ -69,7 +69,7 @@
             <characteristic name="A" typeId="b10eaf4e">1</characteristic>
             <characteristic name="WS" typeId="258d9251">3+</characteristic>
             <characteristic name="S" typeId="09c93781">8</characteristic>
-            <characteristic name="AP" typeId="54255f70">2</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
             <characteristic name="D" typeId="1f91ac72">3</characteristic>
             <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
           </characteristics>
