@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::dark-angels" name="Dark Angels" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::mordekais-judgement::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="45391b34" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d6121297" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="77e435e9" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" targetId="cp-cat::mordekais-judgement" primary="true" />
+        <categoryLink id="26b9f4ac" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="b1aede45" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="abf6ff83" name="Resolute in Duty" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES INFANTRY unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a601574e" name="Teachings of the Lion" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an ADEPTUS ASTARTES INFANTRY unit from your army Falls Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS ASTARTES INFANTRY unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to either shoot or declare a charge (but not both) in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a9895758" name="Fortitude of the First" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks and is within range of an objective marker you control.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, your unit has the Benefit of Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bbe90ca6" name="Endless Hunt" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 3VP if an INTERCESSOR SQUAD unit from your army that is not Battle-shocked is within range of an objective marker you control and which is not within your deployment zone. If that objective marker is within your opponent’s deployment zone, you score 5VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9e89f0b3" name="Archeotech Reliquary" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, your opponent must select one objective marker. At the end of the battle, you score 10VP if you control that objective marker.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::mordekais-judgement::00-chaplain-mordekai" name="Chaplain Mordekai" type="unit" hidden="false">
       <constraints>
         <constraint id="92f2dba1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -418,6 +467,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vengeful-brethren::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b21d278a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="33d2a4a7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8c4a166a" name="Combat Patrol: Dark Angels (The Vengeful Brethren)" hidden="false" targetId="cp-cat::the-vengeful-brethren" primary="true" />
+        <categoryLink id="2d7a968d" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
+        <categoryLink id="67e5165e" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="70f24895" name="Unyielding" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if that model has the BLADEGUARD VETERAN SQUAD keyword: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="452f5982" name="March of Vengeance" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes a Consolidation move, it can move up to 6" instead of up to 3".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="10843f6f" name="Relic Munitions" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in your unit (excluding plasma incinerators) have the [LETHAL HITS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b96f483d" name="Hunters of Heretics" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">■ Each time an ADEPTUS ASTARTES unit from your army destroys an enemy CHARACTER model, you score 5VP. ■ At the end of the battle, if all enemy CHARACTER models are destroyed, you score 5VP</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2d9f798a" name="Take the Stronghold" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Before the battle, at the start of the Deploy Armies step, your opponent must select one objective marker that is not in their deployment zone. At the end of your turn, you score 5VP if you control that selected objective marker.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::the-vengeful-brethren::00-master-zacharial" name="Master Zacharial" type="unit" hidden="false">
       <constraints>

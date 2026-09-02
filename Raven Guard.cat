@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::raven-guard" name="Raven Guard" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::shadow-claw-kevarax::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c209fcdd" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9f1718ae" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="159f97bb" name="Combat Patrol: Raven Guard (Shadow Claw Kevarax)" hidden="false" targetId="cp-cat::shadow-claw-kevarax" primary="true" />
+        <categoryLink id="10c7225a" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="8d1d0a3a" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="01a45a95" name="Stranglehold" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">The Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0418215f" name="From the Shadows" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of weapons equipped by models in your unit by 1, and those weapons have the [ANTI-MONSTER 4+] and [ANTI-VEHICLE 4+] abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a0ee301a" name="Force Their Hand" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that is within 9" of the enemy unit that just ended that move, and not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6", or a Normal move of up to 6" instead if it is a PHOBOS unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0742088b" name="Concentrated Wrath" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">You score 2VP each time a model from your army destroys an enemy unit. If that unit was your Oath of Moment target, you score 3VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c11b19d" name="Clandestine Infiltration" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control the objective marker closest to your opponent’s battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::shadow-claw-kevarax::00-captain-kevarax" name="Captain Kevarax" type="unit" hidden="false">
       <constraints>
         <constraint id="32a71338" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -450,6 +499,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::strike-team-solarien::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2939f6bb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a59b0845" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="280f94b0" name="Combat Patrol: Raven Guard (Strike Team Solarien)" hidden="false" targetId="cp-cat::strike-team-solarien" primary="true" />
+        <categoryLink id="acbec5eb" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="a65d9949" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="63af41d2" name="Vanguard Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">The Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a0dbe03c" name="Giantslayer Doctrine" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One SUPPRESSOR SQUAD unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in your unit by 1, and those weapons have the [ANTI-MONSTER 4+] and [ANTI-VEHICLE 4+] abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2f7f79c" name="Rapid Repositioning" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One PHOBOS unit from your army that is within 9" of that unit and not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to 3".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="04e1d2bf" name="Reconnaissance in Force" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn: • You score 2VP if you control at least one objective marker in No Man’s Land and you control the same number of objective markers in No Man’s Land as your opponent does. • You score 4VP if you control at least one objective marker in No Man’s Land and you control more objective markers in No Man’s Land than your opponent does.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5b990706" name="Pinpoint Purge" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">You score 2VP each time a model from your army destroys an enemy unit with a ranged attack. If that unit was your Oath of Moment target, you score 3VP instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::strike-team-solarien::00-lieutenant-solarien" name="Lieutenant Solarien" type="unit" hidden="false">
       <constraints>

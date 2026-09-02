@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::imperial-knights" name="Imperial Knights" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::armiger-trailblazers::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="680f81bb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1dcb5383" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="684c287b" name="Combat Patrol: Imperial Knights (Armiger Trailblazers)" hidden="false" targetId="cp-cat::armiger-trailblazers" primary="true" />
+        <categoryLink id="9cdc3391" name="Imperial Knights" hidden="false" targetId="cp-faction::imperial-knights" primary="false" />
+        <categoryLink id="b871d41d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="467591c6" name="Loping Gait" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ARMIGER unit from your army that has not been selected to move this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes a move, it can move through enemy models. When doing so, it can move within Engagement Range of such models but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54e4a188" name="Terrifying Charge" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase, just after an ARMIGER unit from your army ends a Charge move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ARMIGER unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit within range of your unit. That enemy unit must take a Battle-shock test, subtracting 1 from the result.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="681fa73f" name="Target Lock" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ARMIGER unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in your unit have the [IGNORES COVER] ability, and each time a model in your unit makes an attack, you can ignore any or all modifiers to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a26c9a29" name="Gouge a Foothold" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Only</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of your Movement phase, you select one objective marker to be your Primary Rallying Point objective marker. Then your opponent selects one objective marker to be your Secondary Rallying Point objective marker (this can be the same objective marker). At the end of your next Command phase or the end of the battle (whichever comes first), you score VP as follows: 5VP if you control your Primary Rallying Point objective marker. 10VP if you control your Secondary Rallying Point objective marker.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::armiger-trailblazers::00-pilot-dantos-and-thauvir" name="Pilot Dantos and Thauvir" type="unit" hidden="false">
       <constraints>
         <constraint id="fb0713df" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />

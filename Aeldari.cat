@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::aeldari" name="Aeldari" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::kygharils-protectors::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="d2fe83ad" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0743bf4a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0eca11fa" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
+        <categoryLink id="1d260d99" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="7bbb8b95" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f1ed2c3f" name="Focused Firepower" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One or more ASURYANI units from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the end of the phase, each time a model in one of your units makes an attack that targets that enemy unit, re‑roll a Wound roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="07028cbe" name="Swift Deception" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your opponent’s Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ASURYANI unit from your army (excluding WRAITHBLADES units).</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D3".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9d56cfe7" name="Elusive" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ASURYANI unit from your army (excluding WRAITHBLADES units) that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have the Stealth ability and each time a ranged attack targets your unit, models in it have the Benefit of Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="32b07e9a" name="Protect the Future" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the Declare Battle Formations step, select one enemy unit (excluding CHARACTER units). The selected unit must be an INFANTRY or MOUNTED unit, if possible. When that enemy unit is destroyed, you score 9VP. If your SPIRITSEER model is on the battlefield when that enemy unit is destroyed, you score 12VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ab962b1" name="Recover the Spirit Stones" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of your turn, select one objective marker within No Man’s Land. At the end of your opponent’s next turn or the end of the battle (whichever comes first), if you control that objective marker, you score 3VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::kygharils-protectors::00-spiritseer-kygharil" name="Spiritseer Kygharil" type="unit" hidden="false">
       <constraints>
         <constraint id="b76fff11" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -393,6 +442,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-fatebreakers::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="769af68f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cb98524f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="182bd1ca" name="Combat Patrol: Aeldari (The Fatebreakers)" hidden="false" targetId="cp-cat::the-fatebreakers" primary="true" />
+        <categoryLink id="b1603429" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="2d184f1c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1f555daa" name="Whip-fast Reactions" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One AELDARI INFANTRY or AELDARI MOUNTED unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="858667b5" name="Storm of Shots" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">Up to two AELDARI MOUNTED units from your army, or one AELDARI INFANTRY unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in one of those units makes an attack, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="beb8354a" name="Zephyr-swift" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">Up to two AELDARI MOUNTED units from your army that are not within Engagement Range of one or more enemy units, or one AELDARI INFANTRY unit from your army that is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Each of those units can make a Normal move of up to 6". RESTRICTIONS: Until the end of the turn, those units are not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1858f265" name="Ineffable Agenda" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 3VP if you control one or more objective markers that are not within your deployment zone and that you did not control at the start of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="81b984f6" name="A Greater Destiny" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if one or more units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::the-fatebreakers::00-farseer-iraneth" name="Farseer Iraneth" type="unit" hidden="false">
       <constraints>
@@ -829,6 +927,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::dreamers-coterie::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5062e427" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="77589473" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="81725d07" name="Combat Patrol: Aeldari (Dreamer's Coterie)" hidden="false" targetId="cp-cat::dreamers-coterie" primary="true" />
+        <categoryLink id="8b3f9ea2" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="ac1087aa" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0e4c3825" name="Encircling Blades" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Reinforcements step of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One destroyed CORSAIR VOIDREAVERS or CORSAIR SKYREAVERS unit from your army. You can use this Stratagem on that unit even though it is destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Add a new unit to your army identical to your destroyed unit, at its original Starting Strength. Set that unit up anywhere on the battlefield wholly within 9" of one or more battlefield edges and not within Engagement Range of one or more enemy units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="79b8ba6b" name="Fade and Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an AELDARI unit from your army Falls Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That AELDARI unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8be3312c" name="Boarders’ Barrage" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ANHRATHE unit from your army that is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one visible enemy VEHICLE or MONSTER unit that is not within Engagement Range of one or more units from your army and is within 8" of your unit. Roll six D6: for each 3+, that enemy unit suffers 1 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c39bda1" name="Raiders’ Prize" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if one or more units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="955d8a86" name="Murderous Reprisals" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 5VP if one or more units from your army destroys an enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::dreamers-coterie::00-kharseth" name="Kharseth" type="unit" hidden="false">
       <constraints>

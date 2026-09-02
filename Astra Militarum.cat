@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::astra-militarum" name="Astra Militarum" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::karsks-gunners::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="358d3e09" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="71a4aaf2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="18768cfc" name="Combat Patrol: Astra Militarum (Karsk's Gunners)" hidden="false" targetId="cp-cat::karsks-gunners" primary="true" />
+        <categoryLink id="a06dff34" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="27f14c06" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="94995ce6" name="Send in the Next Wave" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Reinforcements step of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One destroyed CADIAN SHOCK TROOPS unit from your army. You can use this Stratagem on that unit even though it is destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Add a new unit to your army identical to your destroyed unit, at its original Starting Strength. Set that unit up anywhere on the battlefield wholly within 9" of your battlefield edge and not within Engagement Range of one or more enemy units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a5be6d82" name="Bring It Down" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">Any number of ASTRA MILITARUM units from your army, and one enemy unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in one of your selected units makes an attack that targets that enemy unit, you can re-roll the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1ad184b" name="Artillery Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">2CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your opponent’s Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One OFFICER model from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, halve the Move characteristic of enemy models, halve Advance rolls made for enemy units, enemy units cannot declare a charge and each time an enemy model makes a ranged attack, subtract 1 from the Hit roll. RESTRICTIONS: You can only use this Stratagem once per battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd7c843a" name="Hold the Line" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your opponent’s turn, you score 3VP if there are no enemy units wholly within your deployment zone (excluding Battle-shocked units). If there are no enemy units wholly within 6" of your deployment zone (excluding Battle-shocked units), you score 5VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e9d6aaf" name="Methodical Destruction" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the battle round, select one enemy unit that is not destroyed to be your army’s target for that battle round. At the end of that battle round, you score 4VP if your army’s target for that battle round is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::karsks-gunners::00-command-squad-karsk" name="Command Squad Karsk" type="unit" hidden="false">
       <constraints>
         <constraint id="ebe0ba22" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -787,6 +836,55 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::draydens-lance::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ac514b34" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="712f8a30" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ac4dc442" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
+        <categoryLink id="f350a565" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="d1606416" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9eceb251" name="Last Stand" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ASTRA MILITARUM unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ea1e454" name="Prime Target" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One OFFICER unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the start of your next Command phase, weapons equipped by ASTRA MILITARUM models from your army have the [LETHAL HITS] ability while targeting that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c031fe1c" name="Born In The Saddle" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ATTILAN ROUGH RIDERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3ce0fcf" name="Advance and Eliminate" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time an ASTRA MILITARUM unit from your army destroys an enemy unit, if that enemy unit started that phase within range of one or more objective markers within No Man’s Land, you score 3VP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48c35580" name="Battlefield Domination" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 4VP for each objective marker you control. You cannot score more than 12VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad" name="Drayden's Command Squad" type="unit" hidden="false">
       <constraints>
         <constraint id="d2ab3aba" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -1485,6 +1583,55 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::strike-platoon-gorgonne-vi::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="13dfa1db" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1020f62f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7c118a35" name="Combat Patrol: Astra Militarum (Strike Platoon Gorgonne VI)" hidden="false" targetId="cp-cat::strike-platoon-gorgonne-vi" primary="true" />
+        <categoryLink id="a9eca165" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="568126d1" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9fba67e5" name="Servo-Augur Array" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ASTRA MILITARUM unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one objective marker you control that your unit is within range of. That objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db055faa" name="Swift Execution" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ASTRA MILITARUM INFANTRY unit from your army that has not been selected to move this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 3" to the Move characteristic of models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ec09bd0" name="Indoctrinated Obedience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ASTRA MILITARUM unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not shot this phase, roll one D6, adding 3 if your unit has the VEHICLE keyword. On a 3+, do not remove the destroyed model from play; it can shoot after the attacking model’s unit has finished making its attacks and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a50b95f8" name="Cordon Imperator" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your Command phase, you score 4VP if you control the objective marker closest to your battlefield edge and you control one other objective marker that is wholly within No Man’s Land.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54dde157" name="Tempest of the Emperor" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">You score 3VP each time an ASTRA MILITARUM model from your army destroys an enemy unit that started the phase within range of one or more objective markers. You cannot score more than 12VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::strike-platoon-gorgonne-vi::00-taurox-prime" name="Taurox Prime" type="unit" hidden="false">
       <constraints>
         <constraint id="697472ba" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -2074,6 +2221,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::death-korps-combat-platoon::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2e3baac9" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="118f7232" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="55a74464" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" targetId="cp-cat::death-korps-combat-platoon" primary="true" />
+        <categoryLink id="2ab05e8f" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="721cac67" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2e9a8ebc" name="Fresh Waves" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Reinforcements step of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One destroyed DEATH KORPS OF KRIEG or DEATH RIDERS unit from your army. You can use this Stratagem on that unit even though it is destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Add a new unit to your army identical to your destroyed unit, at its original Starting Strength. Set that unit up anywhere on the battlefield wholly within 9" of one or more battlefield edges and not within Engagement Range of one or more enemy units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48d73f54" name="Fiendslayer Munitions" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">Any number of ASTRA MILITARUM units from your army, and one enemy VEHICLE or MONSTER unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in one of your selected units makes an attack that targets that enemy unit: • Improve the Armour Penetration characteristics of Ranged weapons equipped by models in the selected units by 1. • Ranged weapons equipped by models in the selected units have the [ANTI‑VEHICLE 4+] and [ANTI‑MONSTER 4+] abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1c3eff2" name="Smoke Barrage" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your opponent’s Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ASTRA MILITARUM unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an enemy unit selects your unit as the target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other negative modifiers to that Charge roll).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f4ed06d9" name="All Fronts Advance" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each player’s turn, you score 5VP if you control one or more objective markers not within your deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="79fee1ef" name="Hold and Repel" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your opponent’s turn, you score 3VP if there are no enemy units wholly within your deployment zone (excluding Battle-shocked units). If there are no enemy units wholly within 6" of your deployment zone (excluding Battle-shocked units), you score 5VP instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::death-korps-combat-platoon::00-krieg-command-squad" name="Krieg Command Squad" type="unit" hidden="false">
       <constraints>

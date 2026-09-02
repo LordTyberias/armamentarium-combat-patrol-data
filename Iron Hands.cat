@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::iron-hands" name="Iron Hands" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::medusan-redoubt::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b7bf0cec" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="39e059a7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4c4b0d9e" name="Combat Patrol: Iron Hands (Medusan Redoubt)" hidden="false" targetId="cp-cat::medusan-redoubt" primary="true" />
+        <categoryLink id="0d331703" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="e5dd6b34" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6fd3b193" name="Methodical Firepower" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an ADEPTUS ASTARTES unit from your army Falls Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS ASTARTES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="68ab621a" name="Mercy is Weakness" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One or more ADEPTUS ASTARTES INFANTRY units from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the end of the phase, ranged weapons equipped by models in those ADEPTUS ASTARTES INFANTRY units have the [SUSTAINED HITS 1] ability while targeting that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce716bbe" name="Cogitated Fire Doctrines" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, just after an ADEPTUS ASTARTES unit from your army has shot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS ASTARTES unit, if it is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to 3". If it does, until the end of the turn, your unit is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1276eece" name="Advance and Secure" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control more objectives in No Man’s Land than your opponent.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b969dfb0" name="Methodical Destruction" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time an ADEPTUS ASTARTES unit from your army destroys an enemy unit with a ranged attack, you score 2VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::medusan-redoubt::00-techmarine-gorloch-kataan" name="Techmarine Gorloch Kataan" type="unit" hidden="false">
       <constraints>
         <constraint id="aff0d1b3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />

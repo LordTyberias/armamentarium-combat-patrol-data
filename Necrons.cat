@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::necrons" name="Necrons" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::amonhotekhs-guard::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b68b9e41" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6e5a03d0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="097f26e7" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
+        <categoryLink id="c7f801d1" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="dc964465" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="57fdb749" name="Mercurial Resilience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb02c761" name="Disruption Fields" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 1 to the Strength characteristic of melee weapons equipped by models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9bad2e18" name="Will of the Overlord" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit. RESTRICTIONS: You can only use this Stratagem if an OVERLORD model from your army is on the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29cb567a" name="Reclaim and Dominate" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if one or more NECRONS units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce809b07" name="Treasures of Aeons" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one objective marker in No Man’s Land. You score 3VP each time a NECRONS model from your army destroys an enemy unit that started the phase within range of that objective marker or within range of the objective marker within your deployment zone (if there is one).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::amonhotekhs-guard::00-overlord-amonhotekh" name="Overlord Amonhotekh" type="unit" hidden="false">
       <constraints>
         <constraint id="375da35b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -430,6 +479,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::mindflensers-murder-court::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="fc3a3816" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a33348a7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8b7e0217" name="Combat Patrol: Necrons (Mindflenser's Murder Court)" hidden="false" targetId="cp-cat::mindflensers-murder-court" primary="true" />
+        <categoryLink id="88510167" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="a28c4b8d" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9fe0a033" name="Extermination Directive" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit, re-roll a Hit roll of 1. If that target is Battle-shocked, you can re-roll the Hit roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7de9287c" name="Prowling Efficiency" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit is selected to Fall Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army within Engagement Range of that enemy unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">After that enemy unit ends that Fall Back move, your unit can make a Normal move of up to D6+1".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9de60c9" name="Eldritch Nightmares" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That enemy unit must take a Battle-shock test, subtracting 1 from the result if it is within 12" of your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6dfafcaa" name="Prioritised Excision" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one unit from your opponent’s army. Then your opponent must select one other unit from their army. At the end of the battle, you score 6VP for each of the selected units that is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2d894ca4" name="Empirical Harvesting" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your Command phase: ■ You score 2VP if you control at least as many objective markers as your opponent controls. ■ You score 2VP if you control more objective markers than your opponent controls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::mindflensers-murder-court::00-mokhryst-the-mindflenser" name="Mokhryst the Mindflenser" type="unit" hidden="false">
       <constraints>

@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::salamanders" name="Salamanders" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::pyroclasm-assault-force::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="24eba1c3" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="474cd20b" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="55937be3" name="Combat Patrol: Salamanders (Pyroclasm Assault Force)" hidden="false" targetId="cp-cat::pyroclasm-assault-force" primary="true" />
+        <categoryLink id="82306ba8" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="18b4bd35" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0a5d5604" name="Weather the Storm" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4187c386" name="Crucible of Battle" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an ADEPTUS ASTARTES unit from your army has Advanced.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS ASTARTES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot in a turn in which it Advanced.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24cc7343" name="Stand Your Ground" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="deeac357" name="Promethean Creed" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each player’s turn, you score 5VP if you control one or more objective markers that your opponent controlled at the start of that turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d99ac5c9" name="Wrath of Nocturne" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time an ADEPTUS ASTARTES unit from your army destroys an enemy WARLORD, MONSTER or VEHICLE model, you score 5VP. At the end of the battle, if all enemy WARLORD, MONSTER and VEHICLE models are destroyed, you score 5VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::pyroclasm-assault-force::00-adrax-agatone" name="Adrax Agatone" type="unit" hidden="false">
       <constraints>
         <constraint id="c3be9ef6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />

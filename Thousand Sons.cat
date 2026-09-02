@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::thousand-sons" name="Thousand Sons" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::the-coven-temporus::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7b88ded9" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2a058a3d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ccf6ca73" name="Combat Patrol: Thousand Sons (The Coven Temporus)" hidden="false" targetId="cp-cat::the-coven-temporus" primary="true" />
+        <categoryLink id="c24dfeba" name="Thousand Sons" hidden="false" targetId="cp-faction::thousand-sons" primary="false" />
+        <categoryLink id="1a1737ec" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c19185c3" name="Wreathed in Warpflame" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One THOUSAND SONS unit from your army (excluding TZAANGORS units) that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, melee weapons equipped by models in your unit have the [LETHAL HITS] ability and each time a model in your unit makes an attack that targets a MONSTER or VEHICLE unit, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="03376734" name="Mutant Cunning" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TZAANGORS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6" and, until the end of the phase, each time a ranged attack targets your unit, models in your unit have the Benefit of Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4e7bcd99" name="Malign Entanglement" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Charge phase, just after an enemy unit has declared a charge.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One THOUSAND SONS unit from your army that was selected as a target of that charge.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, subtract 2 from Charge rolls made for that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b9f18d44" name="Sorcerous Ritual" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your opponent’s Fight phase, if one or more PSYKER models from your army are within range of an objective marker that you control and that is not within your deployment zone, roll one D6, adding 1 to the result for each remaining Cabal point you have (to a maximum of +3): on a 5+, you score 3VP</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1e2511be" name="Bringer of Change" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score D3 VP if one or more enemy models were destroyed by Psychic Attacks made by models from your army that phase. You cannot score more than 12VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::the-coven-temporus::00-ahrak-the-time-weaver" name="Ahrak the Time Weaver" type="unit" hidden="false">
       <constraints>
         <constraint id="7b48d90f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -439,6 +488,55 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::prism-of-zadophon::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="90c5f4ea" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0017167d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="76fcf499" name="Combat Patrol: Thousand Sons (Prism of Zadophon)" hidden="false" targetId="cp-cat::prism-of-zadophon" primary="true" />
+        <categoryLink id="8e6d4528" name="Thousand Sons" hidden="false" targetId="cp-faction::thousand-sons" primary="false" />
+        <categoryLink id="e9ce3078" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="974e02fd" name="Mutable Illusion" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TZAANGOR SHAMAN or TZAANGOR ENLIGHTENED unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc004704" name="Paradigm of Rivalry" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your Shooting phase, just after a THOUSAND SONS PSYKER model from your army has attempted a Ritual.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One other THOUSAND SONS PSYKER model from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your model can attempt one Ritual no model from your army has manifested this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="854778b3" name="Curse Foretold" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One RUBRIC MARINES unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, the Malefic Curse weapon equipped by your unit’s Aspiring Sorcerer model has the [PISTOL] ability and each time that model makes an attack with that weapon, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0b606381" name="Arcane Rite" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, if your RUBRIC MARINES unit is within range of one or more Arcane objective markers you control, you score 3VP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="21187574" name="Feast of Soul Secrets" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time an enemy unit is destroyed, if that unit was within 3" of your WARLORD at the start of the phase, you score 3VP. You cannot score more than 12VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::prism-of-zadophon::00-zadophon-the-soul-eater" name="Zadophon the Soul Eater" type="unit" hidden="false">
       <constraints>
         <constraint id="50db8741" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -855,6 +953,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::warptongues-hex-pact::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f885fbd4" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="378c6f08" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c1dcb886" name="Combat Patrol: Thousand Sons (Warptongue's Hex-Pact)" hidden="false" targetId="cp-cat::warptongues-hex-pact" primary="true" />
+        <categoryLink id="600ea34c" name="Thousand Sons" hidden="false" targetId="cp-faction::thousand-sons" primary="false" />
+        <categoryLink id="fe5febae" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="bcea603f" name="Wrath of the Warp" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One THOUSAND SONS PSYKER or SCINTILLATING LEGIONS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a PSYKER or SCINTILLATING LEGIONS model from your unit is destroyed, after the attacking unit has finished making its attacks, roll one D6, adding 2 to the result if the destroyed model has the PSYKER keyword: on a 2-4, the attacking unit suffers 1 mortal wound; on a 5+, the attacking unit suffers 2 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0263d61c" name="Cursetouch" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One THOUSAND SONS PSYKER or SCINTILLATING LEGIONS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 1 to the Damage characteristic of melee weapons equipped by PSYKER and SCINTILLATING LEGIONS models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2d5aee72" name="Intimidating Intrusion" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your opponent’s Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One THOUSAND SONS PSYKER unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one PSYKER model in your unit, then select one objective marker within 12" of that model that is under your opponent’s control and has no models from your opponent’s army within range that have an Objective Control characteristic of 1 or more. Your unit takes a Leadership test. If that test is passed, that objective marker is no longer under your opponent’s control or secured by them.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e0e9578" name="Corrupting Congregation" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">While an objective marker that you control has one or more THOUSAND SONS units from your army (excluding Battle-shocked units) within range of it and one or more SCINTILLATING LEGIONS units from your army (excluding Battle-shocked units) within range of it, it is Cursed by your army. ■ At the end of your turn, you score 1VP if there are one or more objective markers Cursed by your army. ■ At the end of your opponent’s turn, you score 2VP if there are one or more objective markers Cursed by your army.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b766a3a0" name="Expunge All Obstacles" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one enemy model with the highest Wounds characteristic from your opponent’s army that is also on the battlefield. At the end of the battle, you score 6VP if that enemy model’s unit is destroyed. If that enemy model’s unit was destroyed in the first three battle rounds, you score 10VP instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::warptongues-hex-pact::00-madrax-warptongue" name="Madrax Warptongue" type="unit" hidden="false">
       <constraints>

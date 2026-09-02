@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::genestealer-cults" name="Genestealer Cults" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::claw-of-ascension::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="82197818" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="70bb3fa2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cabec5fa" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="b7e979a1" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="32f8729e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1d451ee4" name="Metamorphic Spasm" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HYBRID METAMORPHS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb268cd5" name="Point-blank Ambush" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GENESTEALER CULTS unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, weapons equipped by models in your unit have the [LETHAL HITS] ability while targeting enemy units within 12".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9c8a6c8" name="Swarm the Oppressors" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One or more GENESTEALER CULTS units from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the end of the phase, each time one of your units declares a charge, if that enemy unit is a target of that charge, add 1 to the Charge roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da07aa5e" name="Infiltration Agenda" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if one or more GENESTEALER CULTS units from your army (excluding Battle‐shocked units) are within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e5df073f" name="Safeguard the Sanctuary" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control the objective marker closest to your battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian" name="Shanus Daskovian" type="unit" hidden="false">
       <constraints>
         <constraint id="8b61f162" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -451,6 +500,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::hand-of-the-magus::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e1f88bde" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f3077f7c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b92e438d" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
+        <categoryLink id="85c3381d" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="5a67b8a6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f75466c4" name="Defend the Magus" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your Shooting phase or start of the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One MAGUS unit from your army and one enemy unit within Engagement Range of that MAGUS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a GENESTEALER CULTS model from your army makes an attack that targets that enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f3896d8f" name="Lurking Killers" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GENESTEALER CULTS INFANTRY unit from your army (excluding ABERRANT units) that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b24b0e7" name="Return to the Shadows" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GENESTEALER CULTS INFANTRY unit from your army that is within 9" of that enemy unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6". If your unit has the MAGUS keyword, it can make a Normal move of up to 6" instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="62b7bb08" name="Rise Up" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your opponent’s turn, roll one D6 for each objective marker you control that has one or more NEOPHYTE HYBRID units from your army within range of it (excluding Battle-shocked units): on a 1-3, you score 1VP; on a 4+, you score 3VP</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cca57b2e" name="Will of the Patriarch" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 15VP if your MAGUS model is within 3" of the centre of the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::hand-of-the-magus::00-magus-veridielle" name="Magus Veridielle" type="unit" hidden="false">
       <constraints>

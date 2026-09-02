@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::ultramarines" name="Ultramarines" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::strike-force-octavius::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="abb7f513" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f8b62f11" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="84935618" name="Combat Patrol: Space Marines (Strike Force Octavius)" hidden="false" targetId="cp-cat::strike-force-octavius" primary="true" />
+        <categoryLink id="bc71e9ce" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="e2c7040f" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1ab5abf5" name="Gene-Wrought Resilience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than your unit’s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="16509b81" name="Veteran Instincts" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TERMINATOR unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, re-roll a Wound roll of 1. If that attack targets a MONSTER or VEHICLE unit, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4356bd1b" name="Duty and Honour" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that is within range of an objective marker you control.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1354a663" name="Wrath of the Emperor" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score 2VP if your CAPTAIN model destroyed one or more enemy models that phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5227d9b8" name="Shock Tactics" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each player’s turn, you score 5VP if you control one or more objective markers that your opponent controlled at the start of that turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::strike-force-octavius::00-captain-octavius" name="Captain Octavius" type="unit" hidden="false">
       <constraints>
         <constraint id="2b8c7218" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -435,6 +484,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::eye-of-ultramar::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="88e5d810" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9a7063c2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9b753656" name="Combat Patrol: Eye of Ultramar" hidden="false" targetId="cp-cat::eye-of-ultramar" primary="true" />
+        <categoryLink id="829f6213" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="e9939aad" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="daf64080" name="Honour the Chapter" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than your unit’s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="07d73a1d" name="Seize the Moment" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an ADEPTUS ASTARTES unit from your army Advances.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS ASTARTES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Advanced.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e436d5a4" name="Martial Precision" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One or more ADEPTUS ASTARTES units from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the end of the phase, ranged weapons equipped by models in your ADEPTUS ASTARTES units have the [LETHAL HITS] ability while targeting that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76dfcbce" name="Secure Objective Primus" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Before the battle, at the start of the Deploy Armies step, your opponent must select one objective marker that is not in their deployment zone. At the end of your turn, you score 5VP if you control that selected objective marker.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d1497a7c" name="Tigurius’ Wrath" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score 2VP if your CHIEF LIBRARIAN TIGURIUS model destroyed one or more enemy models that phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::eye-of-ultramar::00-chief-librarian-tigurius" name="Chief Librarian Tigurius" type="unit" hidden="false">
       <constraints>

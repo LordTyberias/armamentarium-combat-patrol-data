@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::grey-knights" name="Grey Knights" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::aurellios-banishers::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="862d6a96" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="69cae656" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="96edadaf" name="Combat Patrol: Grey Knights (Aurellios' Banishers)" hidden="false" targetId="cp-cat::aurellios-banishers" primary="true" />
+        <categoryLink id="5d70e90c" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="8edf4550" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6668b891" name="Warded Plate" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GREY KNIGHTS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than your unit’s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="298faa5f" name="Unyielding to the Last" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GREY KNIGHTS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf962e82" name="Emergency Teleport" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">2CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GREY KNIGHTS INFANTRY unit from your army that is within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to be selected for the Teleport Assault ability, even though it is within Engagement Range of enemy units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3da66508" name="Champion of Titan" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">You score 6VP each time your WARLORD destroys an enemy CHARACTER model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e49b164d" name="No Escape" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of any of your opponent’s turns, you score 10VP if you control the objective marker closest to your opponent’s battlefield edge and you control the objective marker closest to your own battlefield edge. You can only score VP from this objective once per battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::aurellios-banishers::00-librarian-aurellios" name="Librarian Aurellios" type="unit" hidden="false">
       <constraints>
         <constraint id="941a3a06" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -431,6 +480,49 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::crowes-sanctifiers::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="0dabd3b5" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a568a78d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="905ebf86" name="Combat Patrol: Grey Knights (Crowe's Sanctifiers)" hidden="false" targetId="cp-cat::crowes-sanctifiers" primary="true" />
+        <categoryLink id="e6ae4d6c" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
+        <categoryLink id="d8b85057" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="db4d384c" name="Resolute Ritualists" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">2CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GREY KNIGHTS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than your unit’s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1667e769" name="Into the Maelstrom" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">The Reinforcements step of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GREY KNIGHTS unit from your army in Reserves.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time your unit is set up on the battlefield using the Deep Strike ability, you can set it up anywhere on the battlefield that is more than 3" horizontally away from all enemy units, but if you do, until the end of the turn, it is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="535365ec" name="Empyric Gate" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your opponent’s Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One GREY KNIGHTS unit from your army that is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Remove your unit from the battlefield and place it into Strategic Reserves.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ed5e0092" name="Sanctifying Rites" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Only</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your Movement phase, for each objective marker that is not sanctified by your army, you can select one GREY KNIGHTS unit from your army within range of that objective marker to attempt to sanctify it, if that unit did not Advance this turn and is not within Engagement Range of one or more enemy units. If you do, at the start of your next Movement phase or at the end of the battle (whichever comes first), if that GREY KNIGHTS unit is still within range of that objective marker, that objective marker becomes sanctified by your army and you score the number of VP shown below. Battle round sanctified 2-4: 15VP. Battle round 5: 10VP. Designer's Note: If a unit from your army is within range of multiple objective markers and is selected for this objective, you must select one of those objective markers that you want that unit to attempt to sanctify.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::crowes-sanctifiers::00-castellan-crowe" name="Castellan Crowe" type="unit" hidden="false">
       <constraints>

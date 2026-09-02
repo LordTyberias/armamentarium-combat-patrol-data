@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::harlequins" name="Harlequins" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::kaleidoscopic-onset::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="30614dc6" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="85bcc467" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a681b273" name="Combat Patrol: Harlequins (Kaleidoscopic Onset)" hidden="false" targetId="cp-cat::kaleidoscopic-onset" primary="true" />
+        <categoryLink id="ead4ca9c" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="5f915306" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c81b8986" name="Weakness as Strength" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HARLEQUINS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than your unit’s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7546b043" name="Mocking Flight" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after a HARLEQUINS unit from your army Falls Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That HARLEQUINS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7f1be464" name="Staged Death" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">2CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Any phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HARLEQUINS CHARACTER model from your army that was just destroyed. You can use this Stratagem on that model even though it was just destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">At the end of the phase, set your model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 2 wounds remaining. RESTRICTIONS: Each model can only be targeted with this Stratagem once per battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="45220821" name="Fates Unmade" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each player’s turn, you score 5VP if you control one or more objective markers that your opponent controlled at the start of that turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0bc4308a" name="Bloody Soliloquy" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score 5VP for each CHARACTER model from your army that destroyed one or more enemy units that phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::kaleidoscopic-onset::00-solitaire" name="Solitaire" type="unit" hidden="false">
       <constraints>
         <constraint id="3ed083e4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -546,6 +595,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::twilight-cavalcade::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1b36b6e1" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="acff5af8" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="05213565" name="Combat Patrol: Harlequins (Twilight Cavalcade)" hidden="false" targetId="cp-cat::twilight-cavalcade" primary="true" />
+        <categoryLink id="f7b8923e" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="88979a1e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a4ab3a7d" name="Blade Artists" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HARLEQUINS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of melee weapons equipped by models in your unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="560a3894" name="Malicious Frenzy" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HARLEQUINS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, roll one D6: on a 3+, after the attacking unit has finished making its attacks, the attacking unit suffers 1 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="81bb73f0" name="Dance of Shadows" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HARLEQUINS unit wholly within 6" of one or more battlefield edges and not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Remove your unit from the battlefield and place it into Strategic Reserves. Until the end of your next turn, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca508227" name="Shadows Fall" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of your turn, for each objective marker that you do not control, assign it a different number between 1–6 and then roll one D6: on a result that was not assigned, roll again until you roll one that was assigned; on a result that was assigned, if you control the corresponding objective marker at the end of your turn, you score 5VP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d451b3f7" name="Deadly Denouement" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score 2VP for each CHARACTER model from your army that destroyed one or more enemy models that phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::twilight-cavalcade::00-knight-of-evenfall" name="Knight of Evenfall" type="unit" hidden="false">
       <constraints>

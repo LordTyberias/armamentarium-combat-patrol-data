@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::leagues-of-votann" name="Leagues of Votann" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::bane-slayers-bulwark::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="91773459" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6922ddc1" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4542d785" name="Combat Patrol: Leagues of Votann (Bane-Slayer's Bulwark)" hidden="false" targetId="cp-cat::bane-slayers-bulwark" primary="true" />
+        <categoryLink id="203cb73d" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="45361b09" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e0870e81" name="Point-Blank Fusillade" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One LEAGUES OF VOTANN unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in your unit have the [PISTOL] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9b4438a" name="Ancestral Endurance" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HEARTHKYN WARRIORS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a ranged attack targets your unit, models in your unit have the Benefit of Cover against that attack and if the Strength characteristic of that attack is greater than your unit’s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5cb601ee" name="Contemptuous Rebuff" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Charge phase, just after an enemy unit ends a Charge move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One LEAGUES OF VOTANN unit from your army within Engagement Range of that enemy unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That enemy unit must take a Battle‑shock test, subtracting 1 from the result.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="681dd66c" name="Prospects of Wealth" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your Command phase: ■ If your units have the Hostile Acquisition ability, you score 1VP for each objective marker you control that is not within your deployment zone. ■ If your units have the Fortify Takeover ability, you score 2VP for each objective marker you control that is not within your deployment zone. You cannot score more than 12VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eb4ed169" name="Grudge Match" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, your opponent must select one unit from their army. The first time that enemy unit is destroyed: ■ If your units have the Hostile Acquisition ability, you score 10VP. ■ If your units have the Fortify Takeover ability, you score you score 6VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::bane-slayers-bulwark::00-vynn-bane-slayer" name="Vynn Bane-Slayer" type="unit" hidden="false">
       <constraints>
         <constraint id="9e1d8a4a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -473,6 +522,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::warspekes-prospect::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1a6de5fb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a9911714" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="324f611d" name="Combat Patrol: Leagues of Votann (Warspeke's Prospect)" hidden="false" targetId="cp-cat::warspekes-prospect" primary="true" />
+        <categoryLink id="28d29b95" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
+        <categoryLink id="f0b324e6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9b6c03a4" name="Payment in Kind" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Any phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One LEAGUES OF VOTANN unit from your army that was just destroyed by an attack made by an enemy model. You can use this Stratagem on that LEAGUES OF VOTANN unit even though it was just destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the battle, each time a LEAGUES OF VOTANN model from your army makes an attack that targets that enemy model’s unit, re-roll a Hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ecc6440b" name="Pan-spectral Sweep" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One LEAGUES OF VOTANN unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in your unit have the [LETHAL HITS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="864726f0" name="Skeinwrought Physiology" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One LEAGUES OF VOTANN unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Save characteristic of models in your unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="28ec779b" name="Toil Earns" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Before the battle, at the start of the Deploy Armies step, you must select one objective marker that is not in your deployment zone. From the second battle round onwards, at the end of your turn, you score 4VP if you control that objective marker.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d27cd9e6" name="Settle a Grudge" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the start of the battle round, select one enemy unit that is not destroyed and has one or more Judgement tokens to be your army’s target for that battle round. At the end of that battle round, you score 4VP if your army’s target for that battle round is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::warspekes-prospect::00-k-hl-warspeke" name="Kâhl Warspeke" type="unit" hidden="false">
       <constraints>

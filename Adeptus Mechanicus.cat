@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::adeptus-mechanicus" name="Adeptus Mechanicus" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::maniple-verask-alpha::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4c22b50c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a6080a3c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="81cbf6cf" name="Combat Patrol: Adeptus Mechanicus (Maniple Verask-Alpha)" hidden="false" targetId="cp-cat::maniple-verask-alpha" primary="true" />
+        <categoryLink id="3f4277b4" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
+        <categoryLink id="030b40c1" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="444c4e8d" name="Retribution Codes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Any phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TECH-PRIEST model from your army that was just destroyed by an attack made by an enemy model. You can use this Stratagem on that model even though it was just destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the battle, each time an ADEPTUS MECHANICUS model from your army makes an attack that targets that enemy model’s unit, re-roll a Hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b9452fce" name="Reactive Field-shroud" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TECH-PRIEST or SKITARII unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8c77360c" name="Retrogradial Targeting" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">2CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after a TECH-PRIEST unit from your army ends a Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That TECH-PRIEST unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a825fed4" name="Explorator Acquisition" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your Command phase, roll one D6, adding 1 to the result for each objective marker you control: on a 7+, a piece of valuable archeotech is found and you score 4VP. You cannot score more than 12VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="782ab554" name="Holy Apparatus" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle: ■ You score 4VP if your WARLORD is not destroyed. ■ You score 4VP if your ONAGER DUNECRAWLER model is not destroyed and is not Below Half-strength. ■ You score 2VP if your ONAGER DUNECRAWLER model is not destroyed but is Below Half-strength.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::maniple-verask-alpha::00-enginseer-verask" name="Enginseer Verask" type="unit" hidden="false">
       <constraints>
         <constraint id="5070f621" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -476,6 +525,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::purge-corps-deltic-9::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="55a4fb50" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="10dec376" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9850e200" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
+        <categoryLink id="8cf4ed7b" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
+        <categoryLink id="28299522" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="daa67500" name="An Evaluation of Mettle" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS MECHANICUS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have the Feel No Pain 5+ ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="caf404b2" name="Optimised Efficiency" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an ADEPTUS MECHANICUS unit from your army Falls Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS MECHANICUS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="85ac062f" name="Acceptable Risk Ratio" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS MECHANICUS unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in your unit by 1 and those weapons have the [HAZARDOUS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1cbc8867" name="Targeted Purge" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, your opponent must select one unit from their army (excluding MONSTER and VEHICLE units). At the end of the battle, you score 12VP if that unit is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="740e9854" name="Prescribed Excoriation" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 3VP if there are no enemy units within your deployment zone (excluding Battle-shocked units). If there are no enemy units within 6" of your deployment zone (excluding Battle-shocked units), you score 5VP instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::purge-corps-deltic-9::00-manipulus-skand" name="Manipulus Skand" type="unit" hidden="false">
       <constraints>

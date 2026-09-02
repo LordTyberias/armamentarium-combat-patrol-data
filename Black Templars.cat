@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::black-templars" name="Black Templars" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::siguards-crusaders::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="32ccd196" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d7b0d21a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ca051af4" name="Combat Patrol: Black Templars (Siguard's Crusaders)" hidden="false" targetId="cp-cat::siguards-crusaders" primary="true" />
+        <categoryLink id="934ad8d1" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
+        <categoryLink id="d25002f3" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c1f0d3fb" name="Shield of Zeal" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the attacking model is within 6" of your unit, models in your unit have a 4+ invulnerable save against that attack. Primaris Neophyte models have a 5+ invulnerable save against that attack instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f9ac5d53" name="Hate-Fuelled Strength" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES INFANTRY unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack that targets the closest eligible target, you can re-roll the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca6e2809" name="Goaded to Fury" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has shot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move, but must end that move as close as possible to that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7688a7e6" name="Path of Purgation" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 8VP if one or more ADEPTUS ASTARTES units from your army (excluding Battle-shocked units) are within your opponent’s deployment zone. If your WARLORD is not Battle-shocked and is wholly within your opponent’s deployment zone, you score 10VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1cf692e8" name="Sacred Vow" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the start of the battle round, select one enemy unit that is not destroyed to be your army’s target that battle round. At the end of that battle round, you score 3VP if your army’s target for that battle round was destroyed by a melee attack made by an ADEPTUS ASTARTES model from your army. If that ADEPTUS ASTARTES model has the PRIMARIS CRUSADER SQUAD keyword, you score 4VP instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::siguards-crusaders::00-marshal-siguard" name="Marshal Siguard" type="unit" hidden="false">
       <constraints>
         <constraint id="b655b34e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -503,6 +552,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::vow-sworn-of-vedrenn::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a5c11776" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="800c9b77" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c42e0547" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
+        <categoryLink id="a70d410c" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
+        <categoryLink id="d3642a74" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="05d590a4" name="Dedication to the End" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if your unit has the BLADEGUARD VETERAN SQUAD or SWORD BRETHREN SQUAD keywords. On a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb09e8c6" name="Bulwark of Faith" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One BLADEGUARD VETERAN SQUAD or SWORD BRETHREN SQUAD unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b80649c8" name="Divine Protection" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 5+ invulnerable save and they have the Feel No Pain 5+ ability against mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a04c1034" name="Execution Edict" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time an ADEPTUS ASTARTES unit from your army destroys an enemy CHARACTER model, you score 4VP. At the end of the battle, if all enemy CHARACTER models are destroyed, you score 4VP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c37d9c5f" name="To Their Very Gates" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control the objective marker closest to your opponent’s battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::vow-sworn-of-vedrenn::00-emperor-s-champion-vedrenn" name="Emperor's Champion Vedrenn" type="unit" hidden="false">
       <constraints>
