@@ -4,11 +4,12 @@ BattleScribe catalogue data for the fixed Combat Patrol rosters of Warhammer 40,
 [Armamentarium](https://github.com/LordTyberias/Armamentarium) project.
 
 - `Combat Patrol.gst` — the game system: profile types, the categories, one force entry.
-- 34 `.cat` files — one per faction, together holding **317 unit entries** across **72 patrols**.
+- 34 `.cat` files — one per faction, together holding **317 unit entries** and **72 rules rows**
+  across **72 patrols**.
 
 ## What this is, and what it is not
 
-A Combat Patrol is a fixed roster: it is chosen, not built. That shapes the data in three ways that
+A Combat Patrol is a fixed roster: it is chosen, not built. That shapes the data in four ways that
 differ from an ordinary BattleScribe catalogue, and they are deliberate:
 
 - **No points.** Combat Patrol datasheets do not carry point values, so no `costs` element is written.
@@ -16,6 +17,12 @@ differ from an ordinary BattleScribe catalogue, and they are deliberate:
 - **The model count sits on the entry.** There is no `selectionEntryGroup` to pick a number from,
   because nothing is picked — each unit entry states `min = max = <model count>` directly.
 - **Profiles keep their printed order.** The order models are listed in is content, not incidental.
+- **Each patrol opens with a rules row that holds no models.** A printed Combat Patrol sheet carries
+  three Stratagems and its Secondary Objective alongside the datasheets, and those belong to the patrol
+  rather than to any one unit. There is no other carrier for them, so the patrol gets one entry stating
+  `min = max = 0` — the same construction Spearhead uses for its Battle Traits (ADR 0042). It is not a
+  unit and must not be counted as one: a reader that gives it a floor of one model invents a model that
+  does not exist.
 
 Each unit row is its own root `selectionEntry`; which patrol it belongs to is a category, alongside its
 faction, its Imperium/Chaos/Xenos grouping and — where applicable — a `Legacy` marker.
@@ -24,7 +31,7 @@ faction, its Imperium/Chaos/Xenos grouping and — where applicable — a `Legac
 
 The reader tells those four kinds of membership apart by the **id prefix**, never by the name — three of
 them share names with unit keywords. Six Space Marine catalogues carry the same `cp-faction::` id, and
-79 of the 317 entries name "Space Marines" as their group and "Imperium" as a keyword at the same time.
+79 of the 317 unit entries name "Space Marines" as their group and "Imperium" as a keyword at once.
 
 | Prefix | Meaning |
 |---|---|
@@ -38,13 +45,29 @@ Unit entry ids are `cp::<patrol-slug>::NN-<unit-slug>`, and a fixed wargear line
 entry under `<entry-id>::<slug>`. **Those ids are stored in users' saved army lists**, so changing one
 strands the list that carries it.
 
+The rules row is `cp::<patrol-slug>::0-patrol-rules`. The single digit is not a typo and not free
+choice: the reader sorts a patrol's entries by id with an **ordinal** comparison to recover the printed
+order, unit rows already start at `00-`, and renumbering them is what the sentence above forbids. `0-`
+sorts ahead of `00-` because `-` (0x2D) precedes `0` (0x30). It carries the patrol, faction, group and
+`Legacy` links like a unit row — the reader reads those four from the *first* entry, and this is now the
+first — but **no `cp-kw::` keywords**, because it is not a unit and its keywords would be printed on a
+datasheet. Its two profile types live in the `.gst` beside the other four:
+
+| Profile type | Characteristics |
+|---|---|
+| `Stratagem` | `CP`, `When`, `Target`, `Effect` |
+| `Secondary Objective` | `Type` (`Default` / `Optional` / `Only`), `Effect` |
+
+`Only` is not a third state invented for tidiness. Three patrols have one objective and no alternative,
+and both Knight sheets say so in as many words: "nor will you have a choice of secondary objectives".
+
 Nothing in this repository enforces any of it. A prefix or an id that drifts produces no build error and
 no failing file — it produces an empty patrol list in the application, which is why it is written down
 here rather than left to be inferred from the data.
 
 ## This is not meant for other BattleScribe tools
 
-The data is read losslessly by the Armamentarium importer; that is measured, over all 297 entries.
+The data is read losslessly by the Armamentarium importer; that is measured, over all 389 entries.
 
 **It is not expected to be usable in the BattleScribe Data Editor, in New Recruit, or in any other
 roster builder, and that is deliberate rather than an oversight.** The reasons are the three above: a
@@ -96,6 +119,46 @@ above it, not from the word "every".
 
 Nothing was derived from regular-edition datasheets, and nothing was invented. If Games Workshop
 publishes these four, the official values replace these.
+
+### Five weapon values, and the Stratagems and Secondary Objectives (ARMAM-278, added 2026-09-02)
+
+**The corrections.** A comparison against the official PDFs found one transcription error; a structural
+check for values the rules cannot express — armour penetration is never positive, damage is never
+negative — found four more that the PDF comparison could not see, because the PDFs print them the same
+way. Each correction has a witness in the source itself:
+
+| Catalogue | Weapon | | was | now | witness |
+|---|---|---|---|---|---|
+| Black Templars | Multi-melta | D | `6` | `D6` | the sheet prints `D6`; Salamanders carries it twice |
+| Imperial Fists | Chainfist | D | `-2` | `2` | the catalogue holds it 17× with `2` |
+| Imperial Fists | Power fist (Terminator) | D | `-2` | `2` | Captain Torreus, two pages earlier, has `D 2` |
+| Iron Hands | Servo-arm | AP | `2` | `-2` | Adeptus Mechanicus carries the same arm at `-2` |
+| White Scars | Bellicatus – Icarus | AP | `1` | `-1` | the `krak` line directly beneath keeps its minus |
+
+Only the first is this repository's error. The other four reproduce a typesetting slip in the official
+PDF, and they are corrected against the rules rather than kept faithful, because a damage of `-2` is not
+a value the game can resolve. Four torrent weapons were also moved from `-` to `N/A`, the spelling the
+other 49 use; all four sat in the patrols transcribed from the public reference and carried its habit.
+
+**The Stratagems and Secondary Objectives.** 216 Stratagems (three per patrol) and 141 Secondary
+Objectives now sit in the rules row described above. They were extracted from the same public reference
+as the ARMAM-141 patrols and then checked against the official PDFs, which win wherever the two differ.
+
+Of the 72 patrols, 52 could be checked mechanically against a PDF text layer and 8 more were read on the
+rendered page or on an official app screenshot. That found two errors in the reference, both corrected
+here: `Prescribed Excoriatian` is spelled `Prescribed Excoriation` on the sheet, and the Stratagem the
+reference calls `Overwhelming Force` is headed `Duty and Honour` — that name appears in the sheet's
+flavour text, not as its title, and its effect is written out where the reference abbreviates it. It
+also found a gap: the reference lists only Default/Optional *pairs* and therefore carries nothing at all
+for the three patrols that have a single objective and no choice. Those three were read off the source
+and added.
+
+**What is not checked.** The wording of the remaining 20 patrols rests on the reference alone — 12 of
+their PDFs have no text layer, 4 have no official source at all (the four above), and the rest are image
+sets. Six further PDFs are OCR scans whose text layer drops the CP figures and mangles the headings;
+their Stratagems were confirmed on the rendered page instead. `Phase` and `Turn`, which the reference
+carries in addition, are deliberately left out: the sheets do not print them as fields, three of the 216
+are empty, and every characteristic becomes a column in the rendered datasheet.
 
 ## Licence
 

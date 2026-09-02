@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::death-guard" name="Death Guard" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::maggot-lords::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e98de887" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ab6fed94" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3a051264" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
+        <categoryLink id="478bbe91" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="5e3ae37c" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="95a651b5" name="Sickening Horror" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit within Engagement Range of your unit. That enemy unit must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1982e662" name="Inevitable Decay" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 3" to the range of your unit’s Aura abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d65e2031" name="Vomitous Salvoes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One PLAGUE MARINES unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, Lethal Hits weapons equipped by models in your unit have the [RAPID FIRE 1] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="62db581b" name="Hand of Mortarion" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 3VP for each TERMINATOR model from your army that is within 3" of the centre of the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d578cbda" name="Overwhelming Contagions" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 12VP if you control both the objective marker closest to your battlefield edge and the objective marker closest to your opponent’s battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::maggot-lords::00-sholgor-the-putrid" name="Sholgor the Putrid" type="unit" hidden="false">
       <constraints>
         <constraint id="9fafb6b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -493,6 +542,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-gloeming-blades::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="32fca523" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8a982cb2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="73d2392b" name="Combat Patrol: Death Guard (The Gloeming Blades)" hidden="false" targetId="cp-cat::the-gloeming-blades" primary="true" />
+        <categoryLink id="1a369a94" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="6ebbf275" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7f16d0de" name="Feverglow" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD or PLAGUE LEGIONS unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit, re-roll a Hit roll of 1. If the target is a MONSTER or VEHICLE unit, you can re-roll the Hit roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a9283b88" name="Strength from Dread" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One PLAGUEBEARERS or PLAGUE DRONES unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Strength and Armour Penetration characteristics of melee weapons equipped by models in your unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d010ea29" name="Cloying Contagion" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit (excluding MONSTERS and VEHICLES) is selected to Fall Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD or PLAGUE LEGIONS unit from your army that is within Engagement Range of that enemy unit</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">When that enemy unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of those tests.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5de7f797" name="Wellsprings of Foulness" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your opponent’s turn, you score 1VP for each objective marker within your army’s Contagion Range (to a maximum of 3VP per turn).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4f86aa0b" name="Legacy of Lamentation" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 2VP if two or more units from your army (excluding Battle-shocked units) are each within a different one of the following areas: your deployment zone; No Man’s Land; your opponent’s deployment zone. If one of those units is within your opponent’s deployment zone, you score 3VP instead. You cannot score more than 12VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::the-gloeming-blades::00-phlegmus-gloem" name="Phlegmus Gloem" type="unit" hidden="false">
       <constraints>
@@ -1002,6 +1100,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-shambling-horde::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="23f3b2cb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9a93ecda" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="50093c39" name="Combat Patrol: Death Guard (The Shambling Horde)" hidden="false" targetId="cp-cat::the-shambling-horde" primary="true" />
+        <categoryLink id="61c5f186" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="b8546343" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f36e36b0" name="Corrosive Effluents" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="71f5d59f" name="Harbingers of Despair" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Each enemy unit within Engagement Range of your unit must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="73d48e4f" name="Disgustingly Resilient" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="787fb7e1" name="Contaminate Ground" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 3VP if one or more DEATH GUARD units from your army (excluding Battle-shocked units) are within 3" of the centre of the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f81fe351" name="Spread the Blight" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">You score 2VP each time a DEATH GUARD model from your army destroys an enemy unit that started the phase within Contagion Range of one or more units from your army.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::the-shambling-horde::00-typhus" name="Typhus" type="unit" hidden="false">
       <constraints>

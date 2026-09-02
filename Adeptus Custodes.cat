@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::adeptus-custodes" name="Adeptus Custodes" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::guardians-of-the-throne::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="fe9301f7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cbe7dc6c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8f49a8b1" name="Combat Patrol: Adeptus Custodes (Guardians of the Throne)" hidden="false" targetId="cp-cat::guardians-of-the-throne" primary="true" />
+        <categoryLink id="db635670" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="4fadaaf7" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6b160c41" name="Wrath of the Host" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Any phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One SHIELD-CAPTAIN model from your army that was just destroyed by an attack made by an enemy model. You can use this Stratagem on that model even though it was just destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the battle, ranged weapons equipped by ADEPTUS CUSTODES models from your army have the [SUSTAINED HITS 1] ability while targeting that enemy model’s unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7d00d2a6" name="Gilded Magnificence" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">2CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d1272138" name="Tireless Pursuit" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit ends a Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES INFANTRY unit from your army that was within Engagement Range of that enemy unit at the start of the phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">If your unit is not within Engagement Range of one or more enemy models, it can make a Normal move.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cfc3d27c" name="Guardian of the Realm" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score 1VP if your SHIELD-CAPTAIN model destroyed one or more enemy models that phase. If any of those enemy models’ units started that phase within range of an objective marker, you score 2VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="80639b28" name="Drive the Talons Deep" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your opponent’s turn, you score 3VP if one or more ADEPTUS CUSTODES units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::guardians-of-the-throne::00-shield-captain-tyvan" name="Shield-Captain Tyvan" type="unit" hidden="false">
       <constraints>
         <constraint id="8eef2ff3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -441,6 +490,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::tristraens-gilded-blades::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="389910b3" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f0790ef5" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f35fc9ef" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
+        <categoryLink id="66bcdb68" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="846a603a" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="134020c3" name="The Gilded Spear" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes a Pile‑in move, it can move up to 6" instead of up to 3".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf917f25" name="Inescapable Vengeance" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES unit from your army that has not been selected to move this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 2 to Advance rolls made for your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6afc5ae4" name="Overawing Magnificence" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Charge phase, just after an enemy unit declares a charge.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES unit that was selected as a target of that charge.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That enemy unit must take a Leadership test. If that test is failed, until the end of the phase, subtract 2 from Charge rolls made for that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8dd32a2f" name="Raise the Vexillas" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the third battle round onwards, at the end of your turn, you score 3VP if you control the objective marker closest to your opponent’s battlefield edge and you also control the objective marker closest to your battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a8288e84" name="Victory’s Price" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">■ Each time an enemy unit is destroyed, you score 3VP. ■ Each time an ADEPTUS CUSTODES model from your army is destroyed, you lose 1VP (to a minimum of 0VP).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::tristraens-gilded-blades::00-tristraen" name="Tristraen" type="unit" hidden="false">
       <constraints>

@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::tyranids" name="Tyranids" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::tyranid-assault-brood::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="6dbce158" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3dee0f07" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d0aaf19f" name="Combat Patrol: Tyranids (Tyranid Assault Brood)" hidden="false" targetId="cp-cat::tyranid-assault-brood" primary="true" />
+        <categoryLink id="397a5a94" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="1e64c027" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c70c5509" name="Sensory Amalgamation" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TYRANIDS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="735b2060" name="Scything Terror" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">&amp;#x20;One TYRANIDS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, melee weapons equipped by models in your unit have the [SUSTAINED HITS 1] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4112d6e5" name="Ravenous Rampage" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TYRANIDS unit from your army that has not been selected to charge this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, your unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a633700a" name="Devour" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">You score 4VP each time a model from your army destroys an enemy unit in the Fight phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="009734b2" name="Relentless Swarm" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control the objective marker closest to your opponent’s battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::tyranid-assault-brood::00-parasite-of-mortrex" name="Parasite of Mortrex" type="unit" hidden="false">
       <constraints>
         <constraint id="8322dec2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -348,6 +397,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::insidious-infiltrators::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="876e4fb2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8b194178" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8aacf1cd" name="Combat Patrol: Tyranids (Insidious Infiltrators)" hidden="false" targetId="cp-cat::insidious-infiltrators" primary="true" />
+        <categoryLink id="d1521b64" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="cc7fb936" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2d3be661" name="Swift Kills" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TYRANIDS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of melee weapons equipped by models in your unit by 1 and those weapons have the [ANTI-MONSTER 4+] and [ANTI-VEHICLE 4+] abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df1ac442" name="Pheromonal Trace" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One VON RYAN’S LEAPERS unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one objective marker your unit is within range of and that you control. That objective marker is secured by you (see the main Combat Patrol rules).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8ebd8d71" name="Predators, Not Prey" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase or your Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TYRANIDS unit from your army that has not been selected to move this phase and has not declared a charge this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit automatically pass Desperate Escape tests, and each time a model in your unit makes a move, it can move horizontally through models as if they were not there.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3ac2982" name="Alpha Predation" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">In the first battle round in which the enemy WARLORD is destroyed, you score a number of VP depending on which battle round it is, as shown in the table below. Battle Round: VP Scored 1-2: 15 3-4: 10 5: 5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7894d066" name="Left to Last" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">While the enemy WARLORD is not destroyed, you score 4VP each time you destroy an enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::insidious-infiltrators::00-death-s-shadow" name="Death's Shadow" type="unit" hidden="false">
       <constraints>
@@ -755,6 +853,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-vardenghast-swarm::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b50330fa" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9e2caed8" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4e71a1b5" name="Combat Patrol: Tyranids (The Vardenghast Swarm)" hidden="false" targetId="cp-cat::the-vardenghast-swarm" primary="true" />
+        <categoryLink id="47200bce" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
+        <categoryLink id="58becbfa" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1d9d95d3" name="Hyper-reactive" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TYRANIDS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a8f2bff0" name="Voracious Assault" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TYRANIDS unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack that targets the closest eligible target, you can re-roll the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44b058b6" name="Teeming Broods" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">The Reinforcements step of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One TERMAGANTS unit from your army. You can use this Stratagem on that unit even if it is destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">If your unit is not destroyed, return up to D6 destroyed models to it. Otherwise, add a new unit to your army identical to your destroyed unit, in Strategic Reserves, containing 2D6 models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93092922" name="Alpha Xenoform" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score 4VP if your WINGED TYRANID PRIME model destroyed one or more enemy models that phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="47e090e4" name="Chitinous Tide" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 5VP if you control one or more objective markers that are within 6" of your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::the-vardenghast-swarm::00-terror-of-vardenghast" name="Terror of Vardenghast" type="unit" hidden="false">
       <constraints>

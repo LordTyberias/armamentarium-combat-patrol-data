@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::emperors-children" name="Emperor's Children" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::callous-blades::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5c45ecf7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="856d9969" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7d0736a9" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
+        <categoryLink id="40e09144" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
+        <categoryLink id="897fe76d" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="182fed5d" name="Duellist’s Death" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One EMPEROR’S CHILDREN unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if your unit has the FLAWLESS BLADES keyword. On a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="07975f19" name="Shatter Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One FLAWLESS BLADES unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 1 to the Damage characteristic of melee weapons equipped by models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9ca22e2" name="Obsessive Focus" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One EMPEROR’S CHILDREN unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, you can ignore any or all modifiers to the characteristics of models in your unit (excluding the Objective Control characteristic) and any weapons they are equipped with, and you can ignore any or all modifiers to the characteristics of attacks made by models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="910bae05" name="Trophy for the Dark Prince" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">When your opponent’s WARLORD is destroyed, you score the number of VP shown in the table below, based on which battle round it is destroyed in.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="75db7224" name="Fleeting Possession" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 2VP if you control one or more objective markers that you did not control at the start of that turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::callous-blades::00-lord-kaphrael" name="Lord Kaphrael" type="unit" hidden="false">
       <constraints>
         <constraint id="9c76d40b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -356,6 +405,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::depraved-coterie::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1455045c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="32bc1ba2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="887b9156" name="Combat Patrol: Emperor's Children (Depraved Coterie)" hidden="false" targetId="cp-cat::depraved-coterie" primary="true" />
+        <categoryLink id="0616a1f8" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
+        <categoryLink id="05efae9f" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="4d7c5613" name="Degrading Demise" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase, just after an EMPEROR’S CHILDREN or LEGIONS OF EXCESS unit from your army has shot or fought.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That EMPEROR’S CHILDREN or LEGIONS OF EXCESS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit that your unit’s attacks destroyed one or more enemy models from. That enemy unit must take a Battle-shock test, subtracting 1 from the result if that enemy unit is Below Half-strength. RESTRICTIONS: Each time an enemy unit fails a Battle-shock test as a result of this Stratagem, until the end of the battle round, you cannot use this Stratagem.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="35433fea" name="Perfumed Poisons" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One EMPEROR’S CHILDREN or LEGIONS OF EXCESS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, if the Strength characteristic of that attack is less than or equal to the Toughness characteristic of the target, add 1 to the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4522e198" name="Darkest Dreams" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One LEGIONS OF EXCESS unit from your army that is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Remove your unit from the battlefield and place it into Strategic Reserves. If your unit has the DAEMONETTES keyword, return up to D3 destroyed models to your unit. If your unit has the FIENDS keyword, one model in your unit regains up to D3 lost wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dbcc0f48" name="Feast of Miseries" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">■ You score 2VP each time an enemy unit is destroyed. ■ You score 1VP each time a unit fails a Battle-shock test. If that unit was an enemy unit, you score 2VP instead. You cannot score more than 15VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="792fe314" name="Excruciating Exhibition" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">■ Each time a unit from your army destroys an enemy CHARACTER model, you score 5VP. At the end of the battle, if all enemy CHARACTER models are destroyed, you score 5VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::depraved-coterie::00-sybastis-luxx" name="Sybastis Luxx" type="unit" hidden="false">
       <constraints>

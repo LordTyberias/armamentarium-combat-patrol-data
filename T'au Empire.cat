@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::tau-empire" name="T'au Empire" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::napoks-hunters::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="84f20d62" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="01ffd691" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="78f13ba4" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
+        <categoryLink id="624b6c1d" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="9ffc8a40" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f8c32d02" name="Clubbing Blows" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One KROOTOX RAMPAGERS or KROOTOX RIDERS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 1 to the Damage characteristic of Krootox fists and Rampager fists weapons equipped by models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe059e61" name="Weak Spots" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One KROOT CARNIVORES unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in your unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a38aa175" name="Cut Them Off" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your opponent’s Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One KROOT unit from your army that is wholly within 9" of one or more battlefield edges.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Remove your unit from the battlefield and place it into Strategic Reserves.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="70750599" name="Encirclement" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn: ■ You score 2VP if one or more KROOT units from your army are wholly within 9" of your opponent’s battlefield edge (excluding Battle-shocked units). ■ You score 1VP for each other battlefield edge (excluding your battlefield edge) that has one or more KROOT units from your army wholly within 9" of it (excluding Battle-shocked units and units within your deployment zone).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="20db735d" name="Priority Prey" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the Declare Battle Formations step, your opponent must select one unit from their army (excluding MONSTERS and VEHICLES, if possible). You must then select one other unit from your opponent’s army (excluding MONSTERS and VEHICLES, if possible). At the end of the battle, you score 6VP for each of the selected enemy units that is destroyed. If a selected unit was split using the Patrol Squads ability, both of the split units must be destroyed for the purpose of it being considered destroyed for this objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::napoks-hunters::00-lone-spear-na-pok" name="Lone-spear Na'pok" type="unit" hidden="false">
       <constraints>
         <constraint id="b81c1f70" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -551,6 +600,55 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::preybane-war-party::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f6bba84d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="69a988aa" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="001e4868" name="Combat Patrol: T'au Empire (Preybane War Party)" hidden="false" targetId="cp-cat::preybane-war-party" primary="true" />
+        <categoryLink id="e85eb7ee" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="d27e6841" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e7e4c14b" name="Pheremonal Markings" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One KROOT unit from your army within range of an objective marker you control.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9a841d8" name="Lure and Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after a KROOT unit from your army Falls Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That KROOT unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b505260" name="Strike Once, Strike Well" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One KROOT unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of melee weapons equipped by models in your unit by 1, and those weapons have the [LANCE] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe6b68c2" name="Priority Prey" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the Declare Battle Formations step, you must select two units from your opponent’s army. At the end of the battle, you score 10VP if either of the selected enemy units are destroyed. If a selected unit was split using the Patrol Squads ability, both of the split units must be destroyed for the purpose of it being considered destroyed for this objective.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ec7773c7" name="Set the Lure" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control the objective marker closest to the centre of the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::preybane-war-party::00-kroot-lone-spear" name="Kroot Lone-spear" type="unit" hidden="false">
       <constraints>
         <constraint id="cf273f9a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -1048,6 +1146,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::protectors-of-aunshar::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4d15a16e" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="19aeefd0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="df8d6fc3" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" primary="true" />
+        <categoryLink id="8823d443" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="db1c3c47" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2652dc24" name="Defensive Fusillade" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One T’AU EMPIRE unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in your unit have the [PISTOL] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="87524f7b" name="Rapid Repositioning" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One T’AU EMPIRE unit from your army that is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move up to D6". If your unit has the BATTLESUIT keyword, it can make a Normal move of up to 6" instead. RESTRICTIONS: Until the end of the turn, your unit is not eligible to declare a charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c20be0b" name="Laser-Marked Targets" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Charge phase, just after an enemy unit has declared a charge.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One T’AU EMPIRE unit from your army that was selected as a target of that charge and is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can shoot that enemy unit as if it were your Shooting phase. When doing so, each time a model in your unit makes a ranged attack, an unmodified Hit roll of 6 is required to score a hit, irrespective of the attacking weapon’s Ballistic Skill or any modifiers. Until the end of the phase, subtract 2 from Charge rolls made for that enemy unit. RESTRICTIONS: Your unit cannot shoot more than once this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91fb32fa" name="Kauyon Lure" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your Command phase, you score 5VP if there are one or more T’AU EMPIRE units from your army (excluding Battle-shocked units) within your deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1d4542d" name="Leadership Caste" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 20VP if your ETHEREAL model is not destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::protectors-of-aunshar::00-aun-shar" name="Aun'Shar" type="unit" hidden="false">
       <constraints>
@@ -1618,6 +1765,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::sudden-dawn-cadre::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e0100d43" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="acbf7bd4" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4a6d58be" name="Combat Patrol: T'au Empire (Sudden Dawn Cadre)" hidden="false" targetId="cp-cat::sudden-dawn-cadre" primary="true" />
+        <categoryLink id="d792dd18" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
+        <categoryLink id="e3e89945" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="216b0620" name="Fight by the Code" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One T’AU EMPIRE unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, your unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92becb92" name="Rampart of Fire" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One T’AU EMPIRE unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit within 10", improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3bfa1ba" name="Lives Before Territory" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One T’AU EMPIRE INFANTRY or T’AU EMPIRE BATTLESUIT unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6" and, until the end of the phase, each time an attack targets your unit, it has the Benefit of Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3a012e6a" name="Surprise Attack" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">In the first and second battle rounds: At the end of you turn, you score 4VP for each objective marker in No Man’s Land you control. In the third, fourth and fifth battle rounds: At the end of you turn, you score 2VP for each objective marker in No Man’s Land you control.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24b6a970" name="Ethereal Edict" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, your opponent must select one unit from their army. At the end of the battle, you score 12VP if that unit is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::sudden-dawn-cadre::00-commander-cloudspear" name="Commander Cloudspear" type="unit" hidden="false">
       <constraints>

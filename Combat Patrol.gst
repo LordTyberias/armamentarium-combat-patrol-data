@@ -38,6 +38,20 @@
         <characteristicType id="2451ab48" name="Description" />
       </characteristicTypes>
     </profileType>
+    <profileType id="cf5a1b7e" name="Stratagem">
+      <characteristicTypes>
+        <characteristicType id="8000e444" name="CP" />
+        <characteristicType id="1cfae44d" name="When" />
+        <characteristicType id="459fde7d" name="Target" />
+        <characteristicType id="abf47a40" name="Effect" />
+      </characteristicTypes>
+    </profileType>
+    <profileType id="d3e08c92" name="Secondary Objective">
+      <characteristicTypes>
+        <characteristicType id="31915f4c" name="Type" />
+        <characteristicType id="53bd7dca" name="Effect" />
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="cp-kw::aberrants" name="Aberrants" hidden="false" />

@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::imperial-agents" name="Imperial Agents" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::inquisitors-hand::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f60070c0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="4f2b504f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e813aeb0" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
+        <categoryLink id="8f78e7b0" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="d30a794d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2c098742" name="Punishment Earned" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ARBITES unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, you can re‐roll the Hit roll and, if that attack targets a unit below its Starting Strength, you can re‐roll the Wound roll as well.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ea602f73" name="Dedicated Sacrifice" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One AGENTS OF THE IMPERIUM unit from your army (excluding OFFICIO ASSASSINORUM units) that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 3+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ba6e2f85" name="Hand-picked Killers" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an AGENTS OF THE IMPERIUM unit from your army Falls Back.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That AGENTS OF THE IMPERIUM unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a5cffeb7" name="Judgement Absolute" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one enemy unit (excluding your opponent’s WARLORD). At the end of the battle, you score 6VP if that unit is destroyed and you score 6VP if your opponent’s WARLORD is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8201fea7" name="Blade in the Shadows" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, if your WARLORD is within range of an objective marker, you score the number of VP shown below: ■ If that objective marker is the one closest to your battlefield edge, you score 2VP. ■ If that objective marker is the one closest to your opponent’s battlefield edge, you score 8VP. ■ Otherwise, you score 4VP. You cannot score more than 16VP from this secondary objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::inquisitors-hand::00-preacher-teguen" name="Preacher Teguen" type="unit" hidden="false">
       <constraints>
         <constraint id="4031b600" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -640,6 +689,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::vantarrions-voidsmen::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="845efd3f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a19c50c7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="28b54d93" name="Combat Patrol: Imperial Agents (Vantarrion's Voidsmen)" hidden="false" targetId="cp-cat::vantarrions-voidsmen" primary="true" />
+        <categoryLink id="7a74b67d" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="de231f0d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2e3899ba" name="Small-arms Broadside" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NAVIS IMPERIALIS unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Attacks and Ballistic Skill characteristics of ranged weapons equipped by models in your unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf7c8b52" name="Bulkhead By Bulkhead" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NAVIS IMPERIALIS unit from your army that is within 9" of that enemy unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="62301c58" name="Shipmaster’s Vengeance" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One NAVIS IMPERIALIS unit from your army that is not within Engagement Range of any enemy units and was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, roll one D6: on a 4+, do not remove the destroyed model from play; it can shoot after the attacking unit has finished making its attacks and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="01446229" name="Glittering Prizes" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, if your WARLORD is within range of an objective marker, roll one D6: on a 1, you score 1VP; on a 2-4, you score D3+1VP; on a 5+, you score 4VP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a9d0108" name="Landing Party" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your opponent’s turn, if you have one or more units from your army wholly within your opponent’s deployment zone and one or more units from your army wholly within No Man’s Land, you score 5VP. Otherwise, if you have one or more units from your army wholly within your deployment zone and one or more units from your army wholly within No Man’s Land, you score 2VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::vantarrions-voidsmen::00-eidelwynne-vantarrion" name="Eidelwynne Vantarrion" type="unit" hidden="false">
       <constraints>

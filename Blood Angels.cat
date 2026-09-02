@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::blood-angels" name="Blood Angels" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::strike-force-marcellos::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="74c74a34" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="dec6d313" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ed29bc09" name="Combat Patrol: Blood Angels (Strike Force Marcellos)" hidden="false" targetId="cp-cat::strike-force-marcellos" primary="true" />
+        <categoryLink id="1a3b8de7" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
+        <categoryLink id="56564545" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="4449c63c" name="Controlled Ferocity" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a553ca01" name="Harness the Flaw" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES INFANTRY unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, re-roll a Wound roll of 1. If that attack targets a MONSTER or VEHICLE unit, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7475a97f" name="Rapid Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One INTERCESSOR SQUAD or INCURSOR SQUAD unit from your army that is not within Engagement Range of one or more enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move. It cannot embark within a TRANSPORT at the end of that move. RESTRICTIONS: Until the end of the turn, your unit is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="be92840c" name="Angelic Wrath" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your opponent’s turn, you score 4VP if you control one or more objective markers that are within 6" of your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97da879b" name="Strategic Aggression" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one enemy MONSTER or VEHICLE model. If there are no such enemy models, select one enemy CHARACTER model instead. At the end of the battle, you score 10VP if that enemy model is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::strike-force-marcellos::00-librarian-marcellos" name="Librarian Marcellos" type="unit" hidden="false">
       <constraints>
         <constraint id="436435ca" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -522,6 +571,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::the-sanguinary-spearhead::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a6b13d48" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="bbe15d0f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dbe31757" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
+        <categoryLink id="332d7c81" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
+        <categoryLink id="aa98bc50" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="80f2f26d" name="Refuse to Bend" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, models in your unit have the Feel No Pain 6+ ability against that attack. If the attacking model is not within 12" of your unit, models in your unit have the Feel No Pain 5+ ability against that attack instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d460b82" name="Feint and Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an ADEPTUS ASTARTES unit from your army makes a Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS ASTARTES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c58936ca" name="Precision Fire" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One or more ADEPTUS ASTARTES units from your army and one enemy unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in those ADEPTUS ASTARTES units have the [LETHAL HITS] ability while targeting that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd09079f" name="Tip of the Spear" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if you control the objective marker closest to your opponent’s battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="301e5521" name="Angel’s Judgement" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time a SANGUINARY GUARD unit from your army destroys an enemy CHARACTER model, you score 5VP. At the end of the battle, if all enemy CHARACTER models are destroyed, you score 5VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::the-sanguinary-spearhead::00-captain-raldeo" name="Captain Raldeo" type="unit" hidden="false">
       <constraints>

@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::imperial-fists" name="Imperial Fists" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::rampart-force-torreus::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c154cfe7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7dfeaae1" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7edb56f1" name="Combat Patrol: Imperial Fists (Rampart Force Torreus)" hidden="false" targetId="cp-cat::rampart-force-torreus" primary="true" />
+        <categoryLink id="a89a2951" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="2f2d3c8e" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="aa8666fa" name="Transhuman Might" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, re-roll a Wound roll of 1. If that attack targets a MONSTER or VEHICLE unit, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="479e49b7" name="Siege Masters" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in your unit have the [IGNORES COVER] ability</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a35f8ef" name="Architects of War" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">&amp;#x20;Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, your unit has the Benefit of Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3c6088d3" name="Wrath of Dorn" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if you control more objective markers than your opponent.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ef2bdb14" name="Indomitable Defence" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you have more models within 3" of the centre of the battlefield than your opponent.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::rampart-force-torreus::00-captain-torreus" name="Captain Torreus" type="unit" hidden="false">
       <constraints>
         <constraint id="ed30ba54" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -516,7 +565,7 @@
             <characteristic name="WS" typeId="258d9251">4+</characteristic>
             <characteristic name="S" typeId="09c93781">8</characteristic>
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
             <characteristic name="Keywords" typeId="23459e53">Anti-Vehicle 3+</characteristic>
           </characteristics>
         </profile>
@@ -527,7 +576,7 @@
             <characteristic name="WS" typeId="258d9251">3+</characteristic>
             <characteristic name="S" typeId="09c93781">8</characteristic>
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>

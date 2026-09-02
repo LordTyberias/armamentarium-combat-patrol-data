@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::chaos-daemons" name="Chaos Daemons" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::butchers-of-hyporia::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="edf1693e" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ef5c452d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ee755ef3" name="Combat Patrol: Chaos Daemons (Butchers of Hyporia)" hidden="false" targetId="cp-cat::butchers-of-hyporia" primary="true" />
+        <categoryLink id="1ab80bbc" name="Chaos Daemons" hidden="false" targetId="cp-faction::chaos-daemons" primary="false" />
+        <categoryLink id="a142fecf" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="801a67c4" name="Blood-Maddened Banishment" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One BLOODLETTERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="85b42c76" name="Empyric Predators" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One FLESH HOUNDS unit from your army that is within 6" of that enemy unit and has not been targeted with the Fire Overwatch Stratagem this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to 6". RESTRICTIONS: Until the end of the phase, your unit cannot be targeted with the Fire Overwatch Stratagem.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ae40a588" name="Manifest Hate" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One LEGIONES DAEMONICA unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93440717" name="Worthy Offerings" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 6VP if your opponent’s WARLORD is destroyed. If your opponent’s WARLORD was destroyed by an attack made by your WARLORD model, you score 10VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edbffc73" name="Dark Conjunction" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 1VP for each objective marker that is within your army’s Shadow of Chaos and not within your deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::butchers-of-hyporia::00-kh-har-ret-the-butcher" name="Kh'har'ret the Butcher" type="unit" hidden="false">
       <constraints>
         <constraint id="488d4313" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />

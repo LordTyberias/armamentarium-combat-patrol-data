@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::chaos-space-marines" name="Chaos Space Marines" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::dark-zealots::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="fc80ce9d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="92856bdd" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5419fcd9" name="Combat Patrol: Chaos Space Marines (Dark Zealots)" hidden="false" targetId="cp-cat::dark-zealots" primary="true" />
+        <categoryLink id="91e73572" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="d93fab77" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e8a36df6" name="Empyric Rites" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd3ddc05" name="Bitter Blows" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2afb476d" name="Malicious Volleys" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES INFANTRY unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, re-roll a Hit roll of 1. If that attack targets a unit that is Below Half-strength, you can re-roll the Hit roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="333e3617" name="Champion of the Dark Gods" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each phase, you score 3VP if your DARK APOSTLE model destroyed one or more enemy models that phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b09f8a4" name="Idolatrous Despoilers" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your opponent’s turn, you score 4VP if one or more units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::dark-zealots::00-ghallaron-the-pious" name="Ghallaron the Pious" type="unit" hidden="false">
       <constraints>
         <constraint id="6221990a" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -545,6 +594,55 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::masters-of-terror::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="551d5f5a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f1fc6a4b" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fe267371" name="Combat Patrol: Chaos Space Marines (Masters of Terror)" hidden="false" targetId="cp-cat::masters-of-terror" primary="true" />
+        <categoryLink id="81ea7fb0" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="82a3ba99" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a436b69a" name="Gruesome Trophies" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army within range of an objective marker you control.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="64a2ccbf" name="Half-seen Horrors" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, just after an enemy unit ends a Normal, Advance or Fall Back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that is within 9" of the enemy unit that just ended that move, and not within Engagement Range of one or more enemy units</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6", or a Normal move of up to 6" instead if it is a JUMP PACK unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a12cbb79" name="A Mighty Example" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of weapons equipped by models in your unit by 1, and those weapons have the [ANTI-MONSTER 4+] and [ANTI-VEHICLE 4+] abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c7b47a7" name="Already Here" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if one or more units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e06db6b7" name="The Moment to Strike" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 5VP if one or more units from your army destroys an enemy unit.&amp;#x20;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::masters-of-terror::00-chaos-lord-with-jump-pack" name="Chaos Lord with Jump Pack" type="unit" hidden="false">
       <constraints>
         <constraint id="be98fb08" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -700,7 +798,7 @@
           <characteristics>
             <characteristic name="Range" typeId="b8493dea">12"</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">-</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
@@ -986,6 +1084,55 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::remorseless-reavers::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="926078cb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="99adcdb4" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4581a456" name="Combat Patrol: Chaos Space Marines (Remorseless Reavers)" hidden="false" targetId="cp-cat::remorseless-reavers" primary="true" />
+        <categoryLink id="0ba89321" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="e7f55b89" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5a3e1a88" name="Braying Hordes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Reinforcements step of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One destroyed DAMNED unit from your army. You can use this Stratagem on that unit even though it is destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Add a new unit to your army identical to your destroyed unit, at its original Starting Strength. Set that unit up anywhere on the battlefield wholly within 9" of one or more battlefield edges and not within Engagement Range of one or more enemy units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5a82bce5" name="Cold-blooded Elimination" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or your Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, if the target of that attack is within range of an objective marker, you can re‑roll the Hit roll and you can re‑roll the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b55f8a6" name="Reavers’ Haste" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES INFANTRY from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, your unit is eligible to declare a charge in a turn in which it Advanced. If you select one or more units within range of an objective marker as a target of that charge, add 1 to the Charge roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44b94305" name="Plunderers" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of each player’s turn, you score 5VP if one or more units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b7d0e652" name="Ruination" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time a HERETIC ASTARTES unit from your army destroys an enemy unit you score 5VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::remorseless-reavers::00-red-corsairs-reave-captain" name="Red Corsairs Reave-Captain" type="unit" hidden="false">
       <constraints>
         <constraint id="7989c617" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -1176,7 +1323,7 @@
           <characteristics>
             <characteristic name="Range" typeId="b8493dea">12"</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">-</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
@@ -1522,6 +1669,55 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::warpsmiths-gauntlet::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e91adf63" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="659e9e6e" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d1e180b9" name="Combat Patrol: Chaos Space Marines (Warpsmith's Gauntlet)" hidden="false" targetId="cp-cat::warpsmiths-gauntlet" primary="true" />
+        <categoryLink id="cd3d1961" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="ca40ec74" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b6ae684e" name="Hardened by Hatred" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than your unit’s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ea85a11b" name="Shrieking Imps" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, ranged weapons equipped by models in your unit have the [IGNORES COVER] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a7bf6e50" name="Muzzleblaze Slaughter" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that is within Engagement Range of one or more enemy units and has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, your unit’s ranged weapons have the [PISTOL] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="610c92de" name="Systematic Slaughter" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if one or more units from your army destroy an enemy unit in the shooting phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5a2ca2b3" name="Grip of Iron" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if you control more objective markers than your opponent.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::warpsmiths-gauntlet::00-warpsmith" name="Warpsmith" type="unit" hidden="false">
       <constraints>
         <constraint id="9a0f0592" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -1552,7 +1748,7 @@
           <characteristics>
             <characteristic name="Range" typeId="b8493dea">12"</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">-</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
@@ -1710,7 +1906,7 @@
           <characteristics>
             <characteristic name="Range" typeId="b8493dea">12"</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">-</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
@@ -2094,6 +2290,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::zarkans-daemonkin::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="39cabbd9" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="fd177ff8" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a1bd761d" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
+        <categoryLink id="50ea39d1" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="a7723b37" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d4523cb2" name="Vindictive Strategy" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that has not been selected to shoot or fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit that is below its Starting Strength, re-roll a Hit roll of 1. It that enemy unit is Below Half-strength, re-roll a Wound roll of 1 as well.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0827bfcc" name="Violent Unbinding" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an attack made by an enemy unit destroys your MASTER OF POSSESSION model, before removing it from play.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">Your MASTER OF POSSESSION model. You can use this Stratagem on that model even though it was just destroyed.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">If that enemy unit is within 6" of your MASTER OF POSSESSION model, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f1901b5d" name="Daemonic Fervour" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One POSSESSED unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c70b50ed" name="Marked for Execution" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">When your opponent’s WARLORD is destroyed, if you are in the first, second or third battle round, you score 12VP. Otherwise, you score 6VP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ed171c1" name="Sites of Power" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 2VP if you control at least as many objective markers as your opponent does.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::zarkans-daemonkin::00-aranis-zarkan" name="Aranis Zarkan" type="unit" hidden="false">
       <constraints>

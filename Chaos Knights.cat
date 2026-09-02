@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::chaos-knights" name="Chaos Knights" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::slaughter-talon::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="324befbb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e8c192fd" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="362d7c1d" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" targetId="cp-cat::slaughter-talon" primary="true" />
+        <categoryLink id="a3929730" name="Chaos Knights" hidden="false" targetId="cp-faction::chaos-knights" primary="false" />
+        <categoryLink id="55660d27" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a9374c9c" name="Infernal Rage" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One WAR DOG unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of melee weapons equipped by models in your unit by 1, add 2 to the Attacks characteristic of slaughterclaw weapons equipped by models in your unit, and add 4 to the Attacks characteristic of armoured feet weapons equipped by models in your unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcff8671" name="Hunter’s Stride" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One WAR DOG unit from your army that has not been selected to move this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes a move, it can move through enemy models. When doing so, it can move within Engagement Range of such models but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a5f5b3ce" name="Lunging Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One WAR DOG unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, your unit is eligible to declare a charge in a turn in which it Fell Back. When doing so, it must select at least one enemy unit it was not within Engagement Range of at the start of the turn to be a target of that charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f26112fd" name="Ravening Onslaught" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Only</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">In your Command phase, select one enemy unit that is not destroyed to be your Primary Quarry unit. Your opponent then selects one unit from their army that is not destroyed to be your Secondary Quarry unit (this can be the same unit). At the start of your next Command phase or the end of the battle (whichever comes first), you score VP as follows: 5VP if your Primary Quarry unit is destroyed. 10VP if your Secondary Quarry unit is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::slaughter-talon::00-zarkys-and-helskarr" name="Zarkys and Helskarr" type="unit" hidden="false">
       <constraints>
         <constraint id="7299c4c2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />

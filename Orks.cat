@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::orks" name="Orks" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::gordrangs-gitstompas::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="bdc44b1b" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b243e089" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1053a00b" name="Combat Patrol: Orks (Gordrang's Gitstompas)" hidden="false" targetId="cp-cat::gordrangs-gitstompas" primary="true" />
+        <categoryLink id="8faefb6b" name="Orks" hidden="false" targetId="cp-faction::orks" primary="false" />
+        <categoryLink id="786c5e8b" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="61d0ab3a" name="Get Stuck In" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ORKS unit from your army that has not been selected to fight this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes a Pile-in or Consolidation move, it can move up to 6" instead of up to 3".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91a78667" name="Brutal But Kunnin’" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ORKS INFANTRY unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, your unit is eligible to declare a charge in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b8a2c427" name="Krump Da Gitz!" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has finished making its attacks.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ORKS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6", but must end that move as close as possible to that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2993a49c" name="Stomp ’Em" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the start of the battle round, select one enemy unit that is not destroyed to be your army’s target. At the end of the battle round, you score 3VP if your army’s target for that battle round was destroyed by a melee attack made by an ORKS model from your army.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22a7d5be" name="Proper Lootin’" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your Command phase, for each objective marker you control that is not within your deployment zone and has not yet been looted by your army, you can attempt to loot it. You can loot an objective marker if one or more ORKS units from your army are within range of that objective marker and those units are not within Engagement Range of one or more enemy units. If this is the case, roll one D6: on a 2-4, your army has looted that objective marker and you score 3VP; on a 5+, your army has looted that objective marker and you score 5VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::gordrangs-gitstompas::00-warboss-gordrang" name="Warboss Gordrang" type="unit" hidden="false">
       <constraints>
         <constraint id="8367bbe7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
@@ -602,6 +651,55 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::morgrims-butchas::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="41c07d1f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cf18d56f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3cb6af31" name="Combat Patrol: Orks (Morgrim's Butchas)" hidden="false" targetId="cp-cat::morgrims-butchas" primary="true" />
+        <categoryLink id="6cb3fe46" name="Orks" hidden="false" targetId="cp-faction::orks" primary="false" />
+        <categoryLink id="413ac90c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f50fff08" name="Tough As Squig-hide" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ORKS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of your unit, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e367c442" name="Bestial Bellow" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One BEASTBOSS or SQUIGHOG BOYZ model from your army.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit within 3" of your model. That enemy unit must take a Battle‑shock test and when doing so, subtract 1 from the result.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a1d4e69" name="Get In There!" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, just before an ORKS unit from your army Piles In.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ORKS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes a Pile‑in move, it can move up to 6" instead of up to 3".</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df5cfa79" name="Bag The Big ’Un" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one enemy MONSTER or VEHICLE model. If there are no such enemy models, select the enemy WARLORD model instead. At the end of the battle, you score 8VP if that enemy model is destroyed. If that enemy model was destroyed by your BEASTBOSS model, you score 12VP instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2f8e685c" name="Krumpin’ Spree" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 3VP if you control the objective marker closest to your opponent’s battlefield edge and you score 1VP for each other objective you control that is not within your deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cp::morgrims-butchas::00-beastboss-morgrim" name="Beastboss Morgrim" type="unit" hidden="false">
       <constraints>

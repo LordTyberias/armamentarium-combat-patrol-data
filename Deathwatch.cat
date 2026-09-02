@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::deathwatch" name="Deathwatch" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::vigil-force-alphion::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="72652349" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="38f2d200" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1215c280" name="Combat Patrol: Deathwatch (Vigil Force Alphion)" hidden="false" targetId="cp-cat::vigil-force-alphion" primary="true" />
+        <categoryLink id="9251db4a" name="Deathwatch" hidden="false" targetId="cp-faction::deathwatch" primary="false" />
+        <categoryLink id="631b61e2" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="22f4eede" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="08be3dd3" name="Veteran Instincts" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have the Feel No Pain 5+ ability. If your unit has the GRAVIS keyword, models in your unit have the Feel No Pain 4+ ability instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33b4562a" name="Special-Issue Ammunition" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that has not been selected to shoot this phase.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one of the following set of abilities. Until the end of the phase, ranged weapons equipped by models in your unit have that set of abilities: ■ [ANTI-MONSTER 5+, ANTI-VEHICLE 5+, MELTA 2] ■ [ASSAULT, IGNORES COVER, SUSTAINED HITS 2]</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9df4cd11" name="Deathwatch Teleportarium" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your opponent’s Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that is not within Engagement Range of any enemy units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Remove your unit from the battlefield. In the Reinforcements step of your next Movement phase set your unit up anywhere on the battlefield that is more than 3" horizontally from all enemy models. RESTRICTIONS: You can only use this Stratagem once and after being set up on the battlefield, until the end of the turn, your unit is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd3a2cc8" name="Hunter’s Insight" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">At the start of each of your turns, select one objective marker that is not within your deployment zone. At the end of your opponent’s next turn, you score 4VP if you control that objective marker and there are one or more ADEPTUS ASTARTES units from your army within range of it (excluding Battle-shocked units).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f955eb1a" name="Head-taker Doctrine" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+          <characteristics>
+            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
+            <characteristic name="Effect" typeId="53bd7dca">Each time an ADEPTUS ASTARTES unit from your army destroys an enemy CHARACTER model, you score 5VP. At the end of the battle, if all enemy CHARACTER models are destroyed, you score 5VP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry id="cp::vigil-force-alphion::00-lieutenant-alphion" name="Lieutenant Alphion" type="unit" hidden="false">
       <constraints>
         <constraint id="eb5a7363" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
