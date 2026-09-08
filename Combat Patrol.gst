@@ -38,6 +38,24 @@
         <characteristicType id="2451ab48" name="Description" />
       </characteristicTypes>
     </profileType>
+    <profileType id="7a1e5c04" name="Army Rule">
+      <characteristicTypes>
+        <characteristicType id="a1d33e77" name="Description" />
+      </characteristicTypes>
+    </profileType>
+    <profileType id="3f92bd18" name="Detachment">
+      <characteristicTypes>
+        <characteristicType id="5b7c1e90" name="DP" />
+        <characteristicType id="e8340af2" name="Rule" />
+        <characteristicType id="9c61d5b4" name="Force Disposition" />
+      </characteristicTypes>
+    </profileType>
+    <profileType id="c05a7e6b" name="Enhancement">
+      <characteristicTypes>
+        <characteristicType id="2d84f0c1" name="Restriction" />
+        <characteristicType id="b7e95a36" name="Effect" />
+      </characteristicTypes>
+    </profileType>
     <profileType id="cf5a1b7e" name="Stratagem">
       <characteristicTypes>
         <characteristicType id="8000e444" name="CP" />
@@ -54,6 +72,7 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
+    <categoryEntry id="cp-kw::ardmob" name="'Ardmob" hidden="false" />
     <categoryEntry id="cp-kw::aberrants" name="Aberrants" hidden="false" />
     <categoryEntry id="cp-kw::achilles-ridgerunner" name="Achilles Ridgerunner" hidden="false" />
     <categoryEntry id="cp-kw::acolyte-hybrids" name="Acolyte Hybrids" hidden="false" />
@@ -86,6 +105,7 @@
     <categoryEntry id="cp-kw::armoured-sentinel" name="Armoured Sentinel" hidden="false" />
     <categoryEntry id="cp-kw::artillery" name="Artillery" hidden="false" />
     <categoryEntry id="cp-kw::aspect-warriors" name="Aspect Warriors" hidden="false" />
+    <categoryEntry id="cp-kw::assault-force" name="Assault Force" hidden="false" />
     <categoryEntry id="cp-kw::assault-intercessor-squad" name="Assault Intercessor Squad" hidden="false" />
     <categoryEntry id="cp-kw::assault-intercessors-with-jump-packs" name="Assault Intercessors with Jump Packs" hidden="false" />
     <categoryEntry id="cp-faction::astra-militarum" name="Astra Militarum" hidden="false" />
@@ -196,11 +216,13 @@
     <categoryEntry id="cp-cat::warspekes-prospect" name="Combat Patrol: Leagues of Votann (Warspeke's Prospect)" hidden="false" />
     <categoryEntry id="cp-cat::amonhotekhs-guard" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" />
     <categoryEntry id="cp-cat::mindflensers-murder-court" name="Combat Patrol: Necrons (Mindflenser's Murder Court)" hidden="false" />
+    <categoryEntry id="cp-cat::ardmob" name="Combat Patrol: Orks ('Ardmob)" hidden="false" />
     <categoryEntry id="cp-cat::gordrangs-gitstompas" name="Combat Patrol: Orks (Gordrang's Gitstompas)" hidden="false" />
     <categoryEntry id="cp-cat::morgrims-butchas" name="Combat Patrol: Orks (Morgrim's Butchas)" hidden="false" />
     <categoryEntry id="cp-cat::shadow-claw-kevarax" name="Combat Patrol: Raven Guard (Shadow Claw Kevarax)" hidden="false" />
     <categoryEntry id="cp-cat::strike-team-solarien" name="Combat Patrol: Raven Guard (Strike Team Solarien)" hidden="false" />
     <categoryEntry id="cp-cat::pyroclasm-assault-force" name="Combat Patrol: Salamanders (Pyroclasm Assault Force)" hidden="false" />
+    <categoryEntry id="cp-cat::assault-force" name="Combat Patrol: Space Marines (Assault Force)" hidden="false" />
     <categoryEntry id="cp-cat::strike-force-octavius" name="Combat Patrol: Space Marines (Strike Force Octavius)" hidden="false" />
     <categoryEntry id="cp-cat::askars-wolfpack" name="Combat Patrol: Space Wolves (Askar's Wolfpack)" hidden="false" />
     <categoryEntry id="cp-cat::thoryks-void-hunters" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" />
@@ -273,6 +295,7 @@
     <categoryEntry id="cp-kw::eversor-assassin" name="Eversor Assassin" hidden="false" />
     <categoryEntry id="cp-kw::exoarmour" name="Exoarmour" hidden="false" />
     <categoryEntry id="cp-kw::exoframe" name="Exoframe" hidden="false" />
+    <categoryEntry id="cp-kw::explosives" name="Explosives" hidden="false" />
     <categoryEntry id="cp-kw::farseer" name="Farseer" hidden="false" />
     <categoryEntry id="cp-kw::farstalkers" name="Farstalkers" hidden="false" />
     <categoryEntry id="cp-kw::fellgor-beastmen" name="Fellgor Beastmen" hidden="false" />
@@ -301,6 +324,7 @@
     <categoryEntry id="cp-kw::grenades" name="Grenades" hidden="false" />
     <categoryEntry id="cp-faction::grey-knights" name="Grey Knights" hidden="false" />
     <categoryEntry id="cp-kw::grey-knights" name="Grey Knights" hidden="false" />
+    <categoryEntry id="cp-kw::grots" name="Grots" hidden="false" />
     <categoryEntry id="cp-kw::guardian-defenders" name="Guardian Defenders" hidden="false" />
     <categoryEntry id="cp-kw::guardians" name="Guardians" hidden="false" />
     <categoryEntry id="cp-kw::haemonculus" name="Haemonculus" hidden="false" />
@@ -482,10 +506,11 @@
     <categoryEntry id="cp-kw::solitaire" name="Solitaire" hidden="false" />
     <categoryEntry id="cp-kw::sorcerer" name="Sorcerer" hidden="false" />
     <categoryEntry id="cp-kw::sororitas-rhino" name="Sororitas Rhino" hidden="false" />
-    <categoryEntry id="cp-group::space-marines" name="Space Marines" hidden="false" />
     <categoryEntry id="cp-faction::space-marines" name="Space Marines" hidden="false" />
+    <categoryEntry id="cp-group::space-marines" name="Space Marines" hidden="false" />
     <categoryEntry id="cp-faction::space-wolves" name="Space Wolves" hidden="false" />
     <categoryEntry id="cp-kw::space-wolves" name="Space Wolves" hidden="false" />
+    <categoryEntry id="cp-kw::speed-freeks" name="Speed Freeks" hidden="false" />
     <categoryEntry id="cp-kw::spiritseer" name="Spiritseer" hidden="false" />
     <categoryEntry id="cp-kw::squadron" name="Squadron" hidden="false" />
     <categoryEntry id="cp-kw::squighog-boyz" name="Squighog Boyz" hidden="false" />
@@ -536,6 +561,7 @@
     <categoryEntry id="cp-kw::ultramarines" name="Ultramarines" hidden="false" />
     <categoryEntry id="cp-kw::vanguard" name="Vanguard" hidden="false" />
     <categoryEntry id="cp-kw::vanguard-invader" name="Vanguard Invader" hidden="false" />
+    <categoryEntry id="cp-kw::vanguard-veteran-squad" name="Vanguard Veteran Squad" hidden="false" />
     <categoryEntry id="cp-kw::vedrenn" name="Vedrenn" hidden="false" />
     <categoryEntry id="cp-kw::vehicle" name="Vehicle" hidden="false" />
     <categoryEntry id="cp-kw::venerable-dreadnought" name="Venerable Dreadnought" hidden="false" />

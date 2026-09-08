@@ -4,8 +4,8 @@ BattleScribe catalogue data for the fixed Combat Patrol rosters of Warhammer 40,
 [Armamentarium](https://github.com/LordTyberias/Armamentarium) project.
 
 - `Combat Patrol.gst` — the game system: profile types, the categories, one force entry.
-- 34 `.cat` files — one per faction, together holding **317 unit entries** and **72 rules rows**
-  across **72 patrols**.
+- 34 `.cat` files — one per faction, together holding **328 unit entries** and **74 rules rows**
+  across **74 patrols**.
 
 ## What this is, and what it is not
 
@@ -57,6 +57,14 @@ datasheet. Its two profile types live in the `.gst` beside the other four:
 |---|---|
 | `Stratagem` | `CP`, `When`, `Target`, `Effect` |
 | `Secondary Objective` | `Type` (`Default` / `Optional` / `Only`), `Effect` |
+| `Army Rule` | `Description` |
+| `Detachment` | `DP`, `Rule`, `Force Disposition` |
+| `Enhancement` | `Restriction`, `Effect` |
+
+The last three arrived with the two 11th-edition patrols and are described under their provenance
+entry below. A patrol carries the profile types its own printed sheet carries and no others: the 72
+older patrols have `Stratagem` and `Secondary Objective`, the two newer ones have `Army Rule`,
+`Detachment`, `Enhancement` and `Stratagem`.
 
 `Only` is not a third state invented for tidiness. Three patrols have one objective and no alternative,
 and both Knight sheets say so in as many words: "nor will you have a choice of secondary objectives".
@@ -167,3 +175,34 @@ MIT, see `LICENSE`.
 Warhammer 40,000 and Combat Patrol are trademarks of Games Workshop Limited. This repository is
 unofficial and unaffiliated; it contains no Games Workshop artwork and claims no rights in their
 intellectual property.
+
+### 'Ardmob and Assault Force (ARMAM-341, added 2026-09-08)
+
+The two Combat Patrols that came with the 11th-edition launch box *Armageddon*. Games Workshop names
+them in as many words: *"you already have two Combat Patrols, in the form of the Ork 'Ardmob and the
+Space Marines Assault Force"*. They also ship in the *Getting Started* sets and the *Warhammer
+40,000 Starter Set*, so they are not tied to the launch box.
+
+**Transcribed from the Warhammer 40,000 app**, from screen recordings of every datasheet with all
+sections expanded, plus single screenshots for the four sections a recording had missed. The
+Armageddon datasheet-card PDFs that Games Workshop published for free were used as a cross-check and
+then set aside: **they are not these datasheets.** Measured on the Intercessors, the Combat Patrol
+sheet has 5 models where the box sheet has 10, OC 3 against 2, a different ability, and different
+grenade launcher profiles. A Combat Patrol datasheet of this edition is its own, simplified sheet.
+
+Nothing else carries them. The Games Workshop download index was read in full (1789 entries, all
+languages): its 128 Combat Patrol downloads are the 2024 set and stop there. The public reference
+that ARMAM-141 used lists 209 patrol titles and neither of these two. Wahapedia carries 11th-edition
+unit datasheets but no Combat Patrol sheets.
+
+**These two are the first patrols of the 11th edition, and their sheet is shaped differently.** It
+carries no Secondary Objective. In its place stand an army rule, a detachment with a points cost and
+a force disposition, two enhancements and three stratagems — which is why the rules row grew three
+profile types. Everything else about the format is unchanged.
+
+Two things are worth knowing before editing them. The Ork patrol has **two datasheets of the same
+name** (`'Ardmob Boyz`), told apart by their wargear and by their entry id, exactly as the app
+presents them; renaming one would invent a name Games Workshop does not use. And their `Shoota`
+profiles **differ**: the second sheet marks it [RAPID FIRE 1], the first marks nothing. That was
+read twice from separate screenshots. It is carried as it stands — whether it is deliberate or an
+error on their side is not something this data can decide.

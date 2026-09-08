@@ -1043,5 +1043,605 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="cp::assault-force::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2bcafd1f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a374ac08" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="85660be1" name="Combat Patrol: Space Marines (Assault Force)" hidden="false" targetId="cp-cat::assault-force" primary="true" />
+        <categoryLink id="ae75f88f" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="7456a9d9" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="bc2fbebc" name="Combat Doctrines" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">In your Command phase, you can select one of the Combat Doctrine abilities below. Friendly ADEPTUS ASTARTES units have the selected Combat Doctrine ability until the start of your next Command phase. Assault Doctrine: This unit can declare a charge in a turn in which it made an advance move. Devastator Doctrine: This unit can shoot in a turn in which it made an advance move. Tactical Doctrine: This unit can shoot and declare a charge in a turn in which it made a fall-back move. Each Combat Doctrine cannot be selected more than once per battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="467d49dd" name="Indomitable Resolve" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Friendly ASSAULT FORCE units have +1 OC.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Take and Hold</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b55939b2" name="Battle-line Veterans" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">ASSAULT FORCE INTERCESSOR SQUAD unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit's bolt rifle weapons have [RAPID FIRE 1].</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6233715" name="Blade Masters" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">ASSAULT FORCE VANGUARD VETERAN SQUAD WITH JUMP PACKS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">When an enemy unit ends a charge move, if that enemy unit is engaged with this unit, that unit's melee attacks have -1 to wound rolls until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3e53e94e" name="Relentless Aggression" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when a friendly ASSAULT FORCE unit is selected to make a consolidation move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ASSAULT FORCE unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">When making that consolidation move, your unit can move up to 6&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eb6ca11a" name="Terrifying Charge" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase, when a friendly ASSAULT FORCE unit ends a charge move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ASSAULT FORCE unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit engaged with your unit. That enemy unit makes a battle-shock roll, with -1 to that battle-shock roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2638b150" name="Decapitating Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when a friendly ASSAULT FORCE unit is selected to fight.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ASSAULT FORCE unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's melee attacks have [PRECISION].</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="cp::assault-force::00-assault-force-intercessor-squad" name="Assault Force Intercessor Squad" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b2e5298c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="13193019" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3d6c259f" name="Combat Patrol: Space Marines (Assault Force)" hidden="false" targetId="cp-cat::assault-force" primary="true" />
+        <categoryLink id="d33f0cda" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="b00713f6" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="9bf10906" name="Assault Force" hidden="false" targetId="cp-kw::assault-force" primary="false" />
+        <categoryLink id="7be9f1f4" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+        <categoryLink id="066c2809" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+        <categoryLink id="560b856d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="a03ec949" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="957c6f42" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="66c96973" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="13a901e2" name="Intercessor" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b4ce7af4" name="Intercessor Sergeant" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ebb8a00d" name="Intercessor with Grenade Launcher" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="14ff5fe3" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24eae095" name="Bolt Rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0874138a" name="Grenade Launcher - Frag" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="38f92b2f" name="Grenade Launcher - Krak" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Monster/Vehicle 4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="222bc281" name="Chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa69e672" name="Knives and Fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fca706d2" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a669bed5" name="Stalwart Defenders" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When an enemy unit targets this unit, if every model in this unit is within range of an objective, attacks that target this unit have -1 AP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::assault-force::00-assault-force-intercessor-squad::1-intercessor-sergeant" name="1 Intercessor Sergeant: bolt pistol, bolt rifle, chainsword, knives and fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d1e13ba3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b19c1795" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::assault-force::00-assault-force-intercessor-squad::1-intercessor-grenade-launcher" name="1 Intercessor with Grenade Launcher: bolt pistol, bolt rifle, grenade launcher - krak, knives and fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="bd84194e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2f542d99" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::assault-force::00-assault-force-intercessor-squad::3-intercessors" name="3 Intercessors: bolt pistol, bolt rifle, knives and fists" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="efae6316" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2b21de69" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::assault-force::01-assault-force-captain" name="Assault Force Captain" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ebbd5753" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="126dbbc5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bb66e0ad" name="Combat Patrol: Space Marines (Assault Force)" hidden="false" targetId="cp-cat::assault-force" primary="true" />
+        <categoryLink id="97019f4f" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="5570d851" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="bf562a00" name="Assault Force" hidden="false" targetId="cp-kw::assault-force" primary="false" />
+        <categoryLink id="ae66e926" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="6a82a30b" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+        <categoryLink id="7d73e8a4" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="33693a7f" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="35e0b177" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="28aec0b5" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="bb9f1772" name="Captain" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">6</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e49ecb2" name="Heavy Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c55971e2" name="Master-crafted Power Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6457bbf5" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="597ff2f8" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8657d1f3" name="Relic Shield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has +1 W (included in profile).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe1fe0f8" name="Master of War" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your opponent's Charge phase, if this unit is unengaged and within 6&quot; of one or more enemy units, you can use this ability. If you do, resolve a charge with it. When making the charge roll, if the result is greater than 6 (after modifiers), change it to 6.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::assault-force::01-assault-force-captain::1-captain" name="1 Captain: heavy bolt pistol, master-crafted power weapon, relic shield" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8ae518d5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c8395290" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::assault-force::02-assault-force-vanguard-veteran-squad-with-jump-packs" name="Assault Force Vanguard Veteran Squad With Jump Packs" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a179b66a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="766c311d" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7a9fe2f9" name="Combat Patrol: Space Marines (Assault Force)" hidden="false" targetId="cp-cat::assault-force" primary="true" />
+        <categoryLink id="e0e45927" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="6afabe80" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="7b0825ca" name="Assault Force" hidden="false" targetId="cp-kw::assault-force" primary="false" />
+        <categoryLink id="21d87294" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+        <categoryLink id="07c92bde" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="3b5a6413" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="be860d19" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="c0f06d4c" name="Jump Pack" hidden="false" targetId="cp-kw::jump-pack" primary="false" />
+        <categoryLink id="595f5cf4" name="Vanguard Veteran Squad" hidden="false" targetId="cp-kw::vanguard-veteran-squad" primary="false" />
+        <categoryLink id="ef54719c" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="fbcb5673" name="Vanguard Veteran" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="240f1118" name="Vanguard Veteran Sergeant" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2295abe1" name="Vanguard Veteran with Plasma Pistol" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11f2411f" name="Heavy Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d6053d02" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cdaac7e0" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1273d2fe" name="Master-crafted Power Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1ee2a220" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cbf22e94" name="Rapid Reactions (once per turn per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your opponent's Shooting phase, when an enemy unit has shot, if that unit targeted this unit, this unit can make a normal move of up to D6+1&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::assault-force::02-assault-force-vanguard-veteran-squad-with-jump-packs::1-vanguard-veteran-sergeant" name="1 Vanguard Veteran Sergeant: heavy bolt pistol, master-crafted power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8d9fe49b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="36057d41" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::assault-force::02-assault-force-vanguard-veteran-squad-with-jump-packs::1-vanguard-veteran-plasma-pistol" name="1 Vanguard Veteran with Plasma Pistol: master-crafted power weapon, plasma pistol" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ee8c9485" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c8d34949" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::assault-force::02-assault-force-vanguard-veteran-squad-with-jump-packs::3-vanguard-veterans" name="3 Vanguard Veterans: heavy bolt pistol, master-crafted power weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="bcc9fbca" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f4fa94b6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::assault-force::03-assault-force-librarian" name="Assault Force Librarian" type="unit" hidden="false">
+      <constraints>
+        <constraint id="9b839a66" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2b7f59e7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="07991b91" name="Combat Patrol: Space Marines (Assault Force)" hidden="false" targetId="cp-cat::assault-force" primary="true" />
+        <categoryLink id="f21435a5" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="d61d0d2c" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="330a79d8" name="Assault Force" hidden="false" targetId="cp-kw::assault-force" primary="false" />
+        <categoryLink id="53785312" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+        <categoryLink id="60b649e1" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+        <categoryLink id="1aec35fa" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="f5120494" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+        <categoryLink id="3b907fa7" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+        <categoryLink id="2338c8cb" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+        <categoryLink id="0db4e649" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="3b86c0b1" name="Librarian" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="43e4d5d3" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="45d268cd" name="Fulmination - Electropulse" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e4352d33" name="Fulmination - Electrosurge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 2, Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76567a45" name="Force Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b46cff37" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c2bf0a7" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e02199f7" name="Empyric Insight" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's ranged attacks can ignore modifiers to: BS; Hit rolls and wound rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="25b41efd" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to ASSAULT FORCE INTERCESSOR SQUAD.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::assault-force::03-assault-force-librarian::1-librarian" name="1 Librarian: bolt pistol, force weapon, fulmination - electrosurge" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ed60625f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a2e4dccf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::assault-force::04-assault-force-land-speeder" name="Assault Force Land Speeder" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2f4799a2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="080c42ac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="68289c28" name="Combat Patrol: Space Marines (Assault Force)" hidden="false" targetId="cp-cat::assault-force" primary="true" />
+        <categoryLink id="65fe670c" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
+        <categoryLink id="f4481922" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="12069433" name="Assault Force" hidden="false" targetId="cp-kw::assault-force" primary="false" />
+        <categoryLink id="7cb626d2" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+        <categoryLink id="efa705cd" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+        <categoryLink id="c0c9abac" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+        <categoryLink id="1a54a82e" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b6b5e27c" name="Land Speeder" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">14&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">8</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">9</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6b96834" name="Heavy Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97663c4c" name="Multi-melta" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">10</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-4</characteristic>
+            <characteristic name="D" typeId="64a3de63">D6</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Melta 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f3279589" name="Stormfury Missile Launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">48&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">10</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">4</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f71f1428" name="Armoured Impact" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d80e49c6" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::assault-force::04-assault-force-land-speeder::1-land-speeder" name="1 Land Speeder: armoured impact, heavy flamer, multi-melta, stormfury missile launcher" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="989860bd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c9bafb7d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>
