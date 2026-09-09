@@ -10,6 +10,7 @@
         <categoryLink id="7edb56f1" name="Combat Patrol: Imperial Fists (Rampart Force Torreus)" hidden="false" targetId="cp-cat::rampart-force-torreus" primary="true" />
         <categoryLink id="a89a2951" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="2f2d3c8e" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="09179567" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="aa8666fa" name="Transhuman Might" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -66,6 +67,7 @@
         <categoryLink id="9fb8d262" name="Captain" hidden="false" targetId="cp-kw::captain" primary="false" />
         <categoryLink id="1a15afd1" name="Captain Torreus" hidden="false" targetId="cp-kw::captain-torreus" primary="false" />
         <categoryLink id="fbafd704" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="3092b246" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1a72eed6" name="Captain Torreus" typeId="59000054" typeName="Unit" hidden="false">
@@ -171,6 +173,7 @@
         <categoryLink id="ef08ea10" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="20c7261b" name="Company Heroes" hidden="false" targetId="cp-kw::company-heroes" primary="false" />
         <categoryLink id="6823239c" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="6328c1b5" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a9371964" name="Company Heroes" typeId="59000054" typeName="Unit" hidden="false">
@@ -307,6 +310,7 @@
         <categoryLink id="8a9080f4" name="Gravis" hidden="false" targetId="cp-kw::gravis" primary="false" />
         <categoryLink id="960fa118" name="Heavy Intercessor Squad" hidden="false" targetId="cp-kw::heavy-intercessor-squad" primary="false" />
         <categoryLink id="4e9dcda1" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="e57f94d2" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="b079e9af" name="Heavy Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -405,6 +409,7 @@
         <categoryLink id="398fb2f9" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="3e71f48c" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
         <categoryLink id="fbbff69d" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="978dd0d5" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -513,6 +518,7 @@
         <categoryLink id="8f16da94" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
         <categoryLink id="a035c6d3" name="Terminator Squad" hidden="false" targetId="cp-kw::terminator-squad" primary="false" />
         <categoryLink id="d8f5606d" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="b4940b44" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e7651535" name="Terminator Squad" typeId="59000054" typeName="Unit" hidden="false">

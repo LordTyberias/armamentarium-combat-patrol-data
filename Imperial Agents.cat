@@ -699,6 +699,7 @@
         <categoryLink id="28b54d93" name="Combat Patrol: Imperial Agents (Vantarrion's Voidsmen)" hidden="false" targetId="cp-cat::vantarrions-voidsmen" primary="true" />
         <categoryLink id="7a74b67d" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
         <categoryLink id="de231f0d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="b3e45d57" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="2e3899ba" name="Small-arms Broadside" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -756,6 +757,7 @@
         <categoryLink id="11c95fae" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
         <categoryLink id="52e2a953" name="Eidelwynne Vantarrion" hidden="false" targetId="cp-kw::eidelwynne-vantarrion" primary="false" />
         <categoryLink id="2118a385" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="4804b521" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="3c528527" name="Rogue Trader" typeId="59000054" typeName="Unit" hidden="false">
@@ -948,6 +950,7 @@
         <categoryLink id="042b8595" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
         <categoryLink id="fd6f3085" name="Voidsmen-at-Arms" hidden="false" targetId="cp-kw::voidsmen-at-arms" primary="false" />
         <categoryLink id="f6e54a09" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="82e9c446" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="bae6ae02" name="Voidsmen-at-Arms" typeId="59000054" typeName="Unit" hidden="false">
@@ -1079,6 +1082,7 @@
         <categoryLink id="5b8cc74b" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
         <categoryLink id="dd51c42f" name="Imperial Navy Breachers" hidden="false" targetId="cp-kw::imperial-navy-breachers" primary="false" />
         <categoryLink id="5a073ca2" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="afc1e03b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="bd2a2d74" name="Imperial Navy Breachers" typeId="59000054" typeName="Unit" hidden="false">
@@ -1260,6 +1264,7 @@
         <categoryLink id="348d39ad" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
         <categoryLink id="1bcef073" name="Imperial Navy Breachers" hidden="false" targetId="cp-kw::imperial-navy-breachers" primary="false" />
         <categoryLink id="7f3555e8" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="a3779483" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="bd2a2d74" name="Imperial Navy Breachers" typeId="59000054" typeName="Unit" hidden="false">

@@ -10,6 +10,7 @@
         <categoryLink id="ca051af4" name="Combat Patrol: Black Templars (Siguard's Crusaders)" hidden="false" targetId="cp-cat::siguards-crusaders" primary="true" />
         <categoryLink id="934ad8d1" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
         <categoryLink id="d25002f3" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="89af689e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c1f0d3fb" name="Shield of Zeal" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="f3ff527b" name="Siguard" hidden="false" targetId="cp-kw::siguard" primary="false" />
         <categoryLink id="cc2c3605" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="5641007d" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="c8263e8d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="6228625e" name="Marshal Siguard" typeId="59000054" typeName="Unit" hidden="false">
@@ -177,6 +179,7 @@
         <categoryLink id="d1bfb3ca" name="Primaris Crusader Squad" hidden="false" targetId="cp-kw::primaris-crusader-squad" primary="false" />
         <categoryLink id="4f089998" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="d09b684f" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="8100407b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d9bdf219" name="Primaris Neophyte" typeId="59000054" typeName="Unit" hidden="false">
@@ -371,6 +374,7 @@
         <categoryLink id="1caf5224" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
         <categoryLink id="e7c48c29" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="8d72ec64" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="6659e287" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -447,6 +451,7 @@
         <categoryLink id="fddd7c3e" name="Impulsor" hidden="false" targetId="cp-kw::impulsor" primary="false" />
         <categoryLink id="c20b8b73" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="881462ea" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="0e3e3bb8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="00e42e14" name="Black Templars Impulsor" typeId="59000054" typeName="Unit" hidden="false">

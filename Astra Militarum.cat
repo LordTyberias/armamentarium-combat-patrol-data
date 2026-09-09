@@ -10,6 +10,7 @@
         <categoryLink id="18768cfc" name="Combat Patrol: Astra Militarum (Karsk's Gunners)" hidden="false" targetId="cp-cat::karsks-gunners" primary="true" />
         <categoryLink id="a06dff34" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
         <categoryLink id="27f14c06" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="99f895a7" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="94995ce6" name="Send in the Next Wave" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="a8b6c6ae" name="Officer" hidden="false" targetId="cp-kw::officer" primary="false" />
         <categoryLink id="de5509cd" name="Karsk" hidden="false" targetId="cp-kw::karsk" primary="false" />
         <categoryLink id="f2d1af4c" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="4f7a8a3d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c2444c09" name="Karsk" typeId="59000054" typeName="Unit" hidden="false">
@@ -269,6 +271,7 @@
         <categoryLink id="27699025" name="Cadian" hidden="false" targetId="cp-kw::cadian" primary="false" />
         <categoryLink id="3c77d899" name="Cadian Shock Troops" hidden="false" targetId="cp-kw::cadian-shock-troops" primary="false" />
         <categoryLink id="e2afe8ca" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="2299f377" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d869da84" name="Cadian Shock Troops" typeId="59000054" typeName="Unit" hidden="false">
@@ -447,6 +450,7 @@
         <categoryLink id="c81fff19" name="Cadian" hidden="false" targetId="cp-kw::cadian" primary="false" />
         <categoryLink id="7bfd83d4" name="Cadian Shock Troops" hidden="false" targetId="cp-kw::cadian-shock-troops" primary="false" />
         <categoryLink id="28cd2bdf" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="bf646723" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d869da84" name="Cadian Shock Troops" typeId="59000054" typeName="Unit" hidden="false">
@@ -629,6 +633,7 @@
         <categoryLink id="ad9614cb" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
         <categoryLink id="f9b69482" name="Field Ordnance Battery" hidden="false" targetId="cp-kw::field-ordnance-battery" primary="false" />
         <categoryLink id="0e56477c" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="9e7bcdea" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7f8bce36" name="Field Ordnance Battery" typeId="59000054" typeName="Unit" hidden="false">
@@ -747,6 +752,7 @@
         <categoryLink id="479491a3" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
         <categoryLink id="d705f91a" name="Armoured Sentinel" hidden="false" targetId="cp-kw::armoured-sentinel" primary="false" />
         <categoryLink id="899b04c8" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="b8c45702" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="89d370e8" name="Armoured Sentinel" typeId="59000054" typeName="Unit" hidden="false">
@@ -1592,6 +1598,7 @@
         <categoryLink id="7c118a35" name="Combat Patrol: Astra Militarum (Strike Platoon Gorgonne VI)" hidden="false" targetId="cp-cat::strike-platoon-gorgonne-vi" primary="true" />
         <categoryLink id="a9eca165" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
         <categoryLink id="568126d1" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="a23c7a2d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9fba67e5" name="Servo-Augur Array" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -1648,6 +1655,7 @@
         <categoryLink id="487ee5a8" name="Dedicated Transport" hidden="false" targetId="cp-kw::dedicated-transport" primary="false" />
         <categoryLink id="8f7cd634" name="Taurox Prime" hidden="false" targetId="cp-kw::taurox-prime" primary="false" />
         <categoryLink id="f51fa00e" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="9b89c0d5" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="812d4f0c" name="Taurox Prime" typeId="59000054" typeName="Unit" hidden="false">
@@ -1752,6 +1760,7 @@
         <categoryLink id="a6a1c37e" name="Militarum Tempestus" hidden="false" targetId="cp-kw::militarum-tempestus" primary="false" />
         <categoryLink id="6b9246b0" name="Tempestus Scions" hidden="false" targetId="cp-kw::tempestus-scions" primary="false" />
         <categoryLink id="8ef17849" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="59c64374" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c20486e6" name="Tempestus Scions" typeId="59000054" typeName="Unit" hidden="false">
@@ -1914,6 +1923,7 @@
         <categoryLink id="6386ccae" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
         <categoryLink id="54ce7fef" name="Officer" hidden="false" targetId="cp-kw::officer" primary="false" />
         <categoryLink id="577ee3db" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="d44c8770" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f780acea" name="Tempestus Scion" typeId="59000054" typeName="Unit" hidden="false">
@@ -2078,6 +2088,7 @@
         <categoryLink id="518d320e" name="Militarum Tempestus" hidden="false" targetId="cp-kw::militarum-tempestus" primary="false" />
         <categoryLink id="df1fd4e4" name="Tempestus Scions" hidden="false" targetId="cp-kw::tempestus-scions" primary="false" />
         <categoryLink id="1cb73eb4" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="06169cfd" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c20486e6" name="Tempestus Scions" typeId="59000054" typeName="Unit" hidden="false">
@@ -2231,6 +2242,7 @@
         <categoryLink id="55a74464" name="Combat Patrol: Astra Militarum (Death Korps Combat Platoon)" hidden="false" targetId="cp-cat::death-korps-combat-platoon" primary="true" />
         <categoryLink id="2ab05e8f" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
         <categoryLink id="721cac67" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="cd396f42" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="2e9a8ebc" name="Fresh Waves" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -2288,6 +2300,7 @@
         <categoryLink id="5b160f5a" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
         <categoryLink id="1f7b57f4" name="Officer" hidden="false" targetId="cp-kw::officer" primary="false" />
         <categoryLink id="ae19415b" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="dd82c841" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c5286ebc" name="Lord Commissar" typeId="59000054" typeName="Unit" hidden="false">
@@ -2503,6 +2516,7 @@
         <categoryLink id="b6c4a7fa" name="Platoon" hidden="false" targetId="cp-kw::platoon" primary="false" />
         <categoryLink id="a4443626" name="Death Korps of Krieg" hidden="false" targetId="cp-kw::death-korps-of-krieg" primary="false" />
         <categoryLink id="d638c15c" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="f48d37c3" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="002ec539" name="Death Korps of Krieg" typeId="59000054" typeName="Unit" hidden="false">
@@ -2616,6 +2630,7 @@
         <categoryLink id="c31a8a0e" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
         <categoryLink id="dae5cee0" name="Krieg Heavy Weapons Squad" hidden="false" targetId="cp-kw::krieg-heavy-weapons-squad" primary="false" />
         <categoryLink id="87c9ae11" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="1bbf3635" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="83aed07d" name="Heavy Weapons Gunner" typeId="59000054" typeName="Unit" hidden="false">
@@ -2711,6 +2726,7 @@
         <categoryLink id="3537215e" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
         <categoryLink id="76f1f52e" name="Death Riders" hidden="false" targetId="cp-kw::death-riders" primary="false" />
         <categoryLink id="c9f61d64" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="f21797c7" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="cf96d6b1" name="Death Riders" typeId="59000054" typeName="Unit" hidden="false">

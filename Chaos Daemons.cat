@@ -10,6 +10,7 @@
         <categoryLink id="ee755ef3" name="Combat Patrol: Chaos Daemons (Butchers of Hyporia)" hidden="false" targetId="cp-cat::butchers-of-hyporia" primary="true" />
         <categoryLink id="1ab80bbc" name="Chaos Daemons" hidden="false" targetId="cp-faction::chaos-daemons" primary="false" />
         <categoryLink id="a142fecf" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="3469fc15" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="801a67c4" name="Blood-Maddened Banishment" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="86a89832" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="6cf0805e" name="Kh'har'ret the Butcher" hidden="false" targetId="cp-kw::kh-har-ret-the-butcher" primary="false" />
         <categoryLink id="a29d7c99" name="Legiones Daemonica" hidden="false" targetId="cp-kw::legiones-daemonica" primary="false" />
+        <categoryLink id="c33f7377" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="ed3fbebb" name="Kh'har'ret the Butcher" typeId="59000054" typeName="Unit" hidden="false">
@@ -162,6 +164,7 @@
         <categoryLink id="9303d043" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="85b9e2bf" name="Bloodletters" hidden="false" targetId="cp-kw::bloodletters" primary="false" />
         <categoryLink id="93efe921" name="Legiones Daemonica" hidden="false" targetId="cp-kw::legiones-daemonica" primary="false" />
+        <categoryLink id="ebd2067f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="eeb6b102" name="Bloodletters" typeId="59000054" typeName="Unit" hidden="false">
@@ -238,6 +241,7 @@
         <categoryLink id="61dc9be8" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="04eb134a" name="Bloodletters" hidden="false" targetId="cp-kw::bloodletters" primary="false" />
         <categoryLink id="119e4fdb" name="Legiones Daemonica" hidden="false" targetId="cp-kw::legiones-daemonica" primary="false" />
+        <categoryLink id="ea9ea87c" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="eeb6b102" name="Bloodletters" typeId="59000054" typeName="Unit" hidden="false">
@@ -313,6 +317,7 @@
         <categoryLink id="0a5d1c27" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="1de6a17f" name="Flesh Hounds" hidden="false" targetId="cp-kw::flesh-hounds" primary="false" />
         <categoryLink id="5687c8d8" name="Legiones Daemonica" hidden="false" targetId="cp-kw::legiones-daemonica" primary="false" />
+        <categoryLink id="ed2fb2c0" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9b19cb17" name="Flesh Hounds" typeId="59000054" typeName="Unit" hidden="false">
@@ -398,6 +403,7 @@
         <categoryLink id="65b2ed4a" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="fb4c1a51" name="Flesh Hounds" hidden="false" targetId="cp-kw::flesh-hounds" primary="false" />
         <categoryLink id="57f29f58" name="Legiones Daemonica" hidden="false" targetId="cp-kw::legiones-daemonica" primary="false" />
+        <categoryLink id="04d95a11" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9b19cb17" name="Flesh Hounds" typeId="59000054" typeName="Unit" hidden="false">
@@ -483,6 +489,7 @@
         <categoryLink id="3d8420f9" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="e840f96e" name="Bloodcrushers" hidden="false" targetId="cp-kw::bloodcrushers" primary="false" />
         <categoryLink id="9e027d72" name="Legiones Daemonica" hidden="false" targetId="cp-kw::legiones-daemonica" primary="false" />
+        <categoryLink id="8e177b10" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="629df06b" name="Bloodcrushers" typeId="59000054" typeName="Unit" hidden="false">

@@ -10,6 +10,7 @@
         <categoryLink id="ed29bc09" name="Combat Patrol: Blood Angels (Strike Force Marcellos)" hidden="false" targetId="cp-cat::strike-force-marcellos" primary="true" />
         <categoryLink id="1a3b8de7" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
         <categoryLink id="56564545" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="bf3e111c" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="4449c63c" name="Controlled Ferocity" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -68,6 +69,7 @@
         <categoryLink id="d918123a" name="Marcellos" hidden="false" targetId="cp-kw::marcellos" primary="false" />
         <categoryLink id="40bc4fa6" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="e0e92f36" name="Blood Angels" hidden="false" targetId="cp-kw::blood-angels" primary="false" />
+        <categoryLink id="9bc8701e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="ed75a205" name="Librarian Marcellos" typeId="59000054" typeName="Unit" hidden="false">
@@ -198,6 +200,7 @@
         <categoryLink id="d55964c8" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
         <categoryLink id="9023b07b" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="bc5df5fa" name="Blood Angels" hidden="false" targetId="cp-kw::blood-angels" primary="false" />
+        <categoryLink id="69f85493" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -291,6 +294,7 @@
         <categoryLink id="88338910" name="Incursor Squad" hidden="false" targetId="cp-kw::incursor-squad" primary="false" />
         <categoryLink id="6a84a905" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="50f6d007" name="Blood Angels" hidden="false" targetId="cp-kw::blood-angels" primary="false" />
+        <categoryLink id="531fc734" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="5f7c68fc" name="Incursor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -393,6 +397,7 @@
         <categoryLink id="f5431cdb" name="Aggressor Squad" hidden="false" targetId="cp-kw::aggressor-squad" primary="false" />
         <categoryLink id="95363b05" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="45e30eb1" name="Blood Angels" hidden="false" targetId="cp-kw::blood-angels" primary="false" />
+        <categoryLink id="77fbe284" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="67518c40" name="Aggressor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -458,6 +463,7 @@
         <categoryLink id="60dc5b6f" name="Impulsor" hidden="false" targetId="cp-kw::impulsor" primary="false" />
         <categoryLink id="a2045fe8" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="e349eb4f" name="Blood Angels" hidden="false" targetId="cp-kw::blood-angels" primary="false" />
+        <categoryLink id="9ba9600e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="89828d07" name="Impulsor" typeId="59000054" typeName="Unit" hidden="false">
@@ -578,7 +584,7 @@
         <constraint id="bbe15d0f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="dbe31757" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
+        <categoryLink id="dbe31757" name="Combat Patrol: Blood Angels (Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
         <categoryLink id="332d7c81" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
         <categoryLink id="aa98bc50" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
       </categoryLinks>
@@ -627,7 +633,7 @@
         <constraint id="00c6f37c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="6eca6fc2" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
+        <categoryLink id="6eca6fc2" name="Combat Patrol: Blood Angels (Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
         <categoryLink id="7e35955d" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
         <categoryLink id="fb4cdd1a" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
         <categoryLink id="67af6713" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
@@ -735,7 +741,7 @@
         <constraint id="3347dba3" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="5458d44b" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
+        <categoryLink id="5458d44b" name="Combat Patrol: Blood Angels (Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
         <categoryLink id="b1436ed8" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
         <categoryLink id="ee08c4f7" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
         <categoryLink id="0c68ca67" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
@@ -833,7 +839,7 @@
         <constraint id="1f341b05" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="137d992b" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
+        <categoryLink id="137d992b" name="Combat Patrol: Blood Angels (Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
         <categoryLink id="48edaa30" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
         <categoryLink id="b1337b69" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
         <categoryLink id="b12a99f7" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
@@ -931,7 +937,7 @@
         <constraint id="2d011f49" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="f17aed90" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
+        <categoryLink id="f17aed90" name="Combat Patrol: Blood Angels (Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" primary="true" />
         <categoryLink id="250902eb" name="Blood Angels" hidden="false" targetId="cp-faction::blood-angels" primary="false" />
         <categoryLink id="271780f4" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
         <categoryLink id="987e95ae" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />

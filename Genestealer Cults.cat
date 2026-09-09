@@ -510,6 +510,7 @@
         <categoryLink id="b92e438d" name="Combat Patrol: Genestealer Cults (Hand of the Magus)" hidden="false" targetId="cp-cat::hand-of-the-magus" primary="true" />
         <categoryLink id="85c3381d" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
         <categoryLink id="5a67b8a6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="b520c86d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f75466c4" name="Defend the Magus" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -566,6 +567,7 @@
         <categoryLink id="2467415c" name="Magus" hidden="false" targetId="cp-kw::magus" primary="false" />
         <categoryLink id="0a5aafb6" name="Veridielle" hidden="false" targetId="cp-kw::veridielle" primary="false" />
         <categoryLink id="d036cd21" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="91d59fa8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="ce4c21bb" name="Magus Veridielle" typeId="59000054" typeName="Unit" hidden="false">
@@ -666,6 +668,7 @@
         <categoryLink id="a4ce042d" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
         <categoryLink id="6c8402a3" name="Neophyte Hybrids" hidden="false" targetId="cp-kw::neophyte-hybrids" primary="false" />
         <categoryLink id="94d7b503" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="6e582539" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d1f6b3c0" name="Neophyte Hybrids" typeId="59000054" typeName="Unit" hidden="false">
@@ -830,6 +833,7 @@
         <categoryLink id="e1bd2de4" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
         <categoryLink id="f8601b51" name="Neophyte Hybrids" hidden="false" targetId="cp-kw::neophyte-hybrids" primary="false" />
         <categoryLink id="1393030b" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="2d4f999a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d1f6b3c0" name="Neophyte Hybrids" typeId="59000054" typeName="Unit" hidden="false">
@@ -993,6 +997,7 @@
         <categoryLink id="43334989" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
         <categoryLink id="137adadd" name="Acolyte Hybrids" hidden="false" targetId="cp-kw::acolyte-hybrids" primary="false" />
         <categoryLink id="66fe1608" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="4278f31b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="5fb2423f" name="Acolyte Hybrids" typeId="59000054" typeName="Unit" hidden="false">
@@ -1129,6 +1134,7 @@
         <categoryLink id="f2346be5" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
         <categoryLink id="4ca12343" name="Aberrants" hidden="false" targetId="cp-kw::aberrants" primary="false" />
         <categoryLink id="8ea602ae" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="fbbb0a8d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="b93d9455" name="Aberrants" typeId="59000054" typeName="Unit" hidden="false">
@@ -1203,6 +1209,7 @@
         <categoryLink id="8f31a7f9" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
         <categoryLink id="dce4413d" name="Goliath Rockgrinder" hidden="false" targetId="cp-kw::goliath-rockgrinder" primary="false" />
         <categoryLink id="5fe53cfc" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="6b0abf47" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="74a7c438" name="Goliath Rockgrinder" typeId="59000054" typeName="Unit" hidden="false">

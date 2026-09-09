@@ -10,6 +10,7 @@
         <categoryLink id="4c4b0d9e" name="Combat Patrol: Iron Hands (Medusan Redoubt)" hidden="false" targetId="cp-cat::medusan-redoubt" primary="true" />
         <categoryLink id="0d331703" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="e5dd6b34" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="26ac440f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="6fd3b193" name="Methodical Firepower" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="6ee304e3" name="Techmarine" hidden="false" targetId="cp-kw::techmarine" primary="false" />
         <categoryLink id="10532489" name="Gorloch Kataan" hidden="false" targetId="cp-kw::gorloch-kataan" primary="false" />
         <categoryLink id="56d4b8ff" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="e4c77c9f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1919fcea" name="Techmarine Gorloch Kataan" typeId="59000054" typeName="Unit" hidden="false">
@@ -210,6 +212,7 @@
         <categoryLink id="e3b36a25" name="Gravis" hidden="false" targetId="cp-kw::gravis" primary="false" />
         <categoryLink id="d7b0cb15" name="Heavy Intercessor Squad" hidden="false" targetId="cp-kw::heavy-intercessor-squad" primary="false" />
         <categoryLink id="80c640bb" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="c47fbb25" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="b079e9af" name="Heavy Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -317,6 +320,7 @@
         <categoryLink id="7f1644ca" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="31fdba73" name="Firestrike Servo-turret" hidden="false" targetId="cp-kw::firestrike-servo-turret" primary="false" />
         <categoryLink id="0b182c6f" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="2c4ebc76" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="709099bd" name="Firestrike Servo-turret" typeId="59000054" typeName="Unit" hidden="false">

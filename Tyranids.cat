@@ -10,6 +10,7 @@
         <categoryLink id="d0aaf19f" name="Combat Patrol: Tyranids (Tyranid Assault Brood)" hidden="false" targetId="cp-cat::tyranid-assault-brood" primary="true" />
         <categoryLink id="397a5a94" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
         <categoryLink id="1e64c027" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="84ae1f6c" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c70c5509" name="Sensory Amalgamation" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="f6766396" name="Synapse" hidden="false" targetId="cp-kw::synapse" primary="false" />
         <categoryLink id="2717b1ee" name="Parasite of Mortrex" hidden="false" targetId="cp-kw::parasite-of-mortrex" primary="false" />
         <categoryLink id="1c112aad" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="7ae1f580" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a4cd08dc" name="Parasite of Mortrex" typeId="59000054" typeName="Unit" hidden="false">
@@ -174,6 +176,7 @@
         <categoryLink id="b396ea89" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
         <categoryLink id="9fa07bae" name="Genestealers" hidden="false" targetId="cp-kw::genestealers" primary="false" />
         <categoryLink id="95f791db" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="6ed4b996" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9bc534af" name="Genestealers" typeId="59000054" typeName="Unit" hidden="false">
@@ -253,6 +256,7 @@
         <categoryLink id="c3ac9a40" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
         <categoryLink id="c81c23ef" name="Biovores" hidden="false" targetId="cp-kw::biovores" primary="false" />
         <categoryLink id="a3e0b789" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="7e441241" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a85c6b2c" name="Biovores" typeId="59000054" typeName="Unit" hidden="false">
@@ -326,6 +330,7 @@
         <categoryLink id="601d9f37" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
         <categoryLink id="c6139e51" name="Tyrant Guard" hidden="false" targetId="cp-kw::tyrant-guard" primary="false" />
         <categoryLink id="cd4c6801" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="08535f8b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1f8db711" name="Tyrant Guard" typeId="59000054" typeName="Unit" hidden="false">
@@ -407,6 +412,7 @@
         <categoryLink id="8aacf1cd" name="Combat Patrol: Tyranids (Insidious Infiltrators)" hidden="false" targetId="cp-cat::insidious-infiltrators" primary="true" />
         <categoryLink id="d1521b64" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" primary="false" />
         <categoryLink id="cc7fb936" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="6b7a6243" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="2d3be661" name="Swift Kills" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -462,6 +468,7 @@
         <categoryLink id="771fb27b" name="Neurolictor" hidden="false" targetId="cp-kw::neurolictor" primary="false" />
         <categoryLink id="0a19d9e0" name="Death's Shadow" hidden="false" targetId="cp-kw::death-s-shadow" primary="false" />
         <categoryLink id="69572b74" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="51b94815" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="da7ea085" name="Death's Shadow" typeId="59000054" typeName="Unit" hidden="false">
@@ -560,6 +567,7 @@
         <categoryLink id="a2d967eb" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
         <categoryLink id="a9c1afe0" name="Lictor" hidden="false" targetId="cp-kw::lictor" primary="false" />
         <categoryLink id="bb1e76ab" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="37d9987c" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a3e905d7" name="Lictor" typeId="59000054" typeName="Unit" hidden="false">
@@ -637,6 +645,7 @@
         <categoryLink id="80c891dd" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
         <categoryLink id="496dcd7a" name="Von Ryan's Leapers" hidden="false" targetId="cp-kw::von-ryan-s-leapers" primary="false" />
         <categoryLink id="a9beeb7d" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="e571bc21" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="40bb0eb5" name="Von Ryan's Leapers" typeId="59000054" typeName="Unit" hidden="false">
@@ -714,6 +723,7 @@
         <categoryLink id="cd68e7c5" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
         <categoryLink id="2842b7e5" name="Von Ryan's Leapers" hidden="false" targetId="cp-kw::von-ryan-s-leapers" primary="false" />
         <categoryLink id="c9f586f4" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="f9a8db95" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="40bb0eb5" name="Von Ryan's Leapers" typeId="59000054" typeName="Unit" hidden="false">
@@ -791,6 +801,7 @@
         <categoryLink id="5930ee8e" name="Vanguard Invader" hidden="false" targetId="cp-kw::vanguard-invader" primary="false" />
         <categoryLink id="e381b7b4" name="Von Ryan's Leapers" hidden="false" targetId="cp-kw::von-ryan-s-leapers" primary="false" />
         <categoryLink id="365436ab" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" primary="false" />
+        <categoryLink id="8da4ee41" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="40bb0eb5" name="Von Ryan's Leapers" typeId="59000054" typeName="Unit" hidden="false">

@@ -10,6 +10,7 @@
         <categoryLink id="96edadaf" name="Combat Patrol: Grey Knights (Aurellios' Banishers)" hidden="false" targetId="cp-cat::aurellios-banishers" primary="true" />
         <categoryLink id="5d70e90c" name="Grey Knights" hidden="false" targetId="cp-faction::grey-knights" primary="false" />
         <categoryLink id="8edf4550" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="4af07f87" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="6668b891" name="Warded Plate" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="3e216ee7" name="Librarian" hidden="false" targetId="cp-kw::librarian" primary="false" />
         <categoryLink id="ed3bdbe3" name="Aurellios" hidden="false" targetId="cp-kw::aurellios" primary="false" />
         <categoryLink id="f60e6f87" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+        <categoryLink id="81ab13d7" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f5f49f85" name="Librarian Aurellios" typeId="59000054" typeName="Unit" hidden="false">
@@ -189,6 +191,7 @@
         <categoryLink id="7cd566b6" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="16af61fb" name="Strike Squad" hidden="false" targetId="cp-kw::strike-squad" primary="false" />
         <categoryLink id="f872f510" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+        <categoryLink id="1970bf87" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="13c1225e" name="Strike Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -293,6 +296,7 @@
         <categoryLink id="2a5a7888" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="c0c39db9" name="Brotherhood Terminator Squad" hidden="false" targetId="cp-kw::brotherhood-terminator-squad" primary="false" />
         <categoryLink id="73d94ad9" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+        <categoryLink id="17161891" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="863cf930" name="Brotherhood Terminator Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -400,6 +404,7 @@
         <categoryLink id="5951db9b" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="902ca871" name="Nemesis Dreadknight" hidden="false" targetId="cp-kw::nemesis-dreadknight" primary="false" />
         <categoryLink id="ef86c5d0" name="Grey Knights" hidden="false" targetId="cp-kw::grey-knights" primary="false" />
+        <categoryLink id="3717af64" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="874c9175" name="Nemesis Dreadknight" typeId="59000054" typeName="Unit" hidden="false">

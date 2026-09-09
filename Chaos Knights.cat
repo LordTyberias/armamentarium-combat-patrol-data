@@ -10,6 +10,7 @@
         <categoryLink id="362d7c1d" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" targetId="cp-cat::slaughter-talon" primary="true" />
         <categoryLink id="a3929730" name="Chaos Knights" hidden="false" targetId="cp-faction::chaos-knights" primary="false" />
         <categoryLink id="55660d27" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="19fdd5e8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a9374c9c" name="Infernal Rage" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -62,6 +63,7 @@
         <categoryLink id="e2c3ad14" name="Stalker" hidden="false" targetId="cp-kw::stalker" primary="false" />
         <categoryLink id="37dd7925" name="Zarkys and Helskarr" hidden="false" targetId="cp-kw::zarkys-and-helskarr" primary="false" />
         <categoryLink id="1e97b0f9" name="Chaos Knights" hidden="false" targetId="cp-kw::chaos-knights" primary="false" />
+        <categoryLink id="b1c85bae" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="41bae219" name="Zarkys and Helskarr" typeId="59000054" typeName="Unit" hidden="false">
@@ -180,6 +182,7 @@
         <categoryLink id="c885ca19" name="Brigand" hidden="false" targetId="cp-kw::brigand" primary="false" />
         <categoryLink id="63a3d5b0" name="Karthon and Firegheist" hidden="false" targetId="cp-kw::karthon-and-firegheist" primary="false" />
         <categoryLink id="4c625ba8" name="Chaos Knights" hidden="false" targetId="cp-kw::chaos-knights" primary="false" />
+        <categoryLink id="90e59290" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c3a50707" name="Karthon and Firegheist" typeId="59000054" typeName="Unit" hidden="false">

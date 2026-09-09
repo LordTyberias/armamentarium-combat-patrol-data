@@ -10,6 +10,7 @@
         <categoryLink id="4f8cbd5e" name="Combat Patrol: World Eaters (Karagar's Rampagers)" hidden="false" targetId="cp-cat::karagars-rampagers" primary="true" />
         <categoryLink id="0cfd523d" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
         <categoryLink id="1d81afa2" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="81f6fa8a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="ac19095a" name="Rage Unchecked" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -66,6 +67,7 @@
         <categoryLink id="bf50c9c9" name="Lord on Juggernaut" hidden="false" targetId="cp-kw::lord-on-juggernaut" primary="false" />
         <categoryLink id="05f62425" name="Karagar the Blooded" hidden="false" targetId="cp-kw::karagar-the-blooded" primary="false" />
         <categoryLink id="47fc3643" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="ba03066d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="5d33620b" name="Karagar the Blooded" typeId="59000054" typeName="Unit" hidden="false">
@@ -178,6 +180,7 @@
         <categoryLink id="803772b2" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="0006c5a5" name="Berzerkers" hidden="false" targetId="cp-kw::berzerkers" primary="false" />
         <categoryLink id="236eca90" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="3b2b536e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="25610d77" name="Khorne Berzerkers" typeId="59000054" typeName="Unit" hidden="false">
@@ -298,6 +301,7 @@
         <categoryLink id="bbf24034" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="1082b803" name="Berzerkers" hidden="false" targetId="cp-kw::berzerkers" primary="false" />
         <categoryLink id="c1a0ddae" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="f15ff322" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="25610d77" name="Khorne Berzerkers" typeId="59000054" typeName="Unit" hidden="false">
@@ -419,6 +423,7 @@
         <categoryLink id="fe5e7e92" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="c7f214ac" name="Jakhals" hidden="false" targetId="cp-kw::jakhals" primary="false" />
         <categoryLink id="496d29a0" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="3f4bfe4d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="6c9aaacc" name="Jakhals" typeId="59000054" typeName="Unit" hidden="false">
@@ -528,6 +533,7 @@
         <categoryLink id="dcf974ad" name="Combat Patrol: World Eaters (Arkoth's Gorepact)" hidden="false" targetId="cp-cat::arkoths-gorepact" primary="true" />
         <categoryLink id="6b823b87" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
         <categoryLink id="dcc3835d" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="671c79dd" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="2d389d4c" name="Rending Strikes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -586,6 +592,7 @@
         <categoryLink id="116e4f18" name="Slaughterbound" hidden="false" targetId="cp-kw::slaughterbound" primary="false" />
         <categoryLink id="c0ba6b0c" name="Arkoth Skorgardt" hidden="false" targetId="cp-kw::arkoth-skorgardt" primary="false" />
         <categoryLink id="3f8d5ca0" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="ccf13b4c" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="6295d1ce" name="Arkoth Skorgardt" typeId="59000054" typeName="Unit" hidden="false">
@@ -666,6 +673,7 @@
         <categoryLink id="a1bf90bb" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="e3063a6f" name="Goremongers" hidden="false" targetId="cp-kw::goremongers" primary="false" />
         <categoryLink id="5046e113" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="7ad28fac" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="517a7218" name="Goremongers" typeId="59000054" typeName="Unit" hidden="false">
@@ -745,6 +753,7 @@
         <categoryLink id="156bea7a" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
         <categoryLink id="6e79f24c" name="Goremongers" hidden="false" targetId="cp-kw::goremongers" primary="false" />
         <categoryLink id="28738839" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="ce698cdc" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="517a7218" name="Goremongers" typeId="59000054" typeName="Unit" hidden="false">
@@ -827,6 +836,7 @@
         <categoryLink id="448132d4" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="86f53531" name="Bloodletters" hidden="false" targetId="cp-kw::bloodletters" primary="false" />
         <categoryLink id="36a942f0" name="Blood Legions" hidden="false" targetId="cp-kw::blood-legions" primary="false" />
+        <categoryLink id="723583d8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="eeb6b102" name="Bloodletters" typeId="59000054" typeName="Unit" hidden="false">
@@ -901,6 +911,7 @@
         <categoryLink id="2cb1b4d4" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="b5d1d101" name="Flesh Hounds" hidden="false" targetId="cp-kw::flesh-hounds" primary="false" />
         <categoryLink id="88c707cf" name="Blood Legions" hidden="false" targetId="cp-kw::blood-legions" primary="false" />
+        <categoryLink id="1be8731f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9b19cb17" name="Flesh Hounds" typeId="59000054" typeName="Unit" hidden="false">

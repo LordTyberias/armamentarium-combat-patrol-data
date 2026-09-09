@@ -10,6 +10,7 @@
         <categoryLink id="5419fcd9" name="Combat Patrol: Chaos Space Marines (Dark Zealots)" hidden="false" targetId="cp-cat::dark-zealots" primary="true" />
         <categoryLink id="91e73572" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
         <categoryLink id="d93fab77" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="64c004fc" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e8a36df6" name="Empyric Rites" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -65,6 +66,7 @@
         <categoryLink id="f5c80e8e" name="Dark Apostle" hidden="false" targetId="cp-kw::dark-apostle" primary="false" />
         <categoryLink id="b633b558" name="Ghallaron the Pious" hidden="false" targetId="cp-kw::ghallaron-the-pious" primary="false" />
         <categoryLink id="38943e22" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="f3542279" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e113995e" name="Ghallaron the Pious" typeId="59000054" typeName="Unit" hidden="false">
@@ -191,6 +193,7 @@
         <categoryLink id="97ee6bac" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="1a83ad58" name="Legionaries" hidden="false" targetId="cp-kw::legionaries" primary="false" />
         <categoryLink id="9399e231" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="c35920a4" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f30754c1" name="Legionaries" typeId="59000054" typeName="Unit" hidden="false">
@@ -370,6 +373,7 @@
         <categoryLink id="e0391b29" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="de21f663" name="Havocs" hidden="false" targetId="cp-kw::havocs" primary="false" />
         <categoryLink id="6dbe1e77" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="d5f05144" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f108ef07" name="Havocs" typeId="59000054" typeName="Unit" hidden="false">
@@ -534,6 +538,7 @@
         <categoryLink id="f921cc89" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="6271d63a" name="Helbrute" hidden="false" targetId="cp-kw::helbrute" primary="false" />
         <categoryLink id="16bf5cbd" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="03713eda" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="47da98ff" name="Helbrute" typeId="59000054" typeName="Unit" hidden="false">
@@ -603,6 +608,7 @@
         <categoryLink id="fe267371" name="Combat Patrol: Chaos Space Marines (Masters of Terror)" hidden="false" targetId="cp-cat::masters-of-terror" primary="true" />
         <categoryLink id="81ea7fb0" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
         <categoryLink id="82a3ba99" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="ec946b19" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a436b69a" name="Gruesome Trophies" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -659,6 +665,7 @@
         <categoryLink id="8a21fe27" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="2c43025c" name="Chaos Lord" hidden="false" targetId="cp-kw::chaos-lord" primary="false" />
         <categoryLink id="22d2c345" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="9f1bfd18" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="20756b48" name="Chaos Lord with Jump Pack" typeId="59000054" typeName="Unit" hidden="false">
@@ -739,6 +746,7 @@
         <categoryLink id="9125a0f3" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="c10dd6e0" name="Nemesis Claw" hidden="false" targetId="cp-kw::nemesis-claw" primary="false" />
         <categoryLink id="e443bff7" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="195ca919" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="ba55e962" name="Visionary" typeId="59000054" typeName="Unit" hidden="false">
@@ -913,6 +921,7 @@
         <categoryLink id="fe277439" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="b4adf997" name="Chosen" hidden="false" targetId="cp-kw::chosen" primary="false" />
         <categoryLink id="35b1ce6c" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="45a1a187" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c095b29f" name="Chosen Champion" typeId="59000054" typeName="Unit" hidden="false">
@@ -1009,6 +1018,7 @@
         <categoryLink id="33ab03c7" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="9e161e2a" name="Rhino" hidden="false" targetId="cp-kw::rhino" primary="false" />
         <categoryLink id="8f975938" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="014dcd63" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="5476ad2f" name="Chaos Rhino" typeId="59000054" typeName="Unit" hidden="false">
@@ -1093,6 +1103,7 @@
         <categoryLink id="4581a456" name="Combat Patrol: Chaos Space Marines (Remorseless Reavers)" hidden="false" targetId="cp-cat::remorseless-reavers" primary="true" />
         <categoryLink id="0ba89321" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
         <categoryLink id="e7f55b89" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="8ea5afbc" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="5a3e1a88" name="Braying Hordes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -1147,6 +1158,7 @@
         <categoryLink id="71b4449a" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="fc6c2e48" name="Red Corsairs Reave-Captain" hidden="false" targetId="cp-kw::red-corsairs-reave-captain" primary="false" />
         <categoryLink id="459951df" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="c0a4222f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7eeaa63c" name="Red Corsairs Reave-Captain" typeId="59000054" typeName="Unit" hidden="false">
@@ -1286,6 +1298,7 @@
         <categoryLink id="a1202f1a" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="a452301a" name="Red Corsairs Raiders" hidden="false" targetId="cp-kw::red-corsairs-raiders" primary="false" />
         <categoryLink id="526aa898" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="8daf923d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a2eadd7c" name="Red Corsairs Raider Champion" typeId="59000054" typeName="Unit" hidden="false">
@@ -1436,6 +1449,7 @@
         <categoryLink id="97552f28" name="Damned" hidden="false" targetId="cp-kw::damned" primary="false" />
         <categoryLink id="58c5a61e" name="Fellgor Beastmen" hidden="false" targetId="cp-kw::fellgor-beastmen" primary="false" />
         <categoryLink id="ee983602" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="32570445" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c345769d" name="Fellgor Champion" typeId="59000054" typeName="Unit" hidden="false">
@@ -1594,6 +1608,7 @@
         <categoryLink id="8db991ca" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="c83aecba" name="Rhino" hidden="false" targetId="cp-kw::rhino" primary="false" />
         <categoryLink id="f36c4471" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="cd6411c9" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="3d63f2a6" name="Chaos Rhino" typeId="59000054" typeName="Unit" hidden="false">
@@ -1678,6 +1693,7 @@
         <categoryLink id="d1e180b9" name="Combat Patrol: Chaos Space Marines (Warpsmith's Gauntlet)" hidden="false" targetId="cp-cat::warpsmiths-gauntlet" primary="true" />
         <categoryLink id="cd3d1961" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
         <categoryLink id="ca40ec74" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="ed6de741" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="b6ae684e" name="Hardened by Hatred" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -1732,6 +1748,7 @@
         <categoryLink id="6b814336" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="eb3106fa" name="Warpsmith" hidden="false" targetId="cp-kw::warpsmith" primary="false" />
         <categoryLink id="d09a9693" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="e82f6950" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7664b785" name="Warpsmith" typeId="59000054" typeName="Unit" hidden="false">
@@ -1880,6 +1897,7 @@
         <categoryLink id="0c8f7c55" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="e6f2bb0a" name="Havocs" hidden="false" targetId="cp-kw::havocs" primary="false" />
         <categoryLink id="365d104e" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="a1f3d43b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="b63f5925" name="Havoc Champion" typeId="59000054" typeName="Unit" hidden="false">
@@ -1998,6 +2016,7 @@
         <categoryLink id="8d29dd19" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
         <categoryLink id="60619f5e" name="Chaos Terminator Squad" hidden="false" targetId="cp-kw::chaos-terminator-squad" primary="false" />
         <categoryLink id="82d562a2" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="429cf54b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f917fb17" name="Terminator Champion" typeId="59000054" typeName="Unit" hidden="false">
@@ -2138,6 +2157,7 @@
         <categoryLink id="c7357e87" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
         <categoryLink id="46f238cf" name="Legionaries" hidden="false" targetId="cp-kw::legionaries" primary="false" />
         <categoryLink id="3ce3e3ec" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="f4c22d89" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="27017911" name="Aspiring Champion" typeId="59000054" typeName="Unit" hidden="false">

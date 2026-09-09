@@ -493,6 +493,7 @@
         <categoryLink id="722abf22" name="Combat Patrol: Adepta Sororitas (The Penitent Host)" hidden="false" targetId="cp-cat::the-penitent-host" primary="true" />
         <categoryLink id="e442cd61" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
         <categoryLink id="f3d112bc" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="eff44893" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d3e6bcc4" name="Divine Protection" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -548,6 +549,7 @@
         <categoryLink id="cf169836" name="Canoness" hidden="false" targetId="cp-kw::canoness" primary="false" />
         <categoryLink id="3f70c0e5" name="Ellyrine" hidden="false" targetId="cp-kw::ellyrine" primary="false" />
         <categoryLink id="61581776" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="e47426a6" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="bc7cb26f" name="Canoness Ellyrine" typeId="59000054" typeName="Unit" hidden="false">
@@ -670,6 +672,7 @@
         <categoryLink id="901fa9c7" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="be9affa8" name="Battle Sisters Squad" hidden="false" targetId="cp-kw::battle-sisters-squad" primary="false" />
         <categoryLink id="a42934ec" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="4c165a60" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="69e876ac" name="Battle Sisters Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -817,6 +820,7 @@
         <categoryLink id="987339d2" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="a5930bfe" name="Seraphim Squad" hidden="false" targetId="cp-kw::seraphim-squad" primary="false" />
         <categoryLink id="e99df50d" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="01f49691" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="359190f8" name="Seraphim Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -938,6 +942,7 @@
         <categoryLink id="7ead65ee" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="ef8bc2cd" name="Repentia Squad" hidden="false" targetId="cp-kw::repentia-squad" primary="false" />
         <categoryLink id="5b64f1dc" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="f6d0ed05" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c23f45c9" name="Repentia Superior" typeId="59000054" typeName="Unit" hidden="false">
@@ -1047,6 +1052,7 @@
         <categoryLink id="82575dce" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="8e809771" name="Arco-flagellants" hidden="false" targetId="cp-kw::arco-flagellants" primary="false" />
         <categoryLink id="e5f3db6d" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="ca947af8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7dc5fef4" name="Arco-flagellants" typeId="59000054" typeName="Unit" hidden="false">
@@ -1104,6 +1110,7 @@
         <categoryLink id="add4acda" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="d1093384" name="Penitent Engine" hidden="false" targetId="cp-kw::penitent-engine" primary="false" />
         <categoryLink id="b2b0b748" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="e0d6ba92" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="12f2f780" name="Penitent Engine" typeId="59000054" typeName="Unit" hidden="false">
@@ -1195,6 +1202,7 @@
         <categoryLink id="ebcfdb55" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="86771946" name="Sororitas Rhino" hidden="false" targetId="cp-kw::sororitas-rhino" primary="false" />
         <categoryLink id="75854a8b" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="8c60b09d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="424afef1" name="Sororitas Rhino" typeId="59000054" typeName="Unit" hidden="false">

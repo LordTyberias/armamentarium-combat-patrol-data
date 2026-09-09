@@ -552,6 +552,7 @@
         <categoryLink id="73d2392b" name="Combat Patrol: Death Guard (The Gloeming Blades)" hidden="false" targetId="cp-cat::the-gloeming-blades" primary="true" />
         <categoryLink id="1a369a94" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
         <categoryLink id="6ebbf275" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="2e52d6fb" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7f16d0de" name="Feverglow" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -608,6 +609,7 @@
         <categoryLink id="fda9bf66" name="Plague Surgeon" hidden="false" targetId="cp-kw::plague-surgeon" primary="false" />
         <categoryLink id="2484997e" name="Phlegmus Gloem" hidden="false" targetId="cp-kw::phlegmus-gloem" primary="false" />
         <categoryLink id="417bb93c" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="9259481e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="df90e7a0" name="Phlegmus Gloem" typeId="59000054" typeName="Unit" hidden="false">
@@ -709,6 +711,7 @@
         <categoryLink id="e25d2b02" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
         <categoryLink id="a6ba2617" name="Plague Marines" hidden="false" targetId="cp-kw::plague-marines" primary="false" />
         <categoryLink id="fb591829" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="5f9cb591" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9a63cde9" name="Plague Marines" typeId="59000054" typeName="Unit" hidden="false">
@@ -847,6 +850,7 @@
         <categoryLink id="911f99c1" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="111f43e3" name="Plaguebearers" hidden="false" targetId="cp-kw::plaguebearers" primary="false" />
         <categoryLink id="4b0bed26" name="Plague Legions" hidden="false" targetId="cp-kw::plague-legions" primary="false" />
+        <categoryLink id="637d1c1f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="36cfb2d8" name="Plaguebearers" typeId="59000054" typeName="Unit" hidden="false">
@@ -922,6 +926,7 @@
         <categoryLink id="fcfee609" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="8b0f5c6e" name="Plague Drones" hidden="false" targetId="cp-kw::plague-drones" primary="false" />
         <categoryLink id="f22c8573" name="Plague Legions" hidden="false" targetId="cp-kw::plague-legions" primary="false" />
+        <categoryLink id="a882058d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="30a437bf" name="Plague Drones" typeId="59000054" typeName="Unit" hidden="false">
@@ -1030,6 +1035,7 @@
         <categoryLink id="afab6457" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="b679c88a" name="Nurglings" hidden="false" targetId="cp-kw::nurglings" primary="false" />
         <categoryLink id="8aa90bbd" name="Plague Legions" hidden="false" targetId="cp-kw::plague-legions" primary="false" />
+        <categoryLink id="2af6bf2e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="309b3557" name="Nurglings" typeId="59000054" typeName="Unit" hidden="false">
@@ -1110,6 +1116,7 @@
         <categoryLink id="50093c39" name="Combat Patrol: Death Guard (The Shambling Horde)" hidden="false" targetId="cp-cat::the-shambling-horde" primary="true" />
         <categoryLink id="61c5f186" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
         <categoryLink id="b8546343" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="155ea8c2" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f36e36b0" name="Corrosive Effluents" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -1168,6 +1175,7 @@
         <categoryLink id="9817774a" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
         <categoryLink id="e538d412" name="Typhus" hidden="false" targetId="cp-kw::typhus" primary="false" />
         <categoryLink id="bdee46cf" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="6e248bda" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="dbf562d6" name="Typhus" typeId="59000054" typeName="Unit" hidden="false">
@@ -1274,6 +1282,7 @@
         <categoryLink id="5a50f0d6" name="Biologus Putrifier" hidden="false" targetId="cp-kw::biologus-putrifier" primary="false" />
         <categoryLink id="3c6cee9c" name="Folgoth Grelch" hidden="false" targetId="cp-kw::folgoth-grelch" primary="false" />
         <categoryLink id="bb417665" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="6d4b8086" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="83256eff" name="Folgoth Grelch" typeId="59000054" typeName="Unit" hidden="false">
@@ -1389,6 +1398,7 @@
         <categoryLink id="8b3e3de9" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
         <categoryLink id="eeaa2bae" name="Plague Marines" hidden="false" targetId="cp-kw::plague-marines" primary="false" />
         <categoryLink id="00b953c9" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="bd4d44c6" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9a63cde9" name="Plague Marines" typeId="59000054" typeName="Unit" hidden="false">
@@ -1513,6 +1523,7 @@
         <categoryLink id="b59ab41b" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
         <categoryLink id="bf46487a" name="Poxwalkers" hidden="false" targetId="cp-kw::poxwalkers" primary="false" />
         <categoryLink id="60c1f8d3" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="9e729cc5" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d80a1d2c" name="Poxwalkers" typeId="59000054" typeName="Unit" hidden="false">
@@ -1580,6 +1591,7 @@
         <categoryLink id="8a7124bb" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
         <categoryLink id="e98878b2" name="Poxwalkers" hidden="false" targetId="cp-kw::poxwalkers" primary="false" />
         <categoryLink id="a89f5142" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="bfeb6ef9" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d80a1d2c" name="Poxwalkers" typeId="59000054" typeName="Unit" hidden="false">
@@ -1647,6 +1659,7 @@
         <categoryLink id="2fae7d93" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
         <categoryLink id="9316727c" name="Poxwalkers" hidden="false" targetId="cp-kw::poxwalkers" primary="false" />
         <categoryLink id="2fd6c09a" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="0afb779b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d80a1d2c" name="Poxwalkers" typeId="59000054" typeName="Unit" hidden="false">

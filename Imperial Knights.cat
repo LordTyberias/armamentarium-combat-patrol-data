@@ -10,6 +10,7 @@
         <categoryLink id="684c287b" name="Combat Patrol: Imperial Knights (Armiger Trailblazers)" hidden="false" targetId="cp-cat::armiger-trailblazers" primary="true" />
         <categoryLink id="9cdc3391" name="Imperial Knights" hidden="false" targetId="cp-faction::imperial-knights" primary="false" />
         <categoryLink id="b871d41d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="88fbab16" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="467591c6" name="Loping Gait" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -62,6 +63,7 @@
         <categoryLink id="8661c16c" name="Helverin" hidden="false" targetId="cp-kw::helverin" primary="false" />
         <categoryLink id="77c9a61a" name="Dantos and Thauvir" hidden="false" targetId="cp-kw::dantos-and-thauvir" primary="false" />
         <categoryLink id="ab708833" name="Imperial Knights" hidden="false" targetId="cp-kw::imperial-knights" primary="false" />
+        <categoryLink id="320ebe19" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="39215e7d" name="Pilot Dantos and Thauvir" typeId="59000054" typeName="Unit" hidden="false">
@@ -180,6 +182,7 @@
         <categoryLink id="800fdf74" name="Warglaive" hidden="false" targetId="cp-kw::warglaive" primary="false" />
         <categoryLink id="d8b7cbe9" name="Morrigan and Viridor" hidden="false" targetId="cp-kw::morrigan-and-viridor" primary="false" />
         <categoryLink id="1349b206" name="Imperial Knights" hidden="false" targetId="cp-kw::imperial-knights" primary="false" />
+        <categoryLink id="b325797a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="662d1969" name="Pilot Morrigan and Viridor" typeId="59000054" typeName="Unit" hidden="false">

@@ -10,6 +10,7 @@
         <categoryLink id="81cbf6cf" name="Combat Patrol: Adeptus Mechanicus (Maniple Verask-Alpha)" hidden="false" targetId="cp-cat::maniple-verask-alpha" primary="true" />
         <categoryLink id="3f4277b4" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
         <categoryLink id="030b40c1" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="3f1e9c06" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="444c4e8d" name="Retribution Codes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -66,6 +67,7 @@
         <categoryLink id="a47feb1f" name="Enginseer" hidden="false" targetId="cp-kw::enginseer" primary="false" />
         <categoryLink id="6a92e86d" name="Verask" hidden="false" targetId="cp-kw::verask" primary="false" />
         <categoryLink id="529305c4" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="562f6878" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="ce80b2eb" name="Enginseer Verask" typeId="59000054" typeName="Unit" hidden="false">
@@ -180,6 +182,7 @@
         <categoryLink id="2f02a80c" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
         <categoryLink id="432f0e4b" name="Rangers" hidden="false" targetId="cp-kw::rangers" primary="false" />
         <categoryLink id="3e1c2714" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="458e3e24" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1b417206" name="Skitarii Rangers" typeId="59000054" typeName="Unit" hidden="false">
@@ -321,6 +324,7 @@
         <categoryLink id="7d1a3b4d" name="Kataphron" hidden="false" targetId="cp-kw::kataphron" primary="false" />
         <categoryLink id="eb0e7a36" name="Destroyers" hidden="false" targetId="cp-kw::destroyers" primary="false" />
         <categoryLink id="f5d67acf" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="4c795001" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7af5886c" name="Kataphron Destroyers" typeId="59000054" typeName="Unit" hidden="false">
@@ -435,6 +439,7 @@
         <categoryLink id="2b48999b" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
         <categoryLink id="37144af2" name="Onager Dunecrawler" hidden="false" targetId="cp-kw::onager-dunecrawler" primary="false" />
         <categoryLink id="e00917cb" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="923a48f3" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e36fada5" name="Onager Dunecrawler" typeId="59000054" typeName="Unit" hidden="false">
