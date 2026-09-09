@@ -182,7 +182,7 @@
     <categoryEntry id="cp-cat::siguards-crusaders" name="Combat Patrol: Black Templars (Siguard's Crusaders)" hidden="false" />
     <categoryEntry id="cp-cat::vow-sworn-of-vedrenn" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" />
     <categoryEntry id="cp-cat::strike-force-marcellos" name="Combat Patrol: Blood Angels (Strike Force Marcellos)" hidden="false" />
-    <categoryEntry id="cp-cat::the-sanguinary-spearhead" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" />
+    <categoryEntry id="cp-cat::the-sanguinary-spearhead" name="Combat Patrol: Blood Angels (Sanguinary Spearhead)" hidden="false" />
     <categoryEntry id="cp-cat::butchers-of-hyporia" name="Combat Patrol: Chaos Daemons (Butchers of Hyporia)" hidden="false" />
     <categoryEntry id="cp-cat::slaughter-talon" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" />
     <categoryEntry id="cp-cat::dark-zealots" name="Combat Patrol: Chaos Space Marines (Dark Zealots)" hidden="false" />
@@ -711,7 +711,7 @@
         <categoryLink id="1b430a87" name="Combat Patrol: Black Templars (Siguard's Crusaders)" hidden="false" targetId="cp-cat::siguards-crusaders" />
         <categoryLink id="03184bf8" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" />
         <categoryLink id="671b9af2" name="Combat Patrol: Blood Angels (Strike Force Marcellos)" hidden="false" targetId="cp-cat::strike-force-marcellos" />
-        <categoryLink id="99949753" name="Combat Patrol: Blood Angels (The Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" />
+        <categoryLink id="99949753" name="Combat Patrol: Blood Angels (Sanguinary Spearhead)" hidden="false" targetId="cp-cat::the-sanguinary-spearhead" />
         <categoryLink id="17717fd1" name="Combat Patrol: Chaos Daemons (Butchers of Hyporia)" hidden="false" targetId="cp-cat::butchers-of-hyporia" />
         <categoryLink id="51f37738" name="Combat Patrol: Chaos Knights (Slaughter Talon)" hidden="false" targetId="cp-cat::slaughter-talon" />
         <categoryLink id="e71aa121" name="Combat Patrol: Chaos Space Marines (Dark Zealots)" hidden="false" targetId="cp-cat::dark-zealots" />

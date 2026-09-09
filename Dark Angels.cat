@@ -10,6 +10,7 @@
         <categoryLink id="77e435e9" name="Combat Patrol: Dark Angels (Mordekai's Judgement)" hidden="false" targetId="cp-cat::mordekais-judgement" primary="true" />
         <categoryLink id="26b9f4ac" name="Dark Angels" hidden="false" targetId="cp-faction::dark-angels" primary="false" />
         <categoryLink id="b1aede45" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="c4e3c864" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="abf6ff83" name="Resolute in Duty" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -66,6 +67,7 @@
         <categoryLink id="4170adea" name="Mordekai" hidden="false" targetId="cp-kw::mordekai" primary="false" />
         <categoryLink id="6572fab3" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="4ac94ba8" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+        <categoryLink id="851b002f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="be4b0ad2" name="Chaplain Mordekai" typeId="59000054" typeName="Unit" hidden="false">
@@ -173,6 +175,7 @@
         <categoryLink id="4a25e59e" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
         <categoryLink id="19749d09" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="44af5ea7" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+        <categoryLink id="1c9b440c" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -267,6 +270,7 @@
         <categoryLink id="e55a46a0" name="Inceptor Squad" hidden="false" targetId="cp-kw::inceptor-squad" primary="false" />
         <categoryLink id="4f9841b6" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="76c5e7e4" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+        <categoryLink id="9149954d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="15cfa8ba" name="Inceptor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -336,6 +340,7 @@
         <categoryLink id="6d81896a" name="Redemptor Dreadnought" hidden="false" targetId="cp-kw::redemptor-dreadnought" primary="false" />
         <categoryLink id="f23c58ee" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="3f92123d" name="Dark Angels" hidden="false" targetId="cp-kw::dark-angels" primary="false" />
+        <categoryLink id="8db524e8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="5ccac8cf" name="Redemptor Dreadnought" typeId="59000054" typeName="Unit" hidden="false">

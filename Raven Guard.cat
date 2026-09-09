@@ -10,6 +10,7 @@
         <categoryLink id="159f97bb" name="Combat Patrol: Raven Guard (Shadow Claw Kevarax)" hidden="false" targetId="cp-cat::shadow-claw-kevarax" primary="true" />
         <categoryLink id="10c7225a" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="8d1d0a3a" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="0bccfa91" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="01a45a95" name="Stranglehold" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -68,6 +69,7 @@
         <categoryLink id="cacbdd9a" name="Captain" hidden="false" targetId="cp-kw::captain" primary="false" />
         <categoryLink id="021d43ae" name="Captain Kevarax" hidden="false" targetId="cp-kw::captain-kevarax" primary="false" />
         <categoryLink id="61e27dce" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="f11c65a6" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e09e1bd3" name="Captain Kevarax" typeId="59000054" typeName="Unit" hidden="false">
@@ -180,6 +182,7 @@
         <categoryLink id="d140a32d" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="aa2ceee1" name="Assault Intercessors with Jump Packs" hidden="false" targetId="cp-kw::assault-intercessors-with-jump-packs" primary="false" />
         <categoryLink id="e0908794" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="ea92b14d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="00d5f5b3" name="Assault Intercessors with Jump Packs" typeId="59000054" typeName="Unit" hidden="false">
@@ -276,6 +279,7 @@
         <categoryLink id="5851eefb" name="Phobos" hidden="false" targetId="cp-kw::phobos" primary="false" />
         <categoryLink id="f53745ff" name="Infiltrator Squad" hidden="false" targetId="cp-kw::infiltrator-squad" primary="false" />
         <categoryLink id="c07ce3d0" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="df25c37a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="13bd6bd0" name="Infiltrator Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -374,6 +378,7 @@
         <categoryLink id="83439129" name="Phobos" hidden="false" targetId="cp-kw::phobos" primary="false" />
         <categoryLink id="1fb189cf" name="Invictor Tactical Warsuit" hidden="false" targetId="cp-kw::invictor-tactical-warsuit" primary="false" />
         <categoryLink id="3bfeed2e" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="897018f8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9ffa1020" name="Invictor Tactical Warsuit" typeId="59000054" typeName="Unit" hidden="false">
@@ -509,6 +514,7 @@
         <categoryLink id="280f94b0" name="Combat Patrol: Raven Guard (Strike Team Solarien)" hidden="false" targetId="cp-cat::strike-team-solarien" primary="true" />
         <categoryLink id="acbec5eb" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="a65d9949" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="797b4ba0" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="63af41d2" name="Vanguard Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -565,6 +571,7 @@
         <categoryLink id="832e9ed5" name="Lieutenant" hidden="false" targetId="cp-kw::lieutenant" primary="false" />
         <categoryLink id="b6528e90" name="Lieutenant Solarien" hidden="false" targetId="cp-kw::lieutenant-solarien" primary="false" />
         <categoryLink id="2252ee71" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="84029283" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="bb2c1013" name="Lieutenant Solarien" typeId="59000054" typeName="Unit" hidden="false">
@@ -698,6 +705,7 @@
         <categoryLink id="e5074b93" name="Phobos" hidden="false" targetId="cp-kw::phobos" primary="false" />
         <categoryLink id="714f4eec" name="Infiltrator Squad" hidden="false" targetId="cp-kw::infiltrator-squad" primary="false" />
         <categoryLink id="a27a2774" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="071b535e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="13bd6bd0" name="Infiltrator Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -797,6 +805,7 @@
         <categoryLink id="dfb09c01" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="683cc406" name="Suppressor Squad" hidden="false" targetId="cp-kw::suppressor-squad" primary="false" />
         <categoryLink id="f8a825e5" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="e8b404d3" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1962ab25" name="Suppressor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -884,6 +893,7 @@
         <categoryLink id="fac97f54" name="Librarian" hidden="false" targetId="cp-kw::librarian" primary="false" />
         <categoryLink id="a3953a26" name="Librarian Xarius" hidden="false" targetId="cp-kw::librarian-xarius" primary="false" />
         <categoryLink id="d5facdca" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="a7a7b60d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="874e2325" name="Librarian Xarius" typeId="59000054" typeName="Unit" hidden="false">

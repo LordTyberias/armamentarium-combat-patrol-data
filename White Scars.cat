@@ -10,6 +10,7 @@
         <categoryLink id="35bf7ff4" name="Combat Patrol: White Scars (Stormglaive Hunters)" hidden="false" targetId="cp-cat::stormglaive-hunters" primary="true" />
         <categoryLink id="ca951a25" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="8fe607fc" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="9e95ee10" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="51d8fd21" name="Storm Riders" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="3e013483" name="Suboden Khan" hidden="false" targetId="cp-kw::suboden-khan" primary="false" />
         <categoryLink id="bb98d625" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="8d3381f1" name="White Scars" hidden="false" targetId="cp-kw::white-scars" primary="false" />
+        <categoryLink id="2f37af90" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="0161e675" name="Suboden Khan" typeId="59000054" typeName="Unit" hidden="false">
@@ -205,6 +207,7 @@
         <categoryLink id="db2bbda6" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="4335aa95" name="Outrider Squad" hidden="false" targetId="cp-kw::outrider-squad" primary="false" />
         <categoryLink id="81ebe0e1" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="ffefa932" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d8b0f7b6" name="Outrider Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -290,6 +293,7 @@
         <categoryLink id="620206ab" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="dc20e86f" name="Assault Intercessor Squad" hidden="false" targetId="cp-kw::assault-intercessor-squad" primary="false" />
         <categoryLink id="95a16093" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="81cbc15d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="92a71a76" name="Assault Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -403,6 +407,7 @@
         <categoryLink id="cf5af08d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="5d6c9b80" name="Impulsor" hidden="false" targetId="cp-kw::impulsor" primary="false" />
         <categoryLink id="528f7c67" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="40dc90bb" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="89828d07" name="Impulsor" typeId="59000054" typeName="Unit" hidden="false">

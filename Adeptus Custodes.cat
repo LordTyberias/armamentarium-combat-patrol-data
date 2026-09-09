@@ -10,6 +10,7 @@
         <categoryLink id="8f49a8b1" name="Combat Patrol: Adeptus Custodes (Guardians of the Throne)" hidden="false" targetId="cp-cat::guardians-of-the-throne" primary="true" />
         <categoryLink id="db635670" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
         <categoryLink id="4fadaaf7" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="bdef466a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="6b160c41" name="Wrath of the Host" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -65,6 +66,7 @@
         <categoryLink id="2e56a274" name="Shield-Captain" hidden="false" targetId="cp-kw::shield-captain" primary="false" />
         <categoryLink id="536c7f2d" name="Tyvan" hidden="false" targetId="cp-kw::tyvan" primary="false" />
         <categoryLink id="fc70e107" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="fa7b8478" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7687b9d6" name="Shield-Captain Tyvan" typeId="59000054" typeName="Unit" hidden="false">
@@ -176,6 +178,7 @@
         <categoryLink id="d7478510" name="Anathema Psykana" hidden="false" targetId="cp-kw::anathema-psykana" primary="false" />
         <categoryLink id="194ef810" name="Prosecutors" hidden="false" targetId="cp-kw::prosecutors" primary="false" />
         <categoryLink id="89a3daa5" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="5d1a1d94" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="81204e41" name="Prosecutors" typeId="59000054" typeName="Unit" hidden="false">
@@ -244,6 +247,7 @@
         <categoryLink id="5ed25091" name="Anathema Psykana" hidden="false" targetId="cp-kw::anathema-psykana" primary="false" />
         <categoryLink id="b2e95c45" name="Vigilators" hidden="false" targetId="cp-kw::vigilators" primary="false" />
         <categoryLink id="2a58dd33" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="bc96fda4" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="26ae9782" name="Vigilators" typeId="59000054" typeName="Unit" hidden="false">
@@ -301,6 +305,7 @@
         <categoryLink id="879486bb" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="b14ff6bc" name="Custodian Guard" hidden="false" targetId="cp-kw::custodian-guard" primary="false" />
         <categoryLink id="d7b621d1" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="d1c77332" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1cf8b33f" name="Custodian Guard" typeId="59000054" typeName="Unit" hidden="false">
@@ -437,6 +442,7 @@
         <categoryLink id="78c6f989" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="b94d03f6" name="Vertus Praetors" hidden="false" targetId="cp-kw::vertus-praetors" primary="false" />
         <categoryLink id="c49590ae" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="30c8495f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9c690d4b" name="Vertus Praetors" typeId="59000054" typeName="Unit" hidden="false">

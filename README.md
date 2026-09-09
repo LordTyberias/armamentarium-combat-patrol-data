@@ -38,7 +38,7 @@ them share names with unit keywords. Six Space Marine catalogues carry the same 
 | `cp-cat::<patrol-slug>` | the patrol the entry belongs to; the slug repeats in the entry id |
 | `cp-faction::<slug>` | the faction the units belong to — shared between catalogues of one faction |
 | `cp-group::<slug>` | Imperium / Space Marines / Chaos / Xenos |
-| `cp-flag::legacy` | the one flag, not a prefix: the patrol is no longer supported |
+| `cp-flag::legacy` | the one flag, not a prefix: the patrol is no longer supported — 50 of the 74 carry it |
 | `cp-kw::<slug>` | a unit keyword — everything the datasheet prints under "Keywords" |
 
 Unit entry ids are `cp::<patrol-slug>::NN-<unit-slug>`, and a fixed wargear line is a mandatory child
@@ -206,3 +206,34 @@ presents them; renaming one would invent a name Games Workshop does not use. And
 profiles **differ**: the second sheet marks it [RAPID FIRE 1], the first marks nothing. That was
 read twice from separate screenshots. It is carried as it stands — whether it is deliberate or an
 error on their side is not something this data can decide.
+
+### 49 patrols marked Legacy, and one renamed (ARMAM-346, added 2026-09-09)
+
+The Warhammer 40,000 app now offers **24** Combat Patrols. This catalogue holds 74. The 49 that the
+app no longer offers — and that were not already marked — now carry `cp-flag::legacy`; with
+`Vigil Force Alphion`, which had it since ARMAM-84, that makes **50 legacy and 24 live**.
+
+**None was deleted, and none may be.** Saved army lists reference their entry ids, and a deleted
+category would take a saved list's faction with it. A legacy patrol is hidden from the picker by
+default and stays reachable behind its checkbox.
+
+The flag sits on **all 269** top-level entries of those 49, not only on their rules rows. The reader
+asks the first entry alone (`CombatPatrolCatalogue.ReadPatrols`), so the rules row would suffice —
+but `Vigil Force Alphion` carries it on all five of its entries, and two spellings of one statement
+in one file drift apart. Each new `categoryLink` got an id that no other id in the repository uses.
+
+**One patrol was renamed.** `The Sanguinary Spearhead` is called `Sanguinary Spearhead` in the app;
+the unit list is identical (Captain Raldeo, two Sanguinary Guard, Assault Intercessor Squad), so this
+is a rename and neither a departure nor an arrival. Changed at seven places — five in
+`Blood Angels.cat`, two in `Combat Patrol.gst` — and **the id `cp-cat::the-sanguinary-spearhead`
+stays**, for the reason in the section above.
+
+One consequence is accepted rather than glossed over: an army list saved from that patrol *before*
+the rename shows the full stored name instead of the short one. Armamentarium stores the category
+name on the list and keys its short-name table on that name rather than on the id, deliberately. The
+id is untouched, so the datasheet still resolves and nothing is lost.
+
+**What did not happen here.** The 24 live patrols still carry their 10th-edition datasheets. Bringing
+them to the 11th-edition shape is its own piece of work, and it needs a source this repository does
+not yet have — the harvest it would be built from is missing 20 weapon profiles and 25 model counts,
+measured against the two patrols transcribed in ARMAM-341 whose correct values are already here.

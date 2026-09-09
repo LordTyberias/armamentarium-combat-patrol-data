@@ -477,6 +477,7 @@
         <categoryLink id="dffdf81c" name="Combat Patrol: Space Wolves (Thoryk's Void Hunters)" hidden="false" targetId="cp-cat::thoryks-void-hunters" primary="true" />
         <categoryLink id="5b46d5ab" name="Space Wolves" hidden="false" targetId="cp-faction::space-wolves" primary="false" />
         <categoryLink id="666e3e4e" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="a33e00ff" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7bab82f4" name="A Warrior’s Death" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -534,6 +535,7 @@
         <categoryLink id="10b5a690" name="Thoryk" hidden="false" targetId="cp-kw::thoryk" primary="false" />
         <categoryLink id="8a2a3a1f" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="f98077d2" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+        <categoryLink id="c60d5f79" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d4a70420" name="Battle Leader Thoryk" typeId="59000054" typeName="Unit" hidden="false">
@@ -653,6 +655,7 @@
         <categoryLink id="6cfb9017" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
         <categoryLink id="0eade2a0" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="c3cf03d7" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+        <categoryLink id="a5830233" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -756,6 +759,7 @@
         <categoryLink id="7d7cee91" name="Reiver Squad" hidden="false" targetId="cp-kw::reiver-squad" primary="false" />
         <categoryLink id="07688bd8" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="8f6d8509" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+        <categoryLink id="d189cd5e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="10508598" name="Reiver Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -844,6 +848,7 @@
         <categoryLink id="2caf28d5" name="Invictor Tactical Warsuit" hidden="false" targetId="cp-kw::invictor-tactical-warsuit" primary="false" />
         <categoryLink id="47d9d781" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="6227af30" name="Space Wolves" hidden="false" targetId="cp-kw::space-wolves" primary="false" />
+        <categoryLink id="9a6a3b3b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9ffa1020" name="Invictor Tactical Warsuit" typeId="59000054" typeName="Unit" hidden="false">

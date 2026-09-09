@@ -10,6 +10,7 @@
         <categoryLink id="1053a00b" name="Combat Patrol: Orks (Gordrang's Gitstompas)" hidden="false" targetId="cp-cat::gordrangs-gitstompas" primary="true" />
         <categoryLink id="8faefb6b" name="Orks" hidden="false" targetId="cp-faction::orks" primary="false" />
         <categoryLink id="786c5e8b" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="be7982e7" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="61d0ab3a" name="Get Stuck In" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -64,6 +65,7 @@
         <categoryLink id="64f2be5b" name="Warboss" hidden="false" targetId="cp-kw::warboss" primary="false" />
         <categoryLink id="a5ca4373" name="Gordrang" hidden="false" targetId="cp-kw::gordrang" primary="false" />
         <categoryLink id="b26fc963" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="1a33ee3d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="126f798a" name="Warboss Gordrang" typeId="59000054" typeName="Unit" hidden="false">
@@ -156,6 +158,7 @@
         <categoryLink id="ede44cef" name="Mob" hidden="false" targetId="cp-kw::mob" primary="false" />
         <categoryLink id="c73036bd" name="Boyz" hidden="false" targetId="cp-kw::boyz" primary="false" />
         <categoryLink id="0882a1a8" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="2b666270" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="8ea892ce" name="Boy" typeId="59000054" typeName="Unit" hidden="false">
@@ -313,6 +316,7 @@
         <categoryLink id="d8c4b24b" name="Mob" hidden="false" targetId="cp-kw::mob" primary="false" />
         <categoryLink id="7176617d" name="Boyz" hidden="false" targetId="cp-kw::boyz" primary="false" />
         <categoryLink id="2f352969" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="0233d14e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="8ea892ce" name="Boy" typeId="59000054" typeName="Unit" hidden="false">
@@ -469,6 +473,7 @@
         <categoryLink id="baef36f8" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
         <categoryLink id="ae35433e" name="Deffkoptas" hidden="false" targetId="cp-kw::deffkoptas" primary="false" />
         <categoryLink id="1c9ee30d" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="3d03bc95" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="fa177013" name="Deffkoptas" typeId="59000054" typeName="Unit" hidden="false">
@@ -569,6 +574,7 @@
         <categoryLink id="69cda3aa" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
         <categoryLink id="f68df9bd" name="Deff Dread" hidden="false" targetId="cp-kw::deff-dread" primary="false" />
         <categoryLink id="662aaafc" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="c00fd117" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="fa2f4a32" name="Deff Dread" typeId="59000054" typeName="Unit" hidden="false">
@@ -661,6 +667,7 @@
         <categoryLink id="3cb6af31" name="Combat Patrol: Orks (Morgrim's Butchas)" hidden="false" targetId="cp-cat::morgrims-butchas" primary="true" />
         <categoryLink id="6cb3fe46" name="Orks" hidden="false" targetId="cp-faction::orks" primary="false" />
         <categoryLink id="413ac90c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="9f60ca69" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f50fff08" name="Tough As Squig-hide" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -717,6 +724,7 @@
         <categoryLink id="2ae087c5" name="Beastboss" hidden="false" targetId="cp-kw::beastboss" primary="false" />
         <categoryLink id="0e6d8e0d" name="Morgrim" hidden="false" targetId="cp-kw::morgrim" primary="false" />
         <categoryLink id="6faff4a4" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="a81c50a2" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="eeb53611" name="Beastboss Morgrim" typeId="59000054" typeName="Unit" hidden="false">
@@ -845,6 +853,7 @@
         <categoryLink id="d06e579c" name="Beast Snagga" hidden="false" targetId="cp-kw::beast-snagga" primary="false" />
         <categoryLink id="91a4aa75" name="Beast Snagga Boyz" hidden="false" targetId="cp-kw::beast-snagga-boyz" primary="false" />
         <categoryLink id="c81ea9c7" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="5238a790" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9d103296" name="Beast Snagga Boy" typeId="59000054" typeName="Unit" hidden="false">
@@ -979,6 +988,7 @@
         <categoryLink id="15821a38" name="Beast Snagga" hidden="false" targetId="cp-kw::beast-snagga" primary="false" />
         <categoryLink id="3d52e012" name="Beast Snagga Boyz" hidden="false" targetId="cp-kw::beast-snagga-boyz" primary="false" />
         <categoryLink id="8c125c1b" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="0631c6e0" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9d103296" name="Beast Snagga Boy" typeId="59000054" typeName="Unit" hidden="false">
@@ -1111,6 +1121,7 @@
         <categoryLink id="34a825a4" name="Beast Snagga" hidden="false" targetId="cp-kw::beast-snagga" primary="false" />
         <categoryLink id="f2983f1b" name="Squighog Boyz" hidden="false" targetId="cp-kw::squighog-boyz" primary="false" />
         <categoryLink id="b55c8c98" name="Orks" hidden="false" targetId="cp-kw::orks" primary="false" />
+        <categoryLink id="7a91a64a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="3d647f01" name="Squighog Boy" typeId="59000054" typeName="Unit" hidden="false">

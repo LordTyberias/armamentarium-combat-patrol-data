@@ -10,6 +10,7 @@
         <categoryLink id="ccf6ca73" name="Combat Patrol: Thousand Sons (The Coven Temporus)" hidden="false" targetId="cp-cat::the-coven-temporus" primary="true" />
         <categoryLink id="c24dfeba" name="Thousand Sons" hidden="false" targetId="cp-faction::thousand-sons" primary="false" />
         <categoryLink id="1a1737ec" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="11b09641" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c19185c3" name="Wreathed in Warpflame" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="1a2b61df" name="Infernal Master" hidden="false" targetId="cp-kw::infernal-master" primary="false" />
         <categoryLink id="0741dfb7" name="Ahrak the Time Weaver" hidden="false" targetId="cp-kw::ahrak-the-time-weaver" primary="false" />
         <categoryLink id="6ae34ab3" name="Thousand Sons" hidden="false" targetId="cp-kw::thousand-sons" primary="false" />
+        <categoryLink id="25834f71" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="4cfed12d" name="Ahrak the Time Weaver" typeId="59000054" typeName="Unit" hidden="false">
@@ -197,6 +199,7 @@
         <categoryLink id="234eac64" name="Scarab Occult Terminators" hidden="false" targetId="cp-kw::scarab-occult-terminators" primary="false" />
         <categoryLink id="ea78c7e4" name="Psyker (Scarab Occult Sorcerer only)" hidden="false" targetId="cp-kw::psyker-scarab-occult-sorcerer-only" primary="false" />
         <categoryLink id="f2916afa" name="Thousand Sons" hidden="false" targetId="cp-kw::thousand-sons" primary="false" />
+        <categoryLink id="c338df4e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a98437a4" name="Scarab Occult Terminators" typeId="59000054" typeName="Unit" hidden="false">
@@ -343,6 +346,7 @@
         <categoryLink id="96a85b1f" name="Tzeentch" hidden="false" targetId="cp-kw::tzeentch" primary="false" />
         <categoryLink id="f5e500d8" name="Tzaangors" hidden="false" targetId="cp-kw::tzaangors" primary="false" />
         <categoryLink id="c6a37948" name="Thousand Sons" hidden="false" targetId="cp-kw::thousand-sons" primary="false" />
+        <categoryLink id="efa4d343" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="356dd7cc" name="Tzaangors" typeId="59000054" typeName="Unit" hidden="false">
@@ -423,6 +427,7 @@
         <categoryLink id="021d5624" name="Tzeentch" hidden="false" targetId="cp-kw::tzeentch" primary="false" />
         <categoryLink id="8d176ca5" name="Tzaangors" hidden="false" targetId="cp-kw::tzaangors" primary="false" />
         <categoryLink id="1fb5340d" name="Thousand Sons" hidden="false" targetId="cp-kw::thousand-sons" primary="false" />
+        <categoryLink id="ae3a9fd1" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="356dd7cc" name="Tzaangors" typeId="59000054" typeName="Unit" hidden="false">
@@ -963,6 +968,7 @@
         <categoryLink id="c1dcb886" name="Combat Patrol: Thousand Sons (Warptongue's Hex-Pact)" hidden="false" targetId="cp-cat::warptongues-hex-pact" primary="true" />
         <categoryLink id="600ea34c" name="Thousand Sons" hidden="false" targetId="cp-faction::thousand-sons" primary="false" />
         <categoryLink id="fe5febae" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="768b9580" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="bcea603f" name="Wrath of the Warp" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -1020,6 +1026,7 @@
         <categoryLink id="3b2867b3" name="Sorcerer" hidden="false" targetId="cp-kw::sorcerer" primary="false" />
         <categoryLink id="cb36fc5a" name="Madrax Warptongue" hidden="false" targetId="cp-kw::madrax-warptongue" primary="false" />
         <categoryLink id="c230c8df" name="Thousand Sons" hidden="false" targetId="cp-kw::thousand-sons" primary="false" />
+        <categoryLink id="a9bcd097" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f43ec068" name="Madrax Warptongue" typeId="59000054" typeName="Unit" hidden="false">
@@ -1162,6 +1169,7 @@
         <categoryLink id="6cd5d467" name="Rubric Marines" hidden="false" targetId="cp-kw::rubric-marines" primary="false" />
         <categoryLink id="ae248086" name="Psyker (Aspiring Sorcerer only)" hidden="false" targetId="cp-kw::psyker-aspiring-sorcerer-only" primary="false" />
         <categoryLink id="8e089ed6" name="Thousand Sons" hidden="false" targetId="cp-kw::thousand-sons" primary="false" />
+        <categoryLink id="49e07806" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7e20a19d" name="Rubric Marines" typeId="59000054" typeName="Unit" hidden="false">
@@ -1316,6 +1324,7 @@
         <categoryLink id="21ab3c01" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="580c5469" name="Flamers" hidden="false" targetId="cp-kw::flamers" primary="false" />
         <categoryLink id="927d303a" name="Scintillating Legions" hidden="false" targetId="cp-kw::scintillating-legions" primary="false" />
+        <categoryLink id="93618874" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="8cfaba2a" name="Flamers" typeId="59000054" typeName="Unit" hidden="false">
@@ -1403,6 +1412,7 @@
         <categoryLink id="b8a530aa" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="f3f550bf" name="Screamers" hidden="false" targetId="cp-kw::screamers" primary="false" />
         <categoryLink id="4e1e62e1" name="Scintillating Legions" hidden="false" targetId="cp-kw::scintillating-legions" primary="false" />
+        <categoryLink id="99798574" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="75b37f64" name="Screamers" typeId="59000054" typeName="Unit" hidden="false">
@@ -1473,6 +1483,7 @@
         <categoryLink id="44a5b980" name="Summoned" hidden="false" targetId="cp-kw::summoned" primary="false" />
         <categoryLink id="3da2d348" name="Screamers" hidden="false" targetId="cp-kw::screamers" primary="false" />
         <categoryLink id="8eb1a7f3" name="Scintillating Legions" hidden="false" targetId="cp-kw::scintillating-legions" primary="false" />
+        <categoryLink id="dbfbb39f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="75b37f64" name="Screamers" typeId="59000054" typeName="Unit" hidden="false">

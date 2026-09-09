@@ -532,6 +532,7 @@
         <categoryLink id="324f611d" name="Combat Patrol: Leagues of Votann (Warspeke's Prospect)" hidden="false" targetId="cp-cat::warspekes-prospect" primary="true" />
         <categoryLink id="28d29b95" name="Leagues of Votann" hidden="false" targetId="cp-faction::leagues-of-votann" primary="false" />
         <categoryLink id="f0b324e6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="75993575" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9b6c03a4" name="Payment in Kind" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -586,6 +587,7 @@
         <categoryLink id="944798b2" name="Kâhl" hidden="false" targetId="cp-kw::k-hl" primary="false" />
         <categoryLink id="6d6943a8" name="Warspeke" hidden="false" targetId="cp-kw::warspeke" primary="false" />
         <categoryLink id="88e68e4c" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+        <categoryLink id="3f9a03e4" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f7338a53" name="Kâhl Warspeke" typeId="59000054" typeName="Unit" hidden="false">
@@ -695,6 +697,7 @@
         <categoryLink id="4a628c82" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
         <categoryLink id="db03a3e0" name="Cthonian Beserks" hidden="false" targetId="cp-kw::cthonian-beserks" primary="false" />
         <categoryLink id="60ab077c" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+        <categoryLink id="45c5753a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="01392542" name="Cthonian Beserks" typeId="59000054" typeName="Unit" hidden="false">
@@ -814,6 +817,7 @@
         <categoryLink id="347a309b" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
         <categoryLink id="d721aeb3" name="Hernkyn Pioneers" hidden="false" targetId="cp-kw::hernkyn-pioneers" primary="false" />
         <categoryLink id="0523e3ce" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+        <categoryLink id="8a6d09f0" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="270a47c4" name="Hernkyn Pioneers" typeId="59000054" typeName="Unit" hidden="false">
@@ -936,6 +940,7 @@
         <categoryLink id="f676937f" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
         <categoryLink id="ce4a11a4" name="Hearthkyn Warriors" hidden="false" targetId="cp-kw::hearthkyn-warriors" primary="false" />
         <categoryLink id="2703126b" name="Leagues of Votann" hidden="false" targetId="cp-kw::leagues-of-votann" primary="false" />
+        <categoryLink id="936a11c3" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="98e0364b" name="Hearthkyn Warriors" typeId="59000054" typeName="Unit" hidden="false">

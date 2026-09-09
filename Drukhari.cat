@@ -629,6 +629,7 @@
         <categoryLink id="81c16402" name="Combat Patrol: Drukhari (The Blades of Torment)" hidden="false" targetId="cp-cat::the-blades-of-torment" primary="true" />
         <categoryLink id="21108fed" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" primary="false" />
         <categoryLink id="f499ee51" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="b466998b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="b0e49286" name="Quicksilver Reactions" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -685,6 +686,7 @@
         <categoryLink id="9c55beb2" name="Archon" hidden="false" targetId="cp-kw::archon" primary="false" />
         <categoryLink id="fd7ea3ed" name="Malivex" hidden="false" targetId="cp-kw::malivex" primary="false" />
         <categoryLink id="5d8d265a" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+        <categoryLink id="944fbf7b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c232bb6a" name="Archon Malivex" typeId="59000054" typeName="Unit" hidden="false">
@@ -791,6 +793,7 @@
         <categoryLink id="ee9f7e84" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
         <categoryLink id="55f481a6" name="Kabalite Warriors" hidden="false" targetId="cp-kw::kabalite-warriors" primary="false" />
         <categoryLink id="0d0e3990" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+        <categoryLink id="efa2dfc7" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="4732a4c1" name="Kabalite Warriors" typeId="59000054" typeName="Unit" hidden="false">
@@ -920,6 +923,7 @@
         <categoryLink id="94d476c9" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
         <categoryLink id="c1f20ea3" name="Incubi" hidden="false" targetId="cp-kw::incubi" primary="false" />
         <categoryLink id="0d3c2134" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+        <categoryLink id="846741b5" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="08a85f55" name="Incubi" typeId="59000054" typeName="Unit" hidden="false">
@@ -1027,6 +1031,7 @@
         <categoryLink id="44efc5c7" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
         <categoryLink id="2909871e" name="Raider" hidden="false" targetId="cp-kw::raider" primary="false" />
         <categoryLink id="2a8641ce" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+        <categoryLink id="d901923d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="4e1a32e5" name="Raider" typeId="59000054" typeName="Unit" hidden="false">
@@ -1127,6 +1132,7 @@
         <categoryLink id="dc103c2c" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
         <categoryLink id="c1c339e1" name="Ravager" hidden="false" targetId="cp-kw::ravager" primary="false" />
         <categoryLink id="f3a0fbd9" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" primary="false" />
+        <categoryLink id="8096ee1b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="277c5d2f" name="Ravager" typeId="59000054" typeName="Unit" hidden="false">

@@ -452,6 +452,7 @@
         <categoryLink id="182bd1ca" name="Combat Patrol: Aeldari (The Fatebreakers)" hidden="false" targetId="cp-cat::the-fatebreakers" primary="true" />
         <categoryLink id="b1603429" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
         <categoryLink id="2d184f1c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="4e3b6887" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1f555daa" name="Whip-fast Reactions" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -507,6 +508,7 @@
         <categoryLink id="82bcf9a9" name="Farseer" hidden="false" targetId="cp-kw::farseer" primary="false" />
         <categoryLink id="6ef353c1" name="Iraneth" hidden="false" targetId="cp-kw::iraneth" primary="false" />
         <categoryLink id="17444847" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="a5e4cedd" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="755a6b34" name="Farseer Iraneth" typeId="59000054" typeName="Unit" hidden="false">
@@ -640,6 +642,7 @@
         <categoryLink id="c2884365" name="Guardians" hidden="false" targetId="cp-kw::guardians" primary="false" />
         <categoryLink id="b3baf3e0" name="Guardian Defenders" hidden="false" targetId="cp-kw::guardian-defenders" primary="false" />
         <categoryLink id="f4455f14" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="a805d206" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="bceaf907" name="Guardian Defender" typeId="59000054" typeName="Unit" hidden="false">
@@ -747,6 +750,7 @@
         <categoryLink id="3f117f98" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
         <categoryLink id="11417ec6" name="Windriders" hidden="false" targetId="cp-kw::windriders" primary="false" />
         <categoryLink id="6daa35c5" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="67927d26" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a5c6a012" name="Windriders" typeId="59000054" typeName="Unit" hidden="false">
@@ -845,6 +849,7 @@
         <categoryLink id="46e5eeeb" name="Wraith Construct" hidden="false" targetId="cp-kw::wraith-construct" primary="false" />
         <categoryLink id="f5fb479e" name="Wraithlord" hidden="false" targetId="cp-kw::wraithlord" primary="false" />
         <categoryLink id="d7b4257b" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+        <categoryLink id="5e8e6043" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="cfbf86b3" name="Wraithlord" typeId="59000054" typeName="Unit" hidden="false">
@@ -937,6 +942,7 @@
         <categoryLink id="81725d07" name="Combat Patrol: Aeldari (Dreamer's Coterie)" hidden="false" targetId="cp-cat::dreamers-coterie" primary="true" />
         <categoryLink id="8b3f9ea2" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
         <categoryLink id="ac1087aa" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="499219e8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="0e4c3825" name="Encircling Blades" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -994,6 +1000,7 @@
         <categoryLink id="1e52fa50" name="Anhrathe" hidden="false" targetId="cp-kw::anhrathe" primary="false" />
         <categoryLink id="209bb510" name="Kharseth" hidden="false" targetId="cp-kw::kharseth" primary="false" />
         <categoryLink id="9218a3ee" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+        <categoryLink id="05ea7c82" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e7613fe2" name="Kharseth" typeId="59000054" typeName="Unit" hidden="false">
@@ -1113,6 +1120,7 @@
         <categoryLink id="2ebcaaef" name="Anhrathe" hidden="false" targetId="cp-kw::anhrathe" primary="false" />
         <categoryLink id="8c266e4b" name="Corsair Voidreavers" hidden="false" targetId="cp-kw::corsair-voidreavers" primary="false" />
         <categoryLink id="01f8a0e1" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+        <categoryLink id="55e79de9" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7748d755" name="Corsair Voidreavers" typeId="59000054" typeName="Unit" hidden="false">
@@ -1255,6 +1263,7 @@
         <categoryLink id="6ea3940c" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
         <categoryLink id="1d138ca5" name="Corsair Skyreavers" hidden="false" targetId="cp-kw::corsair-skyreavers" primary="false" />
         <categoryLink id="61b9cd80" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+        <categoryLink id="e5e6f08b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="73726290" name="Corsair Skyreavers" typeId="59000054" typeName="Unit" hidden="false">
@@ -1375,6 +1384,7 @@
         <categoryLink id="4b983b67" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
         <categoryLink id="956195ac" name="Wave Serpent" hidden="false" targetId="cp-kw::wave-serpent" primary="false" />
         <categoryLink id="2fe5742a" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+        <categoryLink id="a968708b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="5d421005" name="Wave Serpent" typeId="59000054" typeName="Unit" hidden="false">

@@ -10,6 +10,7 @@
         <categoryLink id="84935618" name="Combat Patrol: Space Marines (Strike Force Octavius)" hidden="false" targetId="cp-cat::strike-force-octavius" primary="true" />
         <categoryLink id="bc71e9ce" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="e2c7040f" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="849cc01a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="1ab5abf5" name="Gene-Wrought Resilience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -66,6 +67,7 @@
         <categoryLink id="db988cb5" name="Captain" hidden="false" targetId="cp-kw::captain" primary="false" />
         <categoryLink id="b7b3ede6" name="Octavius" hidden="false" targetId="cp-kw::octavius" primary="false" />
         <categoryLink id="51551778" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="9742bd95" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="8e7166a5" name="Captain Octavius" typeId="59000054" typeName="Unit" hidden="false">
@@ -178,6 +180,7 @@
         <categoryLink id="0dcc3c87" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
         <categoryLink id="ad3eb286" name="Librarian Tantus" hidden="false" targetId="cp-kw::librarian-tantus" primary="false" />
         <categoryLink id="bf7117cf" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="34a3d332" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="c4a889a8" name="Librarian Tantus" typeId="59000054" typeName="Unit" hidden="false">
@@ -308,6 +311,7 @@
         <categoryLink id="ca36ca44" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
         <categoryLink id="6e0cf76d" name="Terminator Squad" hidden="false" targetId="cp-kw::terminator-squad" primary="false" />
         <categoryLink id="ae60840f" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="2516327e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e7651535" name="Terminator Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -425,6 +429,7 @@
         <categoryLink id="fe371ce4" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="739cd16b" name="Infernus Squad" hidden="false" targetId="cp-kw::infernus-squad" primary="false" />
         <categoryLink id="5f31ce00" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="0c875363" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="33c2f3e3" name="Infernus Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -494,6 +499,7 @@
         <categoryLink id="9b753656" name="Combat Patrol: Eye of Ultramar" hidden="false" targetId="cp-cat::eye-of-ultramar" primary="true" />
         <categoryLink id="829f6213" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="e9939aad" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="95c25d54" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="daf64080" name="Honour the Chapter" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -551,6 +557,7 @@
         <categoryLink id="8374a576" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="93ff8ebf" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="d985818c" name="Ultramarines" hidden="false" targetId="cp-kw::ultramarines" primary="false" />
+        <categoryLink id="9f7ace3a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="18bf192d" name="Chief Librarian Tigurius" typeId="59000054" typeName="Unit" hidden="false">
@@ -684,6 +691,7 @@
         <categoryLink id="ce02db0a" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="bfebfcde" name="Bladeguard Veteran Squad" hidden="false" targetId="cp-kw::bladeguard-veteran-squad" primary="false" />
         <categoryLink id="d48aaa43" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="c0c3a1bd" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="65e7a356" name="Bladeguard Veteran Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -785,6 +793,7 @@
         <categoryLink id="95d407fe" name="Gravis" hidden="false" targetId="cp-kw::gravis" primary="false" />
         <categoryLink id="1fbe9c92" name="Aggressor Squad" hidden="false" targetId="cp-kw::aggressor-squad" primary="false" />
         <categoryLink id="3d34be8d" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="99f75f65" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="67518c40" name="Aggressor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -870,6 +879,7 @@
         <categoryLink id="10e0ae50" name="Phobos" hidden="false" targetId="cp-kw::phobos" primary="false" />
         <categoryLink id="32a16ca2" name="Reiver Squad" hidden="false" targetId="cp-kw::reiver-squad" primary="false" />
         <categoryLink id="6bf6ee08" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="4257643b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="10508598" name="Reiver Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -949,6 +959,7 @@
         <categoryLink id="281e4ff4" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="880ba740" name="Intercessor Squad" hidden="false" targetId="cp-kw::intercessor-squad" primary="false" />
         <categoryLink id="7527adba" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="29a47fdd" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7ebd34d6" name="Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">

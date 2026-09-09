@@ -415,6 +415,7 @@
         <categoryLink id="887b9156" name="Combat Patrol: Emperor's Children (Depraved Coterie)" hidden="false" targetId="cp-cat::depraved-coterie" primary="true" />
         <categoryLink id="0616a1f8" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
         <categoryLink id="05efae9f" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="7f2e7d38" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="4d7c5613" name="Degrading Demise" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -472,6 +473,7 @@
         <categoryLink id="0aecdc8f" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
         <categoryLink id="5a509c8b" name="Sorcerer" hidden="false" targetId="cp-kw::sorcerer" primary="false" />
         <categoryLink id="df4aa489" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
+        <categoryLink id="83dfc282" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="583c996e" name="Sybastis Luxx" typeId="59000054" typeName="Unit" hidden="false">
@@ -601,6 +603,7 @@
         <categoryLink id="5fdf34dc" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
         <categoryLink id="2ee95806" name="Tormentors" hidden="false" targetId="cp-kw::tormentors" primary="false" />
         <categoryLink id="b6dde7d9" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
+        <categoryLink id="d917f70d" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="49d01a0f" name="Tormentors" typeId="59000054" typeName="Unit" hidden="false">
@@ -717,6 +720,7 @@
         <categoryLink id="da29d6f1" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
         <categoryLink id="c38194a8" name="Daemonettes" hidden="false" targetId="cp-kw::daemonettes" primary="false" />
         <categoryLink id="7f6b05ca" name="Legions of Excess" hidden="false" targetId="cp-kw::legions-of-excess" primary="false" />
+        <categoryLink id="49aa8079" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="48d3b5cc" name="Daemonettes" typeId="59000054" typeName="Unit" hidden="false">
@@ -796,6 +800,7 @@
         <categoryLink id="81af8b89" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
         <categoryLink id="57bf0d47" name="Fiends" hidden="false" targetId="cp-kw::fiends" primary="false" />
         <categoryLink id="85b2fa6d" name="Legions of Excess" hidden="false" targetId="cp-kw::legions-of-excess" primary="false" />
+        <categoryLink id="3a046c4e" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f8a481ad" name="Fiends" typeId="59000054" typeName="Unit" hidden="false">

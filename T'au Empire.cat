@@ -10,6 +10,7 @@
         <categoryLink id="78f13ba4" name="Combat Patrol: T'au Empire (Na'pok's Hunters)" hidden="false" targetId="cp-cat::napoks-hunters" primary="true" />
         <categoryLink id="624b6c1d" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
         <categoryLink id="9ffc8a40" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="6e975dc2" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f8c32d02" name="Clubbing Blows" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -65,6 +66,7 @@
         <categoryLink id="de5ed75a" name="Lone-spear" hidden="false" targetId="cp-kw::lone-spear" primary="false" />
         <categoryLink id="b0e901f9" name="Lone-spear Na'pok" hidden="false" targetId="cp-kw::lone-spear-na-pok" primary="false" />
         <categoryLink id="5a1da8e8" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="93892862" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="30d3513a" name="Lone-spear Na'pok" typeId="59000054" typeName="Unit" hidden="false">
@@ -185,6 +187,7 @@
         <categoryLink id="f445bac0" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="e9fcfc9b" name="Carnivores" hidden="false" targetId="cp-kw::carnivores" primary="false" />
         <categoryLink id="af3754a6" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="483815d3" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e33eb0e4" name="Kroot Carnivores" typeId="59000054" typeName="Unit" hidden="false">
@@ -291,6 +294,7 @@
         <categoryLink id="d7a91f75" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="b09dac7f" name="Krootox Riders" hidden="false" targetId="cp-kw::krootox-riders" primary="false" />
         <categoryLink id="1cc67b78" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="0c02f8d2" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="07d61d12" name="Krootox Rider" typeId="59000054" typeName="Unit" hidden="false">
@@ -371,6 +375,7 @@
         <categoryLink id="50031092" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="d5927216" name="Krootox Rampagers" hidden="false" targetId="cp-kw::krootox-rampagers" primary="false" />
         <categoryLink id="350e1002" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="68824fed" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="86409f88" name="Krootox Rampagers" typeId="59000054" typeName="Unit" hidden="false">
@@ -439,6 +444,7 @@
         <categoryLink id="3d9936a5" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="5e211732" name="Carnivores" hidden="false" targetId="cp-kw::carnivores" primary="false" />
         <categoryLink id="89b39e2a" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="119f08f2" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e33eb0e4" name="Kroot Carnivores" typeId="59000054" typeName="Unit" hidden="false">
@@ -545,6 +551,7 @@
         <categoryLink id="5facd9fc" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="ca76b957" name="Krootox Rampagers" hidden="false" targetId="cp-kw::krootox-rampagers" primary="false" />
         <categoryLink id="e7008e95" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="a774978b" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="86409f88" name="Krootox Rampagers" typeId="59000054" typeName="Unit" hidden="false">
@@ -609,6 +616,7 @@
         <categoryLink id="001e4868" name="Combat Patrol: T'au Empire (Preybane War Party)" hidden="false" targetId="cp-cat::preybane-war-party" primary="true" />
         <categoryLink id="e85eb7ee" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
         <categoryLink id="d27e6841" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5d6f156a" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="e7e4c14b" name="Pheremonal Markings" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -663,6 +671,7 @@
         <categoryLink id="d3b6367d" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="291ae914" name="Lone-spear" hidden="false" targetId="cp-kw::lone-spear" primary="false" />
         <categoryLink id="c2528423" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="f5800b54" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="acea942e" name="Kroot Lone-spear" typeId="59000054" typeName="Unit" hidden="false">
@@ -786,6 +795,7 @@
         <categoryLink id="a7e7f975" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="bcff212a" name="Krootox Rampagers" hidden="false" targetId="cp-kw::krootox-rampagers" primary="false" />
         <categoryLink id="16d5ac42" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="904d3da0" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="27afb8a0" name="Krootox Rampager" typeId="59000054" typeName="Unit" hidden="false">
@@ -879,6 +889,7 @@
         <categoryLink id="fcde197f" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="c6e9aec1" name="Krootox Riders" hidden="false" targetId="cp-kw::krootox-riders" primary="false" />
         <categoryLink id="3e001ce2" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="e0ce429f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="ecda0b45" name="Krootox Rider" typeId="59000054" typeName="Unit" hidden="false">
@@ -974,6 +985,7 @@
         <categoryLink id="7adb8b50" name="Kroot" hidden="false" targetId="cp-kw::kroot" primary="false" />
         <categoryLink id="80862df1" name="Farstalkers" hidden="false" targetId="cp-kw::farstalkers" primary="false" />
         <categoryLink id="5af59a7b" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="a5c210cd" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="2c9d6b45" name="Kroot Kill-broker" typeId="59000054" typeName="Unit" hidden="false">
@@ -1156,6 +1168,7 @@
         <categoryLink id="df8d6fc3" name="Combat Patrol: T'au Empire (Protectors of Aun'shar)" hidden="false" targetId="cp-cat::protectors-of-aunshar" primary="true" />
         <categoryLink id="8823d443" name="T'au Empire" hidden="false" targetId="cp-faction::t-au-empire" primary="false" />
         <categoryLink id="db1c3c47" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="644c9520" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="2652dc24" name="Defensive Fusillade" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -1211,6 +1224,7 @@
         <categoryLink id="cbf36db7" name="Ethereal" hidden="false" targetId="cp-kw::ethereal" primary="false" />
         <categoryLink id="a6075b26" name="Aun'Shar" hidden="false" targetId="cp-kw::aun-shar" primary="false" />
         <categoryLink id="faf0812b" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="d686c9c4" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a6620746" name="Aun'Shar" typeId="59000054" typeName="Unit" hidden="false">
@@ -1295,6 +1309,7 @@
         <categoryLink id="4d33c592" name="Cadre Fireblade" hidden="false" targetId="cp-kw::cadre-fireblade" primary="false" />
         <categoryLink id="2ddb6dd9" name="Shas'nel D'tano" hidden="false" targetId="cp-kw::shas-nel-d-tano" primary="false" />
         <categoryLink id="a0ad4e37" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="3b7818b1" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="a78a0a1b" name="Shas'nel D'tano" typeId="59000054" typeName="Unit" hidden="false">
@@ -1388,6 +1403,7 @@
         <categoryLink id="1b34a53d" name="Battlesuit" hidden="false" targetId="cp-kw::battlesuit" primary="false" />
         <categoryLink id="900e578b" name="Ghostkeel" hidden="false" targetId="cp-kw::ghostkeel" primary="false" />
         <categoryLink id="fcb60362" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="ebba3db8" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="dc44588b" name="Ghostkeel Battlesuit" typeId="59000054" typeName="Unit" hidden="false">
@@ -1530,6 +1546,7 @@
         <categoryLink id="be9c6f02" name="Fire Warrior" hidden="false" targetId="cp-kw::fire-warrior" primary="false" />
         <categoryLink id="f3212320" name="Strike Team" hidden="false" targetId="cp-kw::strike-team" primary="false" />
         <categoryLink id="3fb2fb1d" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="f562a311" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="96663220" name="Strike Team" typeId="59000054" typeName="Unit" hidden="false">
@@ -1664,6 +1681,7 @@
         <categoryLink id="30d8aaaf" name="Battlesuit" hidden="false" targetId="cp-kw::battlesuit" primary="false" />
         <categoryLink id="8582f678" name="Stealth" hidden="false" targetId="cp-kw::stealth" primary="false" />
         <categoryLink id="0e056a81" name="T'au Empire" hidden="false" targetId="cp-kw::t-au-empire" primary="false" />
+        <categoryLink id="fca83acd" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="38834f72" name="Stealth Battlesuits" typeId="59000054" typeName="Unit" hidden="false">

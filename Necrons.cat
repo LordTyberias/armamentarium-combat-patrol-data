@@ -489,6 +489,7 @@
         <categoryLink id="8b7e0217" name="Combat Patrol: Necrons (Mindflenser's Murder Court)" hidden="false" targetId="cp-cat::mindflensers-murder-court" primary="true" />
         <categoryLink id="88510167" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
         <categoryLink id="a28c4b8d" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="cd0b3d7f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="9fe0a033" name="Extermination Directive" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -544,6 +545,7 @@
         <categoryLink id="415c880c" name="Cryptek" hidden="false" targetId="cp-kw::cryptek" primary="false" />
         <categoryLink id="3a445e93" name="Psychomancer" hidden="false" targetId="cp-kw::psychomancer" primary="false" />
         <categoryLink id="dc4af360" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="728560d1" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="951c2a38" name="Mokhryst the Mindflenser" typeId="59000054" typeName="Unit" hidden="false">
@@ -637,6 +639,7 @@
         <categoryLink id="94a3855e" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
         <categoryLink id="54c497c1" name="Immortals" hidden="false" targetId="cp-kw::immortals" primary="false" />
         <categoryLink id="7dffa285" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="fe49e0be" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="b95b3cf7" name="Immortals" typeId="59000054" typeName="Unit" hidden="false">
@@ -708,6 +711,7 @@
         <categoryLink id="24a12233" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
         <categoryLink id="5bf18627" name="Flayed Ones" hidden="false" targetId="cp-kw::flayed-ones" primary="false" />
         <categoryLink id="d73e3a69" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="ade74197" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d2cecb3b" name="Flayed Ones" typeId="59000054" typeName="Unit" hidden="false">
@@ -769,6 +773,7 @@
         <categoryLink id="194a39fd" name="Destroyer Cult" hidden="false" targetId="cp-kw::destroyer-cult" primary="false" />
         <categoryLink id="5cddc223" name="Ophydian Destroyers" hidden="false" targetId="cp-kw::ophydian-destroyers" primary="false" />
         <categoryLink id="70d6f634" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="2969bd02" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7d1de485" name="Ophydian Destroyers" typeId="59000054" typeName="Unit" hidden="false">
@@ -824,6 +829,7 @@
         <categoryLink id="80d8e693" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
         <categoryLink id="b7fa1b93" name="Flayed Ones" hidden="false" targetId="cp-kw::flayed-ones" primary="false" />
         <categoryLink id="aa858d00" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="96e20f56" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="d2cecb3b" name="Flayed Ones" typeId="59000054" typeName="Unit" hidden="false">
@@ -885,6 +891,7 @@
         <categoryLink id="f23aca9e" name="Destroyer Cult" hidden="false" targetId="cp-kw::destroyer-cult" primary="false" />
         <categoryLink id="22db8bd9" name="Ophydian Destroyers" hidden="false" targetId="cp-kw::ophydian-destroyers" primary="false" />
         <categoryLink id="d49e6863" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="6454b9e1" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="7d1de485" name="Ophydian Destroyers" typeId="59000054" typeName="Unit" hidden="false">

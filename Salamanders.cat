@@ -10,6 +10,7 @@
         <categoryLink id="55937be3" name="Combat Patrol: Salamanders (Pyroclasm Assault Force)" hidden="false" targetId="cp-cat::pyroclasm-assault-force" primary="true" />
         <categoryLink id="82306ba8" name="Space Marines" hidden="false" targetId="cp-faction::space-marines" primary="false" />
         <categoryLink id="18b4bd35" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="994577d6" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="0a5d5604" name="Weather the Storm" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
@@ -67,6 +68,7 @@
         <categoryLink id="2d937f8d" name="Adrax Agatone" hidden="false" targetId="cp-kw::adrax-agatone" primary="false" />
         <categoryLink id="b13e5bb3" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
         <categoryLink id="84bc36c3" name="Salamanders" hidden="false" targetId="cp-kw::salamanders" primary="false" />
+        <categoryLink id="62e46830" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f4cf991e" name="Adrax Agatone" typeId="59000054" typeName="Unit" hidden="false">
@@ -172,6 +174,7 @@
         <categoryLink id="0b51f7e5" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="1c107a5b" name="Infernus Squad" hidden="false" targetId="cp-kw::infernus-squad" primary="false" />
         <categoryLink id="be818eb3" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="1a50cd55" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="33c2f3e3" name="Infernus Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -257,6 +260,7 @@
         <categoryLink id="4448b90f" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
         <categoryLink id="e3d78227" name="Assault Intercessor Squad" hidden="false" targetId="cp-kw::assault-intercessor-squad" primary="false" />
         <categoryLink id="52981ede" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="231acd20" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="92a71a76" name="Assault Intercessor Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -337,6 +341,7 @@
         <categoryLink id="9178512f" name="Gravis" hidden="false" targetId="cp-kw::gravis" primary="false" />
         <categoryLink id="9040e5d8" name="Eradicator Squad" hidden="false" targetId="cp-kw::eradicator-squad" primary="false" />
         <categoryLink id="13c6db73" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="7e6c6838" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="4ef526df" name="Eradicator Squad" typeId="59000054" typeName="Unit" hidden="false">
@@ -443,6 +448,7 @@
         <categoryLink id="3f3be9fb" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
         <categoryLink id="87b44c00" name="Invader ATV" hidden="false" targetId="cp-kw::invader-atv" primary="false" />
         <categoryLink id="d80bb623" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
+        <categoryLink id="8d14e15f" name="Legacy" hidden="false" targetId="cp-flag::legacy" primary="false" />
       </categoryLinks>
       <profiles>
         <profile id="f76569c8" name="Invader ATV" typeId="59000054" typeName="Unit" hidden="false">
