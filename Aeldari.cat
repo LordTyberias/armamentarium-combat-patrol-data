@@ -3,74 +3,86 @@
   <selectionEntries>
     <selectionEntry id="cp::kygharils-protectors::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="d2fe83ad" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="0743bf4a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="811ffa59" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9d717679" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="0eca11fa" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
-        <categoryLink id="1d260d99" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
-        <categoryLink id="7bbb8b95" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="350f9b52" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
+        <categoryLink id="cc901457" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="9754a8fa" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="f1ed2c3f" name="Focused Firepower" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="24e42196" name="Battle Focus" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is ASURYANI, at the start of the battle round, you receive a number of Battle Focus tokens based on the battle size, as shown in the table below. Each time one of the triggers shown in the Agile Manoeuvres section below occurs, you can spend one Battle Focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c4cf0ec5" name="Graceful Warriors" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Friendly KYGHARIL'S PROTECTORS units (excluding KYGHARIL'S PROTECTORS WRAITHBLADES units) have:Stealth.-3&quot; detection range.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Purge the Foe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bd68a28c" name="Seer’s Hand" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">KYGHARIL'S PROTECTORS SPIRITSEER model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">At the end of your Movement phase, you can select one friendly KYGHARIL'S PROTECTORS WRAITHBLADES unit within 12&quot; of this model:That unit heals D3 wounds.That unit's attacks have [PRECISION] until the start of your next Movement phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d1fb9927" name="Guided Jump" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">KYGHARIL'S PROTECTORS WARP SPIDERS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit has Scouts 6&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="64f2d19b" name="Fading Fusillade" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, when a friendly KYGHARIL'S PROTECTORS unit is selected make a fall-back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That KYGHARIL'S PROTECTORS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That move does not prevent your unit from being eligible to shoot.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="90fdcec0" name="Suppressing Storm" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, when a friendly KYGHARIL'S PROTECTORS unit (excluding CHARACTER units) has shot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That KYGHARIL'S PROTECTORS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit hit by those attacks. That enemy unit is suppressed until the start of your next turn:While a unit is suppressed, that unit’s attacks have -1 to hit rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="caf87b8c" name="Focused Strikes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
             <characteristic name="When" typeId="1cfae44d">Start of your Shooting phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One or more ASURYANI units from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the end of the phase, each time a model in one of your units makes an attack that targets that enemy unit, re‑roll a Wound roll of 1.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="07028cbe" name="Swift Deception" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
-          <characteristics>
-            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Start of your opponent’s Charge phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ASURYANI unit from your army (excluding WRAITHBLADES units).</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D3".</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9d56cfe7" name="Elusive" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
-          <characteristics>
-            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ASURYANI unit from your army (excluding WRAITHBLADES units) that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have the Stealth ability and each time a ranged attack targets your unit, models in it have the Benefit of Cover against that attack.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="32b07e9a" name="Protect the Future" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the start of the Declare Battle Formations step, select one enemy unit (excluding CHARACTER units). The selected unit must be an INFANTRY or MOUNTED unit, if possible. When that enemy unit is destroyed, you score 9VP. If your SPIRITSEER model is on the battlefield when that enemy unit is destroyed, you score 12VP instead.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3ab962b1" name="Recover the Spirit Stones" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the start of your turn, select one objective marker within No Man’s Land. At the end of your opponent’s next turn or the end of the battle (whichever comes first), if you control that objective marker, you score 3VP.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One or more friendly KYGHARIL'S PROTECTORS units.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Your units' ranged attacks that target that unit can re-roll wound rolls of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry id="cp::kygharils-protectors::00-spiritseer-kygharil" name="Spiritseer Kygharil" type="unit" hidden="false">
       <constraints>
-        <constraint id="b76fff11" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="eff1df18" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="c91344a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="35898985" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="c5e9bbcb" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
-        <categoryLink id="17e34f73" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
-        <categoryLink id="6e7b855b" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="bf364479" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="a884db05" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="79380d8b" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
-        <categoryLink id="a6ed94dc" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
-        <categoryLink id="07c391db" name="Spiritseer" hidden="false" targetId="cp-kw::spiritseer" primary="false" />
-        <categoryLink id="86dfa245" name="Kygharil" hidden="false" targetId="cp-kw::kygharil" primary="false" />
-        <categoryLink id="ab2b50be" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+        <categoryLink id="4310ddc5" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
+        <categoryLink id="017276d1" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="3ee01371" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="b3521db2" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+      <categoryLink id="6aee4df3" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="d0def75b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="4739283d" name="Kygharil’s Protectors" hidden="false" targetId="cp-kw::kygharils-protectors" primary="false" />
+      <categoryLink id="82c2bbeb" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+      <categoryLink id="90f09cac" name="Spiritseer" hidden="false" targetId="cp-kw::spiritseer" primary="false" />
+      <categoryLink id="bfe172e7" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="20b66063" name="Spiritseer Kygharil" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="84daf207" name="Spiritseer Kygharil" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">6+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -78,18 +90,18 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="e6fa3a79" name="Shuriken pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="c9178865" name="Shuriken Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="3e0f9b87" name="Witch staff" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="6e4cc816" name="Witch Staff" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -100,82 +112,60 @@
             <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 2+, Psychic</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="75194da2" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ade2479e" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ffb9a7a1" name="Spiritseer" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">While this unit is within 3&quot; of a friendly WRAITH CONSTRUCT unit, this unit has Lone Operative.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a416a7f0" name="Spiritseer" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="754c7f61" name="Spirit Mark (Psychic) (once per turn per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While this model is within 3" of one or more friendly Wraith Construct units, this model has the Lone Operative ability.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When this unit starts or ends a move, you can use this ability. If you do, select one friendly WRAITH CONSTRUCT unit (excluding TITANIC units) within 6&quot; of this model and one enemy unit visible to this model. That friendly unit's attacks that target that enemy unit have [SUSTAINED HITS 1] until the start of your next Movement phase.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a9081331" name="Spirit Mark (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="51d38485" name="Tears of Isha (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Once per turn, in your Movement phase, when this model starts or ends a move, select one friendly Wraith Construct unit within 6" of this model and one enemy unit visible to this model. Until the start of your next Movement phase, weapons equipped by models in that friendly unit have the [Sustained Hits 1] ability while targeting that enemy unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="68d1c062" name="Enhancement: Spiritual Guidance (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">At the start of the battle round, if the bearer is on the battlefield, you receive 1 additional Battle Focus token. (Default enhancement; may be replaced with Isha's Protection: Once per turn, in your Movement phase, when the bearer starts or ends a move, select one friendly Wraithblades unit within 6" of the bearer. Until the start of your next Movement phase, each time an attack targets that Wraithblades unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of that Wraithblades unit, subtract 1 from the Wound roll.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, you can select one friendly WRAITH CONSTRUCT unit within 6&quot; of this model that has not been selected for this ability this turn.If that unit has a destroyed model, return one destroyed model to that unit.Or: If that unit does not have a destroyed model, one model in that unit heals D3 wounds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="d8d6ec1f" name="Spiritseer" hidden="false">
-          <description>While this model is within 3" of one or more friendly Wraith Construct units, this model has the Lone Operative ability.</description>
-        </rule>
-        <rule id="e1d79e07" name="Spirit Mark (Psychic)" hidden="false">
-          <description>Once per turn, in your Movement phase, when this model starts or ends a move, select one friendly Wraith Construct unit within 6" of this model and one enemy unit visible to this model. Until the start of your next Movement phase, weapons equipped by models in that friendly unit have the [Sustained Hits 1] ability while targeting that enemy unit.</description>
-        </rule>
-        <rule id="3ef4c5dc" name="Enhancement: Spiritual Guidance (Warlord)" hidden="false">
-          <description>At the start of the battle round, if the bearer is on the battlefield, you receive 1 additional Battle Focus token. (Default enhancement; may be replaced with Isha's Protection: Once per turn, in your Movement phase, when the bearer starts or ends a move, select one friendly Wraithblades unit within 6" of the bearer. Until the start of your next Movement phase, each time an attack targets that Wraithblades unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of that Wraithblades unit, subtract 1 from the Wound roll.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::kygharils-protectors::00-spiritseer-kygharil::shuriken-pistol" name="Shuriken pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::kygharils-protectors::00-spiritseer-kygharil::1-spiritseer-kygharil" name="1 Spiritseer Kygharil: shuriken pistol, witch staff" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="d2b0a181" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="141a3a80" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::kygharils-protectors::00-spiritseer-kygharil::witch-staff" name="Witch staff" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="7dd58ef8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="426c3711" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="de2895db" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0e09d65c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::kygharils-protectors::01-dire-avengers" name="Dire Avengers" type="unit" hidden="false">
+    <selectionEntry id="cp::kygharils-protectors::01-dire-avengers" name="Kygharil’s Protectors Dire Avengers" type="unit" hidden="false">
       <constraints>
-        <constraint id="785a2c6e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="f08c022a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="c938f2df" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9f8b8028" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="d2d2d673" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
-        <categoryLink id="1cbd35a9" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
-        <categoryLink id="d41a8cf6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="9b546630" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="efa7d722" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
-        <categoryLink id="64931aea" name="Aspect Warriors" hidden="false" targetId="cp-kw::aspect-warriors" primary="false" />
-        <categoryLink id="2658c047" name="Dire Avengers" hidden="false" targetId="cp-kw::dire-avengers" primary="false" />
-        <categoryLink id="04d81581" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+        <categoryLink id="2d3d8e91" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
+        <categoryLink id="67d19d84" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="d8baf222" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="e345aa1e" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+      <categoryLink id="74672d79" name="Aspect Warriors" hidden="false" targetId="cp-kw::aspect-warriors" primary="false" />
+      <categoryLink id="3daa485a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="9dca59a2" name="Kygharil’s Protectors" hidden="false" targetId="cp-kw::kygharils-protectors" primary="false" />
+      <categoryLink id="1cf45fba" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="8b4fdb62" name="Dire Avenger" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="a70778d0" name="Dire Avengers Exarch" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -183,19 +173,19 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="b9fa5cb4" name="Dire Avenger Exarch" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="b0cbd86c" name="Dire Avenger" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
-            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
             <characteristic name="LD" typeId="7c47673d">6+</characteristic>
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="dd6cb460" name="Avenger shuriken catapult" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="39fde579" name="Avenger Shuriken Catapult" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">4</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -204,18 +194,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
-            <characteristic name="WS" typeId="258d9251">3+</characteristic>
-            <characteristic name="S" typeId="09c93781">3</characteristic>
-            <characteristic name="AP" typeId="54255f70">0</characteristic>
-            <characteristic name="D" typeId="1f91ac72">1</characteristic>
-            <characteristic name="Keywords" typeId="23459e53"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="45f57e11" name="Power glaive" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="fd95630f" name="Power Glaive" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -226,176 +205,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="96511329" name="Bladestorm" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Ranged weapons equipped by models in this unit have the [Sustained Hits 1] ability while targeting an enemy unit within half range.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="99263769" name="Shimmershield" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">The bearer has a 4+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="51f3830a" name="Bladestorm" hidden="false">
-          <description>Ranged weapons equipped by models in this unit have the [Sustained Hits 1] ability while targeting an enemy unit within half range.</description>
-        </rule>
-        <rule id="d7d6aa5c" name="Shimmershield" hidden="false">
-          <description>The bearer has a 4+ invulnerable save.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry id="cp::kygharils-protectors::01-dire-avengers::1-dire-avenger-exarch-avenger-shuriken-catapult-power-glaive-shimmershield" name="1 Dire Avenger Exarch: Avenger shuriken catapult, power glaive, shimmershield" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="1e465a1a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="965f0deb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::kygharils-protectors::01-dire-avengers::4-dire-avengers-avenger-shuriken-catapult-close-combat-weapon" name="4 Dire Avengers: Avenger shuriken catapult, close combat weapon" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="490610e7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d3ce75d5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry id="cp::kygharils-protectors::02-wraithblades" name="Wraithblades" type="unit" hidden="false">
-      <constraints>
-        <constraint id="1dbdc7b5" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="5453c8f3" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="e094d8ba" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
-        <categoryLink id="8ecf1454" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
-        <categoryLink id="b19942a9" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="f4eb2292" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="29a6f325" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
-        <categoryLink id="8ed79688" name="Wraith Construct" hidden="false" targetId="cp-kw::wraith-construct" primary="false" />
-        <categoryLink id="6f9cbe14" name="Wraithblades" hidden="false" targetId="cp-kw::wraithblades" primary="false" />
-        <categoryLink id="3da21805" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
-      </categoryLinks>
-      <profiles>
-        <profile id="9068a532" name="Wraithblades" typeId="59000054" typeName="Unit" hidden="false">
-          <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
-            <characteristic name="T" typeId="f11c2b57">6</characteristic>
-            <characteristic name="SV" typeId="9a958949">2+</characteristic>
-            <characteristic name="W" typeId="b75ce314">3</characteristic>
-            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
-            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6acbfc5f" name="Ghostaxe" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
-            <characteristic name="WS" typeId="258d9251">4+</characteristic>
-            <characteristic name="S" typeId="09c93781">7</characteristic>
-            <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">2</characteristic>
-            <characteristic name="Keywords" typeId="23459e53"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c7ee2e67" name="Malevolent Souls" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 3+, do not remove it from play; that destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d0cfe5dc" name="Forceshield" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">The bearer has a 4+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="d7af779f" name="Malevolent Souls" hidden="false">
-          <description>Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 3+, do not remove it from play; that destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</description>
-        </rule>
-        <rule id="646d978d" name="Forceshield" hidden="false">
-          <description>The bearer has a 4+ invulnerable save.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry id="cp::kygharils-protectors::02-wraithblades::every-model-ghostaxe-forceshield" name="Every model: ghostaxe, forceshield" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="d488f640" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="3c754514" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry id="cp::kygharils-protectors::03-warp-spiders" name="Warp Spiders" type="unit" hidden="false">
-      <constraints>
-        <constraint id="1f1cb736" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="eb73a347" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="0211ba6a" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
-        <categoryLink id="f86be500" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
-        <categoryLink id="0bbb2e00" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="9ac3401c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="9f2490ed" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
-        <categoryLink id="e7e364fe" name="Jump Pack" hidden="false" targetId="cp-kw::jump-pack" primary="false" />
-        <categoryLink id="f0777a13" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
-        <categoryLink id="d00aebd9" name="Aspect Warriors" hidden="false" targetId="cp-kw::aspect-warriors" primary="false" />
-        <categoryLink id="7ae226bf" name="Warp Spiders" hidden="false" targetId="cp-kw::warp-spiders" primary="false" />
-        <categoryLink id="01c912e0" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
-      </categoryLinks>
-      <profiles>
-        <profile id="277eb879" name="Warp Spider" typeId="59000054" typeName="Unit" hidden="false">
-          <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
-            <characteristic name="T" typeId="f11c2b57">3</characteristic>
-            <characteristic name="SV" typeId="9a958949">3+</characteristic>
-            <characteristic name="W" typeId="b75ce314">1</characteristic>
-            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
-            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="03e4ea9b" name="Warp Spider Exarch" typeId="59000054" typeName="Unit" hidden="false">
-          <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
-            <characteristic name="T" typeId="f11c2b57">3</characteristic>
-            <characteristic name="SV" typeId="9a958949">3+</characteristic>
-            <characteristic name="W" typeId="b75ce314">2</characteristic>
-            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
-            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ea2b39db" name="Death spinner" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
-            <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
-            <characteristic name="S" typeId="cc313509">4</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
-            <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f822779d" name="Death weavers" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">6"</characteristic>
-            <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
-            <characteristic name="S" typeId="cc313509">4</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
-            <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent, Twin-linked</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="eaa9ec62" name="Weapon Strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -406,7 +216,285 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="3ace82dc" name="Powerblades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="76d13a87" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c8ffb00" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="59a250ec" name="Aspect Shrine Token (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit makes hit rolls or wound rolls, you can use this ability. If you do, change one of those rolls to an unmodified 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29d2e5bf" name="Bladestorm" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's ranged attacks that target a unit within half range have [SUSTAINED HITS 1].</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="067994e7" name="Shimmershield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has 4+ InSv.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::kygharils-protectors::01-dire-avengers::1-dire-avengers-exarch" name="1 Dire Avengers Exarch: power glaive, shimmershield" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3f748596" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b8f0be66" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kygharils-protectors::01-dire-avengers::4-dire-avenger" name="4 Dire Avenger: avenger shuriken catapult, weapon strike" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ff2ee7e0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ed8d8155" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::kygharils-protectors::01a-dire-avengers" name="Kygharil’s Protectors Dire Avengers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="6b8ba171" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="53e2c41d" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f36bac14" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
+        <categoryLink id="6a38625c" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="b0ed89f2" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="04f1f0f4" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+      <categoryLink id="78bec98a" name="Aspect Warriors" hidden="false" targetId="cp-kw::aspect-warriors" primary="false" />
+      <categoryLink id="b110ad2c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="fcc35665" name="Kygharil’s Protectors" hidden="false" targetId="cp-kw::kygharils-protectors" primary="false" />
+      <categoryLink id="01f7869a" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="66972722" name="Dire Avengers Exarch" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a11f3090" name="Dire Avenger" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="442755b4" name="Avenger Shuriken Catapult" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3978abc3" name="Power Glaive" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-3</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a2d702b" name="Weapon Strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="031e333e" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb915c49" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b71a2a2b" name="Aspect Shrine Token (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit makes hit rolls or wound rolls, you can use this ability. If you do, change one of those rolls to an unmodified 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c3e7e1a5" name="Bladestorm" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's ranged attacks that target a unit within half range have [SUSTAINED HITS 1].</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f33d2d1" name="Shimmershield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has 4+ InSv.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::kygharils-protectors::01a-dire-avengers::1-dire-avengers-exarch" name="1 Dire Avengers Exarch: power glaive, shimmershield" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="41f1615a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cd17c150" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::kygharils-protectors::01a-dire-avengers::4-dire-avenger" name="4 Dire Avenger: avenger shuriken catapult, weapon strike" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="07ec2d0e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="40b54b8d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::kygharils-protectors::02-wraithblades" name="Kygharil’s Protectors Wraithblades" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e3d7ce23" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6b5377e1" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c3054f92" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
+        <categoryLink id="022543cd" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="28fa2c98" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="142e0ff8" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+      <categoryLink id="db890096" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="f528cd2d" name="Kygharil’s Protectors" hidden="false" targetId="cp-kw::kygharils-protectors" primary="false" />
+      <categoryLink id="2013a3a1" name="Wraith Construct" hidden="false" targetId="cp-kw::wraith-construct" primary="false" />
+      <categoryLink id="3c98ec5a" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="501d3546" name="Wraithblade" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">8+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ae68ccb" name="Ghostaxe" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">7</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="32ce8f12" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="58c5d04f" name="Psychic Guidance" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this unit is within 12&quot; of one or more friendly AELDARI PSYKER models:This unit has 6+ Ld.This unit's attacks have +1 to hit rolls</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="71610a41" name="Forceshield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has 4+ InSv.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="daae21d0" name="Malevolent Souls" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When a model in this unit is destroyed, if this unit has not been selected to fight this phase, roll one D6:On a 3+, do not remove that model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), that model is removed from the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::kygharils-protectors::02-wraithblades::5-wraithblade" name="5 Wraithblade: forceshield, ghostaxe" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="6a5358dd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9722ee24" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::kygharils-protectors::03-warp-spiders" name="Kygharil’s Protectors Warp Spiders" type="unit" hidden="false">
+      <constraints>
+        <constraint id="93c072d7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9e98b67a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="211aa231" name="Combat Patrol: Aeldari (Kygharil's Protectors)" hidden="false" targetId="cp-cat::kygharils-protectors" primary="true" />
+        <categoryLink id="42857160" name="Aeldari" hidden="false" targetId="cp-faction::aeldari" primary="false" />
+        <categoryLink id="b0f1ad82" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="78c9045e" name="Aeldari" hidden="false" targetId="cp-kw::aeldari" primary="false" />
+      <categoryLink id="50430adf" name="Aspect Warriors" hidden="false" targetId="cp-kw::aspect-warriors" primary="false" />
+      <categoryLink id="8779a01a" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+      <categoryLink id="cc1499b0" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="e1ac0dec" name="Jump Pack" hidden="false" targetId="cp-kw::jump-pack" primary="false" />
+      <categoryLink id="8cc47625" name="Kygharil’s Protectors" hidden="false" targetId="cp-kw::kygharils-protectors" primary="false" />
+      <categoryLink id="8d8e43e6" name="Asuryani" hidden="false" targetId="cp-kw::asuryani" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="cdc467f1" name="Warp Spider" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa4da88c" name="Warp Spider Exarch" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="90747b27" name="Death Spinner" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f1ba301c" name="Death Weavers" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">6&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9d991772" name="Powerblades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -417,28 +505,49 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits, Twin-linked</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="131ef370" name="Weapon Strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">2</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c2c3853b" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="edf46ffd" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="79dc9412" name="Battle Focus" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="956fd008" name="Aspect Shrine Token" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit makes hit rolls or wound rolls, you can use this ability. If you do, change one of those rolls to an unmodified 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="84cdcf6a" name="Engulfing Flames (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to shoot, you can use this ability. If you do, this unit's ranged attacks have [ANTI-INFANTRY 3+].</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::kygharils-protectors::03-warp-spiders::1-warp-spider-exarch-death-weavers-powerblades" name="1 Warp Spider Exarch: death weavers, powerblades" type="upgrade" hidden="false">
+        <selectionEntry id="cp::kygharils-protectors::03-warp-spiders::4-warp-spider" name="4 Warp Spider: death spinner, weapon strike" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a78a98f5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="3c9d98d2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="429e612f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="236cb726" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::kygharils-protectors::03-warp-spiders::4-warp-spiders-death-spinner-close-combat-weapon" name="4 Warp Spiders: death spinner, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::kygharils-protectors::03-warp-spiders::1-warp-spider-exarch" name="1 Warp Spider Exarch: death weavers, powerblades" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="04594719" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="51c91411" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="3dc21913" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1b8b8848" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

@@ -989,75 +989,87 @@
     </selectionEntry>
     <selectionEntry id="cp::frenzied-reavers::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="413b45ad" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="24f98ea5" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="e0269fe6" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e394e90b" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="c193d604" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
-        <categoryLink id="a174ab88" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
-        <categoryLink id="b3f0b681" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="09b551e2" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="f5c5fc0b" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="6cb68b6b" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="723807f5" name="Horrifying Butchery" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="c0a2c669" name="Blessings of Khorne" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is WORLD EATERS, at the start of the battle round, you can make a Blessings of Khorne roll. To do so, roll eight D6. You can then use those dice to activate up to two Blessings of Khorne (see below). Each Blessing of Khorne specifies the dice results it requires (where a number is specified, a double or triple of that value or higher is required). You can only activate each Blessing of Khorne once per battle round. Any unused dice from the Blessings of Khorne roll are then discarded. Once activated, each Blessing of Khorne applies to all units from your army with this ability until the end of the battle round. Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2, 3, 4, 6, 6. First they use the two 6s to activate Warp Blades (which requires a double 5+ ), leaving the following dice: 1, 2, 2, 2, 3, 4. They then use the two 2s to activate Unbridled Bloodlust. Now that two Blessings of Khorne have been activated, no more can be activated and the remaining dice are discarded. This unit has +1 to charge rolls. Each time a model in this unit makes a Pile-in or Consolidation move, it can move up to 6&quot; instead of up to 3&quot;. Each time a model in this unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play. Melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability. Melee weapons equipped by models in this unit have the [LETHAL HITS] ability Each time a model in this unit makes a melee attack that targets an INFANTRY unit, that attack has the [DEVASTATING WOUNDS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d8f61fe4" name="Berzerker Charge" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">When a friendly FRENZIED REAVERS unit is selected to fight, if that unit made a charge move this turn, its melee attacks have +1 S.When playing a Combat Patrol battle, the following friendly units must start the battle in strategic reserves and cannot be set up on the battlefield before the battle round stated. When doing so, they must be set up wholly within your deployment zone.DAEMON PRINCE: Battle round 2.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Purge the Foe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="02e5e565" name="Bane of the Craven" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">FRENZIED REAVERS MASTER OF EXECUTIONS model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">When an enemy unit engaged with this unit is selected to make a fall-back move:That enemy unit must select the desperate escape mode.If that enemy unit is battle-shocked, that enemy unit has -1 to the hazard rolls made for that desperate escape.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f73838c1" name="Fearsome Presence" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">FRENZIED REAVERS DAEMON PRINCE model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This model has OC 5.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="96351fa7" name="Horrifying Butchery" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
             <characteristic name="When" typeId="1cfae44d">Start of the Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One KHORNE BERZERKERS unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit within Engagement Range of your unit. That enemy unit must take a Battle-shock test.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly engaged FRENZIED REAVERS KHORNE BERZERKERS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit engaged with your unit. That enemy unit makes a battle-shock roll, with -1 to that battle-shock roll.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2a3bac60" name="Berserk Resilience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="bb7e5cad" name="Berserk Resilience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One WORLD EATERS CHARACTER unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 2 if the Total Carnage Blessing of Khorne is active for your army. On a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent's Shooting phase, when an enemy unit targets a friendly FRENZIED REAVERS INFANTRY unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That FRENZIED REAVERS INFANTRY unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Ranged attacks that target your unit with a S greater than your unit's T have -1 to wound rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="9e463867" name="Bloodlust" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="5e75a9f8" name="Rabid Response" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has shot.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One JAKHALS unit from your army that had one or more of its models destroyed by the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Your unit can make a Normal move of up to D6".</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="51c96337" name="Champions of Khorne" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your Command phase, if there is an objective marker wholly within No Man’s Land that you control and that has one or more CHARACTER models (excluding Battle-shocked models) from your army within range of it, you score 2VP. If there are two such objective markers, you score 3VP instead.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="04843e61" name="Skull Takers" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of the Fight phase, for each CHARACTER model from your army, if that model destroyed one or more enemy units that phase, you score 3VP. You cannot score more than 12VP from this secondary objective.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, when an enemy unit has shot, if that unit targeted a friendly unengaged FRENZIED REAVERS JAKHALS unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That FRENZIED REAVERS JAKHALS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a normal move of up to D6&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="cp::frenzied-reavers::00-vorrakh" name="Vorrakh" type="unit" hidden="false">
+    <selectionEntry id="cp::frenzied-reavers::00-vorrakh" name="Vorrakh, Lord of the Frenzied Reavers" type="unit" hidden="false">
       <constraints>
-        <constraint id="492cc688" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="2c5d76c7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="7be7873b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5cf314b9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="c82d5cad" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
-        <categoryLink id="d3d1df9f" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
-        <categoryLink id="07e0cff3" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="8996d735" name="Monster" hidden="false" targetId="cp-kw::monster" primary="false" />
-        <categoryLink id="1e9edf5f" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="1ab3a085" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="1984ade1" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
-        <categoryLink id="f7922410" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
-        <categoryLink id="f08e7b78" name="Daemon Prince" hidden="false" targetId="cp-kw::daemon-prince" primary="false" />
-        <categoryLink id="0538bb2d" name="Vorrakh" hidden="false" targetId="cp-kw::vorrakh" primary="false" />
-        <categoryLink id="0f702bc3" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="30c019a6" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="55f45923" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="d41abb8e" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="8d7c8a22" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="6aae0e6d" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="3210a3f9" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
+      <categoryLink id="cf61c797" name="Daemon Prince" hidden="false" targetId="cp-kw::daemon-prince" primary="false" />
+      <categoryLink id="8865a90d" name="Frenzied Reavers" hidden="false" targetId="cp-kw::frenzied-reavers" primary="false" />
+      <categoryLink id="f18104c0" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+      <categoryLink id="0f405685" name="Monster" hidden="false" targetId="cp-kw::monster" primary="false" />
+      <categoryLink id="00e1eceb" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="093a1f2a" name="Vorrakh" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="b6515851" name="Vorrakh" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">10"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">10&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">10</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">10</characteristic>
@@ -1065,9 +1077,9 @@
             <characteristic name="OC" typeId="d8b56b65">3</characteristic>
           </characteristics>
         </profile>
-        <profile id="a2cd6fea" name="Infernal cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="8e4e35b3" name="Infernal Cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">3</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -1076,7 +1088,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="c7ca7650" name="Hellforged weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="819119ff" name="Hellforged Weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">16</characteristic>
@@ -1087,61 +1099,61 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="b9803b8b" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="b0a81284" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="055b6e10" name="Enhancement: Fearsome Presence (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="9a278285" name="Lord of Murder" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While the bearer is not Battle-shocked, it has an Objective Control characteristic of 5. (Default enhancement; may be replaced with Bane of the Craven: Each time an enemy unit (excluding Monsters and Vehicles) that is within Engagement Range of the bearer Falls Back, all models in that enemy unit must take a Desperate Escape test; when doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">While this model is within 3&quot; of a friendly FRENZIED REAVERS INFANTRY unit, this unit has Lone Operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="65e082bc" name="Direct the Slaughter" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">(Once per battle round, per army) When a friendly FRENZIED REAVERS unit within 12&quot; of this model is targeted with a stratagem, you can use this ability. If you do, that use is -1CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="65bb4bca" name="Devastating Assault" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">If this unit made a charge move this turn, this unit’s melee attacks have [DEVASTATING WOUNDS].</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="90daad30" name="Enhancement: Fearsome Presence (Warlord)" hidden="false">
-          <description>While the bearer is not Battle-shocked, it has an Objective Control characteristic of 5. (Default enhancement; may be replaced with Bane of the Craven: Each time an enemy unit (excluding Monsters and Vehicles) that is within Engagement Range of the bearer Falls Back, all models in that enemy unit must take a Desperate Escape test; when doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::frenzied-reavers::00-vorrakh::infernal-cannon" name="Infernal cannon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::00-vorrakh::1-vorrakh" name="1 Vorrakh: hellforged weapons, infernal cannon" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="ecca3395" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="a867c2b7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::00-vorrakh::hellforged-weapons" name="Hellforged weapons" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="821204b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="7bbf9acd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="72104e16" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="364b44ff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::frenzied-reavers::01-jakhals" name="Jakhals" type="unit" hidden="false">
+    <selectionEntry id="cp::frenzied-reavers::01-jakhals" name="Frenzied Reavers Jakhals" type="unit" hidden="false">
       <constraints>
-        <constraint id="75f1a19b" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="82bf2f47" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="509e79e9" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ca363f21" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="117cb676" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
-        <categoryLink id="bb40fe54" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
-        <categoryLink id="678155fc" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="6e440ee7" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="6b520edf" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="fe753fab" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
-        <categoryLink id="4be7011b" name="Jakhals" hidden="false" targetId="cp-kw::jakhals" primary="false" />
-        <categoryLink id="e9e3db39" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="83c64b57" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="abf101d3" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="6309697a" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="5eb3fe05" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="f8cbab30" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="9a6a58e3" name="Frenzied Reavers" hidden="false" targetId="cp-kw::frenzied-reavers" primary="false" />
+      <categoryLink id="8da440e4" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="7eef3ae2" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+      <categoryLink id="dd8d8cd8" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="6c9aaacc" name="Jakhals" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="863c1ebc" name="Dishonoured" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">6+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -1149,18 +1161,48 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="bc9847a9" name="Jakhal with Autopistol and Chainblade" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8d6ec7e8" name="Jakhal with Autopistol and Mauler Chainblade" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c630fba0" name="Jakhal Pack Leader" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b31c722b" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="848d6d33" name="Chainblades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="ae5a6fe2" name="Chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -1171,7 +1213,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="28498cbe" name="Mauler chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="51cd465c" name="Mauler Chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -1182,7 +1224,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="717a072d" name="Skullsmasher and mangler" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="54684a38" name="Skullsmasher and Mangler" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -1193,58 +1235,70 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="3fc23172" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="ab2f27bf" name="Icon of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit destroys an enemy unit, you gain 1 Bloodshed Point. When making a Blessings of Khorne roll:Roll one additional D6 for each Bloodshed Point you have.Then, you lose your Bloodshed Points.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="90f65626" name="Objective Ravaged" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Command phase, if this unit is controlling an objective, that objective is secured.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-jakhal-pack-leader-autopistol-chainblades" name="1 Jakhal Pack Leader: autopistol, chainblades" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-dishonoured" name="1 Dishonoured: skullsmasher and mangler" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="9d8f653c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="3a1b56e1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="64bb2c84" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="acb58293" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-dishonoured-skullsmasher-and-mangler" name="1 Dishonoured: skullsmasher and mangler" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::7-jakhal-with-autopistol-and-chainblade" name="7 Jakhal with Autopistol and Chainblade: autopistol, chainblade" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="70028229" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="5588b45e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="6622bc48" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3e1cd280" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-jakhal-autopistol-mauler-chainblade" name="1 Jakhal: autopistol, mauler chainblade" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-jakhal-with-autopistol-and-mauler-chainblade" name="1 Jakhal with Autopistol and Mauler Chainblade: autopistol, mauler chainblade" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="bc4bb98d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="19459676" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c5a9fc3a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d4ad9038" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::01-jakhals::7-jakhals-autopistol-chainblades" name="7 Jakhals: autopistol, chainblades" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::01-jakhals::1-jakhal-pack-leader" name="1 Jakhal Pack Leader: autopistol, chainblade" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="8d2e0255" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="3cc748e5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="12099765" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="bc203905" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers" name="Khorne Berzerkers" type="unit" hidden="false">
+    <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers" name="Frenzied Reavers Khorne Berzerkers" type="unit" hidden="false">
       <constraints>
-        <constraint id="4c5ada0d" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="e62b40d1" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="6e53670a" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="21e98157" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="2b2bae59" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
-        <categoryLink id="71444f15" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
-        <categoryLink id="589adf6f" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="a18d0ec0" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="eca7a6c5" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="a3776670" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
-        <categoryLink id="8f58de4f" name="Berzerkers" hidden="false" targetId="cp-kw::berzerkers" primary="false" />
-        <categoryLink id="bd56a113" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="accd9ac9" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="0a1f5dad" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="d607777d" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="a84e936c" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="18f07d7e" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="c1bba924" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="4ae59920" name="Frenzied Reavers" hidden="false" targetId="cp-kw::frenzied-reavers" primary="false" />
+      <categoryLink id="73a5abd3" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="9c8f9f2a" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+      <categoryLink id="e394eccc" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="25610d77" name="Khorne Berzerkers" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="d7b9e850" name="Khorne Berzerker with Bolt Pistol and Chainblade" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -1252,40 +1306,70 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="bfa386e9" name="Khorne Berzerker Champion" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3675bdc4" name="Khorne Berzerker with Plasma Pistol and Chainblade" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e277137f" name="Khorne Berzerker with Bolt Pistol and Khornate Eviscerator" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6ce0438" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="425c698b" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="d706618b" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="d93d8235" name="Chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="efa5b2e6" name="Chainblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -1296,7 +1380,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="15b3d074" name="Khornate eviscerator" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="c016416e" name="Khornate Eviscerator" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -1307,59 +1391,69 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="e4da4e82" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="6bb26996" name="Icon of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit destroys an enemy unit, you gain 1 Bloodshed Point. When making a Blessings of Khorne roll:Roll one additional D6 for each Bloodshed Point you have.Then, you lose your Bloodshed Points.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fd8dd593" name="Blood Surge (once per turn, per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your opponent's Shooting phase, when an enemy unit has shot, if those attacks destroyed a model in this unit and this unit is unengaged, this unit can make a surge move of up to D6+2&quot;.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::1-khorne-berzerker-champion-plasma-pistol-chainblade" name="1 Khorne Berzerker Champion: plasma pistol, chainblade" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::5-khorne-berzerker-with-bolt-pistol-and-chainblade" name="5 Khorne Berzerker with Bolt Pistol and Chainblade: bolt pistol, chainblade" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="64ee1d11" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="093e335f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="efcefe15" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ae06df97" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::2-khorne-berzerkers-plasma-pistol-chainblade" name="2 Khorne Berzerkers: plasma pistol, chainblade" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::1-khorne-berzerker-champion" name="1 Khorne Berzerker Champion: chainblade, plasma pistol - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="315c4083" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="e09e1ad3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="edf30d28" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ebdae269" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::2-khorne-berzerkers-bolt-pistol-khornate-eviscerator" name="2 Khorne Berzerkers: bolt pistol, Khornate eviscerator" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::2-khorne-berzerker-with-plasma-pistol-and-chainblade" name="2 Khorne Berzerker with Plasma Pistol and Chainblade: chainblade, plasma pistol - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="08ff1314" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="84210715" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="4bfafb3e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="70bb358e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::5-khorne-berzerkers-bolt-pistol-chainblade" name="5 Khorne Berzerkers: bolt pistol, chainblade" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::02-khorne-berzerkers::2-khorne-berzerker-with-bolt-pistol-and-khornate-eviscerator" name="2 Khorne Berzerker with Bolt Pistol and Khornate Eviscerator: bolt pistol, khornate eviscerator" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="b4b93716" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="deb813b6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c45ab43f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="01daf021" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::frenzied-reavers::03-master-of-executions" name="Master of Executions" type="unit" hidden="false">
+    <selectionEntry id="cp::frenzied-reavers::03-master-of-executions" name="Frenzied Reavers Master of Executions" type="unit" hidden="false">
       <constraints>
-        <constraint id="3ebd8934" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="8f9abcd1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="331e5d64" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="666ada73" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="b0d8135d" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
-        <categoryLink id="c40f7408" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
-        <categoryLink id="a4af49ff" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="6b44a58b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="449562bc" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="8262c5d5" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="896ba85a" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
-        <categoryLink id="34d1c03f" name="Master of Executions" hidden="false" targetId="cp-kw::master-of-executions" primary="false" />
-        <categoryLink id="0c32a148" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
+        <categoryLink id="2accf598" name="Combat Patrol: World Eaters (Frenzied Reavers)" hidden="false" targetId="cp-cat::frenzied-reavers" primary="true" />
+        <categoryLink id="f3977a01" name="World Eaters" hidden="false" targetId="cp-faction::world-eaters" primary="false" />
+        <categoryLink id="faec9d99" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="36283e4b" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="c597ad84" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="732f8647" name="Frenzied Reavers" hidden="false" targetId="cp-kw::frenzied-reavers" primary="false" />
+      <categoryLink id="3da9ee62" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="c7eb9791" name="Khorne" hidden="false" targetId="cp-kw::khorne" primary="false" />
+      <categoryLink id="0f9cbc1e" name="World Eaters" hidden="false" targetId="cp-kw::world-eaters" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="5890fc01" name="Master of Executions" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="a901d7cc" name="Master of Executions" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -1367,18 +1461,18 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="efac8ed4" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="5fde6168" name="Axe of dismemberment" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="31599db3" name="Axe of Dismemberment" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -1389,33 +1483,27 @@
             <characteristic name="Keywords" typeId="23459e53">Devastating Wounds, Precision</characteristic>
           </characteristics>
         </profile>
-        <profile id="320b9d50" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="72551c21" name="Blessings of Khorne" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="ae3f6b9c" name="A Worthy Skull" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="d145558f" name="A Worthy Skull" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's unit destroys an enemy Character model, you gain 1CP.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model's melee attacks that target a CHARACTER unit can:Re-roll hit rolls.Re-roll wound rolls.When this unit destroys a Character model, you gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="69dd6680" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ FRENZIED REAVERS KHORNE BERZERKERS</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="1516fa64" name="A Worthy Skull" hidden="false">
-          <description>Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's unit destroys an enemy Character model, you gain 1CP.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::frenzied-reavers::03-master-of-executions::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::frenzied-reavers::03-master-of-executions::1-master-of-executions" name="1 Master of Executions: axe of dismemberment, bolt pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="4f62ac50" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="f76471f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::frenzied-reavers::03-master-of-executions::axe-of-dismemberment" name="Axe of dismemberment" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="3586c4f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="e30437b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="3e26fe31" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="98911cac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

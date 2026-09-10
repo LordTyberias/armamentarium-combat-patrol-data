@@ -3,83 +3,95 @@
   <selectionEntries>
     <selectionEntry id="cp::amonhotekhs-guard::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="b68b9e41" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="6e5a03d0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="e9a60e11" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="52da89a9" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="097f26e7" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
-        <categoryLink id="c7f801d1" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
-        <categoryLink id="dc964465" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="539501d1" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
+        <categoryLink id="d6b143b9" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="91a471cf" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="57fdb749" name="Mercurial Resilience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="2cbbae08" name="Reanimation Protocols" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is NECRONS, at the end of your Command phase, each unit from your army with this ability that is on the battlefield activates its Reanimation Protocols and reanimates D3 wounds. Each time such a unit reanimates a wound: ■ If that unit contains one or more models with fewer than their starting number of wounds remaining, select one of those models; that model regains one lost wound. ■ If all models in that unit have their starting number of wounds, but that unit is not at its Starting Strength, one destroyed model is returned to that unit with one wound remaining. Once such a unit is at its Starting Strength and all of its models have their starting number of wounds, nothing further happens. Example: A unit of Lokhust Destroyers (which have a Wounds characteristic of 3) activates its Reanimation Protocols. The unit had a Starting Strength of 3, but currently contains 2 models, and one of those models has lost 1 wound. A 3 is rolled to see how many wounds are reanimated. The first of these reanimated wounds restores the wounded Lokhust Destroyer back to 3 wounds. The second of these reanimated wounds returns the destroyed Lokhust Destroyer to the battlefield with 1 wound remaining. The third of these reanimated wounds restores one of the remaining lost wounds to the same Lokhust Destroyer that was just returned. The unit now contains 3 models, two of which have 3 wounds remaining and one of which has 2 wounds remaining.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="90c50b42" name="Territorial Imperatives" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">At the end of your Command phase, you can select one friendly AMONHOTEKH'S GUARD unit. That unit has +1 OC until the start of your next Command phase.When playing a Combat Patrol battle, the following friendly units must start the battle in strategic reserves and cannot be set up on the battlefield before the battle round stated. When doing so, they must be set up wholly within your deployment zone.CANOPTEK DOOMSTALKER: Battle round 3.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Take and Hold</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c4296c24" name="Metalline Might" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">AMONHOTEKH'S GUARD OVERLORD model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This model's melee attacks have +2 S.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a41ee4be" name="Unblemished Legions" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">AMONHOTEKH'S GUARD NECRON WARRIORS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit has +1 M.This unit's ranged attacks have [ASSAULT]</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a6e3ada" name="Gauss Storm" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 5+ invulnerable save.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, when a friendly AMONHOTEKH'S GUARD NECRON WARRIORS unit is selected to shoot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That AMONHOTEKH'S GUARD NECRON WARRIORS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's attacks have +1 to hit rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="fb02c761" name="Disruption Fields" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="b80d58cc" name="Aggression Protocols" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army that has not been selected to fight this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 1 to the Strength characteristic of melee weapons equipped by models in your unit.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, when a friendly AMONHOTEKH'S GUARD unit (excluding MONSTER/VEHICLE units) is selected to make a fall-back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That AMONHOTEKH'S GUARD unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That move does not prevent your unit from being eligible to shoot/declare a charge.</characteristic>
           </characteristics>
         </profile>
-        <profile id="9bad2e18" name="Will of the Overlord" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="1c2b2e4e" name="Reinforced Resilience" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One NECRONS unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit. RESTRICTIONS: You can only use this Stratagem if an OVERLORD model from your army is on the battlefield.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="29cb567a" name="Reclaim and Dominate" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if one or more NECRONS units from your army (excluding Battle-shocked units) are wholly within your opponent’s deployment zone.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ce809b07" name="Treasures of Aeons" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one objective marker in No Man’s Land. You score 3VP each time a NECRONS model from your army destroys an enemy unit that started the phase within range of that objective marker or within range of the objective marker within your deployment zone (if there is one).</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent's Shooting phase, when an enemy unit targets a friendly AMONHOTEKH'S GUARD unit (excluding MONSTER/VEHICLE units) with every model within a terrain area.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That AMONHOTEKH'S GUARD unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit has +1 Sv.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry id="cp::amonhotekhs-guard::00-overlord-amonhotekh" name="Overlord Amonhotekh" type="unit" hidden="false">
       <constraints>
-        <constraint id="375da35b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="667691e1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="4a607266" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3d91e7a6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="bfba8850" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
-        <categoryLink id="42591d87" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
-        <categoryLink id="dda59a78" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="602a16da" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="a9a67fd6" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="f28d50f7" name="Noble" hidden="false" targetId="cp-kw::noble" primary="false" />
-        <categoryLink id="77edca82" name="Overlord" hidden="false" targetId="cp-kw::overlord" primary="false" />
-        <categoryLink id="7c83a217" name="Amonhotekh" hidden="false" targetId="cp-kw::amonhotekh" primary="false" />
-        <categoryLink id="70092e35" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="b61371f0" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
+        <categoryLink id="bfe1497d" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="f650d0ab" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="3fc60679" name="Amonhotekh’s Guard" hidden="false" targetId="cp-kw::amonhotekhs-guard" primary="false" />
+      <categoryLink id="b385a37e" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="bce73ff6" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="6811d284" name="Noble" hidden="false" targetId="cp-kw::noble" primary="false" />
+      <categoryLink id="8b827653" name="Overlord" hidden="false" targetId="cp-kw::overlord" primary="false" />
+      <categoryLink id="16e9c932" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="c69cde88" name="Overlord Amonhotekh" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="be1e4143" name="Overlord Amonhotekh" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">5</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">6</characteristic>
-            <characteristic name="LD" typeId="7c47673d">4+</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="7d5f9d4e" name="Tachyon arrow" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="63896fc0" name="Tachyon Arrow" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">72"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">72&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">16</characteristic>
@@ -88,7 +100,7 @@
             <characteristic name="Keywords" typeId="aa05940c">One Shot</characteristic>
           </characteristics>
         </profile>
-        <profile id="b60fa083" name="Overlord's blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="84e46897" name="Overlord’s Blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -99,89 +111,49 @@
             <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="aaccc4cc" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ef8dc50c" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="e990560c" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="b5956761" name="Iron Will" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="22afc5e0" name="Implacable Resilience" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time an attack is allocated to this model, subtract 1 from that attack's Damage characteristic.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="51be6e3d" name="One Shot" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">The bearer can only shoot with this weapon once per battle.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Necron Warriors</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bb4397b7" name="Enhancement: Overriding Control (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">The bearer's unit is eligible to shoot in a turn in which it Fell Back. (Default enhancement; may be replaced with Protocol of Resonant Focus: In your Command phase, select one enemy unit within 12" of and visible to the bearer. Until the end of the turn, each time a friendly Necrons model makes an attack that targets that enemy unit, re-roll a Hit roll of 1.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">In the Fight phase, when this model is destroyed, if this unit has not been selected to fight this phase, roll one D6: on a 2+, do not remove this model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), this model is removed from the battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="e115cc3b" name="Implacable Resilience" hidden="false">
-          <description>Each time an attack is allocated to this model, subtract 1 from that attack's Damage characteristic.</description>
-        </rule>
-        <rule id="36d8505e" name="One Shot" hidden="false">
-          <description>The bearer can only shoot with this weapon once per battle.</description>
-        </rule>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This model can be attached to the following unit: Necron Warriors</description>
-        </rule>
-        <rule id="ffdbe6d1" name="Enhancement: Overriding Control (Warlord)" hidden="false">
-          <description>The bearer's unit is eligible to shoot in a turn in which it Fell Back. (Default enhancement; may be replaced with Protocol of Resonant Focus: In your Command phase, select one enemy unit within 12" of and visible to the bearer. Until the end of the turn, each time a friendly Necrons model makes an attack that targets that enemy unit, re-roll a Hit roll of 1.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::amonhotekhs-guard::00-overlord-amonhotekh::tachyon-arrow" name="Tachyon arrow" type="upgrade" hidden="false">
+        <selectionEntry id="cp::amonhotekhs-guard::00-overlord-amonhotekh::1-overlord-amonhotekh" name="1 Overlord Amonhotekh: overlord's blade, tachyon arrow" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="19315ecd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="fdda0118" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::amonhotekhs-guard::00-overlord-amonhotekh::overlord-s-blade" name="Overlord's blade" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="c29b1bff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="8a02b117" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="ceb3dd6a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="19ca40e2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::amonhotekhs-guard::01-necron-warriors" name="Necron Warriors" type="unit" hidden="false">
+    <selectionEntry id="cp::amonhotekhs-guard::01-necron-warriors" name="Amonhotekh’s Guard Necron Warriors" type="unit" hidden="false">
       <constraints>
-        <constraint id="8b1c6848" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="13cd09e3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="22f56a4c" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0978a792" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="f9301cfe" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
-        <categoryLink id="3e9cf1ae" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
-        <categoryLink id="e7d81c08" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="e453405b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="4647d035" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="d2ed7a51" name="Necron Warriors" hidden="false" targetId="cp-kw::necron-warriors" primary="false" />
-        <categoryLink id="2f5cda30" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="acf5eb87" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
+        <categoryLink id="552eb693" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="0c7dc440" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="8e308a39" name="Amonhotekh’s Guard" hidden="false" targetId="cp-kw::amonhotekhs-guard" primary="false" />
+      <categoryLink id="faabbffd" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="d6a670c4" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="82d778a2" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="c428f88f" name="Necron Warriors" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="7b9bb6f3" name="Necron Warrior with Gauss Reaper and Combat Attachments" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -189,9 +161,19 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="5ba84cbf" name="Gauss flayer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="1a8a9dab" name="Necron Warrior with Gauss Flayer and Combat Attachments" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5deb7955" name="Gauss Flayer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -200,18 +182,18 @@
             <characteristic name="Keywords" typeId="aa05940c">Lethal Hits, Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="c49f86c0" name="Gauss reaper" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="c3fac183" name="Gauss Reaper" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
-            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
             <characteristic name="Keywords" typeId="aa05940c">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="20d72ac6" name="Combat Attachments" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">1</characteristic>
@@ -222,44 +204,50 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="e990560c" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="73887fd7" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="bdfe30b5" name="Their Number Is Legion" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit's Reanimation Protocols activate, it can re-roll the dice to determine the number of wounds reanimated.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::amonhotekhs-guard::01-necron-warriors::5-necron-warriors-gauss-flayer-close-combat-weapon" name="5 Necron Warriors: gauss flayer, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::amonhotekhs-guard::01-necron-warriors::5-necron-warrior-with-gauss-reaper-and-combat-attachments" name="5 Necron Warrior with Gauss Reaper and Combat Attachments: combat attachments, gauss reaper" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a88bac3b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d8941b8a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="8d1e0a77" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="97fe2d3e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::amonhotekhs-guard::01-necron-warriors::5-necron-warriors-gauss-reaper-close-combat-weapon" name="5 Necron Warriors: gauss reaper, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::amonhotekhs-guard::01-necron-warriors::5-necron-warrior-with-gauss-flayer-and-combat-attachments" name="5 Necron Warrior with Gauss Flayer and Combat Attachments: combat attachments, gauss flayer" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="cece1111" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="bfb4b691" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="d3f101ab" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ac2169db" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::amonhotekhs-guard::02-skorpekh-destroyers" name="Skorpekh Destroyers" type="unit" hidden="false">
+    <selectionEntry id="cp::amonhotekhs-guard::02-skorpekh-destroyers" name="Amonhotekh’s Guard Skorpekh Destroyers" type="unit" hidden="false">
       <constraints>
-        <constraint id="af5a209d" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="dda0cf80" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="094e76e1" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7f85cec4" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="ed448126" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
-        <categoryLink id="c904979d" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
-        <categoryLink id="8d2d51ea" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="b0642f00" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="ada433e6" name="Skorpekh Destroyers" hidden="false" targetId="cp-kw::skorpekh-destroyers" primary="false" />
-        <categoryLink id="342454d2" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="345d72a7" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
+        <categoryLink id="5e0ce781" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="061cc172" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="2d13c62a" name="Amonhotekh’s Guard" hidden="false" targetId="cp-kw::amonhotekhs-guard" primary="false" />
+      <categoryLink id="595f964e" name="Destroyer Cult" hidden="false" targetId="cp-kw::destroyer-cult" primary="false" />
+      <categoryLink id="c60b4453" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="57942bda" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="584c26ad" name="Skorpekh Destroyers" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="6fc5fe79" name="Skorpekh Destroyer with Plasmacyte" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">6</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -267,7 +255,17 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="a7d69aa8" name="Skorpekh hyperphase weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="295a11e6" name="Skorpekh Destroyer" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="34a6dd11" name="Hyperphase Blades" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -278,64 +276,56 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="e990560c" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="21a9b270" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="77720868" name="Plasmacyte" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="7cc19345" name="Plasmacyte (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Once per battle for each Plasmacyte this unit has, when this unit is selected to fight, you can use this ability. If you do, until the end of the phase, melee weapons equipped by models in this unit have the [Devastating Wounds] ability.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to fight, you can use this ability. If you do, this unit's attacks have [DEVASTATING WOUNDS].</characteristic>
           </characteristics>
         </profile>
-        <profile id="2a8695ae" name="Designer's Note" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="53388fd4" name="Whirling Onslaught" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Place the relevant number of Plasmacyte tokens next to the unit, removing one each time this unit uses this ability.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit's melee attacks can re-roll hit rolls of 1.If this unit made a charge move this turn, this unit's melee attacks can re-roll hit rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="8143ff8a" name="Plasmacyte" hidden="false">
-          <description>Once per battle for each Plasmacyte this unit has, when this unit is selected to fight, you can use this ability. If you do, until the end of the phase, melee weapons equipped by models in this unit have the [Devastating Wounds] ability.</description>
-        </rule>
-        <rule id="d5c09c1b" name="Designer's Note" hidden="false">
-          <description>Place the relevant number of Plasmacyte tokens next to the unit, removing one each time this unit uses this ability.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::amonhotekhs-guard::02-skorpekh-destroyers::3-skorpekh-destroyers-skorpekh-hyperphase-weapons" name="3 Skorpekh Destroyers: Skorpekh hyperphase weapons" type="upgrade" hidden="false">
+        <selectionEntry id="cp::amonhotekhs-guard::02-skorpekh-destroyers::1-skorpekh-destroyer-with-plasmacyte" name="1 Skorpekh Destroyer with Plasmacyte: hyperphase blades, plasmacyte" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a606feaa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="c81dfda2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="4fdcb0d4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="730ec36e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::amonhotekhs-guard::02-skorpekh-destroyers::1-plasmacyte" name="1 Plasmacyte" type="upgrade" hidden="false">
+        <selectionEntry id="cp::amonhotekhs-guard::02-skorpekh-destroyers::2-skorpekh-destroyer" name="2 Skorpekh Destroyer: hyperphase blades" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="ef604141" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="843f2867" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c15e85ae" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1f6dac06" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::amonhotekhs-guard::03-canoptek-scarab-swarms" name="Canoptek Scarab Swarms" type="unit" hidden="false">
+    <selectionEntry id="cp::amonhotekhs-guard::03-canoptek-scarab-swarms" name="Amonhotekh’s Guard Canoptek Scarab Swarms" type="unit" hidden="false">
       <constraints>
-        <constraint id="6af7172f" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="0b8b826e" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="34d20f88" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="56d658b7" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="99f84db3" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
-        <categoryLink id="407257d5" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
-        <categoryLink id="0ad42b08" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="e809874e" name="Swarm" hidden="false" targetId="cp-kw::swarm" primary="false" />
-        <categoryLink id="70d37a38" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
-        <categoryLink id="571f519e" name="Canoptek" hidden="false" targetId="cp-kw::canoptek" primary="false" />
-        <categoryLink id="1bf394fe" name="Scarab Swarms" hidden="false" targetId="cp-kw::scarab-swarms" primary="false" />
-        <categoryLink id="b46a79dc" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="cad9668b" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
+        <categoryLink id="468d8033" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="73b46fd3" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="7c79e40b" name="Amonhotekh’s Guard" hidden="false" targetId="cp-kw::amonhotekhs-guard" primary="false" />
+      <categoryLink id="83786bdc" name="Canoptek" hidden="false" targetId="cp-kw::canoptek" primary="false" />
+      <categoryLink id="a994184f" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+      <categoryLink id="09689526" name="Swarm" hidden="false" targetId="cp-kw::swarm" primary="false" />
+      <categoryLink id="95f0b3df" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="dca26168" name="Canoptek Scarab Swarms" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="e5364fdb" name="Canoptek Scarab Swarm" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">9"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">10&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">2</characteristic>
             <characteristic name="SV" typeId="9a958949">6+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -343,7 +333,7 @@
             <characteristic name="OC" typeId="d8b56b65">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="3502e611" name="Feeder mandibles" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="52b49a42" name="Feeder Mandibles" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">6</characteristic>
@@ -354,45 +344,46 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="a6ab28b8" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="e990560c" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="e4a1aaaa" name="Scarab Interference" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">While an enemy unit is engaged with this unit, that enemy unit's attacks have -1 to hit rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::amonhotekhs-guard::03-canoptek-scarab-swarms::3-canoptek-scarab-swarms-feeder-mandibles" name="3 Canoptek Scarab Swarms: feeder mandibles" type="upgrade" hidden="false">
+        <selectionEntry id="cp::amonhotekhs-guard::03-canoptek-scarab-swarms::3-canoptek-scarab-swarm" name="3 Canoptek Scarab Swarm: feeder mandibles" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="fa37999b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="bdceccad" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="8da4a97a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="448914b3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::amonhotekhs-guard::04-canoptek-doomstalker" name="Canoptek Doomstalker" type="unit" hidden="false">
+    <selectionEntry id="cp::amonhotekhs-guard::04-canoptek-doomstalker" name="Amonhotekh’s Guard Canoptek Doomstalker" type="unit" hidden="false">
       <constraints>
-        <constraint id="16092a2e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="dd899b03" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="6e6e7d50" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="c03496a7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="2a185e24" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
-        <categoryLink id="a20b96a4" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
-        <categoryLink id="2473a613" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="b1360f60" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
-        <categoryLink id="56ed11fc" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
-        <categoryLink id="ee73f241" name="Canoptek" hidden="false" targetId="cp-kw::canoptek" primary="false" />
-        <categoryLink id="8bed9dc0" name="Doomstalker" hidden="false" targetId="cp-kw::doomstalker" primary="false" />
-        <categoryLink id="c65602af" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
+        <categoryLink id="f707ef7e" name="Combat Patrol: Necrons (Amonhotekh's Guard)" hidden="false" targetId="cp-cat::amonhotekhs-guard" primary="true" />
+        <categoryLink id="d1ae5248" name="Necrons" hidden="false" targetId="cp-faction::necrons" primary="false" />
+        <categoryLink id="c0c7ee09" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="46ca6da4" name="Amonhotekh’s Guard" hidden="false" targetId="cp-kw::amonhotekhs-guard" primary="false" />
+      <categoryLink id="6971363e" name="Canoptek" hidden="false" targetId="cp-kw::canoptek" primary="false" />
+      <categoryLink id="382de9f9" name="Canoptek Doomstalker" hidden="false" targetId="cp-kw::canoptek-doomstalker" primary="false" />
+      <categoryLink id="b4b5fb2b" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+      <categoryLink id="de52dd6d" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+      <categoryLink id="1ad6167e" name="Necrons" hidden="false" targetId="cp-kw::necrons" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="2cb708a2" name="Canoptek Doomstalker" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="7255ef37" name="Canoptek Doomstalker" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">8</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">12</characteristic>
@@ -400,20 +391,20 @@
             <characteristic name="OC" typeId="d8b56b65">4</characteristic>
           </characteristics>
         </profile>
-        <profile id="a2fd0108" name="Doomsday blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="32439e2d" name="Doomsday Blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">48&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6+1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">14</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">3</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast, Heavy</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1, Heavy</characteristic>
           </characteristics>
         </profile>
-        <profile id="c8baa837" name="Twin gauss flayer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="29fdfa15" name="Twin Gauss Flayer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -422,7 +413,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Lethal Hits, Rapid Fire 1, Twin-linked</characteristic>
           </characteristics>
         </profile>
-        <profile id="abc3506b" name="Doomstalker limbs" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="c9a08837" name="Doomstalker Limbs" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -433,49 +424,22 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="5530ed54" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e990560c" name="Reanimation Protocols" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="33455760" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="654df3ce" name="Damaged: 1-4 Wounds Remaining" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="f2028cc7" name="Damaged: 1-4 Wounds Remaining" hidden="false">
-          <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::amonhotekhs-guard::04-canoptek-doomstalker::doomsday-blaster" name="Doomsday blaster" type="upgrade" hidden="false">
+        <selectionEntry id="cp::amonhotekhs-guard::04-canoptek-doomstalker::1-canoptek-doomstalker" name="1 Canoptek Doomstalker: doomsday blaster, doomstalker limbs, twin gauss flayer" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="8a792e6e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="ee86b71c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::amonhotekhs-guard::04-canoptek-doomstalker::twin-gauss-flayer" name="Twin gauss flayer" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="f2475e9f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="7d77f1e8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::amonhotekhs-guard::04-canoptek-doomstalker::doomstalker-limbs" name="Doomstalker limbs" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="de4c6c10" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="6eae4638" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="4cc2d4f7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e68d320b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

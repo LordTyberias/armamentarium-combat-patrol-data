@@ -3,75 +3,92 @@
   <selectionEntries>
     <selectionEntry id="cp::maggot-lords::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="e98de887" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="ab6fed94" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="058e4be4" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0814126f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="3a051264" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
-        <categoryLink id="478bbe91" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
-        <categoryLink id="5e3ae37c" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="2fe0c987" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
+        <categoryLink id="52b9449c" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="2b63537b" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="95a651b5" name="Sickening Horror" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="cae60535" name="Nurgle’s Gift (Aura)" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is DEATH GUARD, while an enemy unit is within Contagion Range of one or more DEATH GUARD models from your army, it is Afflicted (see below). Contagion Range changes over the course of the battle, as shown below. Contagion Range cannot be greater than 12&quot; after modifiers. During the Declare Battle Formations step, select one of the Plagues below. Until the end of the battle, while an enemy unit is Afflicted, subtract 1 from the Toughness characteristic of models in that unit, and that unit has the effect of your chosen Plague.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc82795e" name="Pact of Decay" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">When mustering your army, unless specifically stated otherwise, you cannot select PLAGUE LEGIONS as your Army Faction.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3886078" name="Creeping Rot" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Friendly MAGGOT LORDS TERMINATOR units have Scouts 3&quot;.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Purge the Foe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4ea67cdd" name="Noisome Veil" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">MAGGOT LORDS TALLYMAN model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per battle, per army) In your opponent's Shooting phase, when an enemy unit targets this unit, you can use this ability. If you do, this unit has Stealth.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b1643a71" name="Bountiful Regeneration" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">MAGGOT LORDS LORD OF VIRULENCE model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">In your Command phase, this model heals 1 wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f90fe948" name="Inexorable Executioners" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase, when a friendly MAGGOT LORDS DEATHSHROUD TERMINATORS unit starts a charge move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That MAGGOT LORDS DEATHSHROUD TERMINATORS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can move through models (excluding MONSTER/VEHICLE models).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eb22770f" name="Vomitous Salvoes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, when a friendly MAGGOT LORDS PLAGUE MARINES unit is selected to shoot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That MAGGOT LORDS PLAGUE MARINES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's Lethal Hits ranged attacks have [RAPID FIRE 1].</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="270905c0" name="Sickening Horror" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
             <characteristic name="When" typeId="1cfae44d">Start of the Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit within Engagement Range of your unit. That enemy unit must take a Battle-shock test.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1982e662" name="Inevitable Decay" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
-          <characteristics>
-            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One DEATH GUARD unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 3" to the range of your unit’s Aura abilities.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d65e2031" name="Vomitous Salvoes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
-          <characteristics>
-            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One PLAGUE MARINES unit from your army that has not been selected to shoot this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, Lethal Hits weapons equipped by models in your unit have the [RAPID FIRE 1] ability.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="62db581b" name="Hand of Mortarion" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 3VP for each TERMINATOR model from your army that is within 3" of the centre of the battlefield.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d578cbda" name="Overwhelming Contagions" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 12VP if you control both the objective marker closest to your battlefield edge and the objective marker closest to your opponent’s battlefield edge.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly MAGGOT LORDS INFANTRY unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit engaged with your unit. That enemy unit makes a battle-shock roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry id="cp::maggot-lords::00-sholgor-the-putrid" name="Sholgor the Putrid" type="unit" hidden="false">
       <constraints>
-        <constraint id="9fafb6b1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="59be0168" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="060991b3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2b129866" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="a143de3c" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
-        <categoryLink id="ba27cd84" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
-        <categoryLink id="5eb378ae" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="0d1b2f9c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="22a78d26" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="182e5fae" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="20e9be09" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
-        <categoryLink id="b7f67b33" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
-        <categoryLink id="a059981c" name="Lord of Virulence" hidden="false" targetId="cp-kw::lord-of-virulence" primary="false" />
-        <categoryLink id="ac623c02" name="Sholgor the Putrid" hidden="false" targetId="cp-kw::sholgor-the-putrid" primary="false" />
-        <categoryLink id="e507666a" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="b1449af0" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
+        <categoryLink id="baf69459" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="1b7a6833" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="590bdbf1" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="9ce1091a" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="16368916" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="4e48a9f4" name="Lord of Virulence" hidden="false" targetId="cp-kw::lord-of-virulence" primary="false" />
+      <categoryLink id="cdcc0ccc" name="Maggot Lords" hidden="false" targetId="cp-kw::maggot-lords" primary="false" />
+      <categoryLink id="3fb8db62" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
+      <categoryLink id="1d858c51" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
+      <categoryLink id="a31c1ffe" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="920705c2" name="Sholgor the Putrid" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="6f6cc495" name="Sholgor the Putrid" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">7</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">6</characteristic>
@@ -79,9 +96,9 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="207e9b39" name="Twin plague spewer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="ddb3115f" name="Twin Plague Spewer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -90,7 +107,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Ignores Cover, Torrent, Twin-linked</characteristic>
           </characteristics>
         </profile>
-        <profile id="42d227c4" name="Power fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="8076a542" name="Power Fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -101,76 +118,57 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="803e9318" name="Nurgle’s Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="28659bc8" name="Nurgle's Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="703942b6" name="Pact of Decay" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="de8efaca" name="Blight Bombardment" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ca8fe78e" name="Enemy Spotted" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">At the start of your Shooting phase, select one enemy unit within 30" of and visible to this model. Until the end of the phase, each time a friendly Death Guard model makes a ranged attack that targets that unit, re-roll a Hit roll of 1 (if that attack is made with a Blast weapon, you can re-roll the Hit roll instead).</characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the start of your Shooting phase, you can select one enemy unit within 18&quot; of this model. That unit has +6&quot; detection range.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2b49699d" name="Enhancement: Bountiful Regeneration (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="281acb65" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">At the start of your Command phase, the bearer regains up to 1 lost wound. (Default enhancement; may be replaced with Vision of Vileness.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ MAGGOT LORDS DEATHSHROUD TERMINATORS</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="8b20963f" name="Blight Bombardment" hidden="false">
-          <description>At the start of your Shooting phase, select one enemy unit within 30" of and visible to this model. Until the end of the phase, each time a friendly Death Guard model makes a ranged attack that targets that unit, re-roll a Hit roll of 1 (if that attack is made with a Blast weapon, you can re-roll the Hit roll instead).</description>
-        </rule>
-        <rule id="a23d028b" name="Enhancement: Bountiful Regeneration (Warlord)" hidden="false">
-          <description>At the start of your Command phase, the bearer regains up to 1 lost wound. (Default enhancement; may be replaced with Vision of Vileness.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::maggot-lords::00-sholgor-the-putrid::twin-plague-spewer" name="Twin plague spewer" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::00-sholgor-the-putrid::1-sholgor-the-putrid" name="1 Sholgor the Putrid: power fist, twin plague spewer" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="576811fa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="14984bfd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::maggot-lords::00-sholgor-the-putrid::power-fist" name="Power fist" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="02b6574a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="01baae48" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="6d0f9e68" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d5a8640f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::maggot-lords::01-septimol-fulg" name="Septimol Fulg" type="unit" hidden="false">
+    <selectionEntry id="cp::maggot-lords::01-septimol-fulg" name="Septimol Fulg, Maggot Lords Tallyman" type="unit" hidden="false">
       <constraints>
-        <constraint id="c109be6d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="40241c1d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="f2eb2ba5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d745cd69" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="4e2ac064" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
-        <categoryLink id="8c0558b1" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
-        <categoryLink id="5c7e7251" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="fdf42abd" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="f5a865ba" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="e4c27e60" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="4b18ba9a" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
-        <categoryLink id="6abb6d14" name="Tallyman" hidden="false" targetId="cp-kw::tallyman" primary="false" />
-        <categoryLink id="f7757cc6" name="Septimol Fulg" hidden="false" targetId="cp-kw::septimol-fulg" primary="false" />
-        <categoryLink id="ede708d1" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="4afd4c29" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
+        <categoryLink id="4d7ed84a" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="11bcd227" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="e5e09bb2" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="cb8e03bb" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="e001208c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="26722172" name="Maggot Lords" hidden="false" targetId="cp-kw::maggot-lords" primary="false" />
+      <categoryLink id="3f3a86cf" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
+      <categoryLink id="19bb7976" name="Tallyman" hidden="false" targetId="cp-kw::tallyman" primary="false" />
+      <categoryLink id="ae5678ac" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="e7d636d3" name="Septimol Fulg" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="a346636f" name="Septimol Fulg" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">6</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -178,29 +176,29 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="3a074d0a" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="2d7edf67" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="e21c9c9f" name="Numerological Artefacts" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -211,70 +209,56 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="b70fafa6" name="Nurgle’s Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="28659bc8" name="Nurgle's Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="bb9f2656" name="Pact of Decay" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="3a25ba8d" name="Malicious Calculations" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="aa6d2400" name="Sevenfold Chant" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack's Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">In your Command phase, if this model is on the battlefield, roll 2D6:On a 7+, you gain 1 CP.</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="04f2588f" name="Malicious Calculations" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Plague Marines.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit's attacks can ignore modifiers to: BS.WS.Hit rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="633de312" name="Malicious Calculations" hidden="false">
-          <description>While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack's Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.</description>
-        </rule>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This model can be attached to the following unit: Plague Marines.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::maggot-lords::01-septimol-fulg::plasma-pistol" name="Plasma pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::01-septimol-fulg::1-septimol-fulg" name="1 Septimol Fulg: numerological artefacts, plasma pistol - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="09a98022" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="136617a6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::maggot-lords::01-septimol-fulg::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="59498d87" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="fc31ba31" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="717779fc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8fb68ab7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::maggot-lords::02-deathshroud-terminators" name="Deathshroud Terminators" type="unit" hidden="false">
+    <selectionEntry id="cp::maggot-lords::02-deathshroud-terminators" name="Maggot Lords Deathshroud Terminators" type="unit" hidden="false">
       <constraints>
-        <constraint id="87293795" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="f5201a29" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="be281fa2" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1e937fcd" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="b6f91ef8" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
-        <categoryLink id="871c96c1" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
-        <categoryLink id="37dcd5e8" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="b44d0cce" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="07ca6463" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="9c0ac132" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
-        <categoryLink id="90ab874e" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
-        <categoryLink id="0665d004" name="Deathshroud Terminators" hidden="false" targetId="cp-kw::deathshroud-terminators" primary="false" />
-        <categoryLink id="08d8f96a" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="f3edee16" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
+        <categoryLink id="01f32c65" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="0dfc2fb3" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="9f92b7c2" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="18ffd682" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="efba1cf4" name="Maggot Lords" hidden="false" targetId="cp-kw::maggot-lords" primary="false" />
+      <categoryLink id="9abfb27a" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
+      <categoryLink id="72ab3be3" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
+      <categoryLink id="cfa1cf27" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="35de2f6f" name="Deathshroud Terminators" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="97a491b6" name="Deathshroud Terminator" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">7</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -282,18 +266,39 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="a3cebc92" name="Plaguespurt gauntlet" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="32394ad7" name="Deathshroud Champion" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da5a2035" name="Plaguespurt Gauntlet" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 4+, Ignores Cover, Pistol, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 4+, Close-quarters, Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="144a4df7" name="Manreaper" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="cd032ff1" name="Manreaper - Strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7aece0ee" name="Manreaper - Sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">8</characteristic>
@@ -304,51 +309,56 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="64fe2c14" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="28659bc8" name="Nurgle's Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="e7b21882" name="Nurgle’s Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="26257755" name="Pact of Decay" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="20732583" name="Obstinate Resistance" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While this unit is engaged, this unit has +1 OC.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::maggot-lords::02-deathshroud-terminators::1-deathshroud-champion-2-plaguespurt-gauntlets-manreaper" name="1 Deathshroud Champion: 2 plaguespurt gauntlets, manreaper" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::02-deathshroud-terminators::2-deathshroud-terminator" name="2 Deathshroud Terminator: manreaper - strike, plaguespurt gauntlet" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="4a7b658a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="96f9db42" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="eed89383" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="6af573a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::maggot-lords::02-deathshroud-terminators::2-deathshroud-terminators-plaguespurt-gauntlet-manreaper" name="2 Deathshroud Terminators: plaguespurt gauntlet, manreaper" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::02-deathshroud-terminators::1-deathshroud-champion" name="1 Deathshroud Champion: manreaper - strike, plaguespurt gauntlet" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="dd3049d7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="372ac799" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="d0667796" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a21ce713" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::maggot-lords::03-plague-marines" name="Plague Marines" type="unit" hidden="false">
+    <selectionEntry id="cp::maggot-lords::03-plague-marines" name="Maggot Lords Plague Marines" type="unit" hidden="false">
       <constraints>
-        <constraint id="ad9e1c5d" field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="38729d9e" field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="07b58f46" field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ed964354" field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="ae508242" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
-        <categoryLink id="1871b00a" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
-        <categoryLink id="46a3eb09" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="7401c89e" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="f9255411" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="1908d45e" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
-        <categoryLink id="f9894974" name="Plague Marines" hidden="false" targetId="cp-kw::plague-marines" primary="false" />
-        <categoryLink id="1b4234c0" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="853e04b3" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
+        <categoryLink id="6397edf4" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="f824ce3f" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="9a63cde9" name="Plague Marines" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="bd1137fa" name="Plague Marine with Plague Spewer" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">6</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -356,20 +366,50 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="23fbe579" name="Blight launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="271c6c95" name="Plague Marine" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6f6e01a2" name="Plague Champion" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d59497e" name="Plague Marine with Blight Launcher" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb70f642" name="Blight Launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D3</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">6</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast, Lethal Hits</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1, Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="d05f9271" name="Boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="156ceb8f" name="Boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -378,9 +418,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="d12f6921" name="Plague spewer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="88a35837" name="Plague Spewer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -389,40 +429,29 @@
             <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 2+, Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="dea7dc36" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="4fa22fd4" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="42d227c4" name="Power fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
-            <characteristic name="WS" typeId="258d9251">3+</characteristic>
-            <characteristic name="S" typeId="09c93781">8</characteristic>
-            <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">2</characteristic>
-            <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e406d63d" name="Plague knives" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="96e856d3" name="Plague Knives" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -433,61 +462,82 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="28659bc8" name="Nurgle's Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="c585c6cf" name="Power Fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1dec6e8b" name="Nurgle’s Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="a2b880ce" name="Pact of Decay" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3725498d" name="Infused with the Blessings of Nurgle" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, when this unit has shot, you can select one enemy unit hit by those ranged attacks. If you do, that enemy unit is Afflicted until the start of your next turn.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::maggot-lords::03-plague-marines::1-plague-champion-plasma-pistol-power-fist" name="1 Plague Champion: plasma pistol, power fist" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::03-plague-marines::1-plague-marine-with-plague-spewer" name="1 Plague Marine with Plague Spewer: plague knives, plague spewer" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="7c707bf0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="6cce8fd9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="9ee9c6b6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d7590212" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::maggot-lords::03-plague-marines::1-plague-marine-blight-launcher-plague-knives" name="1 Plague Marine: blight launcher, plague knives" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::03-plague-marines::4-plague-marine" name="4 Plague Marine: boltgun, plague knives" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="55d83a7a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="eda349b4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="81c968c3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ece72537" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::maggot-lords::03-plague-marines::1-plague-marine-plague-spewer-plague-knives" name="1 Plague Marine: plague spewer, plague knives" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::03-plague-marines::1-plague-champion" name="1 Plague Champion: plasma pistol - standard, power fist" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="dd5f524c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="252cd8e6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="1b1d0862" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3470ccc1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::maggot-lords::03-plague-marines::4-plague-marines-boltgun-plague-knives" name="4 Plague Marines: boltgun, plague knives" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::03-plague-marines::1-plague-marine-with-blight-launcher" name="1 Plague Marine with Blight Launcher: blight launcher, plague knives" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="50f996d0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="8f658133" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="ae5514a1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="398d0d2c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::maggot-lords::04-chaos-rhino" name="Chaos Rhino" type="unit" hidden="false">
+    <selectionEntry id="cp::maggot-lords::04-chaos-rhino" name="Maggot Lords Chaos Rhino" type="unit" hidden="false">
       <constraints>
-        <constraint id="797a7b79" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="e578a1d5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="f1e45eee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9c100c7e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="b45048b2" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
-        <categoryLink id="bfef1ab9" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
-        <categoryLink id="bbe29efc" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="97fcdff8" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
-        <categoryLink id="209a8176" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
-        <categoryLink id="67326027" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="403dc0c8" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
-        <categoryLink id="b6f32560" name="Transport" hidden="false" targetId="cp-kw::transport" primary="false" />
-        <categoryLink id="317521e4" name="Dedicated Transport" hidden="false" targetId="cp-kw::dedicated-transport" primary="false" />
-        <categoryLink id="7c3767cb" name="Rhino" hidden="false" targetId="cp-kw::rhino" primary="false" />
-        <categoryLink id="71d602e3" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
+        <categoryLink id="bb5a30e3" name="Combat Patrol: Death Guard (Maggot Lords)" hidden="false" targetId="cp-cat::maggot-lords" primary="true" />
+        <categoryLink id="4cbcf9f4" name="Death Guard" hidden="false" targetId="cp-faction::death-guard" primary="false" />
+        <categoryLink id="aa6bbc41" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="0534f62f" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="31976406" name="Dedicated Transport" hidden="false" targetId="cp-kw::dedicated-transport" primary="false" />
+      <categoryLink id="76c83954" name="Maggot Lords" hidden="false" targetId="cp-kw::maggot-lords" primary="false" />
+      <categoryLink id="2ba619b1" name="Nurgle" hidden="false" targetId="cp-kw::nurgle" primary="false" />
+      <categoryLink id="1af93ce3" name="Smoke" hidden="false" targetId="cp-kw::smoke" primary="false" />
+      <categoryLink id="4414a089" name="Transport" hidden="false" targetId="cp-kw::transport" primary="false" />
+      <categoryLink id="40cad04a" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+      <categoryLink id="8d2d8215" name="Death Guard" hidden="false" targetId="cp-kw::death-guard" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="de5dc169" name="Chaos Rhino" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="a01535bd" name="Chaos Rhino" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">9</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">10</characteristic>
@@ -495,18 +545,18 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="6325d8bb" name="Havoc launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="87c7ad0d" name="Havoc Launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">48"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">48&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="4155ed9b" name="Armoured tracks" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="e203a637" name="Armoured Tracks" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -517,28 +567,22 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="0185d854" name="Transport" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="721e1732" name="Nurgle’s Gift (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model has a transport capacity of 12 Death Guard Infantry models. It cannot transport Terminator models.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a92aa3fe" name="Pact of Decay" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="19ef8708" name="Transport" hidden="false">
-          <description>This model has a transport capacity of 12 Death Guard Infantry models. It cannot transport Terminator models.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::maggot-lords::04-chaos-rhino::havoc-launcher" name="Havoc launcher" type="upgrade" hidden="false">
+        <selectionEntry id="cp::maggot-lords::04-chaos-rhino::1-chaos-rhino" name="1 Chaos Rhino: armoured tracks, havoc launcher" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="96b555af" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="2cd471f1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::maggot-lords::04-chaos-rhino::armoured-tracks" name="Armoured tracks" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="c09884d4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b26df866" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="165e142e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5749e044" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

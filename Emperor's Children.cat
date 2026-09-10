@@ -3,74 +3,92 @@
   <selectionEntries>
     <selectionEntry id="cp::callous-blades::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="5c45ecf7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="856d9969" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="83b890a2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="40d60930" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="7d0736a9" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
-        <categoryLink id="40e09144" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
-        <categoryLink id="897fe76d" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="bb41536e" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
+        <categoryLink id="4ea6be5e" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
+        <categoryLink id="8c28a139" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="182fed5d" name="Duellist’s Death" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="a7acef13" name="Pact of Excess" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">When mustering your army, unless specifically stated otherwise, you cannot select LEGIONS OF EXCESS as your Army Faction.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6972ac59" name="Thrill Seekers" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is EMPEROR’S CHILDREN, this unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back, but when doing so: ■ It cannot target a unit it was within Engagement Range of at the start of the turn. ■ It cannot target a unit that was the target of another unit’s charge or attack this phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e486dc21" name="Nimble Strikes" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">When friendly CALLOUS BLADES units start a normal/advance/charge move, those units can move through models (excluding MONSTER/VEHICLE models).</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Purge the Foe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="358d7073" name="Invigorating Agonies" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">CALLOUS BLADES LORD EXULTANT model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per battle, per army) In your opponent's Shooting phase, when an enemy unit has shot, if this unit was hit by those attacks, you can use this ability. If you do, this unit can make a surge move of up to D3+1&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cbe097fc" name="Martial Perfection" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">CALLOUS BLADES INFRACTORS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per battle, per army) In the Fight phase, when an enemy unit targets this unit, you can use this ability. If you do, attacks that target your unit have -1 to hit rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5391b885" name="Duellist’s Death" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One EMPEROR’S CHILDREN unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if your unit has the FLAWLESS BLADES keyword. On a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when an enemy unit targets a friendly CALLOUS BLADES unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That CALLOUS BLADES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">When a model in your unit is destroyed, if your unit has not been selected to fight this phase, roll one D6, with +1 to the result if your unit has FLAWLESS BLADES:On a 4+, do not remove that model from the battlefield. When your unit has fought, or at the end of the phase (whichever comes first), that model is removed from the battlefield.</characteristic>
           </characteristics>
         </profile>
-        <profile id="07975f19" name="Shatter Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="3f9c0fd2" name="Shatter Strike" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One FLAWLESS BLADES unit from your army that has not been selected to fight this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 1 to the Damage characteristic of melee weapons equipped by models in your unit.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when a friendly CALLOUS BLADES FLAWLESS BLADES unit is selected to fight.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That CALLOUS BLADES FLAWLESS BLADES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's melee attacks have +1 D.</characteristic>
           </characteristics>
         </profile>
-        <profile id="e9ca22e2" name="Obsessive Focus" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="bd5ee869" name="Profane Desecration" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One EMPEROR’S CHILDREN unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, you can ignore any or all modifiers to the characteristics of models in your unit (excluding the Objective Control characteristic) and any weapons they are equipped with, and you can ignore any or all modifiers to the characteristics of attacks made by models in your unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="910bae05" name="Trophy for the Dark Prince" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">When your opponent’s WARLORD is destroyed, you score the number of VP shown in the table below, based on which battle round it is destroyed in.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="75db7224" name="Fleeting Possession" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 2VP if you control one or more objective markers that you did not control at the start of that turn.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly CALLOUS BLADES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one objective your unit is controlling. That objective is secured.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="cp::callous-blades::00-lord-kaphrael" name="Lord Kaphrael" type="unit" hidden="false">
+    <selectionEntry id="cp::callous-blades::00-lord-kaphrael" name="Lord Kaphrael of the Callous Blades" type="unit" hidden="false">
       <constraints>
-        <constraint id="9c76d40b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="ec0e4a3b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="1513b861" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="dd2d8721" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="fe4f19da" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
-        <categoryLink id="fc6d3698" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
-        <categoryLink id="5730a639" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="ca39ce1e" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="bcc5ccb2" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="adf24cb1" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="f5972c09" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
-        <categoryLink id="7ae4dc8d" name="Lord Exultant" hidden="false" targetId="cp-kw::lord-exultant" primary="false" />
-        <categoryLink id="9b108b0c" name="Lord Kaphrael" hidden="false" targetId="cp-kw::lord-kaphrael" primary="false" />
-        <categoryLink id="f1c50ce9" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
+        <categoryLink id="e8d0b0e7" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
+        <categoryLink id="3e27552c" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
+        <categoryLink id="14c8ebd8" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="f095b1f8" name="Callous Blades" hidden="false" targetId="cp-kw::callous-blades" primary="false" />
+      <categoryLink id="fec79e8e" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="d9894f01" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="896d29c8" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="cf9e8d61" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="d2f7603d" name="Lord Exultant" hidden="false" targetId="cp-kw::lord-exultant" primary="false" />
+      <categoryLink id="754590ed" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
+      <categoryLink id="7768835b" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="c440c4fd" name="Lord Kaphrael" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="17207cba" name="Lord Kaphrael" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">5</characteristic>
@@ -78,7 +96,7 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="1034e338" name="Phoenix power spear" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="8bf109a9" name="Phoenix Power Spear" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -89,7 +107,7 @@
             <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
           </characteristics>
         </profile>
-        <profile id="42d227c4" name="Power fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="316fbc02" name="Power Fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -100,83 +118,62 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="0a15d1e5" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="cbcff896" name="Pact of Excess" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="c1e08528" name="Thrill Seekers" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="7ce2d5e2" name="Thrill Seekers" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="23302957" name="Euphoric Strikes" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="87aa7f16" name="Peerless Killer" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit's attacks have [LETHAL HITS].</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="5d45811a" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Infractors.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="340061a5" name="Enhancement: Distorting Vapours (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While the bearer is leading a unit, models in that unit have the Stealth ability and that unit can only be selected as the target of a ranged attack if the attacking model is within 18". (Default enhancement; may be replaced with Transhuman Speed.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ LORD KAPHRAEL OF THE CALLOUS BLADES</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="850e62ea" name="Euphoric Strikes" hidden="false">
-          <description>Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1.</description>
-        </rule>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This model can be attached to the following unit: Infractors.</description>
-        </rule>
-        <rule id="f7d406be" name="Enhancement: Distorting Vapours (Warlord)" hidden="false">
-          <description>While the bearer is leading a unit, models in that unit have the Stealth ability and that unit can only be selected as the target of a ranged attack if the attacking model is within 18". (Default enhancement; may be replaced with Transhuman Speed.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::callous-blades::00-lord-kaphrael::phoenix-power-spear" name="Phoenix power spear" type="upgrade" hidden="false">
+        <selectionEntry id="cp::callous-blades::00-lord-kaphrael::1-lord-kaphrael" name="1 Lord Kaphrael: phoenix power spear, power fist" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="0a753fe4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="1c3d9425" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::callous-blades::00-lord-kaphrael::power-fist" name="Power fist" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="8f439cb2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="14a13493" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="5105d3e0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="190f8566" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::callous-blades::01-infractors" name="Infractors" type="unit" hidden="false">
+    <selectionEntry id="cp::callous-blades::01-infractors" name="Callous Blades Infractors" type="unit" hidden="false">
       <constraints>
-        <constraint id="10dbda2e" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="88c4d4e3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="8f11bee7" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="948b2444" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="697e8feb" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
-        <categoryLink id="f7c4ff53" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
-        <categoryLink id="107a4c8f" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="ecfd82e1" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="3fc1b8b5" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="73d3d153" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="8b99a3d4" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
-        <categoryLink id="ea1dd960" name="Infractors" hidden="false" targetId="cp-kw::infractors" primary="false" />
-        <categoryLink id="cbfd5fd0" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
+        <categoryLink id="e2a8919f" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
+        <categoryLink id="b3db6dda" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
+        <categoryLink id="dcca9195" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="6320434e" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="309abb26" name="Callous Blades" hidden="false" targetId="cp-kw::callous-blades" primary="false" />
+      <categoryLink id="d88f3de5" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="ac6fe55e" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="9a8d4e79" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="c02ef50c" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
+      <categoryLink id="b4dbc4a0" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="4994a286" name="Infractors" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="10c72634" name="Obsessionist" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -184,18 +181,28 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="5cbb42c7" name="Infractor" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fbbb1f1b" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="357f6e38" name="Duelling sabre" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="dce141b3" name="Duelling Sabre" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -206,67 +213,73 @@
             <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
           </characteristics>
         </profile>
-        <profile id="1da211ca" name="Power sword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="08f4916b" name="Power Sword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
             <characteristic name="WS" typeId="258d9251">3+</characteristic>
-            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
             <characteristic name="D" typeId="1f91ac72">1</characteristic>
             <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
           </characteristics>
         </profile>
-        <profile id="c1e08528" name="Thrill Seekers" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="e082bfab" name="Pact of Excess" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="0aadccff" name="Thrill Seekers" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4d390d4" name="Icon of Excess" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Shooting phase or the Fight phase, if this unit destroyed an enemy unit this phase, this unit makes a leadership roll: On a success, you gain 1 CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48f77a70" name="Excessive Assault" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's melee attacks:Can re-roll wound rolls of 1.Or: That target a unit within range of an objective can re-roll wound rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="da581be6" name="Patrol Squads" hidden="false">
-          <description>At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::callous-blades::01-infractors::1-obsessionist-bolt-pistol-power-sword" name="1 Obsessionist: bolt pistol, power sword" type="upgrade" hidden="false">
+        <selectionEntry id="cp::callous-blades::01-infractors::1-obsessionist" name="1 Obsessionist: bolt pistol, power sword" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="134a1930" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="ec02fcc6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="b131f620" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5be8c1bb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::callous-blades::01-infractors::9-infractors-bolt-pistol-duelling-sabre" name="9 Infractors: bolt pistol, duelling sabre" type="upgrade" hidden="false">
+        <selectionEntry id="cp::callous-blades::01-infractors::9-infractor" name="9 Infractor: bolt pistol, duelling sabre" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="54147bf6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="fd06a172" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="3a72f158" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b196e041" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::callous-blades::02-flawless-blades" name="Flawless Blades" type="unit" hidden="false">
+    <selectionEntry id="cp::callous-blades::02-flawless-blades" name="Callous Blades Flawless Blades" type="unit" hidden="false">
       <constraints>
-        <constraint id="72f8c600" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="7e2b4e1c" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="36e401e3" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9ad37f41" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="25aee872" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
-        <categoryLink id="720167c4" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
-        <categoryLink id="d4010b8e" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="9bf95126" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="7883fa3e" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="ff1fb3ee" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
-        <categoryLink id="057c522b" name="Flawless Blades" hidden="false" targetId="cp-kw::flawless-blades" primary="false" />
-        <categoryLink id="35d7c353" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
+        <categoryLink id="88039aa8" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
+        <categoryLink id="3b6c2eaf" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
+        <categoryLink id="82265a10" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="9be9b36d" name="Callous Blades" hidden="false" targetId="cp-kw::callous-blades" primary="false" />
+      <categoryLink id="eeee185b" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="e7f247f2" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="8976a491" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="e53e2ecb" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
+      <categoryLink id="468b3a7a" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="26fcb365" name="Flawless Blades" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="53ff50e2" name="Flawless Blades" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">5</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -274,21 +287,21 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="41d5c00c" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="2400b23e" name="Blissblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="65a171e9" name="Blissblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
             <characteristic name="WS" typeId="258d9251">2+</characteristic>
             <characteristic name="S" typeId="09c93781">6</characteristic>
             <characteristic name="AP" typeId="54255f70">-3</characteristic>
@@ -296,56 +309,56 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="773b5f95" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="87b1960b" name="Daemonic Patrons" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="73e82372" name="Pact of Excess" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time this unit is selected to fight, it can call upon daemonic patrons. If it does, until the end of the phase, each time a model in this unit makes an attack, an unmodified Wound roll of 3+ scores a Critical Wound. At the end of the Fight phase, if this unit called upon daemonic patrons this phase and no enemy models were destroyed by attacks made by models in this unit this phase, one model in this unit is destroyed.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00cfe9c9" name="Thrill Seekers" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ba05552" name="Daemonic Patrons" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to fight, you can use this ability. If you do:This unit's melee attacks score a critical wound on an unmodified 3+.When this unit has fought, if those attacks did not destroy an enemy model, one model in this unit is destroyed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="a76d4950" name="Daemonic Patrons" hidden="false">
-          <description>Each time this unit is selected to fight, it can call upon daemonic patrons. If it does, until the end of the phase, each time a model in this unit makes an attack, an unmodified Wound roll of 3+ scores a Critical Wound. At the end of the Fight phase, if this unit called upon daemonic patrons this phase and no enemy models were destroyed by attacks made by models in this unit this phase, one model in this unit is destroyed.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::callous-blades::02-flawless-blades::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::callous-blades::02-flawless-blades::3-flawless-blades" name="3 Flawless Blades: blissblade, bolt pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="bb5520bc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d3d2343b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::callous-blades::02-flawless-blades::blissblade" name="Blissblade" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="01fc00d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="75b9f0ed" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="48384e6d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a57aabc5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::callous-blades::03-flawless-blades" name="Flawless Blades" type="unit" hidden="false">
+    <selectionEntry id="cp::callous-blades::03-flawless-blades" name="Callous Blades Flawless Blades" type="unit" hidden="false">
       <constraints>
-        <constraint id="57d54e15" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="cb029295" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="b36cb23d" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e040cd51" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="eb54c81d" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
-        <categoryLink id="0e95b7a8" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
-        <categoryLink id="6e7f003f" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="7339c8ca" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="d97d2b25" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="c7781d0c" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
-        <categoryLink id="65b655bd" name="Flawless Blades" hidden="false" targetId="cp-kw::flawless-blades" primary="false" />
-        <categoryLink id="05062cba" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
+        <categoryLink id="004e0e94" name="Combat Patrol: Emperor's Children (Callous Blades)" hidden="false" targetId="cp-cat::callous-blades" primary="true" />
+        <categoryLink id="25379e1e" name="Emperor's Children" hidden="false" targetId="cp-faction::emperor-s-children" primary="false" />
+        <categoryLink id="655f9d8c" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="0e773c00" name="Callous Blades" hidden="false" targetId="cp-kw::callous-blades" primary="false" />
+      <categoryLink id="2ccc859b" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="a0c7229d" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="e4e9d95a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="bf6644a4" name="Slaanesh" hidden="false" targetId="cp-kw::slaanesh" primary="false" />
+      <categoryLink id="5e0514f0" name="Emperor's Children" hidden="false" targetId="cp-kw::emperor-s-children" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="26fcb365" name="Flawless Blades" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="d9e6b2ce" name="Flawless Blades" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">5</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -353,21 +366,21 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="616a46a2" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="2400b23e" name="Blissblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="ec82a33b" name="Blissblade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
             <characteristic name="WS" typeId="258d9251">2+</characteristic>
             <characteristic name="S" typeId="09c93781">6</characteristic>
             <characteristic name="AP" typeId="54255f70">-3</characteristic>
@@ -375,33 +388,32 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="1c43b3cb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="87b1960b" name="Daemonic Patrons" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="772350df" name="Pact of Excess" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time this unit is selected to fight, it can call upon daemonic patrons. If it does, until the end of the phase, each time a model in this unit makes an attack, an unmodified Wound roll of 3+ scores a Critical Wound. At the end of the Fight phase, if this unit called upon daemonic patrons this phase and no enemy models were destroyed by attacks made by models in this unit this phase, one model in this unit is destroyed.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="63b8ad63" name="Thrill Seekers" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c966d29" name="Daemonic Patrons" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to fight, you can use this ability. If you do:This unit's melee attacks score a critical wound on an unmodified 3+.When this unit has fought, if those attacks did not destroy an enemy model, one model in this unit is destroyed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="a76d4950" name="Daemonic Patrons" hidden="false">
-          <description>Each time this unit is selected to fight, it can call upon daemonic patrons. If it does, until the end of the phase, each time a model in this unit makes an attack, an unmodified Wound roll of 3+ scores a Critical Wound. At the end of the Fight phase, if this unit called upon daemonic patrons this phase and no enemy models were destroyed by attacks made by models in this unit this phase, one model in this unit is destroyed.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::callous-blades::03-flawless-blades::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::callous-blades::03-flawless-blades::3-flawless-blades" name="3 Flawless Blades: blissblade, bolt pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="b44d22ae" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="6b9acd8e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::callous-blades::03-flawless-blades::blissblade" name="Blissblade" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="b0e77ae6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9d289d15" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="cf32d9a2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4ca4c0c2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

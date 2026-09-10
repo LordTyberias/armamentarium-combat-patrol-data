@@ -3,73 +3,86 @@
   <selectionEntries>
     <selectionEntry id="cp::claw-of-ascension::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="82197818" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="70bb3fa2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="9da136d8" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d263a90c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="cabec5fa" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
-        <categoryLink id="b7e979a1" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
-        <categoryLink id="32f8729e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+        <categoryLink id="5394a4c5" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="1efbc0b6" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="fb1ed52d" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="1d451ee4" name="Metamorphic Spasm" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="1bb4888f" name="Cult Ambush" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is GENESTEALER CULTS, you start the battle with a number of Resurgence points, depending on the battle size, as shown below. ■ Combat Patrol: 2 Resurgence points ■ Incursion: 6 Resurgence points ■ Strike Force: 10 Resurgence points ■ Onslaught: 14 Resurgence points Each time a unit from your army is destroyed, if every model in that unit has this ability, you can spend the relevant number of Resurgence points shown below based on that unit’s Starting Strength. Claw of Ascension Hybrid Metamorphs 5 models...2 Resurgence Points Claw of Ascension Atalal Jackals 5 models...2 Resurgence Points If you do: ■ Add a new unit to your army identical to your destroyed unit, in Cult Ambush, at its Starting Strength, with all of its wounds remaining and any [ONE SHOT] weapons those models are equipped with considered as not having been shot. ■ Place one Cult Ambush marker (see below) anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy units (if this is not possible, no marker is placed). Cult Ambush is a type of Strategic Reserves. Units in Cult Ambush cannot be targeted with the Rapid Ingress Stratagem, but can be set up on the battlefield using a Cult Ambush marker as described below, or by following the rules for Strategic Reserves in a subsequent turn. Units in Cult Ambush are not automatically destroyed at the end of the third battle round. Use a circular 32mm diameter marker for Cult Ambush markers. If an enemy model (excluding AIRCRAFT) ends any kind of move within 8&quot; of a Cult Ambush marker you placed, that Cult Ambush marker is removed from the battlefield. At the end of your opponent’s next Movement phase, for each of your Cult Ambush markers still on the battlefield, you can select one unit from your army that is in Cult Ambush to make an ingress move. For that ingress move, set that unit up with at least one model in that unit in base contact with that Cult Ambush marker and all other models placed wholly within 3&quot; of that Cult Ambush marker (that Cult Ambush marker is then removed from the battlefield). Units in Cult Ambush can make an ingress move in the first battle round using this rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2de75a3" name="Xenos Resilience" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Ranged attacks that target friendly CLAW OF ASCENSION units with a S greater than that unit’s T have -1 to wound rolls.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Purge the Foe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82e6b6d5" name="Heavy Munitions" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">CLAW OF ASCENSION ACHILLES RIDGERUNNERS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit's Achilles missile launcher weapon has +1 A, S and AP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df3fad00" name="Practiced Eye" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">CLAW OF ASCENSION JACKAL ALPHUS model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">At the start of your Shooting phase, you can select one enemy unit. Friendly CLAW OF ASCENSION units' attacks that target that enemy unit have +1 to hit rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1d229777" name="Cult Zealotry" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One HYBRID METAMORPHS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when a friendly CLAW OF ASCENSION unit is selected to fight.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That CLAW OF ASCENSION unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's melee attacks can re-roll wound rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="fb268cd5" name="Point-blank Ambush" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="ab318914" name="Dedicated to the End" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One GENESTEALER CULTS unit from your army that has not been selected to shoot or fight this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, weapons equipped by models in your unit have the [LETHAL HITS] ability while targeting enemy units within 12".</characteristic>
+            <characteristic name="When" typeId="1cfae44d">The Fight phase, when an enemy unit targets a friendly CLAW OF ASCENSION unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That CLAW OF ASCENSION unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">When a model in your unit is destroyed, if your unit has not been selected to fight this phase, roll one D6:On a 3+, do not remove that model from the battlefield. When your unit has fought, or at the end of the phase (whichever comes first), that model is removed from the battlefield.</characteristic>
           </characteristics>
         </profile>
-        <profile id="c9c8a6c8" name="Swarm the Oppressors" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="92c1d0ba" name="Guerrilla Warriors" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Start of your Charge phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One or more GENESTEALER CULTS units from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the end of the phase, each time one of your units declares a charge, if that enemy unit is a target of that charge, add 1 to the Charge roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="da07aa5e" name="Infiltration Agenda" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of your turn, you score 4VP if one or more GENESTEALER CULTS units from your army (excluding Battle‐shocked units) are within your opponent’s deployment zone.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e5df073f" name="Safeguard the Sanctuary" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control the objective marker closest to your battlefield edge.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, when a friendly CLAW OF ASCENSION unit is selected to make a fall-back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That CLAW OF ASCENSION unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That move does not prevent your unit from being eligible to shoot/declare a charge.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian" name="Shanus Daskovian" type="unit" hidden="false">
       <constraints>
-        <constraint id="8b61f162" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="5d6619a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="0186e1ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="fe1432a1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="af4007d5" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
-        <categoryLink id="70918d75" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
-        <categoryLink id="7e583db6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="d83b63ce" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
-        <categoryLink id="f549e4ca" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="037c7349" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
-        <categoryLink id="8d6e6bf3" name="Jackal Alphus" hidden="false" targetId="cp-kw::jackal-alphus" primary="false" />
-        <categoryLink id="6907a74b" name="Shanus Daskovian" hidden="false" targetId="cp-kw::shanus-daskovian" primary="false" />
-        <categoryLink id="7c96d82f" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="478fcaa3" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="e2977b4b" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="795c7ff7" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="68e1aecf" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="ee9be020" name="Claw of Ascension" hidden="false" targetId="cp-kw::claw-of-ascension" primary="false" />
+      <categoryLink id="b6721ac3" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="f5c7abdb" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+      <categoryLink id="665aed6f" name="Jackal Alphus" hidden="false" targetId="cp-kw::jackal-alphus" primary="false" />
+      <categoryLink id="f8c20fce" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+      <categoryLink id="901ee3fb" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="c750c3ef" name="Shanus Daskovian" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="e7ebb2bd" name="Shanus Daskovian" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">5+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -77,20 +90,20 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="cc611d59" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="2ac80e9d" name="Cult sniper rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="afdf3162" name="Cult Sniper Rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">36&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -99,10 +112,10 @@
             <characteristic name="Keywords" typeId="aa05940c">Heavy, Precision</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="1422e704" name="Stolen Blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
             <characteristic name="WS" typeId="258d9251">3+</characteristic>
             <characteristic name="S" typeId="09c93781">3</characteristic>
             <characteristic name="AP" typeId="54255f70">0</characteristic>
@@ -110,87 +123,55 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="7ad00752" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="d06b34bc" name="Priority Target" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, when this unit has shot, you can select one enemy unit hit by those cult sniper rifle attacks. Friendly GENESTEALER CULTS units' attacks that target that enemy unit can re-roll hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="1fdbe59f" name="Master Outrider" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, when this unit has shot, you can use this ability. If you do:This unit can make a normal move of up to 6&quot;.This unit is not eligible to declare a charge until the end of the turn.</characteristic>
           </characteristics>
         </profile>
-        <profile id="dd6d21f8" name="Master Outrider" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="5e81f9e8" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, after this model's unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 6" as if it were your Movement phase. If it does, until the end of the turn, that unit is not eligible to declare a charge.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Atalan Jackals</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d53da959" name="Enhancement: Priority Kill Order (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">At the start of your Shooting phase, select one enemy unit visible to the bearer. Until the end of the phase, each time a friendly Genestealer Cults model makes an attack that targets that enemy unit, you can re-roll the Hit roll. (Default enhancement; may be replaced with Master of Suppression: In your Shooting phase, after the bearer's unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ CLAW OF ASCENSION ATALAN JACKALS</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="d17509f6" name="Master Outrider" hidden="false">
-          <description>In your Shooting phase, after this model's unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 6" as if it were your Movement phase. If it does, until the end of the turn, that unit is not eligible to declare a charge.</description>
-        </rule>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This model can be attached to the following unit: Atalan Jackals</description>
-        </rule>
-        <rule id="0a0478be" name="Enhancement: Priority Kill Order (Warlord)" hidden="false">
-          <description>At the start of your Shooting phase, select one enemy unit visible to the bearer. Until the end of the phase, each time a friendly Genestealer Cults model makes an attack that targets that enemy unit, you can re-roll the Hit roll. (Default enhancement; may be replaced with Master of Suppression: In your Shooting phase, after the bearer's unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian::autopistol" name="Autopistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian::1-shanus-daskovian" name="1 Shanus Daskovian: autopistol, cult sniper rifle, stolen blade" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="3bcdddf2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="c4f80e20" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian::cult-sniper-rifle" name="Cult sniper rifle" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="fdbe5a75" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="1a8e039e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::00-shanus-daskovian::close-combat-weapon" name="Close combat weapon" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="13caf71c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="bd25b85f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="bbf5a9e3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="293a839f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs" name="Hybrid Metamorphs" type="unit" hidden="false">
+    <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs" name="Claw of Ascension Hybrid Metamorphs" type="unit" hidden="false">
       <constraints>
-        <constraint id="24abc511" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="76858633" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="9b64ee31" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b563a0fc" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="3d0443d0" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
-        <categoryLink id="1c02db7f" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
-        <categoryLink id="96d726b5" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="5cf226ca" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="43f66f35" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
-        <categoryLink id="00b83b66" name="Hybrid Metamorphs" hidden="false" targetId="cp-kw::hybrid-metamorphs" primary="false" />
-        <categoryLink id="9addf068" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="bdf5f822" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="37eb01ca" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="7c312cf6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="1eb55eec" name="Claw of Ascension" hidden="false" targetId="cp-kw::claw-of-ascension" primary="false" />
+      <categoryLink id="a6db790c" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="ce29075a" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+      <categoryLink id="a6cc9c1f" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="51106fed" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="c255bf24" name="Hybrid Metamorphs" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="4cd7d7f9" name="Metamorph" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">5+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -198,29 +179,49 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="7e98576f" name="Metamorph Leader" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2d317ed5" name="Metamorph with Hand Flamer" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a0fa10dc" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="4763c70c" name="Hand flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="ee02d9a4" name="Hand Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Pistol, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="6d8e0c9d" name="Leader's bio-weapons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="76d18b60" name="Leader’s Weapon Symbiote" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -231,7 +232,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="5e4f203c" name="Metamorph mutations – strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="0c328fd4" name="Metamorph Mutations - Strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -242,10 +243,10 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="5d7b3702" name="Metamorph mutations – sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="bfdfa547" name="Metamorph Mutations - Sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
             <characteristic name="WS" typeId="258d9251">3+</characteristic>
             <characteristic name="S" typeId="09c93781">4</characteristic>
             <characteristic name="AP" typeId="54255f70">-1</characteristic>
@@ -253,61 +254,189 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="c5540f54" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="e3aba06e" name="Scouts 6&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="702d289a" name="Brood Claim" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d944ab7a" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Movement phase, if this unit is controlling an objective, that objective is secured.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::1-metamorph-leader-autopistol-leader-s-bio-weapons" name="1 Metamorph Leader: autopistol, Leader's bio-weapons" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::1-metamorph" name="1 Metamorph: metamorph mutations - strike" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="8e6859d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="f0245efb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="53fba901" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a2fe8bfb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::1-hybrid-metamorph-metamorph-mutations" name="1 Hybrid Metamorph: Metamorph mutations" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::1-metamorph-leader" name="1 Metamorph Leader: autopistol, leader’s weapon symbiote" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="7c44ad00" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="ceb2a48a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="74a3643e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="de352bc6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::3-hybrid-metamorphs-hand-flamer-metamorph-mutations" name="3 Hybrid Metamorphs: hand flamer, Metamorph mutations" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::01-hybrid-metamorphs::3-metamorph-with-hand-flamer" name="3 Metamorph with Hand Flamer: hand flamer, metamorph mutations - strike" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="b7f4a93f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="60676e9d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="4eb05452" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c646f2fa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner" name="Achilles Ridgerunner" type="unit" hidden="false">
+    <selectionEntry id="cp::claw-of-ascension::01a-hybrid-metamorphs" name="Claw of Ascension Hybrid Metamorphs" type="unit" hidden="false">
       <constraints>
-        <constraint id="ff353ce0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="ef69ffe9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="6c09a1e4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2a82c959" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="976432d7" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
-        <categoryLink id="5d7ad922" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
-        <categoryLink id="8e056962" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="fa13c1c7" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
-        <categoryLink id="04a9b7ca" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
-        <categoryLink id="685ddff2" name="Achilles Ridgerunner" hidden="false" targetId="cp-kw::achilles-ridgerunner" primary="false" />
-        <categoryLink id="543139e6" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="42b2715a" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="ba08734c" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="d1fe57fc" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="bc1bf743" name="Claw of Ascension" hidden="false" targetId="cp-kw::claw-of-ascension" primary="false" />
+      <categoryLink id="7ecb46b4" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="c5ae9fb5" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+      <categoryLink id="16bad6d1" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="2dcf5caa" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="f7e27f3d" name="Achilles Ridgerunner" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="49df9b4b" name="Metamorph" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e4831421" name="Metamorph Leader" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb461831" name="Metamorph with Hand Flamer" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="517aa0bb" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d59f7cb3" name="Hand Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a43ae7f3" name="Leader’s Weapon Symbiote" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c5fb1ab" name="Metamorph Mutations - Strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">5</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6eb77b82" name="Metamorph Mutations - Sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
+            <characteristic name="WS" typeId="258d9251">3+</characteristic>
+            <characteristic name="S" typeId="09c93781">4</characteristic>
+            <characteristic name="AP" typeId="54255f70">-1</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e1461695" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2f31a63f" name="Brood Claim" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Movement phase, if this unit is controlling an objective, that objective is secured.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::claw-of-ascension::01a-hybrid-metamorphs::1-metamorph" name="1 Metamorph: metamorph mutations - strike" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="45ec8cb0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cfd17aee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::01a-hybrid-metamorphs::1-metamorph-leader" name="1 Metamorph Leader: autopistol, leader’s weapon symbiote" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f9c7fbf1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="17b004fc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::claw-of-ascension::01a-hybrid-metamorphs::3-metamorph-with-hand-flamer" name="3 Metamorph with Hand Flamer: hand flamer, metamorph mutations - strike" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ae74f3d9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ec4d5217" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner" name="Claw of Ascension Achilles Ridgerunner" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e9d94edb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d93bc085" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="80b2864e" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="7b864377" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="51b9c66e" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="8c314245" name="Claw of Ascension" hidden="false" targetId="cp-kw::claw-of-ascension" primary="false" />
+      <categoryLink id="0d757bc3" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+      <categoryLink id="d4cda9a2" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+      <categoryLink id="41cf741e" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="67c164a4" name="Achilles Ridgerunner" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">7</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">8</characteristic>
@@ -315,9 +444,9 @@
             <characteristic name="OC" typeId="d8b56b65">3</characteristic>
           </characteristics>
         </profile>
-        <profile id="7f3c5f34" name="Achilles missile launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="b6d1844c" name="Missile Launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">36&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">3</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">9</characteristic>
@@ -326,18 +455,18 @@
             <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="9cd34710" name="Twin heavy stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="09304f7c" name="Twin Heavy Stubber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">36&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">3</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Twin-linked, Rapid Fire 3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3, Twin-linked</characteristic>
           </characteristics>
         </profile>
-        <profile id="bf0df76e" name="Armoured hull" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="b488bf09" name="Armoured Hull" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -348,66 +477,50 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="fca74888" name="Deadly Demise 1" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="8ed88b27" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="60d1a135" name="Survey Augur" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, when this unit has shot, you can select one enemy unit hit by those attacks. Friendly GENESTEALER CULTS units' attacks that target that enemy unit [IGNORES COVER].</characteristic>
           </characteristics>
         </profile>
-        <profile id="25973431" name="Crossfire" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ecb7b9f0" name="Crossfire" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Genestealer Cults unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, when this unit has shot, you can select one enemy unit hit by those attacks that has not been selected for this ability this turn. Friendly GENESTEALER CULTS units' attacks that target that enemy unit have +1 AP until the end of the turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="29472e4c" name="Crossfire" hidden="false">
-          <description>In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Genestealer Cults unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner::achilles-missile-launcher" name="Achilles missile launcher" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner::1-achilles-ridgerunner" name="1 Achilles Ridgerunner: armoured hull, missile launcher, survey augur, twin heavy stubber" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="90ea0e73" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="0ed27fdb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner::twin-heavy-stubber" name="Twin heavy stubber" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="025f089a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9910244e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::02-achilles-ridgerunner::armoured-hull" name="Armoured hull" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="c3ecfda4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="c653282f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="f6df02ab" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="11a5903f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals" name="Atalan Jackals" type="unit" hidden="false">
+    <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals" name="Claw of Ascension Atalan Jackals" type="unit" hidden="false">
       <constraints>
-        <constraint id="90d242f3" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="606f245c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="13bb22b8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="87c4f90a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="50e53f5f" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
-        <categoryLink id="4c91a43a" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
-        <categoryLink id="941da42c" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
-        <categoryLink id="b8d510f7" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
-        <categoryLink id="77b0095a" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
-        <categoryLink id="6619302d" name="Atalan Jackals" hidden="false" targetId="cp-kw::atalan-jackals" primary="false" />
-        <categoryLink id="259af8df" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
+        <categoryLink id="76233354" name="Combat Patrol: Genestealer Cults (Claw of Ascension)" hidden="false" targetId="cp-cat::claw-of-ascension" primary="true" />
+        <categoryLink id="18b39249" name="Genestealer Cults" hidden="false" targetId="cp-faction::genestealer-cults" primary="false" />
+        <categoryLink id="72d716a6" name="Xenos" hidden="false" targetId="cp-group::xenos" primary="false" />
+      <categoryLink id="df181358" name="Claw of Ascension" hidden="false" targetId="cp-kw::claw-of-ascension" primary="false" />
+      <categoryLink id="1c4786ea" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="44422e06" name="Great Devourer" hidden="false" targetId="cp-kw::great-devourer" primary="false" />
+      <categoryLink id="ac387e73" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+      <categoryLink id="ca6273d4" name="Genestealer Cults" hidden="false" targetId="cp-kw::genestealer-cults" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="bbdee297" name="Atalan Jackal" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="527780cf" name="Atalan Jackal" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">5+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -415,9 +528,9 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="dd93fdc1" name="Atalan Wolfquad" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="448a17f2" name="Atalan Wolfquad" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">5+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -425,20 +538,19 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="848bfa30" name="Atalan small arms" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="c3782951" name="Atalan Jackal with Power Weapon" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
-            <characteristic name="A" typeId="1318d167">2</characteristic>
-            <characteristic name="BS" typeId="43a26991">4+</characteristic>
-            <characteristic name="S" typeId="cc313509">4</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
-            <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="572293e2" name="Mining laser" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="85622899" name="Mining Laser" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">12</characteristic>
@@ -447,7 +559,18 @@
             <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="8fc2ec26" name="Atalan power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="3557078a" name="Stolen Firearms" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="34a566a1" name="Power Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -458,7 +581,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="c19c2574" name="Stolen Blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -469,34 +592,34 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="82c5bced" name="Cult Ambush" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="ac0e302a" name="Stealth" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="47c49e43" name="Adaptable Fighters" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to attack, its attacks have:[SUSTAINED HITS 1].Or: [LETHAL HITS].</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::1-atalan-jackal-atalan-small-arms-atalan-power-weapon" name="1 Atalan Jackal: Atalan small arms, Atalan power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::3-atalan-jackal" name="3 Atalan Jackal: stolen blade, stolen firearms" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a4b2c042" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b05ce92b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="24fae647" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="214fe5df" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::3-atalan-jackals-atalan-small-arms-close-combat-weapon" name="3 Atalan Jackals: Atalan small arms, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::1-atalan-wolfquad" name="1 Atalan Wolfquad: mining laser, stolen blade, stolen firearms" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="b518d188" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="18c436f0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="30947348" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d6c274fd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::1-the-atalan-wolfquad-atalan-small-arms-mining-laser-close-combat-weapon" name="1 The Atalan Wolfquad: Atalan small arms, mining laser, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::claw-of-ascension::03-atalan-jackals::1-atalan-jackal-with-power-weapon" name="1 Atalan Jackal with Power Weapon: power weapon, stolen firearms" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="308c8da3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9ba1e7fe" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="d524ba0b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="efbc1360" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

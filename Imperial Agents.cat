@@ -3,74 +3,86 @@
   <selectionEntries>
     <selectionEntry id="cp::inquisitors-hand::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="f60070c0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="4f2b504f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="00cc2acf" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="44e287e2" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="e813aeb0" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
-        <categoryLink id="8f78e7b0" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
-        <categoryLink id="d30a794d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="6f99c9cd" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
+        <categoryLink id="fcc9ce55" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="17d51b56" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="2c098742" name="Punishment Earned" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="337d9e21" name="Assigned Agents" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is AGENTS OF THE IMPERIUM, then in the Select Detachment Rules step, you can select one of the available Detachments from this publication as normal. If your Army Faction is not AGENTS OF THE IMPERIUM, but every model in your army has the IMPERIUM keyword, you can include AGENTS OF THE IMPERIUM units in your army even if they do not have the Faction keyword you selected in the Select Army Faction step. In this case, the maximum number of AGENTS OF THE IMPERIUM units you can include in your army depends on the battle size, as shown below. Note that you can include AGENTS OF THE IMPERIUM DEDICATED TRANSPORT units in such an army as normal, but each unit must start the battle with one or more units embarked within it, or it cannot be deployed for that battle and will count as having been destroyed during the first battle round.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcce7461" name="Marked for Death" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">In your Command phase, you can select one enemy unit. Friendly INQUISITOR'S HAND units' attacks that target that enemy unit have:[IGNORES COVER].[LETHAL HITS].[PRECISION].</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Purge the Foe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3bf7c453" name="Sanctic Slayers" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">INQUISITOR'S HAND MINISTORUM PRIEST model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per turn, per unit) When a friendly INQUISITOR'S HAND unit is selected to attack you can use this ability. If you do, that unit's attacks that target a unit with a T greater than or equal to your attack's S have +1 to wound rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cfdcde6f" name="Killer Reflexes" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">INQUISITOR'S HAND EVERSOR ASSASSIN model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">In the Fight phase, when this model is destroyed, if this unit has not been selected to fight this phase, roll one D6: on a 2+, do not remove this model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), this model is removed from the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c66395c" name="Urban Enforcers" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ARBITES unit from your army that has not been selected to shoot or fight this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, you can re‐roll the Hit roll and, if that attack targets a unit below its Starting Strength, you can re‐roll the Wound roll as well.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent's Shooting phase or the Fight phase, when an enemy unit targets a friendly INQUISITOR'S HAND unit with every model within a terrain area.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That INQUISITOR'S HAND unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Attacks that target your unit have -1 AP.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ea602f73" name="Dedicated Sacrifice" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="004eec3f" name="Superior Weaponry" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One AGENTS OF THE IMPERIUM unit from your army (excluding OFFICIO ASSASSINORUM units) that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 3+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase, when a friendly INQUISITOR'S HAND unit (excluding EVERSOR ASSASSIN units) is selected to attack.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That INQUISITOR'S HAND unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's attacks have +1 AP.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ba6e2f85" name="Hand-picked Killers" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="7fddee89" name="Inquisitorial Mandate" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an AGENTS OF THE IMPERIUM unit from your army Falls Back.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">That AGENTS OF THE IMPERIUM unit.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a5cffeb7" name="Judgement Absolute" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, select one enemy unit (excluding your opponent’s WARLORD). At the end of the battle, you score 6VP if that unit is destroyed and you score 6VP if your opponent’s WARLORD is destroyed.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8201fea7" name="Blade in the Shadows" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, if your WARLORD is within range of an objective marker, you score the number of VP shown below: ■ If that objective marker is the one closest to your battlefield edge, you score 2VP. ■ If that objective marker is the one closest to your opponent’s battlefield edge, you score 8VP. ■ Otherwise, you score 4VP. You cannot score more than 16VP from this secondary objective.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly INQUISITOR'S HAND unit (excluding EVERSOR ASSASSIN units).</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one objective your unit is controlling. That objective is secured.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry id="cp::inquisitors-hand::00-preacher-teguen" name="Preacher Teguen" type="unit" hidden="false">
       <constraints>
-        <constraint id="4031b600" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="0f694978" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="d95f1002" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="71d83307" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="9360fdfd" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
-        <categoryLink id="2225abfb" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
-        <categoryLink id="94d7d45a" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="4bc3c314" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="c95a55c0" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="4bb6ff2b" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="b7d0192e" name="Ordo Hereticus" hidden="false" targetId="cp-kw::ordo-hereticus" primary="false" />
-        <categoryLink id="28bc2d44" name="Ministorum Priest" hidden="false" targetId="cp-kw::ministorum-priest" primary="false" />
-        <categoryLink id="ba3c1e64" name="Preacher Teguen" hidden="false" targetId="cp-kw::preacher-teguen" primary="false" />
-        <categoryLink id="266de667" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="9d537de2" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
+        <categoryLink id="64e19729" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="e47e2d56" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="c7829eb6" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="eab00fc5" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="3e6b62c3" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="3c79cc05" name="Inquisitor’s Hand" hidden="false" targetId="cp-kw::inquisitors-hand" primary="false" />
+      <categoryLink id="7ef29704" name="Ministorum Priest" hidden="false" targetId="cp-kw::ministorum-priest" primary="false" />
+      <categoryLink id="2ec55ad1" name="Ordo Hereticus" hidden="false" targetId="cp-kw::ordo-hereticus" primary="false" />
+      <categoryLink id="ac0e489f" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="3f4b0707" name="Preacher Teguen" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="b4adcc1c" name="Preacher Teguen" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">6+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -78,9 +90,9 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="217dbd54" name="Zealot's vindictor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="00407bfd" name="Zealot’s Vindictor" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -89,7 +101,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="e4c45696" name="Zealot's vindictor" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="6c574c33" name="Zealot’s Vindictor" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -100,81 +112,64 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="1c762727" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="75830959" name="Assigned Agents" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="37313b91" name="Zealot (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This unit can be attached to the following unit: Inquisitorial Agents.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to fight, you can use this ability. If you do, this model's melee attacks have +3 A and S.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2b70d8a8" name="Zealot" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="268ca049" name="Holy Hatred" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of melee weapons equipped by this model by 3.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">If this is an Attached unit, this unit's melee attacks have [SUSTAINED HITS 1].</characteristic>
           </characteristics>
         </profile>
-        <profile id="0ae18971" name="Eye of Justice" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="5031ecb1" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Bespoke ability for the whole Inquisitor's Hand Combat Patrol: At the start of your Command phase, select one Vigilant Squad unit from your army. Until the start of your next Command phase, weapons equipped by models in that unit have the [LETHAL HITS] and [PRECISION] abilities.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="78c69e5c" name="Enhancement: Icon of Aversion (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Models in the bearer's unit have a 4+ invulnerable save, and each time an attack targets the bearer's unit, subtract 1 from the Hit roll and subtract 1 from the Wound roll. (Default enhancement; may be replaced with A Higher Calling: The bearer's unit can declare a charge in a turn in which it Advanced. In addition, melee weapons equipped by models in the bearer's unit have the [SUSTAINED HITS 2] ability, and each time such a model makes a melee attack, add 1 to the Hit roll.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ INQUISITOR'S HAND INQUISITORIAL AGENTS</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This unit can be attached to the following unit: Inquisitorial Agents.</description>
-        </rule>
-        <rule id="c5555c06" name="Zealot" hidden="false">
-          <description>Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of melee weapons equipped by this model by 3.</description>
-        </rule>
-        <rule id="3e74a3aa" name="Eye of Justice" hidden="false">
-          <description>Bespoke ability for the whole Inquisitor's Hand Combat Patrol: At the start of your Command phase, select one Vigilant Squad unit from your army. Until the start of your next Command phase, weapons equipped by models in that unit have the [LETHAL HITS] and [PRECISION] abilities.</description>
-        </rule>
-        <rule id="cdcb0296" name="Enhancement: Icon of Aversion (Warlord)" hidden="false">
-          <description>Models in the bearer's unit have a 4+ invulnerable save, and each time an attack targets the bearer's unit, subtract 1 from the Hit roll and subtract 1 from the Wound roll. (Default enhancement; may be replaced with A Higher Calling: The bearer's unit can declare a charge in a turn in which it Advanced. In addition, melee weapons equipped by models in the bearer's unit have the [SUSTAINED HITS 2] ability, and each time such a model makes a melee attack, add 1 to the Hit roll.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::inquisitors-hand::00-preacher-teguen::zealot-s-vindictor" name="Zealot's vindictor" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::00-preacher-teguen::1-preacher-teguen" name="1 Preacher Teguen: zealot's vindictor" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="565e5f47" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d2839537" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="8cdbb524" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="48144a0e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::inquisitors-hand::01-eversor-assassin" name="Eversor Assassin" type="unit" hidden="false">
+    <selectionEntry id="cp::inquisitors-hand::01-eversor-assassin" name="Inquisitor’s Hand Eversor Assassin" type="unit" hidden="false">
       <constraints>
-        <constraint id="481c1256" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="90459d7c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="2ff78286" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8db0c783" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="34436e39" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
-        <categoryLink id="95bdd437" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
-        <categoryLink id="ad6c9ce1" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="c1ee9a35" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="12385c57" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="03594472" name="Epic Hero" hidden="false" targetId="cp-kw::epic-hero" primary="false" />
-        <categoryLink id="eb674078" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="4f7d32a7" name="Officio Assassinorum" hidden="false" targetId="cp-kw::officio-assassinorum" primary="false" />
-        <categoryLink id="4a2bdef6" name="Eversor Assassin" hidden="false" targetId="cp-kw::eversor-assassin" primary="false" />
-        <categoryLink id="012628ab" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="328dea13" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
+        <categoryLink id="dcc0d689" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="5eaeeca9" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="35c4afa2" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="80c82bbd" name="Epic Hero" hidden="false" targetId="cp-kw::epic-hero" primary="false" />
+      <categoryLink id="79a169b4" name="Eversor Assassin" hidden="false" targetId="cp-kw::eversor-assassin" primary="false" />
+      <categoryLink id="aaf8130c" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="d334e610" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="4e91424a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="8c906b0f" name="Inquisitor’s Hand" hidden="false" targetId="cp-kw::inquisitors-hand" primary="false" />
+      <categoryLink id="59917b1a" name="Officio Assassinorum" hidden="false" targetId="cp-kw::officio-assassinorum" primary="false" />
+      <categoryLink id="d8c26c9a" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="b99ee5f9" name="Eversor Assassin" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="bc857577" name="Eversor Assassin" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">9"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">9&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">6+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -182,18 +177,18 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="e2492eae" name="Executioner pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="588e8bcb" name="Executioner Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">4</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Pistol, Precision, Sustained Hits 3</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 3+, Close-quarters, Precision, Sustained Hits 3</characteristic>
           </characteristics>
         </profile>
-        <profile id="72083c09" name="Power sword and neuro-gauntlet" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="e161c415" name="Power Sword and Neuro-Gauntlet" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">6</characteristic>
@@ -204,61 +199,51 @@
             <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 3+, Precision, Sustained Hits 3</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="cff3b0f8" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="dd6774a3" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="3c58ce94" name="Assigned Agents" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="e3c703d9" name="Overkill (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="786cd3a0" name="Scouts 9&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to attack, you can use this ability. If you do, this unit's melee attacks have -4 AP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::inquisitors-hand::01-eversor-assassin::executioner-pistol" name="Executioner pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::01-eversor-assassin::1-eversor-assassin" name="1 Eversor Assassin: executioner pistol, power sword and neuro-gauntlet" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="6afc75d4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="cb7615bd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::01-eversor-assassin::power-sword-and-neuro-gauntlet" name="Power sword and neuro-gauntlet" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="0d12f1f5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="7dd13074" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="caf8ab74" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="25b434ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents" name="Inquisitorial Agents" type="unit" hidden="false">
+    <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents" name="Inquisitor’s Hand Inquisitorial Agents" type="unit" hidden="false">
       <constraints>
-        <constraint id="0437f647" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="fcd7c6d3" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="5a057935" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="797bd364" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="80210dcb" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
-        <categoryLink id="cf55e157" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
-        <categoryLink id="7f8fd634" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="3736dfd0" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="1167422f" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="501f36f0" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
-        <categoryLink id="55728506" name="Inquisitorial Agents" hidden="false" targetId="cp-kw::inquisitorial-agents" primary="false" />
-        <categoryLink id="a1c7b0e3" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="b1bc1dc5" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
+        <categoryLink id="a2dc9b96" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="3f1123b7" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="12c8ea66" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="b60fde05" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="276c1484" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="233705d2" name="Inquisitor’s Hand" hidden="false" targetId="cp-kw::inquisitors-hand" primary="false" />
+      <categoryLink id="d8fde78f" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
+      <categoryLink id="88abe2b3" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="ebd7c30d" name="Inquisitorial Agents" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="2f4c75df" name="Inquisitorial Agent with Agent’s Firearm, Agent’s Implement and Mystic Stave" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">5+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -266,20 +251,50 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="89b31026" name="Agent firearm" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="bb7ef8c8" name="Inquisitorial Agent with Agent’s Firearm and Agent’s Implement" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="96e14f29" name="Gun Servitor" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2692e5be" name="Inquisitorial Agent with Agent’s Firearm, Plasma Pistol and Agent’s Implement" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="884e6d49" name="Agent’s Firearm" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="13ecd27e" name="Heavy bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="774df7b2" name="Heavy Bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">36&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">3</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -288,29 +303,29 @@
             <characteristic name="Keywords" typeId="aa05940c">Heavy, Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="8b374f58" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="deb5e92b" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="d0561440" name="Agent melee weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="3885c5af" name="Agent’s Implement" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -321,7 +336,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="58e68b24" name="Mystic stave" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="73753ba2" name="Mystic Stave" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -332,71 +347,71 @@
             <characteristic name="Keywords" typeId="23459e53">Anti-Infantry 4+, Psychic</characteristic>
           </characteristics>
         </profile>
-        <profile id="1b54edf9" name="Tome-skull" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="5225d7ec" name="Assigned Agents" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Once per battle for each Tome-skull this unit is equipped with, at the start of any phase, you can select either one friendly Agents of the Imperium unit that is Battle-shocked and within 6" of this unit or one enemy unit within 6" of this unit. If you select a friendly unit, that unit is no longer Battle-shocked. If you select an enemy unit, it must take a Battle-shock test.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d758352d" name="Tome Skull (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of any phase, you can select one friendly battle-shocked AGENTS OF THE IMPERIUM unit within 6&quot; of this unit or one enemy within 6&quot; of this unit. If you select a friendly unit, that unit is no longer battle-shocked. If you select an enemy unit, that unit must make a battle-shock roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1de9fadb" name="Loyal to the Cause" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When an enemy unit targets this unit, if this unit is within range of an objective, attacks that target this unit have -1 to wound rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="5b750617" name="Tome-skull" hidden="false">
-          <description>Once per battle for each Tome-skull this unit is equipped with, at the start of any phase, you can select either one friendly Agents of the Imperium unit that is Battle-shocked and within 6" of this unit or one enemy unit within 6" of this unit. If you select a friendly unit, that unit is no longer Battle-shocked. If you select an enemy unit, it must take a Battle-shock test.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::gun-servitor-heavy-bolter-agent-melee-weapon" name="Gun Servitor: heavy bolter, agent melee weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::1-inquisitorial-agent-with-agents-firearm-agents-implement-and-mystic-stave" name="1 Inquisitorial Agent with Agent’s Firearm, Agent’s Implement and Mystic Stave: agent’s firearm, agent’s implement, mystic stave, tome skull" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="10c7cb83" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="1425119b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="369a6b43" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d0017927" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::1-model-agent-firearm-plasma-pistol-agent-melee-weapon" name="1 model: agent firearm, plasma pistol, agent melee weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::3-inquisitorial-agent-with-agents-firearm-and-agents-implement" name="3 Inquisitorial Agent with Agent’s Firearm and Agent’s Implement: agent’s firearm, agent’s implement" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="baeedafe" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="2fc747ac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="6ecec0b5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d3687bcb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::1-model-agent-firearm-agent-melee-weapon-mystic-stave" name="1 model: agent firearm, agent melee weapon, Mystic stave" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::1-gun-servitor" name="1 Gun Servitor: agent’s implement, heavy bolter" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="048dbb4b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="14349090" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="778ad848" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="16c6c3bf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::3-models-agent-firearm-agent-melee-weapon" name="3 models: agent firearm, agent melee weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::1-inquisitorial-agent-with-agents-firearm-plasma-pistol-and-agents-implement" name="1 Inquisitorial Agent with Agent’s Firearm, Plasma Pistol and Agent’s Implement: agent’s firearm, agent’s implement, plasma pistol - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="4d5526ee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d97d120f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::02-inquisitorial-agents::unit-1-tome-skull" name="Unit: 1 Tome-skull" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="03005189" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="26062141" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="220ebad2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="908fd353" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad" name="Vigilant Squad" type="unit" hidden="false">
+    <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad" name="Inquisitor’s Hand Vigilant Squad" type="unit" hidden="false">
       <constraints>
-        <constraint id="99ae7808" field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="2977acf6" field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="5d33d454" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="db625b7a" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="93b7b000" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
-        <categoryLink id="e3fb7b16" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
-        <categoryLink id="fecc4264" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="6ba78e81" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="da3601ec" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="1d8e74ae" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="a8a4514f" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
-        <categoryLink id="9136f64b" name="Adeptus Arbites" hidden="false" targetId="cp-kw::adeptus-arbites" primary="false" />
-        <categoryLink id="76cd34ad" name="Vigilant Squad" hidden="false" targetId="cp-kw::vigilant-squad" primary="false" />
-        <categoryLink id="caa9a574" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="da4c4cb5" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
+        <categoryLink id="4d66ca93" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="527dc2a4" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="36fe84b7" name="Adeptus Arbites" hidden="false" targetId="cp-kw::adeptus-arbites" primary="false" />
+      <categoryLink id="d3111789" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="a5a11520" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="d76085e2" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="f86aa223" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="337a10c3" name="Inquisitor’s Hand" hidden="false" targetId="cp-kw::inquisitors-hand" primary="false" />
+      <categoryLink id="3b00dde8" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
+      <categoryLink id="7295eeba" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="dc8e81a4" name="Vigilant Squad" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="2ba1fd0f" name="Cyber-Mastiff" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -404,31 +419,71 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe4eb0c3" name="Arbites combat shotgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="c5e36708" name="Proctor-Vigilant" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="021000cc" name="Vigilant with Combat Shotgun, Shotpistol and Gun Stocks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c5eb7d52" name="Vigilant with Grenade Launcher, Shotpistol and Gun Stocks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf199cc2" name="Vigilant with Shotpistol, Webber and Gun Stocks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ff93d35a" name="Combat Shotgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="f123757a" name="Arbites grenade launcher – frag" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="848360e8" name="Grenade Launcher - Frag" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D3</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="b8774be7" name="Arbites grenade launcher – krak" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="cafbfe1e" name="Grenade Launcher - Krak" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">9</characteristic>
@@ -437,29 +492,29 @@
             <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="36c29dc1" name="Arbites shotpistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="742c67c0" name="Shotpistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="f6cc91ce" name="Webber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="5352c9d7" name="Webber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">2</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Assault, Devastating Wounds, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Devastating Wounds</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="7778d896" name="Gun Stocks" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -470,7 +525,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="48681a46" name="Mechanical bite" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="cdcf768d" name="Mechanical Bite" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -481,79 +536,77 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="921c6307" name="Merciless Judgement" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="7676288a" name="Assigned Agents" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes a ranged attack that targets a unit that is Below Half-strength, add 1 to the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="3cc8797a" name="Nuncio-Aquila" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, one containing six models, including the cyber-mastiff model, and the other containing the remaining five models.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Command phase, you can use this ability. If you do, select one objective within 6&quot; of this model that has not been selected for this ability this turn. Enemy units (excluding MONSTER/VEHICLE units) within range of that objective must make a battle-shock roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8940bb94" name="Merciless Judgement" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's ranged attacks that target a unit below half-strength have +1 to wound rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="76a8ed53" name="Merciless Judgement" hidden="false">
-          <description>Each time a model in this unit makes a ranged attack that targets a unit that is Below Half-strength, add 1 to the Wound roll.</description>
-        </rule>
-        <rule id="da581be6" name="Patrol Squads" hidden="false">
-          <description>Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, one containing six models, including the cyber-mastiff model, and the other containing the remaining five models.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::proctor-vigilant-arbites-combat-shotgun-arbites-shotpistol-close-combat-weapon" name="Proctor-Vigilant: Arbites combat shotgun, Arbites shotpistol, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::1-cyber-mastiff" name="1 Cyber-Mastiff: mechanical bite" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="10463c5e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="49e60868" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c49cb269" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="332e682b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::1-model-arbites-grenade-launcher-arbites-shotpistol-close-combat-weapon" name="1 model: Arbites grenade launcher, Arbites shotpistol, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::1-proctor-vigilant" name="1 Proctor-Vigilant: combat shotgun, gun stocks, nuncio-aquila, shotpistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="ae32596d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="7f37ef6f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="4eb0af4d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="58ef278a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::1-model-arbites-shotpistol-webber-close-combat-weapon" name="1 model: Arbites shotpistol, webber, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::6-vigilant-with-combat-shotgun-shotpistol-and-gun-stocks" name="6 Vigilant with Combat Shotgun, Shotpistol and Gun Stocks: combat shotgun, gun stocks, shotpistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="36b58816" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="5901f124" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="2ce0a55e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ec156cfa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::7-models-arbites-combat-shotgun-arbites-shotpistol-close-combat-weapon" name="7 models: Arbites combat shotgun, Arbites shotpistol, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::1-vigilant-with-grenade-launcher-shotpistol-and-gun-stocks" name="1 Vigilant with Grenade Launcher, Shotpistol and Gun Stocks: grenade launcher - frag, gun stocks, shotpistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="1e0cae1b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="be63ecad" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c7feca30" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5cba2610" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::cyber-mastiff-mechanical-bite" name="Cyber-mastiff: mechanical bite" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::03-vigilant-squad::1-vigilant-with-shotpistol-webber-and-gun-stocks" name="1 Vigilant with Shotpistol, Webber and Gun Stocks: gun stocks, shotpistol, webber" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="78286421" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="79a9dba7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="53e5572a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="59a5eb59" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad" name="Vigilant Squad" type="unit" hidden="false">
+    <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad" name="Inquisitor’s Hand Vigilant Squad" type="unit" hidden="false">
       <constraints>
-        <constraint id="b85f1589" field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="4c2f7b65" field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="0e231e8e" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ef14b69d" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="e9b85968" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
-        <categoryLink id="db060710" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
-        <categoryLink id="c63fff4a" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="1e776bf2" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="80d35b9f" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="414d26a1" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="ed9dafd2" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
-        <categoryLink id="564976fa" name="Adeptus Arbites" hidden="false" targetId="cp-kw::adeptus-arbites" primary="false" />
-        <categoryLink id="0247149e" name="Vigilant Squad" hidden="false" targetId="cp-kw::vigilant-squad" primary="false" />
-        <categoryLink id="4d1eb48b" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
+        <categoryLink id="d240d841" name="Combat Patrol: Imperial Agents (Inquisitor's Hand)" hidden="false" targetId="cp-cat::inquisitors-hand" primary="true" />
+        <categoryLink id="3b22f938" name="Imperial Agents" hidden="false" targetId="cp-faction::imperial-agents" primary="false" />
+        <categoryLink id="b100d0ec" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="e2a64cab" name="Adeptus Arbites" hidden="false" targetId="cp-kw::adeptus-arbites" primary="false" />
+      <categoryLink id="2cdbaead" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="7aa8b9f0" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="94f91cb0" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="a6664bd4" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="6d0d8b33" name="Inquisitor’s Hand" hidden="false" targetId="cp-kw::inquisitors-hand" primary="false" />
+      <categoryLink id="9cf40834" name="Retinue" hidden="false" targetId="cp-kw::retinue" primary="false" />
+      <categoryLink id="2637a39a" name="Agents of the Imperium" hidden="false" targetId="cp-kw::agents-of-the-imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="dc8e81a4" name="Vigilant Squad" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="3150f7c9" name="Cyber-Mastiff" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -561,31 +614,71 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe4eb0c3" name="Arbites combat shotgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="39a2f265" name="Proctor-Vigilant" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="653de4f6" name="Vigilant with Combat Shotgun, Shotpistol and Gun Stocks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a0cd494" name="Vigilant with Grenade Launcher, Shotpistol and Gun Stocks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca76fb8e" name="Vigilant with Shotpistol, Webber and Gun Stocks" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ca0ac80" name="Combat Shotgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="f123757a" name="Arbites grenade launcher – frag" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="2c22370f" name="Grenade Launcher - Frag" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D3</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="b8774be7" name="Arbites grenade launcher – krak" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="59187223" name="Grenade Launcher - Krak" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">9</characteristic>
@@ -594,29 +687,29 @@
             <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="36c29dc1" name="Arbites shotpistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="385e5847" name="Shotpistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="f6cc91ce" name="Webber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="06854084" name="Webber" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">N/A</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">2</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Assault, Devastating Wounds, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Devastating Wounds</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="8b850afd" name="Gun Stocks" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -627,7 +720,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="48681a46" name="Mechanical bite" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="0f13b413" name="Mechanical Bite" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -638,54 +731,51 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="921c6307" name="Merciless Judgement" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="6cfda733" name="Assigned Agents" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes a ranged attack that targets a unit that is Below Half-strength, add 1 to the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="9dd5a2ec" name="Nuncio-Aquila" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, one containing six models, including the cyber-mastiff model, and the other containing the remaining five models.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Command phase, you can use this ability. If you do, select one objective within 6&quot; of this model that has not been selected for this ability this turn. Enemy units (excluding MONSTER/VEHICLE units) within range of that objective must make a battle-shock roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1043ea8a" name="Merciless Judgement" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's ranged attacks that target a unit below half-strength have +1 to wound rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="76a8ed53" name="Merciless Judgement" hidden="false">
-          <description>Each time a model in this unit makes a ranged attack that targets a unit that is Below Half-strength, add 1 to the Wound roll.</description>
-        </rule>
-        <rule id="da581be6" name="Patrol Squads" hidden="false">
-          <description>Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, one containing six models, including the cyber-mastiff model, and the other containing the remaining five models.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::proctor-vigilant-arbites-combat-shotgun-arbites-shotpistol-close-combat-weapon" name="Proctor-Vigilant: Arbites combat shotgun, Arbites shotpistol, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::1-cyber-mastiff" name="1 Cyber-Mastiff: mechanical bite" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="253a388b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d9499bda" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="a5c43ff3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="487f4283" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::1-model-arbites-grenade-launcher-arbites-shotpistol-close-combat-weapon" name="1 model: Arbites grenade launcher, Arbites shotpistol, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::1-proctor-vigilant" name="1 Proctor-Vigilant: combat shotgun, gun stocks, nuncio-aquila, shotpistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="2756524c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="bf4e76c9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="4ee21465" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="af076c37" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::1-model-arbites-shotpistol-webber-close-combat-weapon" name="1 model: Arbites shotpistol, webber, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::6-vigilant-with-combat-shotgun-shotpistol-and-gun-stocks" name="6 Vigilant with Combat Shotgun, Shotpistol and Gun Stocks: combat shotgun, gun stocks, shotpistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="1202b64e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9d92062d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="19838c98" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="481a9b6b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::7-models-arbites-combat-shotgun-arbites-shotpistol-close-combat-weapon" name="7 models: Arbites combat shotgun, Arbites shotpistol, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::1-vigilant-with-grenade-launcher-shotpistol-and-gun-stocks" name="1 Vigilant with Grenade Launcher, Shotpistol and Gun Stocks: grenade launcher - frag, gun stocks, shotpistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="81b91a79" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="0fa01766" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="43ffeb78" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7fe22d88" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::cyber-mastiff-mechanical-bite" name="Cyber-mastiff: mechanical bite" type="upgrade" hidden="false">
+        <selectionEntry id="cp::inquisitors-hand::04-vigilant-squad::1-vigilant-with-shotpistol-webber-and-gun-stocks" name="1 Vigilant with Shotpistol, Webber and Gun Stocks: gun stocks, shotpistol, webber" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="c3a103bf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="07840a7a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="0e847113" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="bbd2c4d6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

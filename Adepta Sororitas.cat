@@ -3,73 +3,86 @@
   <selectionEntries>
     <selectionEntry id="cp::sanctuary-guardians::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="21bcff27" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="b0f3b7eb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="ec0bbaf7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="77b5c0c6" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="8452a27c" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
-        <categoryLink id="7af4cffd" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
-        <categoryLink id="c93e0e7f" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="e31390be" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
+        <categoryLink id="c42e17f3" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
+        <categoryLink id="936244f5" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="2b00d35d" name="Ascetic Discipline" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="689a5745" name="Acts of Faith" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is ADEPTA SORORITAS, each unit from your army with this ability can perform one Act of Faith per phase. This is done using Miracle dice. If your Army Faction is ADEPTA SORORITAS, you gain 1 Miracle dice: ■ At the start of each battle round. ■ Each time an ADEPTA SORORITAS unit from your army is destroyed. Each time you gain a Miracle dice, roll one D6. The number you roll is the value of that Miracle dice. This value cannot be changed or re‐rolled, unless a rule specifically states otherwise. Keep your Miracle dice to one side – this is your Miracle dice pool. Before making a dice roll for a model or unit from your army with the Acts of Faith ability, if you have one or more dice in your Miracle dice pool, that unit can perform an Act of Faith. If it does, select one of the dice from your Miracle dice pool to substitute that dice roll (if a roll involves more than one dice, e.g. a Charge roll or Battle-shock test, only a single dice can be substituted). The dice that is being substituted is not rolled; instead, the value of the selected Miracle dice is used as if it had been rolled (this counts as an unmodified dice roll of that value for all rules purposes). Each Miracle dice can only be selected for substitution once. Once all Miracle dice substitutions have been made, remove the chosen Miracle dice from your Miracle dice pool, and roll all remaining, unsubstituted dice that are apart of the dice roll. You can use Miracle dice when a unit performs an Act of Faith for any of the following types of dice roll: ■ Advance roll ■ Battle-shock test ■ Charge roll ■ Damage roll ■ Hit roll ■ Saving throw ■ Wound roll Example: Instead of rolling 2D6 to take a Battle-shock test for a unit, you could use one dice from your Miracle dice pool. If the value of that dice was 4, the unit’s Battle-shock test would be determined by rolling one D6 and adding 4 to it (i.e. it would be D6+4).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a5ea992b" name="Blessed Believers" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Melee attacks that target friendly SANCTUARY GUARDIANS units have -1 to hit rolls.When playing a Combat Patrol battle, in your Command phase, you can discard 1 Miracle dice. If you do, you gain 1 CP.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Take and Hold</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8610cd93" name="Righteous Fervour" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">SANCTUARY GUARDIANS CANONESS model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This model's melee attacks have +1 D.This unit's melee attacks have +1 to wound rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f7439580" name="Divine Miracle" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">SANCTUARY GUARDIANS BATTLE SISTERS SQUAD unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per battle, per unit) At the start of any phase, you can use this ability. If you do, this unit heals D3+2 wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9f8ccb89" name="Take Cover" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTA SORORITAS unit from your army that has not been selected to shoot or fight this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 2.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent's Shooting phase or the Fight phase, when an enemy unit targets a friendly SANCTUARY GUARDIANS unit (excluding ARCO‑FLAGELLANTS units) within a terrain area.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That SANCTUARY GUARDIANS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit has +1 Sv.</characteristic>
           </characteristics>
         </profile>
-        <profile id="135b67c5" name="A Martyr’s Death" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="1d241ec4" name="Fervent Devotion" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTA SORORITAS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Each time you use this Stratagem, you can discard 1 Miracle dice. Until the end of the phase, each time a model in your unit is destroyed, if that model has not shot or fought this phase, roll one D6, adding 1 to the result if you discarded a Miracle dice when using this Stratagem. On a 4+, do not remove the destroyed model from play; it can shoot or fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, when a friendly SANCTUARY GUARDIANS unit is selected to make an advance/fall-back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That SANCTUARY GUARDIANS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That move does not prevent your unit from being eligible to shoot/declare a charge.</characteristic>
           </characteristics>
         </profile>
-        <profile id="746b392f" name="Holy Radiance" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="2fcadf05" name="Fires of Damnation" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTA SORORITAS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll and models in your unit have the Feel No Pain 5+ ability against that attack</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d3b086dc" name="Hallowed Retribution" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">You score 3VP each time an ADEPTA SORORITAS unit from your army destroys an enemy unit. If that unit from your army performed an Act of Faith this phase, you score 4VP instead.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a81ac87c" name="Consecrated Ground" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 3VP if one or more ADEPTA SORORITAS units from your army (excluding Battle-shocked units) are within 6" of the centre of the battlefield. If one of those units is your WARLORD, you score 4VP instead.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase, when a friendly SANCTUARY GUARDIANS unit is selected to attack.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That SANCTUARY GUARDIANS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's Torrent weapons have 6 A.Your unit's attacks have +1 AP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="cp::sanctuary-guardians::00-canoness-adalya" name="Canoness Adalya" type="unit" hidden="false">
+    <selectionEntry id="cp::sanctuary-guardians::00-canoness-adalya" name="Sanctuary Canoness Adalya" type="unit" hidden="false">
       <constraints>
-        <constraint id="1f583056" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="41482033" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="5a4c00fc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d364a849" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="4df63192" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
-        <categoryLink id="845fd318" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
-        <categoryLink id="e4951550" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="4c65b4f3" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="47876761" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="d0a5e2d4" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="6214b0a2" name="Canoness" hidden="false" targetId="cp-kw::canoness" primary="false" />
-        <categoryLink id="ade59951" name="Canoness Adalya" hidden="false" targetId="cp-kw::canoness-adalya" primary="false" />
-        <categoryLink id="5daa9e7c" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="4f56d5ad" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
+        <categoryLink id="96fb3fcd" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
+        <categoryLink id="32bf7ff6" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="8b811202" name="Canoness" hidden="false" targetId="cp-kw::canoness" primary="false" />
+      <categoryLink id="1a5bc4b1" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="044c8fb4" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="7594adbb" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="2e9b26b7" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="d9615e5a" name="Sanctuary Guardians" hidden="false" targetId="cp-kw::sanctuary-guardians" primary="false" />
+      <categoryLink id="2c5d1aa6" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="9481c4ec" name="Canoness Adalya" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="fcd004dd" name="Canoness Adalya" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -77,9 +90,9 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="e2ade9f4" name="Condemnor boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="cb70ee60" name="Condemnor Boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -88,7 +101,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Anti-Psyker 2+, Devastating Wounds, Precision, Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="f2612692" name="Hallowed chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="8d1a065c" name="Hallowed Chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -99,96 +112,61 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="53831964" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="1f251bef" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="52322f36" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="04d20ddc" name="Null Rod" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit has Feel No Pain 4+ against mortal wounds and Psychic attacks.</characteristic>
           </characteristics>
         </profile>
-        <profile id="5660a5f6" name="Lead the Righteous" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="add1444b" name="Divine Guidance (once per turn per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When a friendly SANCTUARY GUARDIANS unit is selected to attack, you can use this ability. If you do, that unit's attacks can re-roll hit rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="12b18f6f" name="Null Rod" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="536638ea" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Models in the bearer's unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: Battle Sisters Squad, Celestian Sacresants.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="67b24d9b" name="Enhancement: Defender of the Faith (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Improve the Save characteristic of models in the bearer's unit by 1. In your Command phase, you can discard 1 Miracle dice. If you do, until the start of your next Command phase, add 1 to the Objective Control characteristic of models in the bearer's unit. (Default enhancement; may be replaced with Righteous Fury: The bearer's unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back. In your Command phase, you can discard 1 Miracle dice. If you do, until the end of the turn, you can re-roll Charge rolls made for the bearer's unit.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ SANCTUARY GUARDIANS BATTLE SISTERS SQUAD ■ SANCTUARY GUARDIANS CELESTIAN SACRESANTS</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="34f1beaf" name="Lead the Righteous" hidden="false">
-          <description>While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll.</description>
-        </rule>
-        <rule id="7023351b" name="Null Rod" hidden="false">
-          <description>Models in the bearer's unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.</description>
-        </rule>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This model can be attached to the following units: Battle Sisters Squad, Celestian Sacresants.</description>
-        </rule>
-        <rule id="3dcccfb1" name="Enhancement: Defender of the Faith (Warlord)" hidden="false">
-          <description>Improve the Save characteristic of models in the bearer's unit by 1. In your Command phase, you can discard 1 Miracle dice. If you do, until the start of your next Command phase, add 1 to the Objective Control characteristic of models in the bearer's unit. (Default enhancement; may be replaced with Righteous Fury: The bearer's unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back. In your Command phase, you can discard 1 Miracle dice. If you do, until the end of the turn, you can re-roll Charge rolls made for the bearer's unit.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::sanctuary-guardians::00-canoness-adalya::condemnor-boltgun" name="Condemnor boltgun" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::00-canoness-adalya::1-canoness-adalya" name="1 Canoness Adalya: condemnor boltgun, hallowed chainsword, null rod" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="324b48db" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="409a3707" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::sanctuary-guardians::00-canoness-adalya::hallowed-chainsword" name="Hallowed chainsword" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="b885fbeb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="f28828cc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::sanctuary-guardians::00-canoness-adalya::null-rod" name="Null rod" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="36c476d3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9c3eb9b2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="ef5e5232" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f23d8b61" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad" name="Battle Sisters Squad" type="unit" hidden="false">
+    <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad" name="Sanctuary Guardians Battle Sisters Squad" type="unit" hidden="false">
       <constraints>
-        <constraint id="6ff3d373" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="ebaeb2e6" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="79668baa" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2cd966d4" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="b1c7fbe9" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
-        <categoryLink id="edbb9f87" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
-        <categoryLink id="1d09481a" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="f0652f94" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="b874c921" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="2a73fdf4" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="00d8a204" name="Battle Sisters Squad" hidden="false" targetId="cp-kw::battle-sisters-squad" primary="false" />
-        <categoryLink id="402f027c" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="1bbdaf90" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
+        <categoryLink id="92de34cc" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
+        <categoryLink id="d27f03d5" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="7996c44c" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="47e58c25" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="f560ace8" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="d3ace3b6" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="a39c61e0" name="Sanctuary Guardians" hidden="false" targetId="cp-kw::sanctuary-guardians" primary="false" />
+      <categoryLink id="65399f55" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="69e876ac" name="Battle Sisters Squad" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="a6747218" name="Battle Sister with Simulacrum Imperialis" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -196,9 +174,49 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="25d199dc" name="Battle Sister with Ministorum Flamer" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="155466b0" name="Battle Sister" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="26cd1334" name="Battle Sister with Ministorum Heavy Flamer" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bfa5976b" name="Sister Superior" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf76fcfd" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -207,9 +225,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
           </characteristics>
         </profile>
-        <profile id="d05f9271" name="Boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="4e1850ae" name="Boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -218,9 +236,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="d8d95fc8" name="Combi-weapon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="59ea4fc5" name="Combi-weapon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -229,9 +247,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="802703f0" name="Ministorum flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="6615ce86" name="Ministorum Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -240,9 +258,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="2f56de19" name="Ministorum heavy flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="8a2707c5" name="Ministorum Heavy Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">6</characteristic>
@@ -251,18 +269,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
-            <characteristic name="WS" typeId="258d9251">4+</characteristic>
-            <characteristic name="S" typeId="09c93781">3</characteristic>
-            <characteristic name="AP" typeId="54255f70">0</characteristic>
-            <characteristic name="D" typeId="1f91ac72">1</characteristic>
-            <characteristic name="Keywords" typeId="23459e53"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b3755955" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="7d4fd5c5" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -273,86 +280,100 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="dd8875eb" name="Stocks and Fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">1</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="55b93e5e" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="52322f36" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="7f7b8131" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="3a7fed4f" name="Simulacrum Imperialis" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="b2f5d895" name="Defenders of the Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Command phase, if this unit is controlling an objective, that objective is secured.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a78688f3" name="Cherub (once per battle per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit has performed an Act of Faith, you can use this ability. If you do, you gain 1 Miracle dice.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b28b3566" name="Simulacrum Imperialis" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Command phase, for each objective you control that has a friendly unit with this ability within range of it, roll one D6:On a 4+, you gain 1 Miracle dice with a value equal to that result.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3313f00" name="Simulacrum Imperialis" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice with a value equal to that result.</characteristic>
           </characteristics>
         </profile>
-        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="e86bcf03" name="Simulacrum Imperialis" hidden="false">
-          <description>At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice with a value equal to that result.</description>
-        </rule>
-        <rule id="da581be6" name="Patrol Squads" hidden="false">
-          <description>Before the battle, at the start of the Declare Battle Formations step, this unit can be split into two units, each containing five models.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::sister-superior-bolt-pistol-combi-weapon-power-weapon" name="Sister Superior: bolt pistol, combi-weapon, power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::1-battle-sister-with-simulacrum-imperialis" name="1 Battle Sister with Simulacrum Imperialis: boltgun, bolt pistol, simulacrum imperialis, stocks and fists" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="e39fc9fd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="0cd1d65b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="5b43ccaa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="340ae6a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::1-battle-sister-bolt-pistol-ministorum-flamer-close-combat-weapon" name="1 Battle Sister: bolt pistol, Ministorum flamer, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::1-battle-sister-with-ministorum-flamer" name="1 Battle Sister with Ministorum Flamer: bolt pistol, ministorum flamer, stocks and fists" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="4c2271be" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="5c022f02" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="b70373e2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="206bbc9f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::1-battle-sister-bolt-pistol-ministorum-heavy-flamer-close-combat-weapon" name="1 Battle Sister: bolt pistol, Ministorum heavy flamer, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::6-battle-sister" name="6 Battle Sister: boltgun, bolt pistol, stocks and fists" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="dbff3f26" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="a2e64177" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="36ca2ff4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c5cf6d9e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::1-battle-sister-bolt-pistol-boltgun-close-combat-weapon-simulacrum-imperialis" name="1 Battle Sister: bolt pistol, boltgun, close combat weapon, simulacrum imperialis" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::1-battle-sister-with-ministorum-heavy-flamer" name="1 Battle Sister with Ministorum Heavy Flamer: bolt pistol, ministorum heavy flamer, stocks and fists" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="000bc8b4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="61bfdf50" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="f188fdbd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="654ec2fa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::6-battle-sisters-bolt-pistol-boltgun-close-combat-weapon" name="6 Battle Sisters: bolt pistol, boltgun, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::01-battle-sisters-squad::1-sister-superior" name="1 Sister Superior: bolt pistol, combi-weapon, power weapon, stocks and fists" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="6ed32239" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b8baaafa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="d6162a4c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="158d6df4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::sanctuary-guardians::02-celestian-sacresants" name="Celestian Sacresants" type="unit" hidden="false">
+    <selectionEntry id="cp::sanctuary-guardians::02-celestian-sacresants" name="Sanctuary Guardians Celestian Sacresants" type="unit" hidden="false">
       <constraints>
-        <constraint id="f94bbd62" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="bf78dab7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="440133f7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8d70de8f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="c5ebb21f" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
-        <categoryLink id="6bb12e95" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
-        <categoryLink id="ebe67ca9" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="9a2ea850" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="013a9be3" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="c725be2a" name="Celestian Sacresants" hidden="false" targetId="cp-kw::celestian-sacresants" primary="false" />
-        <categoryLink id="d170c1c0" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="c46e740a" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
+        <categoryLink id="8be3c800" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
+        <categoryLink id="12f6d558" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="9fa8d0de" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="4d673be2" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="b8010e98" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="a46a786f" name="Sanctuary Guardians" hidden="false" targetId="cp-kw::sanctuary-guardians" primary="false" />
+      <categoryLink id="b20778b8" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="2328a8e8" name="Celestian Sacresants" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="e3b60020" name="Sacresant Superior" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -360,18 +381,28 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="89fe4e90" name="Celestian Sacresants" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b1f46259" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="30d1cd5e" name="Hallowed mace" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="b724505d" name="Hallowed Mace" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -382,68 +413,64 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="d2be4f20" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="52322f36" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="a916fffa" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="8c8ad3f3" name="Sworn Protectors" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="6106d99e" name="Sworn Protectors" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While an Adepta Sororitas Character is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When an enemy unit targets this unit, if this unit has ADEPTA SORORITAS CHARACTER, attacks that target this unit have -1 to wound rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="0e1193d7" name="Sworn Protectors" hidden="false">
-          <description>While an Adepta Sororitas Character is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::sanctuary-guardians::02-celestian-sacresants::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::02-celestian-sacresants::1-sacresant-superior" name="1 Sacresant Superior: bolt pistol, hallowed mace" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="0d6ccbab" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9bc77dca" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="9045f0f5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="55f655af" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::sanctuary-guardians::02-celestian-sacresants::hallowed-mace" name="Hallowed mace" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::02-celestian-sacresants::4-celestian-sacresants" name="4 Celestian Sacresants: bolt pistol, hallowed mace" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="8551a818" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9458834f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="69a43d7e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="813ff48a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::sanctuary-guardians::03-arco-flagellants" name="Arco-flagellants" type="unit" hidden="false">
+    <selectionEntry id="cp::sanctuary-guardians::03-arco-flagellants" name="Sanctuary Guardians Arco-Flagellants" type="unit" hidden="false">
       <constraints>
-        <constraint id="dc5add85" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="e295c862" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="0d5d2898" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6592c6f0" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="daac2c95" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
-        <categoryLink id="acd429a3" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
-        <categoryLink id="dfdb4488" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="29afc281" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="f14eab84" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="ffdb01a3" name="Arco-flagellants" hidden="false" targetId="cp-kw::arco-flagellants" primary="false" />
-        <categoryLink id="d5a35390" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
+        <categoryLink id="631710a9" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" primary="true" />
+        <categoryLink id="b46c1732" name="Adepta Sororitas" hidden="false" targetId="cp-faction::adepta-sororitas" primary="false" />
+        <categoryLink id="537505cb" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="fbddfb7d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="c5800095" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="3387e3ac" name="Penitent" hidden="false" targetId="cp-kw::penitent" primary="false" />
+      <categoryLink id="2ce88b74" name="Sanctuary Guardians" hidden="false" targetId="cp-kw::sanctuary-guardians" primary="false" />
+      <categoryLink id="4d4693fb" name="Adepta Sororitas" hidden="false" targetId="cp-kw::adepta-sororitas" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="7dc5fef4" name="Arco-flagellants" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="52b4e248" name="Arco-Flagellents" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">7"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">7&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
-            <characteristic name="SV" typeId="9a958949">7+</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
             <characteristic name="LD" typeId="7c47673d">8+</characteristic>
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="1bc58087" name="Arco-flails" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="a4ef4371" name="Arco-flails" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -454,32 +481,27 @@
             <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="fb4c9a40" name="Feel No Pain 5+" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="936dfc44" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b0f8f560" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="52322f36" name="Acts of Faith" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="8c5aefb4" name="Extremis Trigger Word" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8bc43668" name="Extremis Trigger Word" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time this unit is selected to fight, you can choose to invoke its extremis trigger word. If you do, then until the end of the phase, arco-flails equipped by models in this unit have an Attacks characteristic of 6 and the [HAZARDOUS] ability.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When this unit is selected to fight, you can use this ability. If you do:This unit's arco-flails weapons have 6 A.This unit's melee attacks have [HAZARDOUS].</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="7d7fed43" name="Extremis Trigger Word" hidden="false">
-          <description>Each time this unit is selected to fight, you can choose to invoke its extremis trigger word. If you do, then until the end of the phase, arco-flails equipped by models in this unit have an Attacks characteristic of 6 and the [HAZARDOUS] ability.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::sanctuary-guardians::03-arco-flagellants::arco-flails" name="Arco-flails" type="upgrade" hidden="false">
+        <selectionEntry id="cp::sanctuary-guardians::03-arco-flagellants::10-arco-flagellents" name="10 Arco-Flagellents: arco-flails" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a7b1d7f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="97036709" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="adf0c02e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="47b92a48" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

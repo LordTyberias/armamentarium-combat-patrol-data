@@ -2313,74 +2313,91 @@
     </selectionEntry>
     <selectionEntry id="cp::zarkans-daemonkin::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="39cabbd9" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="fd177ff8" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="68b2b59a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9e3c6574" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="a1bd761d" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
-        <categoryLink id="50ea39d1" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
-        <categoryLink id="a7723b37" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+        <categoryLink id="a4e73fcc" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
+        <categoryLink id="e3db0e4b" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="105a9465" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="d4523cb2" name="Vindictive Strategy" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="3e0dd5d7" name="Cults of the Dark Gods" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is HERETIC ASTARTES, you can include any of the following units in your army, and when you do so their Faction keywords are replaced with HERETIC ASTARTES: ■ KHORNE BERZERKERS (see World Eaters) ■ RUBRIC MARINES (see Thousand Sons) ■ PLAGUE MARINES (see Death Guard) ■ NOISE MARINES (see Emperor’s Children) The combined points value of such units you can include in your army depends on the battle size, as follows: ■ Incursion: Up to 250 pts ■ Strike Force: Up to 500 pts ■ Onslaught: Up to 750 pts</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="157830a4" name="Dark Pacts" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is HERETIC ASTARTES, each time a unit with this ability is selected to shoot or fight, it can make a Dark Pact. If it does, it must first take a Leadership test before any effects of that Dark Pact are resolved; if that test is failed, that unit suffers D3 mortal wounds. Then, select one of the following abilities for that unit’s weapons to gain until the end of the phase: ■ [LETHAL HITS] ■ [SUSTAINED HITS 1]</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93c90b4a" name="Abject Fear" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Friendly ZARKAN'S DAEMONKIN units have the following ability:Terrifying Presence (Aura): While an enemy unit is within 3&quot; of this unit, that enemy unit has -1 Ld.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Disruption</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6e1d2387" name="Prey on the Weak" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">ZARKAN'S DAEMONKIN POSSESSED unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit has Scouts 6&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aab2122b" name="Infernal Infusion" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">ZARKAN'S DAEMONKIN MASTER OF POSSESSION model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit's attacks have +1 S.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="78189da0" name="Vindictive Strategy" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One HERETIC ASTARTES unit from your army that has not been selected to shoot or fight this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit that is below its Starting Strength, re-roll a Hit roll of 1. It that enemy unit is Below Half-strength, re-roll a Wound roll of 1 as well.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase or the Fight phase, when a friendly ZARKAN'S DAEMONKIN LEGIONARIES unit is selected to attack.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ZARKAN'S DAEMONKIN LEGIONARIES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's attacks can:Re-roll hit rolls of 1.Re-roll wound rolls of 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="0827bfcc" name="Violent Unbinding" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="93622c4e" name="Daemonic Frenzy" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an attack made by an enemy unit destroys your MASTER OF POSSESSION model, before removing it from play.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">Your MASTER OF POSSESSION model. You can use this Stratagem on that model even though it was just destroyed.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">If that enemy unit is within 6" of your MASTER OF POSSESSION model, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent's Movement phase, when an enemy unit is selected to make a fall-back move, if that unit is engaged with a friendly ZARKAN'S DAEMONKIN POSSESSED unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ZARKAN'S DAEMONKIN POSSESSED unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">When an enemy unit engaged with your unit is selected to make a fall-back move, that enemy unit must use the desperate escape mode, with -1 to those hazard rolls if that enemy unit is battle-shocked.</characteristic>
           </characteristics>
         </profile>
-        <profile id="f1901b5d" name="Daemonic Fervour" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="2f406b87" name="Alert to Danger" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One POSSESSED unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c70b50ed" name="Marked for Execution" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">When your opponent’s WARLORD is destroyed, if you are in the first, second or third battle round, you score 12VP. Otherwise, you score 6VP.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7ed171c1" name="Sites of Power" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 2VP if you control at least as many objective markers as your opponent does.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Movement phase, when an enemy unit ends a move within 8&quot; of a friendly unengaged ZARKAN'S DAEMONKIN CULTIST MOB unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ZARKAN'S DAEMONKIN CULTIST MOB unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a normal move of up to D3+1&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry id="cp::zarkans-daemonkin::00-aranis-zarkan" name="Aranis Zarkan" type="unit" hidden="false">
       <constraints>
-        <constraint id="d9ba1da7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="0ef4e8af" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="96fe9daf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="05b027f5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="96ff5991" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
-        <categoryLink id="a3c25059" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
-        <categoryLink id="e68c95e5" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="64eb022b" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="6919dba5" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="bdc2f730" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
-        <categoryLink id="e3fecdb9" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="17852453" name="Master of Possession" hidden="false" targetId="cp-kw::master-of-possession" primary="false" />
-        <categoryLink id="40a429ce" name="Aranis Zarkan" hidden="false" targetId="cp-kw::aranis-zarkan" primary="false" />
-        <categoryLink id="72e4be14" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="beea7d1d" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
+        <categoryLink id="3fc2d4f1" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="aee23883" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="17c7692d" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="c8cbb7ef" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="226a7631" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="bb381f9a" name="Master of Possession" hidden="false" targetId="cp-kw::master-of-possession" primary="false" />
+      <categoryLink id="42a49d07" name="Psyker" hidden="false" targetId="cp-kw::psyker" primary="false" />
+      <categoryLink id="f1df32da" name="Zarkan’s Daemonkin" hidden="false" targetId="cp-kw::zarkans-daemonkin" primary="false" />
+      <categoryLink id="9044ebab" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="e3ae6f2d" name="Aranis Zarkan" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="80af26f0" name="Aranis Zarkan" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -2388,40 +2405,40 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="205ae393" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="98674df1" name="Rite of Possession – witchfire" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="278d7cb9" name="Rite of Possession - Focused Witchfire" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
-            <characteristic name="A" typeId="1318d167">2</characteristic>
-            <characteristic name="BS" typeId="43a26991">3+</characteristic>
-            <characteristic name="S" typeId="cc313509">4</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
-            <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Anti-Psyker 2+, Pistol, Precision, Psychic</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4375bce1" name="Rite of Possession – focused witchfire" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">6</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">3</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Anti-Psyker 2+, Hazardous, Pistol, Precision, Psychic</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Psyker 2+, Close-quarters, Hazardous, Precision, Psychic</characteristic>
           </characteristics>
         </profile>
-        <profile id="719055d9" name="Staff of possession" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="76dc463a" name="Rite of Possession - Witchfire" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Anti-Psyker 2+, Close-quarters, Precision, Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c83fb81" name="Staff of Possession" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -2432,88 +2449,65 @@
             <characteristic name="Keywords" typeId="23459e53">Anti-Psyker 2+, Psychic</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="6dd0fa8a" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="44cc8e62" name="Cults of the Dark Gods" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="0d126d79" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="4b1cb2b9" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="87e25dfa" name="Sacrificial Dagger" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="af9b899b" name="Sacrificial Dagger" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Once per phase, when this model is selected to shoot or fight, it can use this ability. If it does, this model's unit suffers 1 mortal wound and, until the end of the phase, each time this model makes a Psychic Attack, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">(Once per phase, per unit) When this unit is selected to attack, you can use this ability. If you do:This unit suffers 1 mortal wound.This unit's Psychic attacks have:+1 to hit rolls.+1 to wound rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="4553636e" name="Daemonkin (Psychic)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: Legionaries, Possessed.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">While this unit has a Bodyguard model, this unit has +1 to advance rolls and charge rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="90273179" name="Enhancement: Foul Zealotry (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="8f2aa9ce" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time the bearer's unit makes a Dark Pact, that unit's weapons gain the [LETHAL HITS] and [SUSTAINED HITS 1] abilities until the end of the phase, instead of just gaining one of those abilities. (Default enhancement; may be replaced with Prey on the Weak.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ ZARKAN'S DAEMONKIN LEGIONARIES ■ ZARKAN'S DAEMONKIN POSSESSED</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="b8b7441a" name="Sacrificial Dagger" hidden="false">
-          <description>Once per phase, when this model is selected to shoot or fight, it can use this ability. If it does, this model's unit suffers 1 mortal wound and, until the end of the phase, each time this model makes a Psychic Attack, add 1 to the Hit roll and add 1 to the Wound roll.</description>
-        </rule>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This model can be attached to the following units: Legionaries, Possessed.</description>
-        </rule>
-        <rule id="deae99dc" name="Enhancement: Foul Zealotry (Warlord)" hidden="false">
-          <description>Each time the bearer's unit makes a Dark Pact, that unit's weapons gain the [LETHAL HITS] and [SUSTAINED HITS 1] abilities until the end of the phase, instead of just gaining one of those abilities. (Default enhancement; may be replaced with Prey on the Weak.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::zarkans-daemonkin::00-aranis-zarkan::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::00-aranis-zarkan::1-aranis-zarkan" name="1 Aranis Zarkan: bolt pistol, rites of possession - witchfire, staff of possession" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="d67fde76" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b7a49eff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::zarkans-daemonkin::00-aranis-zarkan::rite-of-possession" name="Rite of Possession" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="e3e9532a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="2d31acc5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::zarkans-daemonkin::00-aranis-zarkan::staff-of-possession" name="Staff of possession" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="e842fae8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="0d21c3d8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="f42adef2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a34d4896" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::zarkans-daemonkin::01-possessed" name="Possessed" type="unit" hidden="false">
+    <selectionEntry id="cp::zarkans-daemonkin::01-possessed" name="Zarkan’s Daemonkin Possessed" type="unit" hidden="false">
       <constraints>
-        <constraint id="896a350e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="3ee361a4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="b65e7aab" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e41c565d" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="cc11bc8c" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
-        <categoryLink id="2c89c9c2" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
-        <categoryLink id="c4f55451" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="2dbdc6b8" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="94828c76" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="fb200775" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
-        <categoryLink id="e9b21150" name="Possessed" hidden="false" targetId="cp-kw::possessed" primary="false" />
-        <categoryLink id="b9ff64f0" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="2e0b307c" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
+        <categoryLink id="1af7ce89" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="2f99d803" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="cd48787f" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="6a4b16f0" name="Daemon" hidden="false" targetId="cp-kw::daemon" primary="false" />
+      <categoryLink id="5d2afafd" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="b9e59d38" name="Zarkan’s Daemonkin" hidden="false" targetId="cp-kw::zarkans-daemonkin" primary="false" />
+      <categoryLink id="120c5d37" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="9f3e58f5" name="Possessed" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="63841766" name="Possessed Champion" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">9"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">9&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">6</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -2521,7 +2515,17 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="04c14bf0" name="Hideous mutations" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="0bdea887" name="Possessed" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">9&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df96a005" name="Hideous Mutations" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -2532,46 +2536,68 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="54c245dd" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="0d126d79" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="24fb5fbb" name="Cults of the Dark Gods" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="bb319ac8" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cb473885" name="Chaos Icon" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit makes a Dark Pact, this unit can re-roll the leadership roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="169038fb" name="Unholy Bloodshed" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">(Once per battle, per unit) When this unit makes a Dark Pact, you can use this ability. If you do, this unit's attacks have [DEVASTATING WOUNDS].</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::zarkans-daemonkin::01-possessed::every-model-hideous-mutations" name="Every model: hideous mutations" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::01-possessed::1-possessed-champion" name="1 Possessed Champion: hideous mutations" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="fe44a0ea" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="47dc1092" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="1bf81b90" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3ced8b66" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::zarkans-daemonkin::01-possessed::4-possessed" name="4 Possessed: hideous mutations" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="ef7db18e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="beecd6f5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::zarkans-daemonkin::02-cultist-mob" name="Cultist Mob" type="unit" hidden="false">
+    <selectionEntry id="cp::zarkans-daemonkin::02-cultist-mob" name="Zarkan’s Daemonkin Cultist Mob" type="unit" hidden="false">
       <constraints>
-        <constraint id="b7e16449" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="376b2071" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="8fcd8740" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1b3bab2c" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="ff7af709" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
-        <categoryLink id="7380735e" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
-        <categoryLink id="65ad77f5" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="4c300630" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="47c87400" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="7b72352a" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="4454fda9" name="Damned" hidden="false" targetId="cp-kw::damned" primary="false" />
-        <categoryLink id="e8073b21" name="Cultist Mob" hidden="false" targetId="cp-kw::cultist-mob" primary="false" />
-        <categoryLink id="56fb96a1" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="ed4088fc" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
+        <categoryLink id="62995d3c" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="569faee0" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="c172420a" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="122f8c7f" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="f4440b3e" name="Damned" hidden="false" targetId="cp-kw::damned" primary="false" />
+      <categoryLink id="99560f3b" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="f20f0b22" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="bf5dbcea" name="Zarkan’s Daemonkin" hidden="false" targetId="cp-kw::zarkans-daemonkin" primary="false" />
+      <categoryLink id="8c9fc82b" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="c070f540" name="Cultist Mob" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="ce8181c9" name="Cultist Champion" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">6+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -2579,29 +2605,39 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="22dc207c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="f7c3a2f0" name="Chaos Cultist" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">6+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b7b5197c" name="Autopistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="8d223516" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="db715d0a" name="Brutal assault weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="c5ba9bdd" name="Blades and Cudgels" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -2612,46 +2648,57 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="0d126d79" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ffdc4fad" name="Cults of the Dark Gods" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="94304264" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3bb53f9c" name="For the Dark Gods" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the end of your Command phase, if this unit is controlling an objective, that objective is secured.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::zarkans-daemonkin::02-cultist-mob::1-cultist-champion-bolt-pistol-brutal-assault-weapon" name="1 Cultist Champion: bolt pistol, brutal assault weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::02-cultist-mob::1-cultist-champion" name="1 Cultist Champion: blades and cudgels, bolt pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="0daf89bc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="bd067500" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="90e552ec" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="aef3ab64" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::zarkans-daemonkin::02-cultist-mob::9-chaos-cultists-autopistol-brutal-assault-weapon" name="9 Chaos Cultists: autopistol, brutal assault weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::02-cultist-mob::9-chaos-cultist" name="9 Chaos Cultist: autopistol, blades and cudgels" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="cb1b062b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="8ae57f69" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="0927d39d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4cae2a76" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::zarkans-daemonkin::03-legionaries" name="Legionaries" type="unit" hidden="false">
+    <selectionEntry id="cp::zarkans-daemonkin::03-legionaries" name="Zarkan’s Daemonkin Legionaries" type="unit" hidden="false">
       <constraints>
-        <constraint id="01bf7157" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="d1946dfb" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="671d719d" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="dd2b95d0" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="1d6295f6" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
-        <categoryLink id="4041b3f7" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
-        <categoryLink id="1d015718" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
-        <categoryLink id="bb545cf1" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="34d03e53" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="69517932" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
-        <categoryLink id="385e43e9" name="Legionaries" hidden="false" targetId="cp-kw::legionaries" primary="false" />
-        <categoryLink id="5574d348" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
+        <categoryLink id="76a3f85b" name="Combat Patrol: Chaos Space Marines (Zarkan's Daemonkin)" hidden="false" targetId="cp-cat::zarkans-daemonkin" primary="true" />
+        <categoryLink id="0d95e6b6" name="Chaos Space Marines" hidden="false" targetId="cp-faction::chaos-space-marines" primary="false" />
+        <categoryLink id="bbc598aa" name="Chaos" hidden="false" targetId="cp-group::chaos" primary="false" />
+      <categoryLink id="a3725d8b" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="0e5e39a7" name="Chaos" hidden="false" targetId="cp-kw::chaos" primary="false" />
+      <categoryLink id="1b48ad97" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="b409c83c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="8e4f9b49" name="Zarkan’s Daemonkin" hidden="false" targetId="cp-kw::zarkans-daemonkin" primary="false" />
+      <categoryLink id="1a628975" name="Heretic Astartes" hidden="false" targetId="cp-kw::heretic-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="f30754c1" name="Legionaries" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="5b1db2c3" name="Legionary" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -2659,20 +2706,50 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="705e3983" name="Aspiring Champion" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cdc18366" name="Legionary with Meltagun" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2bb5672e" name="Legionary with Heavy Bolter" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8810dc49" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="d05f9271" name="Boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="e7626abb" name="Boltgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -2681,9 +2758,9 @@
             <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="13ecd27e" name="Heavy bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="6c8250b6" name="Heavy Bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">36&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">3</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -2692,9 +2769,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Heavy, Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="070d7ab8" name="Meltagun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="6eed0e2e" name="Meltagun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">9</characteristic>
@@ -2703,29 +2780,29 @@
             <characteristic name="Keywords" typeId="aa05940c">Melta 2</characteristic>
           </characteristics>
         </profile>
-        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="1e8c6230" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="d7f1e114" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="c50b02b4" name="Accursed weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="38adb3a2" name="Accursed Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -2736,7 +2813,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="729040f1" name="Fists and Knives" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -2747,45 +2824,55 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="0d126d79" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="aa8ed677" name="Cults of the Dark Gods" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="77e9d8e1" name="Veterans of the Long War" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="90b10430" name="Dark Pacts" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit targets an enemy unit with a melee attack, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="26f6506e" name="Combat Squad" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">At the start of the Declare Battle Formations step, you can split this unit into two separate units, each containing five models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="18a17d2c" name="Chaos Icon" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit makes a Dark Pact, this unit can re-roll the leadership test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c9b61f3" name="Veterans of the Long War" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's melee attacks:Can re-roll wound rolls of 1.Or: That target a unit within range of an objective can re-roll wound rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="244ce1ac" name="Veterans of the Long War" hidden="false">
-          <description>Each time a model in this unit targets an enemy unit with a melee attack, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::1-aspiring-champion-plasma-pistol-accursed-weapon" name="1 Aspiring Champion: plasma pistol, accursed weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::7-legionary" name="7 Legionary: boltgun, bolt pistol, fists and knives" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a0119d84" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="8b6cea99" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="7be64b58" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="69f3750b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::1-legionary-bolt-pistol-meltagun-close-combat-weapon" name="1 Legionary: bolt pistol, meltagun, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::1-aspiring-champion" name="1 Aspiring Champion: accursed weapon, plasma pistol - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="dd08ffbe" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d07f9d71" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="1c34b6d0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="82a70323" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::1-legionary-bolt-pistol-heavy-bolter-close-combat-weapon" name="1 Legionary: bolt pistol, heavy bolter, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::1-legionary-with-meltagun" name="1 Legionary with Meltagun: bolt pistol, fists and knives, meltagun" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="1964a3a1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="7b8aa9e0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="7306c240" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f3cdbf10" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::7-legionaries-bolt-pistol-boltgun-close-combat-weapon" name="7 Legionaries: bolt pistol, boltgun, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::zarkans-daemonkin::03-legionaries::1-legionary-with-heavy-bolter" name="1 Legionary with Heavy Bolter: bolt pistol, fists and knives, heavy bolter" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="97c31ed7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="a45f9400" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="8e0396dc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4a8f2f6f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
