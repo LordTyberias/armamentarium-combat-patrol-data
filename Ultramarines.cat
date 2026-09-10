@@ -1229,11 +1229,6 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="fca706d2" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
         <profile id="a669bed5" name="Stalwart Defenders" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">When an enemy unit targets this unit, if every model in this unit is within range of an objective, attacks that target this unit have -1 AP.</characteristic>
@@ -1309,11 +1304,6 @@
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
             <characteristic name="D" typeId="1f91ac72">2</characteristic>
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6457bbf5" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
         <profile id="597ff2f8" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
@@ -1434,11 +1424,6 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="1ee2a220" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
         <profile id="cbf22e94" name="Rapid Reactions (once per turn per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">In your opponent's Shooting phase, when an enemy unit has shot, if that unit targeted this unit, this unit can make a normal move of up to D6+1&quot;.</characteristic>
@@ -1539,11 +1524,6 @@
             <characteristic name="Keywords" typeId="23459e53">Psychic</characteristic>
           </characteristics>
         </profile>
-        <profile id="b46cff37" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
         <profile id="2c2bf0a7" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
@@ -1637,11 +1617,6 @@
             <characteristic name="AP" typeId="54255f70">0</characteristic>
             <characteristic name="D" typeId="1f91ac72">1</characteristic>
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d80e49c6" name="Oath of Moment" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
       </profiles>
