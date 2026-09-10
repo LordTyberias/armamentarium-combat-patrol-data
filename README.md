@@ -4,7 +4,7 @@ BattleScribe catalogue data for the fixed Combat Patrol rosters of Warhammer 40,
 [Armamentarium](https://github.com/LordTyberias/Armamentarium) project.
 
 - `Combat Patrol.gst` — the game system: profile types, the categories, one force entry.
-- 34 `.cat` files — one per faction, together holding **328 unit entries** and **74 rules rows**
+- 34 `.cat` files — one per faction, together holding **331 unit entries** and **74 rules rows**
   across **74 patrols**.
 
 ## What this is, and what it is not
@@ -31,7 +31,7 @@ faction, its Imperium/Chaos/Xenos grouping and — where applicable — a `Legac
 
 The reader tells those four kinds of membership apart by the **id prefix**, never by the name — three of
 them share names with unit keywords. Six Space Marine catalogues carry the same `cp-faction::` id, and
-79 of the 317 unit entries name "Space Marines" as their group and "Imperium" as a keyword at once.
+79 of the unit entries name "Space Marines" as their group and "Imperium" as a keyword at once.
 
 | Prefix | Meaning |
 |---|---|
@@ -75,7 +75,7 @@ here rather than left to be inferred from the data.
 
 ## This is not meant for other BattleScribe tools
 
-The data is read losslessly by the Armamentarium importer; that is measured, over all 389 entries.
+The data is read losslessly by the Armamentarium importer; that is measured, over all 405 entries.
 
 **It is not expected to be usable in the BattleScribe Data Editor, in New Recruit, or in any other
 roster builder, and that is deliberate rather than an oversight.** The reasons are the three above: a
@@ -233,7 +233,89 @@ the rename shows the full stored name instead of the short one. Armamentarium st
 name on the list and keys its short-name table on that name rather than on the id, deliberately. The
 id is untouched, so the datasheet still resolves and nothing is lost.
 
-**What did not happen here.** The 24 live patrols still carry their 10th-edition datasheets. Bringing
-them to the 11th-edition shape is its own piece of work, and it needs a source this repository does
-not yet have — the harvest it would be built from is missing 20 weapon profiles and 25 model counts,
-measured against the two patrols transcribed in ARMAM-341 whose correct values are already here.
+**What did not happen here.** The 24 live patrols still carried their 10th-edition datasheets after
+this pass. Bringing them to the 11th-edition shape needed a denser harvest first; it is done with
+ARMAM-348, described below.
+
+## ARMAM-348: the 22 live patrols brought to the 11th-edition shape
+
+The 24 patrols the app still offers now carry the sheet it actually shows. Two of them —
+`Assault Force` and `'Ardmob` — were already in that shape from ARMAM-341; the other 22 are rebuilt
+here, datasheets included. That is more than the rules row: the app prefixes unit names with the
+patrol name, the abilities differ on every sheet checked, and `Enhancement: X (Warlord)` has moved
+off the leader's datasheet into the detachment's rules row. A half rebuild would have shown the
+enhancement twice.
+
+**Source.** The Warhammer 40,000 app, read with the harvester in
+`LordTyberias/Armamentarium` under `tools/app-harvester/`, and written by the generator beside it
+under `tools/cp-11e-builder/`. Both are tracked there, and so is the harvest they read — a further
+patrol set from Games Workshop costs a run rather than another hand transcription.
+
+**What the generator guarantees.** It reuses the existing entry ids rather than minting new ones,
+takes the spelling the catalogue already carries where it has one, and reports every gap instead of
+inventing a value. Two counter-checks back that: it is held against the hand-written
+`cp::assault-force::…` entries, and every value it wrote here was matched back against the harvest —
+5307 values, none without cover.
+
+### Numbers
+
+| | before | after |
+|---|---|---|
+| unit entries | 328 | 331 |
+| rules rows with a `Detachment` | 2 | 24 |
+| rules rows with a `Secondary Objective` | 74 | 50 |
+| `Enhancement` profiles | 4 | 48 |
+| `Army Rule` profiles | 2 | 40 |
+| categories | 527 | 555 |
+
+The 50 legacy patrols are untouched and keep their 10th-edition datasheets.
+
+### Three entries were added, and no id was moved
+
+Counted on the device, eight of the 22 patrols list a unit **twice**. Five of them are already
+doubled here; three were not, and their second entry is new:
+
+| patrol | new entry |
+|---|---|
+| `kygharils-protectors` | `01a-dire-avengers` |
+| `claw-of-ascension` | `01a-hybrid-metamorphs` |
+| `the-vardenghast-swarm` | `02a-termagants` |
+
+The `a` after the number sorts the entry ordinally straight after its sister and before the next one,
+because `-` (0x2D) precedes `a` and `1` precedes `2` — the same device by which `0-patrol-rules`
+sorts before `00-`. **No existing id changed.** Nothing was deleted either: the plan for this work
+allowed deleting a unit entry the app no longer lists, and the case never arose.
+
+**The counting itself needed the device.** The harvest cannot represent a repetition: its
+`datasheets` map is keyed by name, its composition list deduplicates identical lines, and
+`datasheet_rows` is smeared across scroll windows. The roster list in the app is the only place that
+says how often a unit sits in the box, and that count is tracked as `unit_counts.json` beside the
+generator.
+
+### Wargear child ids changed
+
+236 wargear child lines were replaced by 200 new ones, because the 11th edition arms these units
+differently and the child id carries the model name. An army list saved before this change may show
+such a line unresolved. That is accepted and stated here; the **unit** ids, which carry the datasheet,
+are all unchanged.
+
+### Three findings carried as they stand
+
+- **`Maggot Lords Plague Marines` has no keywords.** The app shows four sections on that sheet and no
+  Keywords section at all; the 10th-edition entry here had keywords. Looked at on the device rather
+  than assumed. The entry keeps its patrol, faction and group links and gets no `cp-kw::` ones.
+- **`Amonhotekh's Guard Canoptek Doomstalker` has no abilities section.** It shows
+  `Damaged: 1-4 Wounds Remaining` in its place, which is carried as an ability the way the
+  10th-edition entry carried it.
+- **Two model counts changed with the edition**, each attested twice on its own sheet, in the prose
+  and in the table: `Drayden's Lance Command Squad` holds 4 models where this catalogue said 5, and
+  `Inquisitor's Hand Vigilant Squad` 10 where it said 11.
+
+### What was deliberately not levelled
+
+Six values differ from the two patrols ARMAM-341 transcribed by hand, and the app is followed in each
+case: `Heavy flamer` stays lower-case where that transcription wrote `Heavy Flamer`, `3 Intercessor
+models` is not pluralised, `Plasma Pistol - Standard` keeps its mode, a typographic apostrophe stays
+typographic, and a run-together enumeration (`BS.Hit rolls`) is not separated. `Oath of Moment`, which
+sits on every space marine sheet in this catalogue, appears nowhere in the app any more and is not
+written for the rebuilt patrols.

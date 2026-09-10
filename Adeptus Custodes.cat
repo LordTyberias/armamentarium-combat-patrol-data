@@ -499,73 +499,85 @@
     </selectionEntry>
     <selectionEntry id="cp::tristraens-gilded-blades::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="389910b3" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="f0790ef5" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="715b7442" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="feb21109" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="f35fc9ef" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
-        <categoryLink id="66bcdb68" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
-        <categoryLink id="846a603a" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="e85fdf75" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
+        <categoryLink id="eb5b0e25" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="21924540" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="134020c3" name="The Gilded Spear" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="59a79675" name="Martial Ka’tah" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">Each time a unit from your army with this ability is selected to fight, select one of the Ka’tah Stances below. Until that unit has finished making its attacks, the selected Stance is active for it and it gains the relevant ability: Melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability. Melee weapons equipped by models in this unit have the [LETHAL HITS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b9fe18ae" name="Fearless and Unrelenting" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">(Once per turn, per army) One friendly TRISTRAEN'S GILDED BLADES unit can re-roll a battle-shock roll.When playing a Combat Patrol battle, the following friendly units must start the battle in strategic reserves and cannot be set up on the battlefield before the battle round stated. When doing so, they must be set up wholly within your deployment zone.GILDED BLADES CUSTODIAN WARDENS: Battle round 2.GILDED BLADES ALLARUS CUSTODIANS: Battle round 3.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Take and Hold</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a24e406b" name="Shattering Charge" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">TRISTRAEN'S GILDED BLADES BLADE CHAMPION model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">When this unit ends a charge move, you can select one enemy unit engaged with this unit. If you do, that enemy unit makes a battle-shock roll, with -1 to that battle-shock roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ddeb8962" name="Comrades in Wrath" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">GILDED BLADES ALLARUS CUSTODIANS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit has +1 to charge rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3610eac" name="Gilded Spear" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES unit from your army that has not been selected to fight this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit makes a Pile‑in move, it can move up to 6" instead of up to 3".</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when a friendly TRISTRAEN'S GILDED BLADES unit is selected to make a consolidation move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That TRISTRAEN'S GILDED BLADES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">When making that consolidation move, your unit can move up to D3+3&quot;.</characteristic>
           </characteristics>
         </profile>
-        <profile id="bf917f25" name="Inescapable Vengeance" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="d0e22d17" name="Inevitable Wrath" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Movement phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES unit from your army that has not been selected to move this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, add 2 to Advance rolls made for your unit.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, when an enemy unit has shot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly unengaged TRISTRAEN'S GILDED BLADES BLADE CHAMPION unit that lost a wound as a result of those attacks.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a surge move of up to D6+1&quot;.</characteristic>
           </characteristics>
         </profile>
-        <profile id="6afc5ae4" name="Overawing Magnificence" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="53d2a8cc" name="Never Outmatched" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Charge phase, just after an enemy unit declares a charge.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS CUSTODES unit that was selected as a target of that charge.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">That enemy unit must take a Leadership test. If that test is failed, until the end of the phase, subtract 2 from Charge rolls made for that enemy unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8dd32a2f" name="Raise the Vexillas" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">From the third battle round onwards, at the end of your turn, you score 3VP if you control the objective marker closest to your opponent’s battlefield edge and you also control the objective marker closest to your battlefield edge.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a8288e84" name="Victory’s Price" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">■ Each time an enemy unit is destroyed, you score 3VP. ■ Each time an ADEPTUS CUSTODES model from your army is destroyed, you lose 1VP (to a minimum of 0VP).</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase when a friendly TRISTRAEN'S GILDED BLADES unit that is below starting strength is selected to fight.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That TRISTRAEN'S GILDED BLADES unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's melee attacks have +1 A.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="cp::tristraens-gilded-blades::00-tristraen" name="Tristraen" type="unit" hidden="false">
+    <selectionEntry id="cp::tristraens-gilded-blades::00-tristraen" name="Tristraen of the Gilded Blades" type="unit" hidden="false">
       <constraints>
-        <constraint id="975259c5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="ddd03c42" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="2aea4a03" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5a92fc3c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="c57d0084" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
-        <categoryLink id="d7227ad9" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
-        <categoryLink id="5c268f86" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="dd45594f" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="01db006b" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="68d8ab13" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="d48c6b91" name="Blade Champion" hidden="false" targetId="cp-kw::blade-champion" primary="false" />
-        <categoryLink id="c3b296d8" name="Tristraen" hidden="false" targetId="cp-kw::tristraen" primary="false" />
-        <categoryLink id="a450394b" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="cc0b6441" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
+        <categoryLink id="4aa5c2fb" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="64a23cde" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="6070bd71" name="Blade Champion" hidden="false" targetId="cp-kw::blade-champion" primary="false" />
+      <categoryLink id="7784562c" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="3f971740" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="6e825025" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="bcf87da1" name="Tristraen’s Gilded Blades" hidden="false" targetId="cp-kw::tristraens-gilded-blades" primary="false" />
+      <categoryLink id="1ba8732e" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="2a9b33d5" name="Tristraen" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="8546f4e3" name="Tristraen" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">6</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">6</characteristic>
@@ -573,7 +585,7 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="3d4714bf" name="Vaultswords – Behemor" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="73207237" name="Vaultswords - Behemor" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">6</characteristic>
@@ -584,7 +596,7 @@
             <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
           </characteristics>
         </profile>
-        <profile id="216b3bb8" name="Vaultswords – Hurricanis" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="59320b7e" name="Vaultswords - Hurricanis" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">9</characteristic>
@@ -595,7 +607,7 @@
             <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="5fc4297e" name="Vaultswords – Victus" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="f949e8e4" name="Vaultswords - Victus" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -606,54 +618,50 @@
             <characteristic name="Keywords" typeId="23459e53">Devastating Wounds</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="55978105" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="15b6823c" name="Martial Ka'tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="d387cd02" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="f32e515b" name="Enhancement: Watchman of Terra (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="4576e1d5" name="Rapid Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While the bearer is within Engagement Range of one or more enemy units, it has an Objective Control characteristic of 4. (Default enhancement; may be replaced with Warrior Exemplar: Each time the bearer destroys an enemy unit, roll one D6: on a 3+, you gain 1CP.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit can re-roll advance rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="ead20b98" name="Enhancement: Watchman of Terra (Warlord)" hidden="false">
-          <description>While the bearer is within Engagement Range of one or more enemy units, it has an Objective Control characteristic of 4. (Default enhancement; may be replaced with Warrior Exemplar: Each time the bearer destroys an enemy unit, roll one D6: on a 3+, you gain 1CP.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::tristraens-gilded-blades::00-tristraen::vaultswords" name="Vaultswords" type="upgrade" hidden="false">
+        <selectionEntry id="cp::tristraens-gilded-blades::00-tristraen::1-tristraen" name="1 Tristraen: vaultswords - behemor" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="995bb866" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="19a5107a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c3d532dd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4a6c1719" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::tristraens-gilded-blades::01-custodian-guard" name="Custodian Guard" type="unit" hidden="false">
+    <selectionEntry id="cp::tristraens-gilded-blades::01-custodian-guard" name="Gilded Blades Custodian Guard" type="unit" hidden="false">
       <constraints>
-        <constraint id="2b9e66fd" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="8f883963" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="cf3669b4" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="27918b20" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="24fb1758" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
-        <categoryLink id="9eb418fb" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
-        <categoryLink id="ee125d7c" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="a279bc01" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="fd28bde5" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="b045c0d6" name="Custodian Guard" hidden="false" targetId="cp-kw::custodian-guard" primary="false" />
-        <categoryLink id="13c798bb" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="e5f6ae29" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
+        <categoryLink id="d1a3dcba" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="41d09310" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="d30426a6" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="ac2236ad" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="04397c4a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="ceababe6" name="Tristraen’s Gilded Blades" hidden="false" targetId="cp-kw::tristraens-gilded-blades" primary="false" />
+      <categoryLink id="ace1defc" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="1cf8b33f" name="Custodian Guard" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="c113780c" name="Custodian Guard" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">6</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -661,18 +669,18 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="008958ea" name="Sentinel blade" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="e17fc40d" name="Sentinel Blade" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Assault, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="3b3477d6" name="Sentinel blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="e7846fe2" name="Sentinel Blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -683,54 +691,64 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="608ce7d2" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="15b6823c" name="Martial Ka'tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="acee83b4" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="20013ca7" name="Praesidium Shield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="1295a4b0" name="Sentinel Storm" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Add 1 to the bearer's Wounds characteristic.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">(Once per battle, per unit) In your Shooting phase, when this unit has shot, you can use this ability. If you do, this unit can shoot again.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ffc0b14b" name="Stand Vigil" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's melee attacks:Can re-roll wound rolls of 1.Or: That target a unit within range of an objective can re-roll wound rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="99ee9491" name="Praesidium Shield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model has +1 W.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2caf0851" name="Praesidium Shield" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Add 1 to the bearer’s Wounds characteristic.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="312c5c3d" name="Praesidium Shield" hidden="false">
-          <description>Add 1 to the bearer's Wounds characteristic.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::tristraens-gilded-blades::01-custodian-guard::every-model-sentinel-blade-praesidium-shield" name="Every model: sentinel blade, praesidium shield" type="upgrade" hidden="false">
+        <selectionEntry id="cp::tristraens-gilded-blades::01-custodian-guard::3-custodian-guard" name="3 Custodian Guard: praesidium shield, sentinel blade" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="421e6c89" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="01f75f93" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="9051230f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4485b391" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::tristraens-gilded-blades::02-custodian-wardens" name="Custodian Wardens" type="unit" hidden="false">
+    <selectionEntry id="cp::tristraens-gilded-blades::02-custodian-wardens" name="Gilded Blades Custodian Wardens" type="unit" hidden="false">
       <constraints>
-        <constraint id="d53f6d12" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="f2c4f615" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="6aa85459" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="edcdadf3" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="0ab9f6ca" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
-        <categoryLink id="9604b88d" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
-        <categoryLink id="e858adb9" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="d405c01c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="f260cfb6" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="6bc8bda5" name="Custodian Wardens" hidden="false" targetId="cp-kw::custodian-wardens" primary="false" />
-        <categoryLink id="1f191c42" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+        <categoryLink id="24812a0b" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
+        <categoryLink id="b98cb28f" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="da122f3b" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="6bc75ac9" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="61372856" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="4ccb74f1" name="Tristraen’s Gilded Blades" hidden="false" targetId="cp-kw::tristraens-gilded-blades" primary="false" />
+      <categoryLink id="7cd9155e" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="4af7a1ca" name="Custodian Wardens" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="8bcb9419" name="Custodian Warden with Castellan Axe" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">6</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -738,10 +756,20 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="ec41b0e7" name="Castellan axe" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="36d8f6b2" name="Custodian Warden with Guardian Spear" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
-            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">6</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="12a49397" name="Castellan Axe" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
@@ -749,18 +777,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
           </characteristics>
         </profile>
-        <profile id="736a79ec" name="Guardian spear" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
-            <characteristic name="A" typeId="1318d167">2</characteristic>
-            <characteristic name="BS" typeId="43a26991">2+</characteristic>
-            <characteristic name="S" typeId="cc313509">4</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
-            <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="90db12b0" name="Castellan axe" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="c7fd4268" name="Castellan Axe" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -771,83 +788,9 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="d816de1b" name="Guardian spear" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="21aa8073" name="Guardian Spear" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
-            <characteristic name="WS" typeId="258d9251">2+</characteristic>
-            <characteristic name="S" typeId="09c93781">7</characteristic>
-            <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">2</characteristic>
-            <characteristic name="Keywords" typeId="23459e53"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="15b6823c" name="Martial Ka'tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntries>
-        <selectionEntry id="cp::tristraens-gilded-blades::02-custodian-wardens::1-model-castellan-axe" name="1 model: castellan axe" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="ea327169" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="334c4da3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::tristraens-gilded-blades::02-custodian-wardens::2-models-guardian-spear" name="2 models: guardian spear" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="403bba59" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="1818399c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry id="cp::tristraens-gilded-blades::03-allarus-custodians" name="Allarus Custodians" type="unit" hidden="false">
-      <constraints>
-        <constraint id="7d49f211" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="67814b63" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="6025233e" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
-        <categoryLink id="e81ac117" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
-        <categoryLink id="ece9c59d" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="43f9bb1f" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="cbaa3ffb" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
-        <categoryLink id="c63ece9d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="d5b5c3e4" name="Allarus Custodians" hidden="false" targetId="cp-kw::allarus-custodians" primary="false" />
-        <categoryLink id="042fd4cc" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
-      </categoryLinks>
-      <profiles>
-        <profile id="0b4ef154" name="Allarus Custodians" typeId="59000054" typeName="Unit" hidden="false">
-          <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">5"</characteristic>
-            <characteristic name="T" typeId="f11c2b57">7</characteristic>
-            <characteristic name="SV" typeId="9a958949">2+</characteristic>
-            <characteristic name="W" typeId="b75ce314">4</characteristic>
-            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
-            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2d3505ec" name="Balistus grenade launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
-            <characteristic name="A" typeId="1318d167">D6</characteristic>
-            <characteristic name="BS" typeId="43a26991">2+</characteristic>
-            <characteristic name="S" typeId="cc313509">4</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
-            <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="736a79ec" name="Guardian spear" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -856,7 +799,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
           </characteristics>
         </profile>
-        <profile id="d816de1b" name="Guardian spear" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="da33c31f" name="Guardian Spear" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -867,22 +810,122 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ac032718" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="15b6823c" name="Martial Ka'tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="9a5593cc" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="172be514" name="Divine Protection" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit has Feel No Pain 4+ against mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::tristraens-gilded-blades::03-allarus-custodians::every-model-balistus-grenade-launcher-guardian-spear" name="Every model: balistus grenade launcher, guardian spear" type="upgrade" hidden="false">
+        <selectionEntry id="cp::tristraens-gilded-blades::02-custodian-wardens::1-custodian-warden-with-castellan-axe" name="1 Custodian Warden with Castellan Axe: castellan axe" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="b0c7c156" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="c70bfa36" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c539b80e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="41232590" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::tristraens-gilded-blades::02-custodian-wardens::2-custodian-warden-with-guardian-spear" name="2 Custodian Warden with Guardian Spear: guardian spear" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="23092456" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f9726587" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::tristraens-gilded-blades::03-allarus-custodians" name="Gilded Blades Allarus Custodians" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8192bd65" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6dc8c38d" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="393bf6d8" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" primary="true" />
+        <categoryLink id="430d9928" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="196484e5" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="636d4377" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="40420e08" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="1c7c9363" name="Terminator" hidden="false" targetId="cp-kw::terminator" primary="false" />
+      <categoryLink id="785154d8" name="Tristraen’s Gilded Blades" hidden="false" targetId="cp-kw::tristraens-gilded-blades" primary="false" />
+      <categoryLink id="e13aff0f" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2990ae1b" name="Allarus Custodian" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">5&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">4</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ec4c60e2" name="Balistus Grenade Launcher" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">D6</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="218778c4" name="Guardian Spear" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">4</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7f85b7a1" name="Guardian Spear" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">7</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="acc45a9a" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="17b6e2df" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="beb19117" name="Slayers of Tyrants" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit's attacks that target a CHARACTER/MONSTER/VEHICLE unit can re-roll wound rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ab51faf" name="From Golden Light" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">(Once per battle, per unit) At the end of your opponent's turn, if this unit is unengaged, you can use this ability. If you do, place this unit in strategic reserves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::tristraens-gilded-blades::03-allarus-custodians::2-allarus-custodian" name="2 Allarus Custodian: balistus grenade launcher, guardian spear" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b6aa4853" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d9502695" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

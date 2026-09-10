@@ -844,86 +844,88 @@
     </selectionEntry>
     <selectionEntry id="cp::draydens-lance::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="ac514b34" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="712f8a30" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="71f73092" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="27496d4a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="ac4dc442" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
-        <categoryLink id="f350a565" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
-        <categoryLink id="d1606416" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="819bd447" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
+        <categoryLink id="c5f5244b" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="48d43897" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="9eceb251" name="Last Stand" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="d01a78e6" name="Voice of Command" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
           <characteristics>
-            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ASTRA MILITARUM unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is ASTRA MILITARUM, OFFICER with this ability can issue Orders. Each OFFICER datasheet will specify how many Orders it can issue in a battle round and which units are eligible to receive those Orders. Each time an OFFICER model issues an Order, select one of the Orders below, then select one eligible friendly unit within 6&quot; of that OFFICER model to issue it to. OFFICER models can issue Orders in your Command phase and at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield. Until the start of your next Command phase, the unit you selected is affected by that Order. Unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit. Only ASTRA MILITARUM models gain the benefit of an Order issued to their unit. Add 3&quot; to the Move characteristic of models in this unit. Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1. Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1. Improve the Attacks characteristic of Rapid Fire weapons equipped by models in this unit by 1. Improve the Save characteristic of models in this unit by 1 (this cannot improve a model’s Save to better than 3+). Improve the Leadership and Objective Control characteristics of models in this unit by 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="9ea1e454" name="Prime Target" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="9b78f853" name="Experienced Veterans" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Friendly DRAYDEN'S LANCE units can re-roll rolls to determine the:A of a weapon.D of an attack.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Priority Assets</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="965c8f1b" name="Call Up the Reserves" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">DRAYDEN'S LANCE OFFICER model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per battle, per unit) At the start of any phase, you can use this ability. If you do, select one friendly DRAYDEN'S LANCE unit. That unit heals D3+2 wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5353bdca" name="Drayden’s Drill" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">DRAYDEN'S LANCE KASRKIN unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit’s snap shooting attacks hit on unmodified hit rolls of 4+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fefd07c1" name="Focus Attacks" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
             <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One OFFICER unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Until the start of your next Command phase, weapons equipped by ASTRA MILITARUM models from your army have the [LETHAL HITS] ability while targeting that enemy unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly DRAYDEN'S LANCE OFFICER unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit. Friendly DRAYDEN'S LANCE units' attacks that target that enemy unit have the following until the start of your next turn:[LETHAL HITS].[IGNORES COVER], if they are ranged attacks</characteristic>
           </characteristics>
         </profile>
-        <profile id="c031fe1c" name="Born In The Saddle" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="5f08b88a" name="First Wave" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ATTILAN ROUGH RIDERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your Movement phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly DRAYDEN'S LANCE unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one objective your unit is controlling. That objective is secured.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a3ce0fcf" name="Advance and Eliminate" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
+        <profile id="225d1611" name="Veteran Skirmishers" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">Each time an ASTRA MILITARUM unit from your army destroys an enemy unit, if that enemy unit started that phase within range of one or more objective markers within No Man’s Land, you score 3VP.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="48c35580" name="Battlefield Domination" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 4VP for each objective marker you control. You cannot score more than 12VP from this secondary objective.</characteristic>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent's Movement phase, when an enemy unit ends a move within 8&quot; of a friendly unengaged DRAYDEN'S LANCE unit.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That DRAYDEN'S LANCE unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a normal move of up to D3+1&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad" name="Drayden's Command Squad" type="unit" hidden="false">
+    <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad" name="Drayden’s Lance Command Squad" type="unit" hidden="false">
       <constraints>
-        <constraint id="d2ab3aba" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="3eb2c295" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="ac874030" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e44dbad7" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="df47453f" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
-        <categoryLink id="fec77119" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
-        <categoryLink id="6275148c" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="6083917a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="3bf1a55b" name="Grenades" hidden="false" targetId="cp-kw::grenades" primary="false" />
-        <categoryLink id="6d91071d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="3b78a90f" name="Platoon" hidden="false" targetId="cp-kw::platoon" primary="false" />
-        <categoryLink id="6a799fb3" name="Cadian" hidden="false" targetId="cp-kw::cadian" primary="false" />
-        <categoryLink id="3cc26f7c" name="Command Squad" hidden="false" targetId="cp-kw::command-squad" primary="false" />
-        <categoryLink id="7bdd6c81" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="64fb6138" name="Officer" hidden="false" targetId="cp-kw::officer" primary="false" />
-        <categoryLink id="8042ff95" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="94ff9c62" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
+        <categoryLink id="3f1d839a" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="e092f17f" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="d18bfa19" name="Cadian" hidden="false" targetId="cp-kw::cadian" primary="false" />
+      <categoryLink id="2c92bf1d" name="Drayden’s Lance" hidden="false" targetId="cp-kw::draydens-lance" primary="false" />
+      <categoryLink id="fbbf0a61" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="b07ef460" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="2bb332bd" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="d22de8d4" name="Platoon" hidden="false" targetId="cp-kw::platoon" primary="false" />
+      <categoryLink id="2a8de94d" name="Officer" hidden="false" targetId="cp-kw::officer" primary="false" />
+      <categoryLink id="0ec0f41b" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="8a2edbbe" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="1f5ef87e" name="Major Drayden" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="5fe28b99" name="Cadian Veteran Guardsmen with Medi-pack" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
-            <characteristic name="T" typeId="f11c2b57">3</characteristic>
-            <characteristic name="SV" typeId="9a958949">5+</characteristic>
-            <characteristic name="W" typeId="b75ce314">3</characteristic>
-            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
-            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1ca62f52" name="Veteran Guardsman" typeId="59000054" typeName="Unit" hidden="false">
-          <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">5+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -931,20 +933,50 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="8c9145c3" name="Cadian Veteran Guardsman" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c48a467" name="Major Drayden" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="832a8ba6" name="Cadian Veteran Guardsman with Powerfist" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">5+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d6512903" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="71462c0e" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="df793e7c" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
@@ -953,40 +985,29 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="44a30d4f" name="Laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="bf26253c" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
-            <characteristic name="A" typeId="1318d167">1</characteristic>
-            <characteristic name="BS" typeId="43a26991">4+</characteristic>
-            <characteristic name="S" typeId="cc313509">3</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">0</characteristic>
-            <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="ebd16292" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="636b421f" name="Gun Stocks" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -997,7 +1018,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="42d227c4" name="Power fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="1c983329" name="Power Fist" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -1008,7 +1029,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="b3755955" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="2a9c55aa" name="Power Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -1019,93 +1040,84 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="a1468ec5" name="Voice of Command" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="bc9cb3e3" name="Voice of Command" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="d18d661d" name="Cadia Stands!" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="8a2c9858" name="Medi-pack" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While this unit contains an Officer, each time a ranged attack targets this unit, if this unit is within range of an objective marker you control, models in this unit have the Benefit of Cover against that attack.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit has Feel No Pain 6+.</characteristic>
           </characteristics>
         </profile>
-        <profile id="d9bdb6e3" name="Medi-pack" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="a60448d0" name="Orders" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">The bearer's unit has the Feel No Pain 6+ ability.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit’s OFFICER can issue up to 2 Orders to DRAYDEN'S LANCE units.</characteristic>
           </characteristics>
         </profile>
-        <profile id="61c2650d" name="Orders" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="ed460e0f" name="Over There" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This unit's Officer can issue 1 Order to a Regiment unit.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the start of your Shooting phase, you can select one enemy unit within 24&quot; of this unit. That enemy unit has +3&quot; detection range.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ec475553" name="Enhancement: Overarching Command (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="8dd6f1f6" name="Regimental Standard" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">In your Command phase, the bearer can issue one additional Order that phase. In addition, each time the bearer issues an Order, it can be issued to any friendly Astra Militarum unit on the battlefield, regardless of distance between the two units or any keywords that unit would normally be required to have. (Default enhancement; may be replaced with Commando Training: Each time the bearer issues an Order to a friendly unit, you can select one objective marker within range of that unit and one objective marker within range of the bearer's unit. Those objective markers are secured by you (see the Combat Patrol rules).)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit has +1 OC.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc863290" name="Master Vox" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit's OFFICER model issues an Order, it can be issued to any eligible unit within 24&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="46f39c71" name="Cadia Stands!" hidden="false">
-          <description>While this unit contains an Officer, each time a ranged attack targets this unit, if this unit is within range of an objective marker you control, models in this unit have the Benefit of Cover against that attack.</description>
-        </rule>
-        <rule id="6c7614ff" name="Medi-pack" hidden="false">
-          <description>The bearer's unit has the Feel No Pain 6+ ability.</description>
-        </rule>
-        <rule id="4b1647b6" name="Orders" hidden="false">
-          <description>This unit's Officer can issue 1 Order to a Regiment unit.</description>
-        </rule>
-        <rule id="02f7e35b" name="Enhancement: Overarching Command (Warlord)" hidden="false">
-          <description>In your Command phase, the bearer can issue one additional Order that phase. In addition, each time the bearer issues an Order, it can be issued to any friendly Astra Militarum unit on the battlefield, regardless of distance between the two units or any keywords that unit would normally be required to have. (Default enhancement; may be replaced with Commando Training: Each time the bearer issues an Order to a friendly unit, you can select one objective marker within range of that unit and one objective marker within range of the bearer's unit. Those objective markers are secured by you (see the Combat Patrol rules).)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::major-drayden-plasma-pistol-power-weapon" name="Major Drayden: plasma pistol, power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::1-cadian-veteran-guardsmen-with-medi-pack" name="1 Cadian Veteran Guardsmen with Medi-pack: gun stocks, lasgun, medi-pack" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="5a3b7178" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="7d855067" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c7f8d862" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ab97a4b5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::1-cadian-veteran-guardsman-bolt-pistol-power-fist" name="1 Cadian Veteran Guardsman: bolt pistol, power fist" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::1-cadian-veteran-guardsman" name="1 Cadian Veteran Guardsman: gun stocks, lasgun" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="74fbc05c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="68c24f36" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="6659697c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="cbacfb29" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::1-cadian-veteran-guardsman-lasgun-close-combat-weapon-medi-pack" name="1 Cadian Veteran Guardsman: lasgun, close combat weapon, medi-pack" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::1-major-drayden" name="1 Major Drayden: plasma pistol, power weapon" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="eb0d6002" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="65ab95b4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="788abc97" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ef8720b2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::2-cadian-veteran-guardsmen-lasgun-close-combat-weapon" name="2 Cadian Veteran Guardsmen: lasgun, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::00-drayden-s-command-squad::1-cadian-veteran-guardsman-with-powerfist" name="1 Cadian Veteran Guardsman with Powerfist: bolt pistol, power fist" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="459e80b2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="c95ab5a0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="9dbcedef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="a6464c40" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::draydens-lance::01-kasrkin" name="Kasrkin" type="unit" hidden="false">
+    <selectionEntry id="cp::draydens-lance::01-kasrkin" name="Drayden’s Lance Kasrkin" type="unit" hidden="false">
       <constraints>
-        <constraint id="fbbf71cb" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="26b4ac91" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="2718f365" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="30734745" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="2f0c1f3a" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
-        <categoryLink id="f9c2e1c8" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
-        <categoryLink id="f900c340" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="c348c9fc" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="841e70e9" name="Grenades" hidden="false" targetId="cp-kw::grenades" primary="false" />
-        <categoryLink id="f047aa9c" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="97b09bf1" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
-        <categoryLink id="3e3d1d5a" name="Kasrkin" hidden="false" targetId="cp-kw::kasrkin" primary="false" />
-        <categoryLink id="0a111bbe" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="4fff46ff" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
+        <categoryLink id="39fb7ac9" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="dc387f97" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="6785b8be" name="Drayden’s Lance" hidden="false" targetId="cp-kw::draydens-lance" primary="false" />
+      <categoryLink id="0233e9e3" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="a575baec" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="7bd83a8d" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="c8198145" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
+      <categoryLink id="73ab5ff8" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="cb15f027" name="Kasrkin" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="7b0618cf" name="Kasrkin Sergeant" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -1113,9 +1125,79 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="8a2b88c3" name="Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="a89882ea" name="Kasrkin Trooper with Plasma Gun" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2100dcb6" name="Kasrkin Trooper with Melta Mine" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9af4d27e" name="Kasrkin Trooper with Hot-shot Marksman Rifle" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa88edfe" name="Kasrkin Trooper with Grenade Launcher" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f4ddd746" name="Kasrkin Trooper with Hot-shot Volley Gun" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ae31c16" name="Kasrkin Trooper with Flamer" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6017ac75" name="Kasrkin Trooper" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b7882df8" name="Flamer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -1124,20 +1206,20 @@
             <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="e389ec9f" name="Grenade launcher – frag" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="1c823af6" name="Grenade Launcher - Frag" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D3</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="37405d7b" name="Grenade launcher – krak" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="20b954c4" name="Grenade Launcher - Krak" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">9</characteristic>
@@ -1146,9 +1228,9 @@
             <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="f673db01" name="Hot-shot lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="9ef4064a" name="Hot-shot Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
@@ -1157,20 +1239,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="c4cea5c3" name="Hot-shot laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="b0a3c987" name="Hot-shot Marksman Rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
-            <characteristic name="A" typeId="1318d167">1</characteristic>
-            <characteristic name="BS" typeId="43a26991">3+</characteristic>
-            <characteristic name="S" typeId="cc313509">3</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
-            <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="00ce9439" name="Hot-shot marksman rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="b8493dea">36"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">36&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -1179,9 +1250,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Heavy, Precision</characteristic>
           </characteristics>
         </profile>
-        <profile id="390b2997" name="Hot-shot volley gun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="e7ef1ce0" name="Hot-shot Volley Gun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">30&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -1190,9 +1261,20 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 2</characteristic>
           </characteristics>
         </profile>
-        <profile id="2386aeba" name="Plasma gun – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="961d4f9b" name="Hot-shot laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">3</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a06797d3" name="Plasma Gun - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
@@ -1201,9 +1283,20 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="e3f8d361" name="Plasma gun – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="fcc7ffe0" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">7</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0268ff47" name="Plasma Gun - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
@@ -1212,7 +1305,29 @@
             <characteristic name="Keywords" typeId="aa05940c">Hazardous, Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="1e533cf1" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">3+</characteristic>
+            <characteristic name="S" typeId="cc313509">8</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c27f27bf" name="Chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">4</characteristic>
+            <characteristic name="WS" typeId="258d9251">4+</characteristic>
+            <characteristic name="S" typeId="09c93781">3</characteristic>
+            <characteristic name="AP" typeId="54255f70">0</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="62798ca2" name="Gun Stocks" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -1223,120 +1338,98 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="b3755955" name="Power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
-          <characteristics>
-            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
-            <characteristic name="A" typeId="b10eaf4e">3</characteristic>
-            <characteristic name="WS" typeId="258d9251">4+</characteristic>
-            <characteristic name="S" typeId="09c93781">4</characteristic>
-            <characteristic name="AP" typeId="54255f70">-2</characteristic>
-            <characteristic name="D" typeId="1f91ac72">1</characteristic>
-            <characteristic name="Keywords" typeId="23459e53"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e3aba06e" name="Scouts 6&quot;" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="8551aafa" name="Voice of Command" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="3b6178a5" name="Warrior Elite" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="9d8ce8e7" name="Warrior Elite (once per battle round, per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">In your Command phase, you can select one Order to affect this unit until the start of your next Command phase, in addition to any other Orders issued to this unit by an Officer model this turn.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the start of any phase, you can use this ability. If you do, select one Order. That Order affects this unit, in addition to any other Orders issued to this unit, until the start of your next Command phase.</characteristic>
           </characteristics>
         </profile>
-        <profile id="46bf6dc0" name="Melta Mine" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="56005249" name="Melta Mine (once per battle, per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Once per battle, at the start of any phase, you can select one enemy unit within 3" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a Vehicle unit.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the start of any phase, you can use this ability. If you do, select one enemy unit within 3&quot; of this model and roll one D6. On a 2+:That enemy unit suffers D3 mortal wounds.Or: If that enemy unit has VEHICLE, that enemy unit suffers 2D3 mortal wounds.</characteristic>
           </characteristics>
         </profile>
-        <profile id="dcc76c62" name="Patrol Squads" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="0991c3d0" name="Vox‑caster" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When you target this unit with a stratagem, roll one D6, with +1 to the result if a friendly OFFICER model is within 6&quot; of this unit:On a 5+, you gain 1 CP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="14d793cf" name="Warrior Elite" hidden="false">
-          <description>In your Command phase, you can select one Order to affect this unit until the start of your next Command phase, in addition to any other Orders issued to this unit by an Officer model this turn.</description>
-        </rule>
-        <rule id="53a0811b" name="Melta Mine" hidden="false">
-          <description>Once per battle, at the start of any phase, you can select one enemy unit within 3" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a Vehicle unit.</description>
-        </rule>
-        <rule id="da581be6" name="Patrol Squads" hidden="false">
-          <description>At the start of the Declare Battle Formations step, before any units have been set up, this unit can be split into two units, each containing five models.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-sergeant-plasma-pistol-chainsword" name="1 Kasrkin Sergeant: plasma pistol, chainsword" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-sergeant" name="1 Kasrkin Sergeant: chainsword, plasma pistol - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="57f509e6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="aa9df155" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="d944506d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="af903c8d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-hot-shot-marksman-rifle-close-combat-weapon" name="1 Kasrkin Trooper: hot-shot marksman rifle, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-with-plasma-gun" name="1 Kasrkin Trooper with Plasma Gun: gun stocks, plasma gun - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="e6c741a7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="59b4ce13" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="d5d85506" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="72d173e7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-hot-shot-laspistol-close-combat-weapon-melta-mine" name="1 Kasrkin Trooper: hot-shot laspistol, close combat weapon, melta mine" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-with-melta-mine" name="1 Kasrkin Trooper with Melta Mine: gun stocks, hot-shot laspistol, melta mine (once per battle, per unit)" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a1dc8b6d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b0aea6a4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="6f608a5b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="01c596c8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-flamer-close-combat-weapon" name="1 Kasrkin Trooper: flamer, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-with-hot-shot-marksman-rifle" name="1 Kasrkin Trooper with Hot-shot Marksman Rifle: gun stocks, hot-shot marksman rifle" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="37c8f44b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="9c65377d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="74e80efb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="36836dc6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-grenade-launcher-close-combat-weapon" name="1 Kasrkin Trooper: grenade launcher, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-with-grenade-launcher" name="1 Kasrkin Trooper with Grenade Launcher: grenade launcher - frag, gun stocks" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="2b527f6f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="324d4afc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="865ef00d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="9503c064" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-hot-shot-volley-gun-close-combat-weapon" name="1 Kasrkin Trooper: hot-shot volley gun, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-with-hot-shot-volley-gun" name="1 Kasrkin Trooper with Hot-shot Volley Gun: gun stocks, hot-shot volley gun" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="7f426f96" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b5fc8934" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="608513c1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="85993137" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-plasma-gun-close-combat-weapon" name="1 Kasrkin Trooper: plasma gun, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::1-kasrkin-trooper-with-flamer" name="1 Kasrkin Trooper with Flamer: flamer, gun stocks" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="14a68535" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="4f1b0308" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="24611340" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="644e9fc0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::01-kasrkin::3-kasrkin-troopers-hot-shot-lasgun-close-combat-weapon" name="3 Kasrkin Troopers: hot-shot lasgun, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::01-kasrkin::3-kasrkin-trooper" name="3 Kasrkin Trooper: gun stocks, hot-shot lasgun" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="e23dc293" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="95c516a8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="b69a8234" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d9453ea9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders" name="Attilan Rough Riders" type="unit" hidden="false">
+    <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders" name="Drayden’s Lance Attilan Rough Riders" type="unit" hidden="false">
       <constraints>
-        <constraint id="0676047b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="f810931c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="e0012a21" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2849e09a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="d551a94f" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
-        <categoryLink id="21eef8fe" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
-        <categoryLink id="3922a63c" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="92aacf3a" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
-        <categoryLink id="88a540c4" name="Grenades" hidden="false" targetId="cp-kw::grenades" primary="false" />
-        <categoryLink id="af23f7ea" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="75c3eb2b" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
-        <categoryLink id="03265d1e" name="Attilan Rough Riders" hidden="false" targetId="cp-kw::attilan-rough-riders" primary="false" />
-        <categoryLink id="629cc939" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="6b0eeb1c" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
+        <categoryLink id="feadd081" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="80f0e252" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="a3bf35db" name="Drayden’s Lance" hidden="false" targetId="cp-kw::draydens-lance" primary="false" />
+      <categoryLink id="4484c1c4" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="b77ca07f" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="d12cf84f" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+      <categoryLink id="67c87719" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
+      <categoryLink id="6b618f04" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="ac18070d" name="Attilan Rough Riders" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="dd2b27ec" name="Rough Rider Sergeant" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -1344,9 +1437,29 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="71462c0e" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="8f80d567" name="Rough Rider with Hunting Lance" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="72ba0d96" name="Rough Rider with Goad Lance" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce20c582" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
@@ -1355,18 +1468,18 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="44a30d4f" name="Laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="84e6329d" name="Laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="03144abc" name="Goad lance" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="991343ba" name="Goad Lance" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -1374,10 +1487,10 @@
             <characteristic name="S" typeId="09c93781">6</characteristic>
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
             <characteristic name="D" typeId="1f91ac72">2</characteristic>
-            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="8a5c3746" name="Hunting lance – frag tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="9626d276" name="Hunting Lance - Frag Tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">D6</characteristic>
@@ -1388,7 +1501,7 @@
             <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
           </characteristics>
         </profile>
-        <profile id="47752d4c" name="Hunting lance – melta tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="4371774e" name="Hunting Lance - Melta Tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">1</characteristic>
@@ -1399,7 +1512,7 @@
             <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
           </characteristics>
         </profile>
-        <profile id="0a6ed6b4" name="Power sabre" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="589a9239" name="Power Sabre" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -1410,7 +1523,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="c6865c39" name="Steed's hooves" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="8418a574" name="Steed’s Hooves" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -1421,58 +1534,58 @@
             <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
           </characteristics>
         </profile>
-        <profile id="5d22f481" name="Horsemasters" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="69f52784" name="Voice of Command" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1d49c5d8" name="Horsemasters" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit makes a fall‑back move, that move does not prevent this unit from being eligible to shoot/declare a charge.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="2580db99" name="Horsemasters" hidden="false">
-          <description>This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders::1-rough-rider-sergeant-lasgun-laspistol-hunting-lance-power-sabre-steed-s-hooves" name="1 Rough Rider Sergeant: lasgun, laspistol, hunting lance, power sabre, steed's hooves" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders::1-rough-rider-sergeant" name="1 Rough Rider Sergeant: hunting lance - frag tip, lasgun, laspistol, power sabre, steed's hooves" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="7a3956be" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="8c0e7240" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="95e4f7c5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ea88e580" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders::1-rough-rider-lasgun-laspistol-goad-lance-steed-s-hooves" name="1 Rough Rider: lasgun, laspistol, goad lance, steed's hooves" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders::3-rough-rider-with-hunting-lance" name="3 Rough Rider with Hunting Lance: hunting lance - frag tip, lasgun, laspistol, steed's hooves" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a9d42027" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="38e4ff2f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="05242438" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="471c3d05" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders::3-rough-riders-lasgun-laspistol-hunting-lance-steed-s-hooves" name="3 Rough Riders: lasgun, laspistol, hunting lance, steed's hooves" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::02-attilan-rough-riders::1-rough-rider-with-goad-lance" name="1 Rough Rider with Goad Lance: goad lance, laspistol, steed's hooves" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="774b25af" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="90ddd11b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="31d03bfd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8b29afa8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders" name="Attilan Rough Riders" type="unit" hidden="false">
+    <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders" name="Drayden’s Lance Attilan Rough Riders" type="unit" hidden="false">
       <constraints>
-        <constraint id="d726998a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="297c535c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="7b0008bb" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0679ee24" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="9793c1ed" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
-        <categoryLink id="367f8225" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
-        <categoryLink id="82f008d2" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="9cdcf005" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
-        <categoryLink id="3b082bf1" name="Grenades" hidden="false" targetId="cp-kw::grenades" primary="false" />
-        <categoryLink id="d52f4b25" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="85730725" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
-        <categoryLink id="5e8deabf" name="Attilan Rough Riders" hidden="false" targetId="cp-kw::attilan-rough-riders" primary="false" />
-        <categoryLink id="4b0c93ba" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
+        <categoryLink id="92139329" name="Combat Patrol: Astra Militarum (Drayden's Lance)" hidden="false" targetId="cp-cat::draydens-lance" primary="true" />
+        <categoryLink id="3f480039" name="Astra Militarum" hidden="false" targetId="cp-faction::astra-militarum" primary="false" />
+        <categoryLink id="8ef25ffe" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="ba516d80" name="Drayden’s Lance" hidden="false" targetId="cp-kw::draydens-lance" primary="false" />
+      <categoryLink id="6f7c2271" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="02cc23ed" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="c092c44c" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+      <categoryLink id="2fe921ae" name="Regiment" hidden="false" targetId="cp-kw::regiment" primary="false" />
+      <categoryLink id="3531c03a" name="Astra Militarum" hidden="false" targetId="cp-kw::astra-militarum" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="ac18070d" name="Attilan Rough Riders" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="c3ef685b" name="Rough Rider Sergeant" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -1480,9 +1593,29 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="71462c0e" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="042bc166" name="Rough Rider with Hunting Lance" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d61d05a" name="Rough Rider with Goad Lance" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2424f057" name="Lasgun" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
@@ -1491,18 +1624,18 @@
             <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="44a30d4f" name="Laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="b84a2d3b" name="Laspistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="03144abc" name="Goad lance" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="dbc948bd" name="Goad Lance" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -1510,10 +1643,10 @@
             <characteristic name="S" typeId="09c93781">6</characteristic>
             <characteristic name="AP" typeId="54255f70">-2</characteristic>
             <characteristic name="D" typeId="1f91ac72">2</characteristic>
-            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="8a5c3746" name="Hunting lance – frag tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="dcb54b61" name="Hunting Lance - Frag Tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">D6</characteristic>
@@ -1524,7 +1657,7 @@
             <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
           </characteristics>
         </profile>
-        <profile id="47752d4c" name="Hunting lance – melta tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="71c03726" name="Hunting Lance - Melta Tip" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">1</characteristic>
@@ -1535,7 +1668,7 @@
             <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
           </characteristics>
         </profile>
-        <profile id="0a6ed6b4" name="Power sabre" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="9e1ec7c7" name="Power Sabre" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -1546,7 +1679,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="c6865c39" name="Steed's hooves" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="c7a3d47f" name="Steed’s Hooves" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -1557,34 +1690,34 @@
             <characteristic name="Keywords" typeId="23459e53">Extra Attacks</characteristic>
           </characteristics>
         </profile>
-        <profile id="5d22f481" name="Horsemasters" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="bf5ccc84" name="Voice of Command" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="57f935ee" name="Horsemasters" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When this unit makes a fall‑back move, that move does not prevent this unit from being eligible to shoot/declare a charge.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="2580db99" name="Horsemasters" hidden="false">
-          <description>This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders::1-rough-rider-sergeant-lasgun-laspistol-hunting-lance-power-sabre-steed-s-hooves" name="1 Rough Rider Sergeant: lasgun, laspistol, hunting lance, power sabre, steed's hooves" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders::1-rough-rider-sergeant" name="1 Rough Rider Sergeant: hunting lance - frag tip, lasgun, laspistol, power sabre, steed's hooves" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="996a4017" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="36c3db63" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="6e37894b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7a5e1cd3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders::1-rough-rider-lasgun-laspistol-goad-lance-steed-s-hooves" name="1 Rough Rider: lasgun, laspistol, goad lance, steed's hooves" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders::3-rough-rider-with-hunting-lance" name="3 Rough Rider with Hunting Lance: hunting lance - frag tip, lasgun, laspistol, steed's hooves" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="35582e3e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="edda7895" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="6b29ee9c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="83ba51c8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders::3-rough-riders-lasgun-laspistol-hunting-lance-steed-s-hooves" name="3 Rough Riders: lasgun, laspistol, hunting lance, steed's hooves" type="upgrade" hidden="false">
+        <selectionEntry id="cp::draydens-lance::03-attilan-rough-riders::1-rough-rider-with-goad-lance" name="1 Rough Rider with Goad Lance: goad lance, laspistol, steed's hooves" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="da968461" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="f421edfb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="db1a2bed" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="bf75bc84" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

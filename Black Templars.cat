@@ -560,75 +560,93 @@
     </selectionEntry>
     <selectionEntry id="cp::vow-sworn-of-vedrenn::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="a5c11776" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="800c9b77" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="ced3384d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="20248ea5" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="c42e0547" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
-        <categoryLink id="a70d410c" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
-        <categoryLink id="d3642a74" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+        <categoryLink id="6f7cc9aa" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
+        <categoryLink id="3c757282" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
+        <categoryLink id="c06bfa7d" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="05d590a4" name="Dedication to the End" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="7ec949a0" name="Heirs of Sigismund" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">■ If an ADEPTUS ASTARTES unit has a second Faction keyword on its datasheet, that Faction keyword is the name of that unit’s Chapter. For example, High Marshal Helbrecht has both the ADEPTUS ASTARTES and BLACK TEMPLARS Faction keywords, and is therefore from the Black Templars Chapter. ■ You cannot include units from more than one Chapter in your army. ■ If your army includes one or more units from the Black Templars Chapter or you are using one of the Detachments found on the following pages: □ ADEPTUS ASTARTES units from your army lose the Oath of Moment army rule (if they have it), and it is replaced with the Templar Vows army rule. □ You cannot use the 1st Company Task Force Detachment (see Codex: Space Marines). □ Your army cannot include any ADEPTUS ASTARTES PSYKER models. □ Your army cannot include the following datasheets from Codex: Space Marines: Gladiator Lancer; Gladiator Reaper; Gladiator Valiant; Impulsor; Land Raider Crusader; Repulsor; Repulsor Executioner; Sternguard Veteran Squad; Terminator Squad.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ddf969b5" name="Templar Vows" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">If your Army Faction is ADEPTUS ASTARTES, at the start of the first battle round, select one of the following Vows to be active for ADEPTUS ASTARTES units from your army. While a Vow is active for a unit from your army, that unit has the associated ability shown below. This unit’s melee attacks that target a PSYKER unit have [PRECISION]. When this unit declares charge, If an enemy PSYKER unit is within 12&quot; of this unit, you can use this part of this ability. If you do: This unit can re-roll that charge roll. This unit must end that charge move engaged with one or more of those enemy PSYKER units. Each time a model in this unit makes a melee attack, if the Strength characteristic of that attack is less than or equal to the Toughness characteristic of the target, add 1 to the Wound roll. This unit is eligible to declare a charge in a turn in which it Fell Back, and each time a model in this unit makes a Pile-in or Consolidation move, it does not need to end that move closer to the closest enemy model, provided it ends that move as close as possible to the closest enemy unit. If this unit has the INFANTRY keyword: ■ At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase. ■ If the mission you are playing features Actions, this unit is eligible to start to perform an Action in a turn in which it Advanced.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c5aec2b" name="Close-range Destruction" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">Friendly VOW-SWORN OF VEDRENN units' attacks that target a unit within 12&quot; can ignore modifiers to: BS.WS.Hit rolls.When playing a Combat Patrol battle, the following friendly units must start the battle in strategic reserves and cannot be set up on the battlefield before the battle round stated. When doing so, they must be set up wholly within your deployment zone.EMPEROR'S CHAMPION: Battle round 2.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Take and Hold</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7f032a10" name="Divine Endurance" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">VOW-SWORN OF VEDRENN EMPEROR'S CHAMPION model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">At the start of your Movement phase, you can select one friendly VOW-SWORN OF VEDRENN unit visible to and within 12&quot; of this model. If you do, when that unit is selected to make an advance/fall-back move this turn:If that unit uses the desperate escape mode, it passes any hazard rolls.That move does not prevent that unit from being eligible to start an action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="09ddf903" name="Divine Protection" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">VOW-SWORN SWORD BRETHREN unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per battle, per unit) When an enemy unit targets this unit, you can use this ability. If you do, this unit has 4+ InSv.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ef4fc265" name="Come To Their Aid" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if your unit has the BLADEGUARD VETERAN SQUAD or SWORD BRETHREN SQUAD keywords. On a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Charge phase, when a friendly VOW-SWORN OF VEDRENN unit has made a charge roll.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That VOW-SWORN OF VEDRENN unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Add 2 to the charge roll.When selecting charge targets, your unit can only select enemy units engaged with friendly VOW-SWORN OF VEDRENN units.</characteristic>
           </characteristics>
         </profile>
-        <profile id="bb09e8c6" name="Bulwark of Faith" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="c5d36220" name="Heavy Strikes" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Command phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One BLADEGUARD VETERAN SQUAD or SWORD BRETHREN SQUAD unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the start of your next Command phase, add 1 to the Objective Control characteristic of models in your unit.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when a friendly VOW-SWORN SWORD BRETHREN SQUAD/BLADEGUARD VETERAN SQUAD unit is selected to fight.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That VOW-SWORN SWORD BRETHREN SQUAD/BLADEGUARD VETERAN SQUAD unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's melee attacks that target a MONSTER/VEHICLE unit have +1 D.</characteristic>
           </characteristics>
         </profile>
-        <profile id="b80649c8" name="Divine Protection" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="4e81a706" name="Blessed Aura" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS ASTARTES unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have a 5+ invulnerable save and they have the Feel No Pain 5+ ability against mortal wounds.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a04c1034" name="Execution Edict" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">Each time an ADEPTUS ASTARTES unit from your army destroys an enemy CHARACTER model, you score 4VP. At the end of the battle, if all enemy CHARACTER models are destroyed, you score 4VP.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c37d9c5f" name="To Their Very Gates" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the end of the battle, you score 10VP if you control the objective marker closest to your opponent’s battlefield edge.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Command phase, when a friendly VOW-SWORN OF VEDRENN unit passes a battle-shock roll.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That VOW-SWORN OF VEDRENN unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Melee attacks that target your unit have -1 to hit rolls until the start of your next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="cp::vow-sworn-of-vedrenn::00-emperor-s-champion-vedrenn" name="Emperor's Champion Vedrenn" type="unit" hidden="false">
+    <selectionEntry id="cp::vow-sworn-of-vedrenn::00-emperor-s-champion-vedrenn" name="Emperor’s Champion Vedrenn" type="unit" hidden="false">
       <constraints>
-        <constraint id="d74b8ed4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="d5bc9b02" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="34250d85" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="4a3a5d25" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="4643ce38" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
-        <categoryLink id="edc1e056" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
-        <categoryLink id="4f9f6a4b" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
-        <categoryLink id="0ee4c524" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="7ea7e744" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="f8e1d118" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="a1f713b2" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
-        <categoryLink id="f9e6313d" name="Emperor's Champion" hidden="false" targetId="cp-kw::emperor-s-champion" primary="false" />
-        <categoryLink id="d811c704" name="Vedrenn" hidden="false" targetId="cp-kw::vedrenn" primary="false" />
-        <categoryLink id="00f22b45" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
-        <categoryLink id="48fce522" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="f7e50b33" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
+        <categoryLink id="79c98051" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
+        <categoryLink id="ec9b8097" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      <categoryLink id="bcd2934a" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="2c05f72c" name="Emperor's Champion" hidden="false" targetId="cp-kw::emperor-s-champion" primary="false" />
+      <categoryLink id="7c745ddb" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="fd1cc3b0" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="7e4ff6bc" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="344591bd" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+      <categoryLink id="cc8061ff" name="Vow-Sworn of Vedrenn" hidden="false" targetId="cp-kw::vow-sworn-of-vedrenn" primary="false" />
+      <categoryLink id="c3564e54" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+      <categoryLink id="c315a61d" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="62f4a84e" name="Emperor's Champion Vedrenn" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="7447951c" name="Emperor’s Champion Vedrenn" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">8"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">5</characteristic>
@@ -636,18 +654,29 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="f9bfe689" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">2+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="e6b3e40a" name="Black Sword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="d404cb11" name="Black Sword - Strike" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">8</characteristic>
+            <characteristic name="AP" typeId="54255f70">-3</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Anti-Character 5+, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e8ced510" name="Black Sword - Sweep" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">10</characteristic>
@@ -658,77 +687,58 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="8aabb13d" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="60f9b053" name="Lone Operative" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="eb826030" name="Heirs of Sigismund" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="8cc6cfd5" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="66215843" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="f4a02586" name="Enhancement: Oath of Destruction (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="81fec722" name="Deft Riposte" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Melee weapons equipped by the bearer have the [PRECISION] ability. Melee weapons equipped by the bearer have the [SUSTAINED HITS 1] ability while targeting Character units. (Default enhancement; may be replaced with Halo of Detestation: Each time a ranged attack targets the bearer's unit, subtract 1 from the Hit roll.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">Melee attacks that target this unit have [HAZARDOUS].</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="1fe9a5c6" name="Enhancement: Oath of Destruction (Warlord)" hidden="false">
-          <description>Melee weapons equipped by the bearer have the [PRECISION] ability. Melee weapons equipped by the bearer have the [SUSTAINED HITS 1] ability while targeting Character units. (Default enhancement; may be replaced with Halo of Detestation: Each time a ranged attack targets the bearer's unit, subtract 1 from the Hit roll.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::00-emperor-s-champion-vedrenn::bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::00-emperor-s-champion-vedrenn::1-emperors-champion-vedrenn" name="1 Emperor’s Champion Vedrenn: black sword - strike, bolt pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="655b1274" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="3e8727af" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
-          </constraints>
-        </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::00-emperor-s-champion-vedrenn::black-sword" name="Black Sword" type="upgrade" hidden="false">
-          <constraints>
-            <constraint id="2007b84b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="ad2a37a2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="e0575a36" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="46dd48c3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad" name="Crusader Squad" type="unit" hidden="false">
+    <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad" name="Vow-Sworn Crusader Squad" type="unit" hidden="false">
       <constraints>
-        <constraint id="fa46d282" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="6376ba62" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="8e1210bc" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="627b60ce" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="50aa7649" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
-        <categoryLink id="dd1baadb" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
-        <categoryLink id="ee2b99f9" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
-        <categoryLink id="b8e4405c" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="273b61be" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="12e12af6" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
-        <categoryLink id="15c8c405" name="Crusader Squad" hidden="false" targetId="cp-kw::crusader-squad" primary="false" />
-        <categoryLink id="1971e064" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
-        <categoryLink id="fd6dce0d" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="9b835d23" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
+        <categoryLink id="51fe75b6" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
+        <categoryLink id="886b7693" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      <categoryLink id="d9ed9dc4" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="71b89963" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="73502b24" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="0b2ebf23" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="6e5d8c35" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+      <categoryLink id="958dcfc5" name="Vow-Sworn of Vedrenn" hidden="false" targetId="cp-kw::vow-sworn-of-vedrenn" primary="false" />
+      <categoryLink id="c95596fd" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+      <categoryLink id="5a4758e3" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="00c59844" name="Neophytes" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="c79bd90a" name="Initiate with Heavy Bolt Pistol and Chainsword" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
-            <characteristic name="T" typeId="f11c2b57">4</characteristic>
-            <characteristic name="SV" typeId="9a958949">4+</characteristic>
-            <characteristic name="W" typeId="b75ce314">2</characteristic>
-            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
-            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3c0d1567" name="Other Models" typeId="59000054" typeName="Unit" hidden="false">
-          <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -736,20 +746,70 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="19811e83" name="Bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="c209e4df" name="Initiate with Bolt Pistol, Bolt Rifle and Knives and Fists" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2d9148a" name="Sword Brother" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7fefb025" name="Initiate with Pyreblaster, Bolt Pistol and Knives and Fists" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="05ea8a1f" name="Neophyte with Neophyte Firearm and Knives and Fists" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b47cee3a" name="Neophyte with Bolt Pistol and Chainsword" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d8953620" name="Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="a4bde364" name="Bolt rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="779b2a4d" name="Bolt Rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -758,20 +818,20 @@
             <characteristic name="Keywords" typeId="aa05940c">Assault, Heavy</characteristic>
           </characteristics>
         </profile>
-        <profile id="4b671f19" name="Heavy bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="17e96678" name="Heavy Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="2ac560bd" name="Neophyte firearm" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="90e2c679" name="Neophyte Firearm" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -780,9 +840,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Assault</characteristic>
           </characteristics>
         </profile>
-        <profile id="4ee3254b" name="Pyreblaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="9d6e8263" name="Pyreblaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
@@ -791,7 +851,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="6251b776" name="Astartes chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="167eacc6" name="Chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -802,7 +862,7 @@
             <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="bd650bdc" name="Knives and Fists" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -813,7 +873,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="626d2435" name="Master-crafted power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="ad8a63ad" name="Master-crafted Power Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -824,71 +884,82 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="8cc6cfd5" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="94429730" name="Heirs of Sigismund" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
+        <profile id="7dbc42f3" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="696c7be7" name="Righteous Zeal (once per turn, per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your opponent's Shooting phase, when an enemy unit has shot, if those attacks destroyed a model in this unit and this unit is unengaged, this unit can make a surge move of up to D6+2&quot;.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::sword-brother-heavy-bolt-pistol-master-crafted-power-weapon" name="Sword Brother: heavy bolt pistol, master-crafted power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-initiate-with-heavy-bolt-pistol-and-chainsword" name="2 Initiate with Heavy Bolt Pistol and Chainsword: chainsword, heavy bolt pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="9c0c31e0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="4496758a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="f7aff9c7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="63329ee2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-initiates-heavy-bolt-pistol-astartes-chainsword" name="2 Initiates: heavy bolt pistol, Astartes chainsword" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-initiate-with-bolt-pistol-bolt-rifle-and-knives-and-fists" name="2 Initiate with Bolt Pistol, Bolt Rifle and Knives and Fists: bolt pistol, bolt rifle, knives and fists" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="3bfdcc34" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="5bcbd2bf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="685f19ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c606ad89" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-initiates-bolt-pistol-bolt-rifle-close-combat-weapon" name="2 Initiates: bolt pistol, bolt rifle, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::1-sword-brother" name="1 Sword Brother: heavy bolt pistol, master-crafted power weapon" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="14d6621a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="5f654744" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="62e613b7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="fb1d16e6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::1-initiate-pyreblaster-bolt-pistol-close-combat-weapon" name="1 Initiate: pyreblaster, bolt pistol, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::1-initiate-with-pyreblaster-bolt-pistol-and-knives-and-fists" name="1 Initiate with Pyreblaster, Bolt Pistol and Knives and Fists: bolt pistol, knives and fists, pyreblaster" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="6830d44b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="750e5760" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="2957e987" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="732f0aea" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-neophytes-bolt-pistol-astartes-chainsword" name="2 Neophytes: bolt pistol, Astartes chainsword" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-neophyte-with-neophyte-firearm-and-knives-and-fists" name="2 Neophyte with Neophyte Firearm and Knives and Fists: knives and fists, neophyte firearm" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="f08708b5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="c314b3a2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="71a96efe" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2ffe908f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-neophytes-neophyte-firearm-close-combat-weapon" name="2 Neophytes: Neophyte firearm, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::01-crusader-squad::2-neophyte-with-bolt-pistol-and-chainsword" name="2 Neophyte with Bolt Pistol and Chainsword: bolt pistol, chainsword" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="2936f3a1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="835c9d58" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="30f24579" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="ecac36c0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::vow-sworn-of-vedrenn::02-bladeguard-veteran-squad" name="Bladeguard Veteran Squad" type="unit" hidden="false">
+    <selectionEntry id="cp::vow-sworn-of-vedrenn::02-bladeguard-veteran-squad" name="Vow-Sworn Bladeguard Veteran Squad" type="unit" hidden="false">
       <constraints>
-        <constraint id="dda2db72" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="e37072f8" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="19e49d98" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2731f892" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="1faafb21" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
-        <categoryLink id="0ba701fa" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
-        <categoryLink id="a7cac373" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
-        <categoryLink id="b2b5d3cb" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="e5dba1a7" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="765ea33f" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
-        <categoryLink id="3bf32dc3" name="Bladeguard Veteran Squad" hidden="false" targetId="cp-kw::bladeguard-veteran-squad" primary="false" />
-        <categoryLink id="2dacedbb" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
-        <categoryLink id="e4d35b8c" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="b653da47" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
+        <categoryLink id="a488d21b" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
+        <categoryLink id="c560bf13" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      <categoryLink id="26a00853" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="e8e7bc27" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="1fd14be4" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="76bb1582" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+      <categoryLink id="f63d0bed" name="Vow-Sworn of Vedrenn" hidden="false" targetId="cp-kw::vow-sworn-of-vedrenn" primary="false" />
+      <categoryLink id="dd1ea658" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+      <categoryLink id="0619fdaa" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="65e7a356" name="Bladeguard Veteran Squad" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="b2f81eda" name="Bladeguard Veteran Sergeant" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -896,29 +967,39 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="4b671f19" name="Heavy bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="65436b47" name="Bladeguard Veteran" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66986271" name="Heavy Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="8eed0b61" name="Neo-volkite pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="2e3b5d35" name="Neo-Volkite Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">5</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Devastating Wounds</characteristic>
           </characteristics>
         </profile>
-        <profile id="626d2435" name="Master-crafted power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="7a6be7e0" name="Master-crafted Power Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -929,62 +1010,63 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="dc595191" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="8cc6cfd5" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="3e61fa9f" name="Heirs of Sigismund" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="42473d88" name="Bladeguard" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="651f36e2" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">At the start of the Fight phase, you can select one of the following abilities to apply to models in this unit until the end of the phase: Swords of the Chapter: Each time a model in this unit makes a melee attack, re-roll a Hit roll of 1. Shields of the Chapter: Each time an invulnerable saving throw is made for a model in this unit, re-roll a saving throw of 1.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b8bf48e5" name="Bladeguard (once per turn per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In the Fight phase, when this unit is selected to fight or when an enemy unit targets this unit, you can select one of the following:This unit’s melee attacks can re-roll hit rolls of 1.Or: This unit can re-roll saving rolls of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="88951884" name="Bladeguard" hidden="false">
-          <description>At the start of the Fight phase, you can select one of the following abilities to apply to models in this unit until the end of the phase: Swords of the Chapter: Each time a model in this unit makes a melee attack, re-roll a Hit roll of 1. Shields of the Chapter: Each time an invulnerable saving throw is made for a model in this unit, re-roll a saving throw of 1.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::02-bladeguard-veteran-squad::bladeguard-veteran-squad-leader-neo-volkite-pistol-master-crafted-power-weapon" name="Bladeguard Veteran Squad Leader: neo-volkite pistol, master-crafted power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::02-bladeguard-veteran-squad::1-bladeguard-veteran-sergeant" name="1 Bladeguard Veteran Sergeant: master-crafted power weapon, neo-volkite pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="54ce6201" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="c0353652" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="f7307010" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f1fa3bbf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::02-bladeguard-veteran-squad::2-bladeguard-veterans-heavy-bolt-pistol-master-crafted-power-weapon" name="2 Bladeguard Veterans: heavy bolt pistol, master-crafted power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::02-bladeguard-veteran-squad::2-bladeguard-veteran" name="2 Bladeguard Veteran: heavy bolt pistol, master-crafted power weapon" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="c253d903" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="219731c7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="9698eb18" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="1224191d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad" name="Sword Brethren Squad" type="unit" hidden="false">
+    <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad" name="Vow-Sworn Sword Brethren Squad" type="unit" hidden="false">
       <constraints>
-        <constraint id="512294a6" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="db5aab7a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="7763fb44" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1b533f7a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="9be12e46" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
-        <categoryLink id="32345925" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
-        <categoryLink id="e60ceef7" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
-        <categoryLink id="ce02bf6a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="4943137b" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="0d23b928" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
-        <categoryLink id="ec89e46e" name="Sword Brethren Squad" hidden="false" targetId="cp-kw::sword-brethren-squad" primary="false" />
-        <categoryLink id="5750a1f1" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
-        <categoryLink id="fa5ad0c2" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+        <categoryLink id="3da8c4b4" name="Combat Patrol: Black Templars (Vow-sworn of Vedrenn)" hidden="false" targetId="cp-cat::vow-sworn-of-vedrenn" primary="true" />
+        <categoryLink id="56934db4" name="Black Templars" hidden="false" targetId="cp-faction::black-templars" primary="false" />
+        <categoryLink id="5d64d51b" name="Space Marines" hidden="false" targetId="cp-group::space-marines" primary="false" />
+      <categoryLink id="62f3d057" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="ef30c8a3" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="5369dc70" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="b4ce44d3" name="Tacticus" hidden="false" targetId="cp-kw::tacticus" primary="false" />
+      <categoryLink id="2e1563f1" name="Vow-Sworn of Vedrenn" hidden="false" targetId="cp-kw::vow-sworn-of-vedrenn" primary="false" />
+      <categoryLink id="a5205ecc" name="Black Templars" hidden="false" targetId="cp-kw::black-templars" primary="false" />
+      <categoryLink id="58464fa9" name="Adeptus Astartes" hidden="false" targetId="cp-kw::adeptus-astartes" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="724b22fb" name="Sword Brethren Squad" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="dd4d4075" name="Sword Brother with Plasma Pistol and Master-crafted Power Weapon" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">3+</characteristic>
             <characteristic name="W" typeId="b75ce314">3</characteristic>
@@ -992,9 +1074,49 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="d8d95fc8" name="Combi-weapon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="0d4923a3" name="Sword Brother with Pyre Pistol and Master-crafted Power Weapon" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">24"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1015ab99" name="Sword Brother with Twin Lightning Claws" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c7c3551" name="Sword Brother with Heavy Bolt Pistol and Chainsword" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d6f166c" name="Sword Brother Castellan" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">3+</characteristic>
+            <characteristic name="W" typeId="b75ce314">3</characteristic>
+            <characteristic name="LD" typeId="7c47673d">6+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3cd2d3ad" name="Combi-Weapon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -1003,51 +1125,51 @@
             <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="4b671f19" name="Heavy bolt pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="1f4aa10d" name="Heavy Bolt Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="1fee0260" name="Plasma pistol – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="a6a1c952" name="Plasma Pistol - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="44bf0fa3" name="Plasma pistol – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="f9ac3fa0" name="Plasma Pistol - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">3+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Hazardous, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="26af6fab" name="Pyre pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="00a498d8" name="Pyre Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Pistol, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="6251b776" name="Astartes chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="27e50dd4" name="Chainsword" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">6</characteristic>
@@ -1058,7 +1180,7 @@
             <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="626d2435" name="Master-crafted power weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="4fe4d79a" name="Master-Crafted Power Weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -1069,7 +1191,7 @@
             <characteristic name="Keywords" typeId="23459e53">Lethal Hits</characteristic>
           </characteristics>
         </profile>
-        <profile id="9a6ffdc1" name="Twin lightning claws" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="fa5d40e1" name="Twin Lightning Claws" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">5</characteristic>
@@ -1080,51 +1202,51 @@
             <characteristic name="Keywords" typeId="23459e53">Twin-linked</characteristic>
           </characteristics>
         </profile>
-        <profile id="8cc6cfd5" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="6dc7b681" name="Heirs of Sigismund" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="603cb3df" name="Exploit Their Cowardice" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="95864a99" name="Templar Vows" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time an enemy unit within Engagement Range of this unit is selected to Fall Back, after it ends that Fall Back move, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move.</characteristic>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4cfddaef" name="Exploit Their Cowardice" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When an enemy unit engaged with this unit is selected to make a fall-back move, after that enemy unit ends that fall-back move, if this unit is unengaged, this unit can make a normal move.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="55842ae7" name="Exploit Their Cowardice" hidden="false">
-          <description>Each time an enemy unit within Engagement Range of this unit is selected to Fall Back, after it ends that Fall Back move, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::sword-brother-castellan-combi-weapon-master-crafted-power-weapon" name="Sword Brother Castellan: combi-weapon, master-crafted power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-with-plasma-pistol-and-master-crafted-power-weapon" name="1 Sword Brother with Plasma Pistol and Master-crafted Power Weapon: master-crafted power weapon, plasma pistol - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="8df6fa29" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="496e9890" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="e340804b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="06dc24b7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-heavy-bolt-pistol-astartes-chainsword" name="1 Sword Brother: heavy bolt pistol, Astartes chainsword" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-with-pyre-pistol-and-master-crafted-power-weapon" name="1 Sword Brother with Pyre Pistol and Master-crafted Power Weapon: master-crafted power weapon, pyre pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="5b78474f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="f47534a9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="9e4e5b6b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="067150e6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-twin-lightning-claws" name="1 Sword Brother: twin lightning claws" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-with-twin-lightning-claws" name="1 Sword Brother with Twin Lightning Claws: twin lightning claws" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="26a57a5e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="3b9c1f05" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c371a365" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="dd91659c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-pyre-pistol-master-crafted-power-weapon" name="1 Sword Brother: pyre pistol, master-crafted power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-with-heavy-bolt-pistol-and-chainsword" name="1 Sword Brother with Heavy Bolt Pistol and Chainsword: chainsword, heavy bolt pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="0a895cd2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="7ce82c6d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="66baa8e4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="413a77cd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-plasma-pistol-master-crafted-power-weapon" name="1 Sword Brother: plasma pistol, master-crafted power weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::vow-sworn-of-vedrenn::03-sword-brethren-squad::1-sword-brother-castellan" name="1 Sword Brother Castellan: combi-weapon, master-crafted power weapon" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="2f5e6d16" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="cb51b3ef" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="a8234f92" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="41736ff7" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

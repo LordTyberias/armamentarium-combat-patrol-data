@@ -533,75 +533,87 @@
     </selectionEntry>
     <selectionEntry id="cp::purge-corps-deltic-9::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
-        <constraint id="55a4fb50" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="10dec376" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="79e41ce0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5f40f208" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="9850e200" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
-        <categoryLink id="8cf4ed7b" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
-        <categoryLink id="28299522" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+        <categoryLink id="c44d5785" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
+        <categoryLink id="8d634105" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
+        <categoryLink id="da7eb8a6" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="daa67500" name="An Evaluation of Mettle" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="5a6c16f1" name="Doctrina Imperatives" typeId="7a1e5c04" typeName="Army Rule" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="a1d33e77">At the start of the battle round, you can select one of the Doctrina Imperatives below. Until the end of the battle round, that Doctrina Imperative is active for your army, and all units from your army that have the Doctrina Imperatives ability gain the relevant abilities shown below. ■ Ranged weapons equipped by models in this unit have the [HEAVY] ability. ■ Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1. ■ Each time a melee attack targets this unit, if this unit has the BATTLELINE keyword and/or it is within 6&quot; of one or more friendly ADEPTUS MECHANICUS BATTLELINE units, subtract 1 from the Hit roll. ■ Ranged weapons equipped by models in this unit have the [ASSAULT] ability. ■ Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1. ■ Each time a model in this unit makes an attack, if this unit has the BATTLELINE keyword and/or it is within 6&quot; of one or more friendly ADEPTUS MECHANICUS BATTLELINE units, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c2c01f67" name="Imperative Overload" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">At the start of the battle round, you can select one friendly PURGE CORPS DELTIC-9 unit. If you do, that unit has both Doctrina Imperative abilities until the end of the battle round.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Purge the Foe</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="02817881" name="Miniaturised Autosimulacra" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">PURGE CORPS DELTIC-9 TECH-PRIEST MANIPULUS model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">(Once per battle, per unit) At the start of any phase, you can use this ability. If you do, select one friendly PURGE CORPS DELTIC-9 unit. That unit heals D3+2 wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce085a0a" name="Empowered Mechanisms" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">PURGE CORPS SERBERYS SULPHURHOUNDS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit's ranged attacks have [ANTI-INFANTRY 4+].This unit can re-roll rolls to determine the A of a weapon.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2b5d4014" name="Lockdown Protocols" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS MECHANICUS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, models in your unit have the Feel No Pain 5+ ability.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your opponent's Shooting phase or the Fight phase, when an enemy unit targets a friendly PURGE CORPS DELTIC-9 unit that is within range of an objective.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That PURGE CORPS DELTIC-9 unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Attacks that target your unit have -1 to wound rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="caf404b2" name="Optimised Efficiency" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="680d9e8d" name="Preservation Imperatives" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Movement phase, just after an ADEPTUS MECHANICUS unit from your army Falls Back.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">That ADEPTUS MECHANICUS unit.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, when a friendly unengaged PURGE CORPS DELTIC-9 unit has shot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That PURGE CORPS DELTIC-9 unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit can make a normal move of up to D3+1&quot;.Your unit is not eligible to declare a charge until the end of the turn.</characteristic>
           </characteristics>
         </profile>
-        <profile id="85ac062f" name="Acceptable Risk Ratio" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+        <profile id="24e702e2" name="Optimised Targeting" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
           <characteristics>
             <characteristic name="CP" typeId="8000e444">1CP</characteristic>
-            <characteristic name="When" typeId="1cfae44d">Your Shooting phase.</characteristic>
-            <characteristic name="Target" typeId="459fde7d">One ADEPTUS MECHANICUS unit from your army that has not been selected to shoot this phase.</characteristic>
-            <characteristic name="Effect" typeId="abf47a40">Until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in your unit by 1 and those weapons have the [HAZARDOUS] ability.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1cbc8867" name="Targeted Purge" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Default</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">At the start of the first battle round, your opponent must select one unit from their army (excluding MONSTER and VEHICLE units). At the end of the battle, you score 12VP if that unit is destroyed.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="740e9854" name="Prescribed Excoriation" typeId="d3e08c92" typeName="Secondary Objective" hidden="false">
-          <characteristics>
-            <characteristic name="Type" typeId="31915f4c">Optional</characteristic>
-            <characteristic name="Effect" typeId="53bd7dca">From the second battle round onwards, at the end of your turn, you score 3VP if there are no enemy units within your deployment zone (excluding Battle-shocked units). If there are no enemy units within 6" of your deployment zone (excluding Battle-shocked units), you score 5VP instead.</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Shooting phase, when a friendly PURGE CORPS DELTIC-9 unit is selected to shoot.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That PURGE CORPS DELTIC-9 unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit's ranged attacks can re-roll hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry id="cp::purge-corps-deltic-9::00-manipulus-skand" name="Manipulus Skand" type="unit" hidden="false">
       <constraints>
-        <constraint id="ed3f9833" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="5bea9861" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="83c15b00" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a85aaa5a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="6ffe8e59" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
-        <categoryLink id="b0e409d3" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
-        <categoryLink id="f32b1dd8" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="b0db5836" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="ec79d839" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="e93f2fcc" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
-        <categoryLink id="69cd038c" name="Cult Mechanicus" hidden="false" targetId="cp-kw::cult-mechanicus" primary="false" />
-        <categoryLink id="32b8b77f" name="Tech-Priest" hidden="false" targetId="cp-kw::tech-priest" primary="false" />
-        <categoryLink id="7e7ecb31" name="Manipulus" hidden="false" targetId="cp-kw::manipulus" primary="false" />
-        <categoryLink id="b925133d" name="Manipulus Skand" hidden="false" targetId="cp-kw::manipulus-skand" primary="false" />
-        <categoryLink id="f619dd4b" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="b354f817" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
+        <categoryLink id="ac00ffbc" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
+        <categoryLink id="3801f2c5" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="e4ea1844" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="4d7ae8bf" name="Cult Mechanicus" hidden="false" targetId="cp-kw::cult-mechanicus" primary="false" />
+      <categoryLink id="b8428390" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="6b847c3d" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="035a398d" name="Purge Corps Deltic-9" hidden="false" targetId="cp-kw::purge-corps-deltic-9" primary="false" />
+      <categoryLink id="c9a3b1a2" name="Tech-Priest" hidden="false" targetId="cp-kw::tech-priest" primary="false" />
+      <categoryLink id="47f098c3" name="Tech-Priest Manipulus" hidden="false" targetId="cp-kw::tech-priest-manipulus" primary="false" />
+      <categoryLink id="15dea103" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="bd748a9f" name="Manipulus Skand" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="7e71054e" name="Manipulus Skand" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">2+</characteristic>
             <characteristic name="W" typeId="b75ce314">4</characteristic>
@@ -609,18 +621,18 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="88570bd1" name="Transonic cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="d2bb3da1" name="Transonic Cannon" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">2</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="2469cc90" name="Omnissian staff" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="d602ab5d" name="Omnissian Staff" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -631,72 +643,61 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="e09f57fe" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="b6be2e97" name="Doctrina Imperatives" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="fe1d074e" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="83213d5a" name="Defend the Divine Work (once per battle, per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following unit: Skitarii Vanguard.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">At the start of a phase, you can use this ability. If you do, this unit has 4+ InSv until the end of the phase.</characteristic>
           </characteristics>
         </profile>
-        <profile id="affd8994" name="Galvanic Field" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="344ca41b" name="Mechanical Guidance (once per turn, per unit)" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">When a friendly PURGE CORPS DELTIC-9 unit visible to or within 12&quot; of this model is selected to attack, you can use this ability. If you do, that unit's attacks can re-roll wound rolls.</characteristic>
           </characteristics>
         </profile>
-        <profile id="322a214a" name="Enhancement: Aspergilla of Tarentum (Warlord)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="675e07d1" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time an attack targets the bearer's unit, subtract 1 from the Wound roll. (Default enhancement; may be replaced with Overcharged Electropositors: Add 6" to the Range characteristic of ranged weapons equipped by models in the bearer's unit, and those weapons have the [IGNORES COVER] ability.)</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ PURGE CORPS SKITARII VANGUARD</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="4541f07f" name="Leader" hidden="false">
-          <description>This model can be attached to the following unit: Skitarii Vanguard.</description>
-        </rule>
-        <rule id="0152c65e" name="Galvanic Field" hidden="false">
-          <description>While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</description>
-        </rule>
-        <rule id="4cb8f7df" name="Enhancement: Aspergilla of Tarentum (Warlord)" hidden="false">
-          <description>Each time an attack targets the bearer's unit, subtract 1 from the Wound roll. (Default enhancement; may be replaced with Overcharged Electropositors: Add 6" to the Range characteristic of ranged weapons equipped by models in the bearer's unit, and those weapons have the [IGNORES COVER] ability.)</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::purge-corps-deltic-9::00-manipulus-skand::transonic-cannon-omnissian-staff" name="Transonic cannon, Omnissian staff" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::00-manipulus-skand::1-manipulus-skand" name="1 Manipulus Skand: omnissian staff, transonic cannon" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="25f53367" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b4c9dd15" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="64997d66" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="050cb482" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard" name="Skitarii Vanguard" type="unit" hidden="false">
+    <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard" name="Purge Corps Skitarii Vanguard" type="unit" hidden="false">
       <constraints>
-        <constraint id="f808205b" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="5625d852" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="d9984140" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d875249f" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="09eb16b0" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
-        <categoryLink id="7825b1d3" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
-        <categoryLink id="3334e4ec" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="c5c982c5" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="ba8c74f5" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
-        <categoryLink id="4f439e08" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="9b1d4654" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
-        <categoryLink id="3a0a6f8c" name="Vanguard" hidden="false" targetId="cp-kw::vanguard" primary="false" />
-        <categoryLink id="7f96e60f" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="29735ee0" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
+        <categoryLink id="d31a568c" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
+        <categoryLink id="e89bb010" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="e6dd9ccc" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="ab727c3d" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="ea9e17c1" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="3ebb29ae" name="Purge Corps Deltic-9" hidden="false" targetId="cp-kw::purge-corps-deltic-9" primary="false" />
+      <categoryLink id="d4934f8b" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
+      <categoryLink id="70892451" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="5fa9e457" name="Skitarii Vanguard" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="40fd4970" name="Skitarii Vanguard with Plasma Caliver" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">6"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">3</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">1</characteristic>
@@ -704,20 +705,39 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="1393b261" name="Mechanicus pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="5e81e5d1" name="Skitarii Vanguard with Arc Rifle" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
-            <characteristic name="A" typeId="1318d167">1</characteristic>
-            <characteristic name="BS" typeId="43a26991">4+</characteristic>
-            <characteristic name="S" typeId="cc313509">6</characteristic>
-            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
-            <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Pistol</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="0b205e75" name="Arc rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="620690ef" name="Skitarii Vanguard" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6b67ddd" name="Skitarii Vanguard Alpha" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">6&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">3</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">1</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="94d2774e" name="Arc Rifle" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">30&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
@@ -726,9 +746,20 @@
             <characteristic name="Keywords" typeId="aa05940c">Anti-Vehicle 4+, Devastating Wounds, Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="3f32b110" name="Plasma caliver – standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="9f29d0f4" name="Mechanicus Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">1</characteristic>
+            <characteristic name="BS" typeId="43a26991">4+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11a34e52" name="Plasma Caliver - Standard" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">30&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">7</characteristic>
@@ -737,9 +768,9 @@
             <characteristic name="Keywords" typeId="aa05940c"></characteristic>
           </characteristics>
         </profile>
-        <profile id="66822f0e" name="Plasma caliver – supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="78ac355c" name="Plasma Caliver - Supercharge" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">30"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">30&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">2</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">8</characteristic>
@@ -748,9 +779,9 @@
             <characteristic name="Keywords" typeId="aa05940c">Hazardous</characteristic>
           </characteristics>
         </profile>
-        <profile id="2c585b92" name="Radium carbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="910fe324" name="Radium Carbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">3</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
@@ -759,7 +790,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Anti-Infantry 4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="126b9ce1" name="Alpha combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="5ea783b3" name="Alpha’s Combat Artefact" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -770,7 +801,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="48bbb341" name="Close combat weapon" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="55317219" name="Gun Stocks" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">1</characteristic>
@@ -781,73 +812,73 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="2b188dd9" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="95eed12a" name="Doctrina Imperatives" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="19f6ca3a" name="Doctrina Imperatives" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="05e464a7" name="Rad-saturation (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="08393228" name="Omnispex" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">While an enemy unit (excluding Vehicle units) is within 3" of this unit, subtract 1 from the Objective Control characteristic of models in that enemy unit.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit's ranged attacks have [IGNORES COVER].</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df59b326" name="Rad-saturation (Aura)" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">While an enemy unit (excluding VEHICLE units) is within 3&quot; of this unit, that enemy unit has -1 OC.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="e5b48a74" name="Rad-saturation (Aura)" hidden="false">
-          <description>While an enemy unit (excluding Vehicle units) is within 3" of this unit, subtract 1 from the Objective Control characteristic of models in that enemy unit.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::1-skitarii-vanguard-alpha-mechanicus-pistol-alpha-combat-weapon" name="1 Skitarii Vanguard Alpha: Mechanicus pistol, Alpha combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::1-skitarii-vanguard-with-plasma-caliver" name="1 Skitarii Vanguard with Plasma Caliver: gun stocks, plasma caliver - standard" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="a4bd1cd4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="0b81b9a9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="7d5dd0ed" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="b588a008" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::1-skitarii-vanguard-arc-rifle-close-combat-weapon" name="1 Skitarii Vanguard: arc rifle, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::1-skitarii-vanguard-with-arc-rifle" name="1 Skitarii Vanguard with Arc Rifle: arc rifle, gun stocks" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="20ccd668" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="a171b0e4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="8bffd5e5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="c9416215" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::1-skitarii-vanguard-plasma-caliver-close-combat-weapon" name="1 Skitarii Vanguard: plasma caliver, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::7-skitarii-vanguard" name="7 Skitarii Vanguard: gun stocks, radium carbine" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="07a6a7ce" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="6ca0871c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="2ca8d2cb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f49973d5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::7-skitarii-vanguard-radium-carbine-close-combat-weapon" name="7 Skitarii Vanguard: radium carbine, close combat weapon" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::01-skitarii-vanguard::1-skitarii-vanguard-alpha" name="1 Skitarii Vanguard Alpha: alpha’s combat artefact, mechanicus pistol" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="77b5acbe" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="8116fe0a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="cee2df54" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="18ea19ee" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds" name="Serberys Sulphurhounds" type="unit" hidden="false">
+    <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds" name="Purge Corps Serberys Sulphurhounds" type="unit" hidden="false">
       <constraints>
-        <constraint id="8ddc41ac" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="95de5cd8" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="891562a8" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e6099286" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="cc411c1c" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
-        <categoryLink id="88becb8a" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
-        <categoryLink id="88fadc76" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="ee008b35" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
-        <categoryLink id="0220d72a" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="5b8e45e2" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
-        <categoryLink id="838816d3" name="Serberys Sulphurhounds" hidden="false" targetId="cp-kw::serberys-sulphurhounds" primary="false" />
-        <categoryLink id="9af472b9" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="35f3853d" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
+        <categoryLink id="23013173" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
+        <categoryLink id="0f2c4b42" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="ebf67c57" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="81410835" name="Mounted" hidden="false" targetId="cp-kw::mounted" primary="false" />
+      <categoryLink id="6cb0fe6e" name="Purge Corps Deltic-9" hidden="false" targetId="cp-kw::purge-corps-deltic-9" primary="false" />
+      <categoryLink id="d23248ab" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
+      <categoryLink id="62db226a" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="93635ac2" name="Serberys Sulphurhounds" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="65faeba4" name="Serberys Sulphurhound" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -855,51 +886,71 @@
             <characteristic name="OC" typeId="d8b56b65">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="1393b261" name="Mechanicus pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="9d66a38b" name="Serberys Sulphurhound Alpha" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="64a714c0" name="Serberys Sulphurhound with Phosphor Pistols" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc0f31de" name="Mechanicus Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">6</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Devastating Wounds, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Devastating Wounds</characteristic>
           </characteristics>
         </profile>
-        <profile id="dfb8b624" name="Phosphor blast carbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="83116930" name="Phosphor Blast Carbine" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">18"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">6</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Blast, Ignores Cover</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Blast 1, Ignores Cover</characteristic>
           </characteristics>
         </profile>
-        <profile id="9c662e94" name="Phosphor pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="15076584" name="Phosphor Pistol" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">1</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Ignores Cover</characteristic>
           </characteristics>
         </profile>
-        <profile id="c00dd48a" name="Sulphur breath" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="f9c0f28b" name="Sulphur breath" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">9"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">9&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Pistol, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters, Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="74747983" name="Cavalry arc maul" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="12f8d1a9" name="Cavalry Arc Maul" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">1</characteristic>
@@ -910,7 +961,7 @@
             <characteristic name="Keywords" typeId="23459e53">Anti-Vehicle 4+, Devastating Wounds, Extra Attacks</characteristic>
           </characteristics>
         </profile>
-        <profile id="f3485f58" name="Clawed limbs" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="9d6f6ccb" name="Clawed Limbs" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">4</characteristic>
@@ -921,70 +972,64 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="d6d4343e" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="95eed12a" name="Doctrina Imperatives" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="cc0a409a" name="Doctrina Imperatives" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="84d0febd" name="Line-breakers" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="e1b21bcb" name="Pinning Fire" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6 for each model in this unit that is within Engagement Range of that enemy unit, adding 2 to the result if this unit started its Charge move within 6" of one or more friendly Adeptus Mechanicus Battleline units. For each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, when this unit has shot, you can select one enemy unit hit by those attacks. If you do, that enemy unit is pinned until the start of your next turn:While a unit is pinned, that unit:Has -2&quot; M.Has -2 to charge rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="1967778f" name="Line-breakers" hidden="false">
-          <description>Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6 for each model in this unit that is within Engagement Range of that enemy unit, adding 2 to the result if this unit started its Charge move within 6" of one or more friendly Adeptus Mechanicus Battleline units. For each 4+, that enemy unit suffers 1 mortal wound.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds::1-serberys-sulphurhound-alpha-mechanicus-pistol-sulphur-breath-cavalry-arc-maul-clawed-limbs" name="1 Serberys Sulphurhound Alpha: Mechanicus pistol, sulphur breath, cavalry arc maul, clawed limbs" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds::1-serberys-sulphurhound" name="1 Serberys Sulphurhound: clawed limbs, phosphor blast carbine, phosphor pistol, sulphur breath" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="311a6870" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="3bfe392c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="efcb2348" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="7399c029" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds::1-serberys-sulphurhound-phosphor-blast-carbine-phosphor-pistol-sulphur-breath-clawed-limbs" name="1 Serberys Sulphurhound: phosphor blast carbine, phosphor pistol, sulphur breath, clawed limbs" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds::1-serberys-sulphurhound-alpha" name="1 Serberys Sulphurhound Alpha: cavalry arc maul, clawed limbs, mechanicus pistol, sulphur breath" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="59f882fc" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="b401d1c5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="056e9a9a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="30fa53ff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds::1-serberys-sulphurhound-2-phosphor-pistols-sulphur-breath-clawed-limbs" name="1 Serberys Sulphurhound: 2 phosphor pistols, sulphur breath, clawed limbs" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::02-serberys-sulphurhounds::1-serberys-sulphurhound-with-phosphor-pistols" name="1 Serberys Sulphurhound with Phosphor Pistols: clawed limbs, phosphor pistol, sulphur breath" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="72a95fa3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="04276fd8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="c670d7ad" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5edbf7ff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="cp::purge-corps-deltic-9::03-pteraxii-sterylizors" name="Pteraxii Sterylizors" type="unit" hidden="false">
+    <selectionEntry id="cp::purge-corps-deltic-9::03-pteraxii-sterylizors" name="Purge Corps Pteraxii Sterylizors" type="unit" hidden="false">
       <constraints>
-        <constraint id="aabc5fe4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-        <constraint id="ef943f5d" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+        <constraint id="d0e8a682" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5b4b3529" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="85d5dead" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
-        <categoryLink id="be203049" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
-        <categoryLink id="f69fe03f" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
-        <categoryLink id="022bbcac" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
-        <categoryLink id="2a709de3" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
-        <categoryLink id="1e5d7c63" name="Jump Pack" hidden="false" targetId="cp-kw::jump-pack" primary="false" />
-        <categoryLink id="3058ca9f" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
-        <categoryLink id="71c7f4a0" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
-        <categoryLink id="06869f23" name="Pteraxii" hidden="false" targetId="cp-kw::pteraxii" primary="false" />
-        <categoryLink id="b90b833a" name="Sterylizors" hidden="false" targetId="cp-kw::sterylizors" primary="false" />
-        <categoryLink id="2435aad7" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
+        <categoryLink id="120cc433" name="Combat Patrol: Adeptus Mechanicus (Purge Corps Deltic-9)" hidden="false" targetId="cp-cat::purge-corps-deltic-9" primary="true" />
+        <categoryLink id="c9463eda" name="Adeptus Mechanicus" hidden="false" targetId="cp-faction::adeptus-mechanicus" primary="false" />
+        <categoryLink id="bfbb0419" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="d51f2cef" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+      <categoryLink id="a68553cb" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="d2d1a297" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="167b6129" name="Jump Pack" hidden="false" targetId="cp-kw::jump-pack" primary="false" />
+      <categoryLink id="2558122b" name="Purge Corps Deltic-9" hidden="false" targetId="cp-kw::purge-corps-deltic-9" primary="false" />
+      <categoryLink id="1f9c310e" name="Skitarii" hidden="false" targetId="cp-kw::skitarii" primary="false" />
+      <categoryLink id="4d578a0e" name="Adeptus Mechanicus" hidden="false" targetId="cp-kw::adeptus-mechanicus" primary="false" />
       </categoryLinks>
       <profiles>
-        <profile id="868c57bf" name="Pteraxii Sterylizors" typeId="59000054" typeName="Unit" hidden="false">
+        <profile id="5fa662cd" name="Pteraxii Sterylizor" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="M" typeId="e4fce1d3">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
             <characteristic name="T" typeId="f11c2b57">4</characteristic>
             <characteristic name="SV" typeId="9a958949">4+</characteristic>
             <characteristic name="W" typeId="b75ce314">2</characteristic>
@@ -992,20 +1037,30 @@
             <characteristic name="OC" typeId="d8b56b65">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="a1830914" name="Flechette blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="aa629ef8" name="Pteraxii Sterylizor Alpha" typeId="59000054" typeName="Unit" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">4</characteristic>
+            <characteristic name="SV" typeId="9a958949">4+</characteristic>
+            <characteristic name="W" typeId="b75ce314">2</characteristic>
+            <characteristic name="LD" typeId="7c47673d">7+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="04c97dfa" name="Flechette Blaster" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">5</characteristic>
             <characteristic name="BS" typeId="43a26991">4+</characteristic>
             <characteristic name="S" typeId="cc313509">3</characteristic>
             <characteristic name="AP" typeId="9f7a806e">0</characteristic>
             <characteristic name="D" typeId="64a3de63">1</characteristic>
-            <characteristic name="Keywords" typeId="aa05940c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Close-quarters</characteristic>
           </characteristics>
         </profile>
-        <profile id="3ecfd5b8" name="Phosphor torch" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+        <profile id="b4a04b04" name="Phosphor Torch" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
           <characteristics>
-            <characteristic name="Range" typeId="b8493dea">12"</characteristic>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
             <characteristic name="A" typeId="1318d167">D6</characteristic>
             <characteristic name="BS" typeId="43a26991">N/A</characteristic>
             <characteristic name="S" typeId="cc313509">4</characteristic>
@@ -1014,7 +1069,7 @@
             <characteristic name="Keywords" typeId="aa05940c">Ignores Cover, Torrent</characteristic>
           </characteristics>
         </profile>
-        <profile id="60753ec2" name="Pteraxii talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="eb4fbb04" name="Talons" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">2</characteristic>
@@ -1025,7 +1080,7 @@
             <characteristic name="Keywords" typeId="23459e53"></characteristic>
           </characteristics>
         </profile>
-        <profile id="97e25e71" name="Taser goad" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+        <profile id="34e4ad3f" name="Taser Goad" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
           <characteristics>
             <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
             <characteristic name="A" typeId="b10eaf4e">3</characteristic>
@@ -1036,43 +1091,33 @@
             <characteristic name="Keywords" typeId="23459e53">Sustained Hits 2</characteristic>
           </characteristics>
         </profile>
-        <profile id="169a48fb" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="41826dcf" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="24c71f82" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="99a1d8fb" name="Doctrina Imperatives" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
             <characteristic name="Description" typeId="2451ab48"></characteristic>
           </characteristics>
         </profile>
-        <profile id="95eed12a" name="Doctrina Imperatives" typeId="a915f3e9" typeName="Abilities" hidden="false">
+        <profile id="1f623b5b" name="Searing Conflagration" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
-            <characteristic name="Description" typeId="2451ab48"></characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c93e9c2c" name="Searing Conflagration" typeId="a915f3e9" typeName="Abilities" hidden="false">
-          <characteristics>
-            <characteristic name="Description" typeId="2451ab48">Each time a model in this unit makes an attack with a phosphor torch that targets an enemy unit within range of an objective marker, re-roll a Wound roll of 1. If this unit is also within 6" of one or more friendly Adeptus Mechanicus Battleline units, each time such an attack targets such a unit, you can re-roll the Wound roll instead.</characteristic>
+            <characteristic name="Description" typeId="2451ab48">This unit's phosphor torch attacks that target a unit within range of an objective:Can re-roll wound rolls of 1.Or: If this unit is within 6&quot; of a friendly ADEPTUS MECHANICUS BATTLELINE unit, can re-roll wound rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="724b8e9b" name="Searing Conflagration" hidden="false">
-          <description>Each time a model in this unit makes an attack with a phosphor torch that targets an enemy unit within range of an objective marker, re-roll a Wound roll of 1. If this unit is also within 6" of one or more friendly Adeptus Mechanicus Battleline units, each time such an attack targets such a unit, you can re-roll the Wound roll instead.</description>
-        </rule>
-      </rules>
       <selectionEntries>
-        <selectionEntry id="cp::purge-corps-deltic-9::03-pteraxii-sterylizors::1-pteraxii-sterylizor-alpha-flechette-blaster-taser-goad" name="1 Pteraxii Sterylizor Alpha: flechette blaster, taser goad" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::03-pteraxii-sterylizors::4-pteraxii-sterylizor" name="4 Pteraxii Sterylizor: phosphor torch, talons" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="575a9bd0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="d47ef408" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="b94e7465" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="728f8da3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="cp::purge-corps-deltic-9::03-pteraxii-sterylizors::every-model-phosphor-torch-pteraxii-talons" name="Every model: phosphor torch, Pteraxii talons" type="upgrade" hidden="false">
+        <selectionEntry id="cp::purge-corps-deltic-9::03-pteraxii-sterylizors::1-pteraxii-sterylizor-alpha" name="1 Pteraxii Sterylizor Alpha: flechette blaster, taser goad" type="upgrade" hidden="false">
           <constraints>
-            <constraint id="cea8c53a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
-            <constraint id="315b7a08" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+            <constraint id="5f51989f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="602c896d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
