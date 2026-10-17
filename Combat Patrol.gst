@@ -98,6 +98,8 @@
     <categoryEntry id="cp-kw::anathema-psykana" name="Anathema Psykana" hidden="false" />
     <categoryEntry id="cp-kw::anhrathe" name="Anhrathe" hidden="false" />
     <categoryEntry id="cp-kw::apothecary" name="Apothecary" hidden="false" />
+    <categoryEntry id="cp-kw::aquilan-talon" name="Aquilan Talon" hidden="false" />
+    <categoryEntry id="cp-kw::aquilan-wing" name="Aquilan Wing" hidden="false" />
     <categoryEntry id="cp-kw::aranis-zarkan" name="Aranis Zarkan" hidden="false" />
     <categoryEntry id="cp-kw::archon" name="Archon" hidden="false" />
     <categoryEntry id="cp-kw::arco-flagellants" name="Arco-flagellants" hidden="false" />
@@ -175,6 +177,8 @@
     <categoryEntry id="cp-kw::claw-of-ascension" name="Claw of Ascension" hidden="false" />
     <categoryEntry id="cp-cat::sanctuary-guardians" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" />
     <categoryEntry id="cp-cat::the-penitent-host" name="Combat Patrol: Adepta Sororitas (The Penitent Host)" hidden="false" />
+    <categoryEntry id="cp-cat::aquilan-talon" name="Combat Patrol: Adeptus Custodes (Aquilan Talon)" hidden="false" />
+    <categoryEntry id="cp-cat::aquilan-wing" name="Combat Patrol: Adeptus Custodes (Aquilan Wing)" hidden="false" />
     <categoryEntry id="cp-cat::guardians-of-the-throne" name="Combat Patrol: Adeptus Custodes (Guardians of the Throne)" hidden="false" />
     <categoryEntry id="cp-cat::tristraens-gilded-blades" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" />
     <categoryEntry id="cp-cat::maniple-verask-alpha" name="Combat Patrol: Adeptus Mechanicus (Maniple Verask-Alpha)" hidden="false" />
@@ -251,6 +255,7 @@
     <categoryEntry id="cp-kw::commander-cloudspear" name="Commander Cloudspear" hidden="false" />
     <categoryEntry id="cp-kw::commander-in-enforcer-battlesuit" name="Commander in Enforcer Battlesuit" hidden="false" />
     <categoryEntry id="cp-kw::company-heroes" name="Company Heroes" hidden="false" />
+    <categoryEntry id="cp-kw::contemptor-achillus-dreadnought" name="Contemptor-Achillus Dreadnought" hidden="false" />
     <categoryEntry id="cp-kw::corsair-skyreavers" name="Corsair Skyreavers" hidden="false" />
     <categoryEntry id="cp-kw::corsair-voidreavers" name="Corsair Voidreavers" hidden="false" />
     <categoryEntry id="cp-kw::coven-of-agonies" name="Coven of Agonies" hidden="false" />
@@ -288,6 +293,7 @@
     <categoryEntry id="cp-kw::dire-avengers" name="Dire Avengers" hidden="false" />
     <categoryEntry id="cp-kw::doomstalker" name="Doomstalker" hidden="false" />
     <categoryEntry id="cp-kw::draydens-lance" name="Drayden’s Lance" hidden="false" />
+    <categoryEntry id="cp-kw::dreadnought" name="Dreadnought" hidden="false" />
     <categoryEntry id="cp-faction::drukhari" name="Drukhari" hidden="false" />
     <categoryEntry id="cp-kw::drukhari" name="Drukhari" hidden="false" />
     <categoryEntry id="cp-kw::eidelwynne-vantarrion" name="Eidelwynne Vantarrion" hidden="false" />
@@ -509,6 +515,7 @@
     <categoryEntry id="cp-kw::scarab-swarms" name="Scarab Swarms" hidden="false" />
     <categoryEntry id="cp-kw::scintillating-legions" name="Scintillating Legions" hidden="false" />
     <categoryEntry id="cp-kw::screamers" name="Screamers" hidden="false" />
+    <categoryEntry id="cp-kw::sentinel-guard-sodality" name="Sentinel Guard Sodality" hidden="false" />
     <categoryEntry id="cp-kw::septimol-fulg" name="Septimol Fulg" hidden="false" />
     <categoryEntry id="cp-kw::seraphim-squad" name="Seraphim Squad" hidden="false" />
     <categoryEntry id="cp-kw::serberys-sulphurhounds" name="Serberys Sulphurhounds" hidden="false" />
@@ -573,6 +580,7 @@
     <categoryEntry id="cp-kw::tristraens-gilded-blades" name="Tristraen’s Gilded Blades" hidden="false" />
     <categoryEntry id="cp-kw::troupe" name="Troupe" hidden="false" />
     <categoryEntry id="cp-kw::troupe-master" name="Troupe Master" hidden="false" />
+    <categoryEntry id="cp-kw::trusted-sentinel" name="Trusted Sentinel" hidden="false" />
     <categoryEntry id="cp-kw::typhus" name="Typhus" hidden="false" />
     <categoryEntry id="cp-faction::tyranids" name="Tyranids" hidden="false" />
     <categoryEntry id="cp-kw::tyranids" name="Tyranids" hidden="false" />
@@ -589,6 +597,7 @@
     <categoryEntry id="cp-kw::vardenghast-swarm" name="Vardenghast Swarm" hidden="false" />
     <categoryEntry id="cp-kw::vedrenn" name="Vedrenn" hidden="false" />
     <categoryEntry id="cp-kw::vehicle" name="Vehicle" hidden="false" />
+    <categoryEntry id="cp-kw::venatari-with-kinetic-destroyers" name="Venatari with Kinetic Destroyers" hidden="false" />
     <categoryEntry id="cp-kw::venerable-dreadnought" name="Venerable Dreadnought" hidden="false" />
     <categoryEntry id="cp-kw::vengeful-brethren" name="Vengeful Brethren" hidden="false" />
     <categoryEntry id="cp-kw::verask" name="Verask" hidden="false" />
@@ -656,6 +665,8 @@
         <categoryLink id="0051b0f0" name="Anathema Psykana" hidden="false" targetId="cp-kw::anathema-psykana" />
         <categoryLink id="93014efe" name="Anhrathe" hidden="false" targetId="cp-kw::anhrathe" />
         <categoryLink id="a9f70c2a" name="Apothecary" hidden="false" targetId="cp-kw::apothecary" />
+        <categoryLink id="d6a6ad1c" name="Aquilan Talon" hidden="false" targetId="cp-kw::aquilan-talon" />
+        <categoryLink id="9618e591" name="Aquilan Wing" hidden="false" targetId="cp-kw::aquilan-wing" />
         <categoryLink id="c6b0abec" name="Aranis Zarkan" hidden="false" targetId="cp-kw::aranis-zarkan" />
         <categoryLink id="86e5da05" name="Archon" hidden="false" targetId="cp-kw::archon" />
         <categoryLink id="f6d717d5" name="Arco-flagellants" hidden="false" targetId="cp-kw::arco-flagellants" />
@@ -732,6 +743,8 @@
         <categoryLink id="a5bfb564" name="Claw of Ascension" hidden="false" targetId="cp-kw::claw-of-ascension" />
         <categoryLink id="7428859a" name="Combat Patrol: Adepta Sororitas (Sanctuary Guardians)" hidden="false" targetId="cp-cat::sanctuary-guardians" />
         <categoryLink id="32459b4f" name="Combat Patrol: Adepta Sororitas (The Penitent Host)" hidden="false" targetId="cp-cat::the-penitent-host" />
+        <categoryLink id="e92131b2" name="Combat Patrol: Adeptus Custodes (Aquilan Talon)" hidden="false" targetId="cp-cat::aquilan-talon" />
+        <categoryLink id="c5b56c12" name="Combat Patrol: Adeptus Custodes (Aquilan Wing)" hidden="false" targetId="cp-cat::aquilan-wing" />
         <categoryLink id="b14e5c5e" name="Combat Patrol: Adeptus Custodes (Guardians of the Throne)" hidden="false" targetId="cp-cat::guardians-of-the-throne" />
         <categoryLink id="decf8d9c" name="Combat Patrol: Adeptus Custodes (Tristraen's Gilded Blades)" hidden="false" targetId="cp-cat::tristraens-gilded-blades" />
         <categoryLink id="c86a5c72" name="Combat Patrol: Adeptus Mechanicus (Maniple Verask-Alpha)" hidden="false" targetId="cp-cat::maniple-verask-alpha" />
@@ -806,6 +819,7 @@
         <categoryLink id="14b80067" name="Commander Cloudspear" hidden="false" targetId="cp-kw::commander-cloudspear" />
         <categoryLink id="a4a0bace" name="Commander in Enforcer Battlesuit" hidden="false" targetId="cp-kw::commander-in-enforcer-battlesuit" />
         <categoryLink id="0d3ed1a0" name="Company Heroes" hidden="false" targetId="cp-kw::company-heroes" />
+        <categoryLink id="73da9409" name="Contemptor-Achillus Dreadnought" hidden="false" targetId="cp-kw::contemptor-achillus-dreadnought" />
         <categoryLink id="c01b9004" name="Corsair Skyreavers" hidden="false" targetId="cp-kw::corsair-skyreavers" />
         <categoryLink id="bf3cc2fc" name="Corsair Voidreavers" hidden="false" targetId="cp-kw::corsair-voidreavers" />
         <categoryLink id="5b58fd14" name="Coven of Agonies" hidden="false" targetId="cp-kw::coven-of-agonies" />
@@ -843,6 +857,7 @@
         <categoryLink id="73fb87d8" name="Dire Avengers" hidden="false" targetId="cp-kw::dire-avengers" />
         <categoryLink id="b5dec654" name="Doomstalker" hidden="false" targetId="cp-kw::doomstalker" />
         <categoryLink id="1942517d" name="Drayden’s Lance" hidden="false" targetId="cp-kw::draydens-lance" />
+        <categoryLink id="aa66c72d" name="Dreadnought" hidden="false" targetId="cp-kw::dreadnought" />
         <categoryLink id="b0496b96" name="Drukhari" hidden="false" targetId="cp-faction::drukhari" />
         <categoryLink id="5a529677" name="Drukhari" hidden="false" targetId="cp-kw::drukhari" />
         <categoryLink id="901de7fa" name="Eidelwynne Vantarrion" hidden="false" targetId="cp-kw::eidelwynne-vantarrion" />
@@ -1062,6 +1077,7 @@
         <categoryLink id="dee81199" name="Scarab Swarms" hidden="false" targetId="cp-kw::scarab-swarms" />
         <categoryLink id="715fa024" name="Scintillating Legions" hidden="false" targetId="cp-kw::scintillating-legions" />
         <categoryLink id="449fef74" name="Screamers" hidden="false" targetId="cp-kw::screamers" />
+        <categoryLink id="0f15433f" name="Sentinel Guard Sodality" hidden="false" targetId="cp-kw::sentinel-guard-sodality" />
         <categoryLink id="e62315d4" name="Septimol Fulg" hidden="false" targetId="cp-kw::septimol-fulg" />
         <categoryLink id="431a2410" name="Seraphim Squad" hidden="false" targetId="cp-kw::seraphim-squad" />
         <categoryLink id="1ef17fef" name="Serberys Sulphurhounds" hidden="false" targetId="cp-kw::serberys-sulphurhounds" />
@@ -1125,6 +1141,7 @@
         <categoryLink id="2e2f8814" name="Tristraen’s Gilded Blades" hidden="false" targetId="cp-kw::tristraens-gilded-blades" />
         <categoryLink id="57d3b4b1" name="Troupe" hidden="false" targetId="cp-kw::troupe" />
         <categoryLink id="704cd97b" name="Troupe Master" hidden="false" targetId="cp-kw::troupe-master" />
+        <categoryLink id="a640af79" name="Trusted Sentinel" hidden="false" targetId="cp-kw::trusted-sentinel" />
         <categoryLink id="fe6c27cb" name="Typhus" hidden="false" targetId="cp-kw::typhus" />
         <categoryLink id="fd9f1653" name="Tyranids" hidden="false" targetId="cp-faction::tyranids" />
         <categoryLink id="018f2c0b" name="Tyranids" hidden="false" targetId="cp-kw::tyranids" />
@@ -1140,6 +1157,7 @@
         <categoryLink id="080cad77" name="Vardenghast Swarm" hidden="false" targetId="cp-kw::vardenghast-swarm" />
         <categoryLink id="bcdc6e11" name="Vedrenn" hidden="false" targetId="cp-kw::vedrenn" />
         <categoryLink id="fa5da25c" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" />
+        <categoryLink id="b2fd89e9" name="Venatari with Kinetic Destroyers" hidden="false" targetId="cp-kw::venatari-with-kinetic-destroyers" />
         <categoryLink id="7f63e068" name="Venerable Dreadnought" hidden="false" targetId="cp-kw::venerable-dreadnought" />
         <categoryLink id="bd233da4" name="Vengeful Brethren" hidden="false" targetId="cp-kw::vengeful-brethren" />
         <categoryLink id="28c20b51" name="Verask" hidden="false" targetId="cp-kw::verask" />

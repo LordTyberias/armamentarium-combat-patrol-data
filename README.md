@@ -4,8 +4,8 @@ BattleScribe catalogue data for the fixed Combat Patrol rosters of Warhammer 40,
 [Armamentarium](https://github.com/LordTyberias/Armamentarium) project.
 
 - `Combat Patrol.gst` — the game system: profile types, the categories, one force entry.
-- 34 `.cat` files — one per faction, together holding **331 unit entries** and **74 rules rows**
-  across **74 patrols**.
+- 34 `.cat` files — one per faction, together holding **337 unit entries** and **76 rules rows**
+  across **76 patrols**.
 
 ## What this is, and what it is not
 
@@ -38,7 +38,7 @@ them share names with unit keywords. Six Space Marine catalogues carry the same 
 | `cp-cat::<patrol-slug>` | the patrol the entry belongs to; the slug repeats in the entry id |
 | `cp-faction::<slug>` | the faction the units belong to — shared between catalogues of one faction |
 | `cp-group::<slug>` | Imperium / Space Marines / Chaos / Xenos |
-| `cp-flag::legacy` | the one flag, not a prefix: the patrol is no longer supported — 50 of the 74 carry it |
+| `cp-flag::legacy` | the one flag, not a prefix: the patrol is no longer supported — 50 of the 76 carry it |
 | `cp-kw::<slug>` | a unit keyword — everything the datasheet prints under "Keywords" |
 
 Unit entry ids are `cp::<patrol-slug>::NN-<unit-slug>`, and a fixed wargear line is a mandatory child
@@ -319,3 +319,50 @@ models` is not pluralised, `Plasma Pistol - Standard` keeps its mode, a typograp
 typographic, and a run-together enumeration (`BS.Hit rolls`) is not separated. `Oath of Moment`, which
 sits on every space marine sheet in this catalogue, appears nowhere in the app any more and is not
 written for the rebuilt patrols.
+
+## ARMAM-488: Aquilan Talon and Aquilan Wing, two patrols from one box (added 2026-10-17)
+
+The 2026 Adeptus Custodes Combat Patrol box (released 2026-10-17) is **two** patrols in the
+Warhammer 40,000 app, not one: `Combat Patrol: Aquilan Talon` and `Combat Patrol: Aquilan Wing`,
+listed beside `Tristraen's Gilded Blades`, which stays live. Both were harvested on the device
+(Galaxy A17, 2026-10-17) and written by the generator in Armamentarium (`tools/cp-11e-builder`,
+`--new-patrol`). No value comes from the box contents or from regular datasheets.
+
+| Patrol | Units (each once, counted on the device) |
+|---|---|
+| `aquilan-talon` | Contemptor-Achillus Dreadnought, Sentinel Guard Sodality (3), Shield-Captain |
+| `aquilan-wing` | Sentinel Guard Sodality (3), Shield-Captain, Venatari with Kinetic Destroyers (3) |
+
+Entry ids follow the order in which the app lists the datasheets (`00-`, `01-`, `02-`); the unit
+slug drops the patrol's own words, as the existing entries do.
+
+### Numbers
+
+| | before | after |
+|---|---|---|
+| patrols | 74 | 76 |
+| unit entries | 331 | 337 |
+| rules rows | 74 | 76 |
+| rules rows with a `Detachment` | 24 | 26 |
+| `Enhancement` profiles | 48 | 52 |
+| `Army Rule` profiles | 40 | 40 |
+| `Stratagem` profiles | 222 | 228 |
+| categories | 555 | 564 |
+
+Live 26, legacy 50. No existing id, category or entry changed.
+
+### What the app shows differently, and how it is carried
+
+- **No army rule.** Both patrol pages show only `Datasheets` and, under `Detachments`, the one line
+  `<patrol> 1DP` — there is no `Army Rules` section. The rules rows carry a detachment, two
+  enhancements and three stratagems, and no `Army Rule` profile.
+- **Enhancements carry a price** (`10 Points`) in front of the bearer restriction. It is **not**
+  carried: a Combat Patrol has no points. The restriction keeps the bearer text only.
+- **The model table has a `Points` column**, its cell merged across the rows of a unit (`0`). It is
+  read for the model count and otherwise dropped, for the same reason.
+- **Abilities open with a `Core:` group** (`DEEP STRIKE`, `LEADER`). A core ability is carried like a
+  faction ability, by name with an empty description; `Leader` is carried once, with the attach text
+  from its own section.
+- **One finding carried as it stands:** the Aquilan Talon Shield-Captain's leader text names
+  `AQUILAN WING SENTINEL GUARD SODALITY` as the unit it can join. That is what the app prints on the
+  Talon sheet.
