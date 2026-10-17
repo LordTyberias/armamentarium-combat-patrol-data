@@ -1,6 +1,641 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="cp-catalogue::adeptus-custodes" name="Adeptus Custodes" gameSystemId="cp01-4a7e-9d3b-0001" gameSystemRevision="1" battleScribeVersion="2.03" revision="1" authorName="Armamentarium" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
+    <selectionEntry id="cp::aquilan-talon::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ba5b4f04" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6b7f281a" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="879f876a" name="Combat Patrol: Adeptus Custodes (Aquilan Talon)" hidden="false" targetId="cp-cat::aquilan-talon" primary="true" />
+        <categoryLink id="366ecb7c" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="700ffa3e" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="65c37359" name="Resolute Stride" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">When a friendly ADEPTUS CUSTODES AQUILAN TALON unit is selected to make a consolidation move:That unit can move up to 4&quot;.You can select any consolidation mode for that consolidation move, regardless of that consolidation move’s Before Moving restrictions.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Take and Hold</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c08109fb" name="Goldenwrath (Upgrade)" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">AQUILAN TALON CONTEMPTOR-ACHILLUS DREADNOUGHT unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit's Lastrum Storm Bolter weapon has [CLOSE-QUARTERS].</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a6a0da9" name="Coronal Plate" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">AQUILAN TALON SHIELD-CAPTAIN model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This model has Lone Operative 15&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ec12aba3" name="Terrible Might" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Start of the Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly engaged AQUILAN TALON CONTEMPTOR-ACHILLUS DREADNOUGHT unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Select one enemy unit engaged with your unit. That enemy unit makes a battle-shock roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="765f4f26" name="Relentless Destroyers" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase when a friendly ADEPTUS CUSTODES AQUILAN TALON unit is selected to make a fall-back move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS CUSTODES AQUILAN TALON unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">That move does not prevent your unit from being eligible to shoot.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="45798fb7" name="Unstoppable Champion" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, when a friendly AQUILAN TALON CONTEMPTOR-ACHILLUS DREADNOUGHT unit is selected to move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That AQUILAN TALON CONTEMPTOR-ACHILLUS DREADNOUGHT unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit has MOBILE.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="cp::aquilan-talon::00-contemptor-achillus-dreadnought" name="Aquilan Talon Contemptor-Achillus Dreadnought" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4707fa67" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3e106785" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="56c7c2e8" name="Combat Patrol: Adeptus Custodes (Aquilan Talon)" hidden="false" targetId="cp-cat::aquilan-talon" primary="true" />
+        <categoryLink id="43fbce76" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="71a5b931" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="0e88ea01" name="Aquilan Talon" hidden="false" targetId="cp-kw::aquilan-talon" primary="false" />
+      <categoryLink id="69466645" name="Contemptor-Achillus Dreadnought" hidden="false" targetId="cp-kw::contemptor-achillus-dreadnought" primary="false" />
+      <categoryLink id="4a00eb16" name="Dreadnought" hidden="false" targetId="cp-kw::dreadnought" primary="false" />
+      <categoryLink id="ec507689" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="c4dab9b6" name="Vehicle" hidden="false" targetId="cp-kw::vehicle" primary="false" />
+      <categoryLink id="60a64831" name="Walker" hidden="false" targetId="cp-kw::walker" primary="false" />
+      <categoryLink id="d7ca2a43" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="3aaba9f2" name="Contemptor-Achillus Dreadnought" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">9&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">10</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">12</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c7db6158" name="Dreadspear" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">2</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">10</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-3</characteristic>
+            <characteristic name="D" typeId="64a3de63">D3+2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="27a230f9" name="Dreadspear" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">12</characteristic>
+            <characteristic name="AP" typeId="54255f70">-3</characteristic>
+            <characteristic name="D" typeId="1f91ac72">D3+3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="72b34295" name="Lastrum Storm Bolter" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">24&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">3</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7964016b" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="831c1c93" name="Deadly Demise D3" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb598b1f" name="Damaged 4" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f9de68d2" name="Aegis of the Emperor" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b0a55d52" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8af632f6" name="Intimidating Presence" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">Enemy units engaged with this model have -1 Ld.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::aquilan-talon::00-contemptor-achillus-dreadnought::1-contemptor-achillus-dreadnought" name="1 Contemptor-Achillus Dreadnought: dreadspear, lastrum storm bolter" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b8bf64aa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="49384874" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aquilan-talon::01-sentinel-guard-sodality" name="Aquilan Talon Sentinel Guard Sodality" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7c3ac67c" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d6f8bdf4" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f04fd307" name="Combat Patrol: Adeptus Custodes (Aquilan Talon)" hidden="false" targetId="cp-cat::aquilan-talon" primary="true" />
+        <categoryLink id="6f06fdb4" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="98836cce" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="6aad4c25" name="Aquilan Talon" hidden="false" targetId="cp-kw::aquilan-talon" primary="false" />
+      <categoryLink id="fd40af41" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="dbfd275a" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="61284477" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="637f94df" name="Sentinel Guard Sodality" hidden="false" targetId="cp-kw::sentinel-guard-sodality" primary="false" />
+      <categoryLink id="406b3a41" name="Trusted Sentinel" hidden="false" targetId="cp-kw::trusted-sentinel" primary="false" />
+      <categoryLink id="6778beee" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="be69ec3d" name="Sentinel Guard" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c75fa820" name="Sentinel Blade" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b32e0d97" name="Sentinel Blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7984cfa1" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="13792cce" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ff6f81d" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="07c2210c" name="Aegis of the Emperor" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="64c3ea54" name="Resolute Will" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When you target this unit with the Insane Bravery stratagem, you can use this ability. If you do, that use is -1 CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::aquilan-talon::01-sentinel-guard-sodality::3-sentinel-guard" name="3 Sentinel Guard: resolute will, sentinel blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="402d4c41" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="3deb22ea" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aquilan-talon::02-shield-captain" name="Aquilan Talon Shield-Captain" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a77647bd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b0cef872" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="926bc7a3" name="Combat Patrol: Adeptus Custodes (Aquilan Talon)" hidden="false" targetId="cp-cat::aquilan-talon" primary="true" />
+        <categoryLink id="bfc29b50" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="282fd14e" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="41fb8210" name="Aquilan Talon" hidden="false" targetId="cp-kw::aquilan-talon" primary="false" />
+      <categoryLink id="f1f9aed0" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="d2470aed" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="76bdde70" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="c7515a37" name="Shield-Captain" hidden="false" targetId="cp-kw::shield-captain" primary="false" />
+      <categoryLink id="ca881081" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="02f57b68" name="Shield-Captain" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">8</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="59be5071" name="Eternity-pattern Paragon Blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">6</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">10</characteristic>
+            <characteristic name="AP" typeId="54255f70">-3</characteristic>
+            <characteristic name="D" typeId="1f91ac72">3</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc8cc3d6" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82c7cdfe" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fd025fa9" name="Aegis of the Emperor" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="926f624d" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8615ad3f" name="Fight to the Death" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In the Fight phase, when this model is destroyed, if this unit has not been selected to fight this phase, roll one D6:On a 4+, do not remove this model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), this model is removed from the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1f451c50" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ AQUILAN WING SENTINEL GUARD SODALITY</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::aquilan-talon::02-shield-captain::1-shield-captain" name="1 Shield-Captain: eternity-pattern paragon blade, unstoppable will" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="953569ac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="54dbccbd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aquilan-wing::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
+      <constraints>
+        <constraint id="43c1b26d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="87410b21" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f69945cb" name="Combat Patrol: Adeptus Custodes (Aquilan Wing)" hidden="false" targetId="cp-cat::aquilan-wing" primary="true" />
+        <categoryLink id="41c539e3" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="52f10ee7" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="c7203b4a" name="Indomitable Avatars" typeId="3f92bd18" typeName="Detachment" hidden="false">
+          <characteristics>
+            <characteristic name="DP" typeId="5b7c1e90">1DP</characteristic>
+            <characteristic name="Rule" typeId="e8340af2">In your Command phase, you can select one friendly ADEPTUS CUSTODES AQUILAN WING unit. That unit has +1 OC until the start of your next Command phase.</characteristic>
+            <characteristic name="Force Disposition" typeId="9c61d5b4">Take and Hold</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b9eaf898" name="Will of Auramite" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">AQUILAN WING SHIELD-CAPTAIN model only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">In the Fight phase, when this model is destroyed, if this unit has not been selected to fight this phase, roll one D6:On a 4+, do not remove this model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), this model is removed from the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="882cc7a9" name="Eagle’s Pinions (Upgrade)" typeId="c05a7e6b" typeName="Enhancement" hidden="false">
+          <characteristics>
+            <characteristic name="Restriction" typeId="2d84f0c1">AQUILAN WING VENATARI WITH KINETIC DESTROYERS unit only.</characteristic>
+            <characteristic name="Effect" typeId="b7e95a36">This unit has Hover.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="025c287e" name="Driven by Duty" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Your Movement phase, when a friendly ADEPTUS CUSTODES AQUILAN WING unit is selected to make an advance move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS CUSTODES AQUILAN WING unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Your unit has +2 to advance rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6eef4b09" name="Vengeance Inescapable" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">1CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">Fight phase, when a friendly ADEPTUS CUSTODES AQUILAN WING unit is selected to make a pile-in move.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">That ADEPTUS CUSTODES AQUILAN WING unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">When making that pile-in move, your unit can move up to D3+3&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe6682a7" name="On Gilded Wings" typeId="cf5a1b7e" typeName="Stratagem" hidden="false">
+          <characteristics>
+            <characteristic name="CP" typeId="8000e444">2CP</characteristic>
+            <characteristic name="When" typeId="1cfae44d">End of your opponent’s Fight phase.</characteristic>
+            <characteristic name="Target" typeId="459fde7d">One friendly unengaged AQUILAN WING VENATARI WITH KINETIC DESTROYERS unit.</characteristic>
+            <characteristic name="Effect" typeId="abf47a40">Place your unit in strategic reserves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="cp::aquilan-wing::00-sentinel-guard-sodality" name="Aquilan Wing Sentinel Guard Sodality" type="unit" hidden="false">
+      <constraints>
+        <constraint id="bc3728c3" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1f231286" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fa82d8cb" name="Combat Patrol: Adeptus Custodes (Aquilan Wing)" hidden="false" targetId="cp-cat::aquilan-wing" primary="true" />
+        <categoryLink id="50873b12" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="05155ef3" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="4b95dc2f" name="Aquilan Wing" hidden="false" targetId="cp-kw::aquilan-wing" primary="false" />
+      <categoryLink id="595e84bc" name="Battleline" hidden="false" targetId="cp-kw::battleline" primary="false" />
+      <categoryLink id="f2de615e" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="3016e76f" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="51fdc604" name="Sentinel Guard Sodality" hidden="false" targetId="cp-kw::sentinel-guard-sodality" primary="false" />
+      <categoryLink id="593cca9b" name="Trusted Sentinel" hidden="false" targetId="cp-kw::trusted-sentinel" primary="false" />
+      <categoryLink id="aa033f83" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="dd67948b" name="Sentinel Guard" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e32edb1f" name="Sentinel Guard with Vexilla" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3393a1ef" name="Sentinel Blade" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">12&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">5</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-1</characteristic>
+            <characteristic name="D" typeId="64a3de63">2</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Close-quarters</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d8194ade" name="Sentinel Blade" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">2</characteristic>
+            <characteristic name="Keywords" typeId="23459e53"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="161b8474" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="032c1455" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3d3ee6f" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82d8dc6e" name="Aegis of the Emperor" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e8865d56" name="Resolute Will" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">When you target this unit with the Insane Bravery stratagem, you can use this ability. If you do, that use is -1 CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c9a2df2" name="Vexilla" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit has +1 OC. This unit can ignore modifiers to this unit’s Ld.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::aquilan-wing::00-sentinel-guard-sodality::2-sentinel-guard" name="2 Sentinel Guard: resolute will, sentinel blade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="0087b94c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="aa3e8951" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="cp::aquilan-wing::00-sentinel-guard-sodality::1-sentinel-guard-with-vexilla" name="1 Sentinel Guard with Vexilla: resolute will, sentinel blade, vexilla" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b009624b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="0c93f574" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aquilan-wing::01-shield-captain" name="Aquilan Wing Shield-Captain" type="unit" hidden="false">
+      <constraints>
+        <constraint id="04e5e4ce" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6cec85f8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="296f986d" name="Combat Patrol: Adeptus Custodes (Aquilan Wing)" hidden="false" targetId="cp-cat::aquilan-wing" primary="true" />
+        <categoryLink id="90b5e30d" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="57aeead7" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="e1aab833" name="Aquilan Wing" hidden="false" targetId="cp-kw::aquilan-wing" primary="false" />
+      <categoryLink id="380324ae" name="Character" hidden="false" targetId="cp-kw::character" primary="false" />
+      <categoryLink id="652b9619" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="ce48a71a" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="468ef4a1" name="Shield-Captain" hidden="false" targetId="cp-kw::shield-captain" primary="false" />
+      <categoryLink id="24302de7" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="ec44fc7f" name="Shield-Captain" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">8&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">8</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0f1bd547" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d0dc9991" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7df4965b" name="Aegis of the Emperor" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0f2adc64" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="40da6732" name="Unstoppable Will" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This unit has +1 Ld.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="576a5225" name="Leader" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">This model can be attached to the following units: ■ AQUILAN WING SENTINEL GUARD SODALITY</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::aquilan-wing::01-shield-captain::1-shield-captain" name="1 Shield-Captain: eternity-pattern paragon blade, unstoppable will" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="8dd2eddf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="fb6761b0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cp::aquilan-wing::02-venatari-with-kinetic-destroyers" name="Aquilan Wing Venatari with Kinetic Destroyers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="970c0021" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="456a36a0" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cf96ea3f" name="Combat Patrol: Adeptus Custodes (Aquilan Wing)" hidden="false" targetId="cp-cat::aquilan-wing" primary="true" />
+        <categoryLink id="6a478be7" name="Adeptus Custodes" hidden="false" targetId="cp-faction::adeptus-custodes" primary="false" />
+        <categoryLink id="a9911710" name="Imperium" hidden="false" targetId="cp-group::imperium" primary="false" />
+      <categoryLink id="4c39f144" name="Aquilan Wing" hidden="false" targetId="cp-kw::aquilan-wing" primary="false" />
+      <categoryLink id="efd93bec" name="Explosives" hidden="false" targetId="cp-kw::explosives" primary="false" />
+      <categoryLink id="bfbeabcd" name="Fly" hidden="false" targetId="cp-kw::fly" primary="false" />
+      <categoryLink id="bb574d1b" name="Imperium" hidden="false" targetId="cp-kw::imperium" primary="false" />
+      <categoryLink id="701801da" name="Infantry" hidden="false" targetId="cp-kw::infantry" primary="false" />
+      <categoryLink id="737fad93" name="Jump Pack" hidden="false" targetId="cp-kw::jump-pack" primary="false" />
+      <categoryLink id="3e239b46" name="Venatari with Kinetic Destroyers" hidden="false" targetId="cp-kw::venatari-with-kinetic-destroyers" primary="false" />
+      <categoryLink id="07531430" name="Adeptus Custodes" hidden="false" targetId="cp-kw::adeptus-custodes" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="8e53262a" name="Venatari" typeId="59000054" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="e4fce1d3">12&quot;</characteristic>
+            <characteristic name="T" typeId="f11c2b57">7</characteristic>
+            <characteristic name="SV" typeId="9a958949">2+</characteristic>
+            <characteristic name="W" typeId="b75ce314">5</characteristic>
+            <characteristic name="LD" typeId="7c47673d">5+</characteristic>
+            <characteristic name="OC" typeId="d8b56b65">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="71e82f71" name="Kinetic Destroyer" typeId="ffe41412" typeName="Ranged Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="b8493dea">18&quot;</characteristic>
+            <characteristic name="A" typeId="1318d167">4</characteristic>
+            <characteristic name="BS" typeId="43a26991">2+</characteristic>
+            <characteristic name="S" typeId="cc313509">6</characteristic>
+            <characteristic name="AP" typeId="9f7a806e">-2</characteristic>
+            <characteristic name="D" typeId="64a3de63">1</characteristic>
+            <characteristic name="Keywords" typeId="aa05940c">Assault, Close-quarters, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9df1a288" name="Tarsus Buckler" typeId="b50012e8" typeName="Melee Weapons" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="0c6c6741">Melee</characteristic>
+            <characteristic name="A" typeId="b10eaf4e">5</characteristic>
+            <characteristic name="WS" typeId="258d9251">2+</characteristic>
+            <characteristic name="S" typeId="09c93781">6</characteristic>
+            <characteristic name="AP" typeId="54255f70">-2</characteristic>
+            <characteristic name="D" typeId="1f91ac72">1</characteristic>
+            <characteristic name="Keywords" typeId="23459e53">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1edf5516" name="Invulnerable Save" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b159d859" name="Deep Strike" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6d75d22" name="Aegis of the Emperor" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1fb5857" name="Martial Ka’tah" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6fdbde6f" name="Strike from the Skies" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
+            <characteristic name="Description" typeId="2451ab48">In your Shooting phase, if this unit made an ingress move this turn, this unit’s ranged attacks can re‑roll hit rolls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="cp::aquilan-wing::02-venatari-with-kinetic-destroyers::3-venatari" name="3 Venatari: kinetic destroyer, tarsus buckler" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b5e614b9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="538dd51a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry id="cp::guardians-of-the-throne::0-patrol-rules" name="Patrol Rules" type="unit" hidden="false">
       <constraints>
         <constraint id="fe9301f7" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
