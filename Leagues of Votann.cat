@@ -427,6 +427,11 @@
         </profile>
         <profile id="3515076d" name="Prioritised Efficiency" typeId="a915f3e9" typeName="Abilities" hidden="false">
           <characteristics>
+            <characteristic name="Description" typeId="2451ab48"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b4925ed6" name="Decisive Destruction" typeId="a915f3e9" typeName="Abilities" hidden="false">
+          <characteristics>
             <characteristic name="Description" typeId="2451ab48">This unit's ranged attacks that target the closest eligible target can re-roll hit rolls of 1.</characteristic>
           </characteristics>
         </profile>

@@ -366,3 +366,16 @@ Live 26, legacy 50. No existing id, category or entry changed.
 - **One finding carried as it stands:** the Aquilan Talon Shield-Captain's leader text names
   `AQUILAN WING SENTINEL GUARD SODALITY` as the unit it can join. That is what the app prints on the
   Talon sheet.
+
+## ARMAM-604: Einhyr Hearthguard's datasheet ability named again (added 2026-10-18)
+
+`Bane-slayer's Bulwark` was harvested anew on the device (Galaxy A17, app 2.8.1, 2026-10-18), all
+four datasheets with army rule and detachment. One cell differs from the harvest of 2026-09-09: the
+Einhyr Hearthguard's datasheet ability carries its heading `DECISIVE DESTRUCTION`. The older harvest
+had lost it, and the generator then hung the text on the faction ability before it.
+
+The Hearthguard now has what its three siblings have: `Prioritised Efficiency` as a faction ability
+with an empty description (`3515076d`), and `Decisive Destruction` with the text (`b4925ed6`). Profile
+ids are the generator's, derived from entry and name, so the id stays with the name. Army rule,
+detachment, enhancements and the other three sheets are unchanged; one `Abilities` profile more, no
+entry id or category changed.
